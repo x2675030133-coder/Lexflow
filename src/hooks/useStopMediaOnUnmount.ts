@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-function stopPageMedia() {
+export function stopPageMedia() {
   if (typeof window === 'undefined') return;
 
   try {
@@ -28,4 +28,3 @@ function stopPageMedia() {
 export function useStopMediaOnUnmount() {
   useEffect(() => stopPageMedia, []);
 }
-

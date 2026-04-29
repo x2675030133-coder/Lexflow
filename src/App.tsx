@@ -1,5 +1,5 @@
 ﻿import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom';
-import type { ReactNode } from 'react';
+import { useEffect, type ReactNode } from 'react';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -32,6 +32,7 @@ import PreferencesPage from './pages/PreferencesPage';
 import PrivacyPage from './pages/PrivacyPage';
 import TermsPage from './pages/TermsPage';
 import SupportPage from './pages/SupportPage';
+import { stopPageMedia } from './hooks/useStopMediaOnUnmount';
 
 function RequireAuth({ children }: { children: ReactNode }) {
   const { user, loading } = useAuth();
@@ -54,6 +55,12 @@ function RequireAuth({ children }: { children: ReactNode }) {
 
 function AppRoutes() {
   const location = useLocation();
+
+  useEffect(() => {
+    return () => {
+      stopPageMedia();
+    };
+  }, [location.pathname, location.search, location.hash]);
 
   return (
     <div className="page-enter">

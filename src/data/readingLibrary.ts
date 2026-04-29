@@ -37,6 +37,10 @@ function normalizeIdentity(value: string) {
   return String(value || '').toLowerCase().replace(/\s+/g, ' ').trim();
 }
 
+function normalizeTitleIdentity(value: string) {
+  return normalizeIdentity(value).replace(/\s*(?:[\(（]?\d+[\)）]?)\s*$/, '').trim();
+}
+
 function getArticleIdentity(article: Article) {
   if (article.sourceUrl) {
     return `url:${normalizeIdentity(article.sourceUrl)}`;
@@ -44,8 +48,8 @@ function getArticleIdentity(article: Article) {
 
   const paragraphLead = article.paragraphs[0]?.en || '';
   return [
-    normalizeIdentity(article.titleEn),
-    normalizeIdentity(article.titleZh),
+    normalizeTitleIdentity(article.titleEn),
+    normalizeTitleIdentity(article.titleZh),
     normalizeIdentity(article.source),
     normalizeIdentity(paragraphLead),
   ]

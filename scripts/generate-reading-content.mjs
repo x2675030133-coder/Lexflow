@@ -51,6 +51,10 @@ function normalizeText(value) {
   return String(value || '').replace(/\s+/g, ' ').trim();
 }
 
+function normalizeArticleIdentity(value) {
+  return normalizeText(value).toLowerCase().replace(/\s*(?:[\(（]?\d+[\)）]?)\s*$/, '');
+}
+
 function expandParagraphs(paragraphs, titleEn, titleZh, minimum = 8) {
   const cleaned = Array.isArray(paragraphs)
     ? paragraphs
@@ -200,8 +204,21 @@ function mergeArticles(...groups) {
   for (const group of groups) {
     if (!Array.isArray(group)) continue;
     for (const article of group) {
-      if (!article || !article.id || seen.has(article.id)) continue;
-      seen.add(article.id);
+      if (!article) continue;
+
+      const identity = article.sourceUrl
+        ? `url:${normalizeArticleIdentity(article.sourceUrl)}`
+        : [
+            normalizeArticleIdentity(article.titleEn),
+            normalizeArticleIdentity(article.titleZh),
+            normalizeArticleIdentity(article.source),
+            normalizeArticleIdentity(article.paragraphs?.[0]?.en || ''),
+          ]
+            .filter(Boolean)
+            .join('|');
+
+      if (seen.has(identity)) continue;
+      seen.add(identity);
       merged.push(article);
     }
   }
