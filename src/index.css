@@ -1,0 +1,296 @@
+/* Apple-style Easing & Constants */
+:root {
+  --motion-ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --apple-blue: #0071e3;
+  --apple-green: #34c759;
+  --spring-easing: cubic-bezier(0.3, 1.5, 0.5, 1);
+  --apple-ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --apple-spring: cubic-bezier(0.3, 1.5, 0.6, 1);
+  --apple-soft-ease: cubic-bezier(0.2, 0, 0, 1);
+  
+  /* Light Mode Variables */
+  --bg-page: #ffffff;
+  --bg-page-secondary: #f5f5f7;
+  --bg-card: #ffffff;
+  --bg-card-hover: #ffffff;
+  --text-primary: #000000;
+  --text-secondary: #1d1d1f;
+  --border-subtle: rgba(0, 0, 0, 0.1);
+  --nav-glass: rgba(255, 255, 255, 0.85);
+  --blob-opacity: 0.25;
+}
+
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-page);
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  line-height: 1.5;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Apple Premium Animated Background */
+.apple-bg-container {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  background-color: var(--bg-page);
+}
+
+.bg-blob {
+  position: absolute;
+  filter: blur(100px);
+  opacity: var(--blob-opacity);
+  mix-blend-mode: multiply;
+  animation: fluid-blob 30s infinite alternate ease-in-out;
+  transition: opacity 1s var(--apple-soft-ease);
+}
+
+.bg-blob-1 { 
+  top: -10%; left: -5%; width: 100vw; height: 100vw; 
+  background: radial-gradient(circle, rgba(0, 113, 227, 0.35) 0%, transparent 70%); 
+}
+.bg-blob-2 { 
+  bottom: -15%; right: -5%; width: 90vw; height: 90vw; 
+  background: radial-gradient(circle, rgba(88, 56, 214, 0.3) 0%, transparent 70%); 
+  animation-delay: -7s;
+}
+.bg-blob-3 { 
+  top: 5%; right: -15%; width: 85vw; height: 85vw; 
+  background: radial-gradient(circle, rgba(255, 45, 85, 0.25) 0%, transparent 70%); 
+  animation-delay: -14s;
+}
+.bg-blob-4 { 
+  bottom: 10%; left: -5%; width: 80vw; height: 80vw; 
+  background: radial-gradient(circle, rgba(52, 199, 89, 0.2) 0%, transparent 70%); 
+  animation-delay: -21s;
+}
+
+@keyframes fluid-blob {
+  0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  33% { transform: translate(3vw, -5vh) scale(1.1) rotate(120deg); }
+  66% { transform: translate(-3vw, 5vh) scale(0.9) rotate(240deg); }
+  100% { transform: translate(0, 0) scale(1) rotate(360deg); }
+}
+
+/* Base Animations */
+@keyframes apple-fade-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes apple-zoom-in {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes apple-slide-up {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+.reveal-1 { animation: apple-fade-in 1.2s var(--apple-soft-ease) both; }
+.reveal-2 { animation: apple-fade-in 1.2s var(--apple-soft-ease) 0.1s both; }
+.reveal-3 { animation: apple-fade-in 1.2s var(--apple-soft-ease) 0.2s both; }
+.reveal-4 { animation: apple-fade-in 1.2s var(--apple-soft-ease) 0.3s both; }
+
+/* Scroll Reveal Animations - Re-engineered for Apple Fluidity */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(60px) scale(0.98);
+  transition: opacity 1.4s var(--apple-soft-ease), 
+              transform 1.4s var(--apple-soft-ease);
+  will-change: transform, opacity;
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Interactive Apple Elements */
+.apple-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  transition: all 0.6s var(--apple-soft-ease);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.02);
+}
+
+.apple-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+  border-color: rgba(0, 113, 227, 0.15);
+}
+
+.apple-card:active {
+  transform: translateY(-4px) scale(0.98);
+  transition-duration: 0.2s;
+}
+
+.apple-button-primary {
+  @apply relative overflow-hidden transition-all duration-300 active:scale-95;
+}
+
+.apple-button-primary::after {
+  content: '';
+  @apply absolute inset-0 bg-white/10 opacity-0 transition-opacity;
+}
+
+.apple-button-primary:hover::after {
+  @apply opacity-100;
+}
+
+/* Glassmorphism Navigation */
+.glass-nav {
+  background: var(--nav-glass);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 0.5px solid var(--border-subtle);
+  transition: all 0.4s var(--apple-soft-ease);
+}
+
+/* Page Transitions */
+.page-enter {
+  animation: apple-fade-in 0.8s var(--apple-soft-ease) both;
+}
+
+/* Delay classes */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-500 { transition-delay: 500ms; }
+
+/* Word Card Flip Styles */
+.word-card-flip {
+  perspective: 1200px;
+}
+
+.word-card-inner {
+  transition: transform 0.8s var(--apple-spring);
+  transform-style: preserve-3d;
+}
+
+.word-card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+/* Typo */
+.heading-hero {
+  @apply text-[56px] sm:text-[80px] font-black leading-[1.05] tracking-[-0.03em];
+}
+
+.heading-section {
+  @apply text-[40px] sm:text-[52px] font-black tracking-[-0.02em] mb-6;
+}
+
+/* Skeleton / Loading */
+@keyframes apple-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.apple-skeleton {
+  background: linear-gradient(90deg, #f0f0f2 25%, #f8f8fa 50%, #f0f0f2 75%);
+  background-size: 200% 100%;
+  animation: apple-shimmer 2s infinite linear;
+}
+
+/* Data Visualization Animations */
+@keyframes bar-grow {
+  from { transform: scaleY(0); opacity: 0; }
+  to { transform: scaleY(1); opacity: 1; }
+}
+
+.animate-bar-grow {
+  animation: bar-grow 1.2s var(--apple-soft-ease) both;
+  transform-origin: bottom;
+}
+
+@keyframes progress-grow {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+.animate-progress-grow {
+  animation: progress-grow 1.5s var(--apple-soft-ease) both;
+  transform-origin: left;
+}
+
+@keyframes stat-in {
+  from { opacity: 0; transform: translateY(15px) scale(0.9); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.animate-stat-in {
+  animation: stat-in 0.8s var(--apple-spring) both;
+}
+
+/* Modal / Sheet Animations */
+@keyframes apple-sheet-in {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-sheet-in {
+  animation: apple-sheet-in 0.6s var(--apple-soft-ease) both;
+}
+
+/* Interactive Feedback Animations */
+@keyframes apple-shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-8px); }
+  50% { transform: translateX(8px); }
+  75% { transform: translateX(-4px); }
+}
+
+.animate-apple-shake {
+  animation: apple-shake 0.4s var(--apple-soft-ease);
+}
+
+@keyframes apple-pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.animate-apple-pop {
+  animation: apple-pop 0.4s var(--apple-spring);
+}
+
+@keyframes apple-reveal-up {
+  from { opacity: 0; transform: translateY(30px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.animate-reveal-up {
+  animation: apple-reveal-up 0.8s var(--apple-soft-ease) both;
+}
+
+/* Selection */
+::selection {
+  background: rgba(0, 113, 227, 0.15);
+  color: var(--apple-blue);
+}
+

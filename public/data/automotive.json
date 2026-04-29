@@ -1,0 +1,1845 @@
+[
+  {
+    "id": "automotive-0001",
+    "word": "service",
+    "phonetic": "/'sә:vis/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. work done by one person or group that benefits another",
+        "zh": "n. 服务, 贡献, 雇佣, 公职, 服役, 功劳, 仪式, 送达, 行政部门"
+      },
+      {
+        "en": "n. an act of help or assistance",
+        "zh": "vt. 保养, 维修"
+      },
+      {
+        "en": "n. the act of public worship following prescribed rules",
+        "zh": "a. 武装部队的, 服务性的, 仆人的, 耐用的"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"service\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“service”。"
+      }
+    ],
+    "imageQuery": "service",
+    "memoryTip": "service - n. 服务, 贡献, 雇佣, 公职, 服役, 功劳, 仪式, 送达, 行政部门"
+  },
+  {
+    "id": "automotive-0002",
+    "word": "car",
+    "phonetic": "/kɑ:/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a motor vehicle with four wheels; usually propelled by an internal combustion engine",
+        "zh": "n. 汽车, 客车"
+      },
+      {
+        "en": "n. a wheeled vehicle adapted to the rails of railroad",
+        "zh": "[机] 车"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"car\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“car”。"
+      }
+    ],
+    "imageQuery": "car",
+    "memoryTip": "car - n. 汽车, 客车"
+  },
+  {
+    "id": "automotive-0003",
+    "word": "road",
+    "phonetic": "/rәud/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. an open way (generally public) for travel or transportation",
+        "zh": "n. 路, 道路, 公路, 途径, 方法"
+      },
+      {
+        "en": "n. a way or means to achieve something",
+        "zh": "[法] 公路, 道路, 行车道"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"road\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“road”。"
+      }
+    ],
+    "imageQuery": "road",
+    "memoryTip": "road - n. 路, 道路, 公路, 途径, 方法"
+  },
+  {
+    "id": "automotive-0004",
+    "word": "door",
+    "phonetic": "/dɒ:/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a swinging or sliding barrier that will close the entrance to a room or building or vehicle",
+        "zh": "n. 门"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"door\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“door”。"
+      }
+    ],
+    "imageQuery": "door",
+    "memoryTip": "door - n. 门"
+  },
+  {
+    "id": "automotive-0005",
+    "word": "drive",
+    "phonetic": "/draiv/",
+    "partOfSpeech": [
+      "n.",
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "n. the act of applying force to propel something",
+        "zh": "n. 驾车, 快车道, 推进力, 驱动, 动力, 击球, 驱动器"
+      },
+      {
+        "en": "n. a mechanism by which force or power is transmitted in a machine",
+        "zh": "vt. 开车, 驱使, 推动, 驾驶"
+      },
+      {
+        "en": "n. the trait of being highly motivated",
+        "zh": "vi. 开车, 猛击, 飞跑"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"drive\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“drive”。"
+      }
+    ],
+    "imageQuery": "drive",
+    "memoryTip": "drive - n. 驾车, 快车道, 推进力, 驱动, 动力, 击球, 驱动器"
+  },
+  {
+    "id": "automotive-0006",
+    "word": "performance",
+    "phonetic": "/pә'fɒ:mәns/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a dramatic or musical entertainment",
+        "zh": "n. 施行, 工作情况, 成绩, 行为, 表现, 演出"
+      },
+      {
+        "en": "n. the act of presenting a play or a piece of music or other entertainment",
+        "zh": "[电] 绩效, 性能"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"performance\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“performance”。"
+      }
+    ],
+    "imageQuery": "performance",
+    "memoryTip": "performance - n. 施行, 工作情况, 成绩, 行为, 表现, 演出"
+  },
+  {
+    "id": "automotive-0007",
+    "word": "oil",
+    "phonetic": "/ɒil/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a slippery or viscous liquid or liquefiable substance not miscible with water",
+        "zh": "n. 油, 石油, 油画颜料"
+      },
+      {
+        "en": "n. oil paint containing pigment that is used by an artist",
+        "zh": "vt. 涂油于, 使融化成油状, 加油于"
+      },
+      {
+        "en": "v. cover with oil, as if by rubbing",
+        "zh": "vi. 加燃油, 融化"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"oil\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“oil”。"
+      }
+    ],
+    "imageQuery": "oil",
+    "memoryTip": "oil - n. 油, 石油, 油画颜料"
+  },
+  {
+    "id": "automotive-0008",
+    "word": "software",
+    "phonetic": "/'sɒftwєә/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. (computer science) written programs or procedures or rules and associated documentation pertaining to the operation of a computer system and that are stored in read/write memory",
+        "zh": "n. 软件"
+      },
+      {
+        "en": "",
+        "zh": "[计] 软设备"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"software\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“software”。"
+      }
+    ],
+    "imageQuery": "software",
+    "memoryTip": "software - n. 软件"
+  },
+  {
+    "id": "automotive-0009",
+    "word": "safety",
+    "phonetic": "/'seifti/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the state of being certain that adverse effects will not be caused by some agent under defined conditions",
+        "zh": "n. 安全, 保险, 平安, 保安设备"
+      },
+      {
+        "en": "n. a safe place",
+        "zh": "vt. 保护, 防护"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"safety\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“safety”。"
+      }
+    ],
+    "imageQuery": "safety",
+    "memoryTip": "safety - n. 安全, 保险, 平安, 保安设备"
+  },
+  {
+    "id": "automotive-0010",
+    "word": "driver",
+    "phonetic": "/'draivә/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the operator of a motor vehicle",
+        "zh": "n. 驾驶员, 驱动器, 驱动程序"
+      },
+      {
+        "en": "n. someone who drives animals that pull a vehicle",
+        "zh": "[化] 驱动器"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"driver\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“driver”。"
+      }
+    ],
+    "imageQuery": "driver",
+    "memoryTip": "driver - n. 驾驶员, 驱动器, 驱动程序"
+  },
+  {
+    "id": "automotive-0011",
+    "word": "speed",
+    "phonetic": "/spi:d/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. distance travelled per unit time",
+        "zh": "n. 速率, 速度, 迅速"
+      },
+      {
+        "en": "n. a rate (usually rapid) at which something happens",
+        "zh": "vi. 加速, 超速, 快进"
+      },
+      {
+        "en": "n. changing location rapidly",
+        "zh": "vt. 快速传送, 促进, 使加速"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"speed\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“speed”。"
+      }
+    ],
+    "imageQuery": "speed",
+    "memoryTip": "speed - n. 速率, 速度, 迅速"
+  },
+  {
+    "id": "automotive-0012",
+    "word": "route",
+    "phonetic": "/ru:t/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "v. send documents or materials to appropriate destinations",
+        "zh": "n. 路径, 途径, 路线"
+      },
+      {
+        "en": "v. send via a specific route",
+        "zh": "vt. 确定路线, 按规定路线发送"
+      },
+      {
+        "en": "v. divert in a specified direction",
+        "zh": "[计] 传递, 路由设定程序"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"route\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“route”。"
+      }
+    ],
+    "imageQuery": "route",
+    "memoryTip": "route - n. 路径, 途径, 路线"
+  },
+  {
+    "id": "automotive-0013",
+    "word": "vehicle",
+    "phonetic": "/'vi:ikl/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a conveyance that transports people or objects",
+        "zh": "n. 交通工具, 车辆, 传播媒介"
+      },
+      {
+        "en": "n. a medium for the expression or achievement of something",
+        "zh": "[化] 载体; 运载体; 漆料"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"vehicle\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“vehicle”。"
+      }
+    ],
+    "imageQuery": "vehicle",
+    "memoryTip": "vehicle - n. 交通工具, 车辆, 传播媒介"
+  },
+  {
+    "id": "automotive-0014",
+    "word": "engine",
+    "phonetic": "/'endʒin/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. motor that converts thermal energy to mechanical work",
+        "zh": "n. 引擎, 发动机, 机车"
+      },
+      {
+        "en": "n. something used to achieve a purpose",
+        "zh": "vt. 安装发动机于"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"engine\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“engine”。"
+      }
+    ],
+    "imageQuery": "engine",
+    "memoryTip": "engine - n. 引擎, 发动机, 机车"
+  },
+  {
+    "id": "automotive-0015",
+    "word": "traffic",
+    "phonetic": "/'træfik/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the aggregation of things (pedestrians or vehicles) coming and going in a particular locality during a specified period of time",
+        "zh": "n. 交通, 通行, 运输, 交通量, 贸易, 交易, 交往, 通信量"
+      },
+      {
+        "en": "n. buying and selling; especially illicit trade",
+        "zh": "vi. 交易, 做买卖"
+      },
+      {
+        "en": "n. the amount of activity over a communication system during a given period of time",
+        "zh": "vt. 用...作交换"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"traffic\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“traffic”。"
+      }
+    ],
+    "imageQuery": "traffic",
+    "memoryTip": "traffic - n. 交通, 通行, 运输, 交通量, 贸易, 交易, 交往, 通信量"
+  },
+  {
+    "id": "automotive-0016",
+    "word": "plate",
+    "phonetic": "/pleit/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a sheet of metal or wood or glass or plastic",
+        "zh": "n. 碟, 盘子, 盆中物, 金属板, 图版, 金银餐具, 印版, 金属牌(照)"
+      },
+      {
+        "en": "n. a full-page illustration (usually on slick paper)",
+        "zh": "vt. 镀金, 电镀, 用金属板固定, 给...装钢板, 为...制印版"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"plate\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“plate”。"
+      }
+    ],
+    "imageQuery": "plate",
+    "memoryTip": "plate - n. 碟, 盘子, 盆中物, 金属板, 图版, 金银餐具, 印版, 金属牌(照)"
+  },
+  {
+    "id": "automotive-0017",
+    "word": "lane",
+    "phonetic": "/lein/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a narrow way or road",
+        "zh": "n. 小路, 巷, 弄, 单行道"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"lane\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“lane”。"
+      }
+    ],
+    "imageQuery": "lane",
+    "memoryTip": "lane - n. 小路, 巷, 弄, 单行道"
+  },
+  {
+    "id": "automotive-0018",
+    "word": "motor",
+    "phonetic": "/'mәutә/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. machine that converts other forms of energy into mechanical energy and so imparts motion",
+        "zh": "n. 马达, 发动机, 原动力, 汽车"
+      },
+      {
+        "en": "n. a nonspecific agent that imparts motion",
+        "zh": "a. 马达的, 发动机的, 汽车的, 发动的"
+      },
+      {
+        "en": "",
+        "zh": "vt. 推动, 以汽车载运"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"motor\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“motor”。"
+      }
+    ],
+    "imageQuery": "motor",
+    "memoryTip": "motor - n. 马达, 发动机, 原动力, 汽车"
+  },
+  {
+    "id": "automotive-0019",
+    "word": "warning",
+    "phonetic": "/'wɒ:niŋ/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a message informing of danger",
+        "zh": "n. 警告, 预告, 预兆, 通知"
+      },
+      {
+        "en": "n. notification of something, usually in advance",
+        "zh": "[法] 警告, 警戒, 预告; 警告的, 注意的"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"warning\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“warning”。"
+      }
+    ],
+    "imageQuery": "warning",
+    "memoryTip": "warning - n. 警告, 预告, 预兆, 通知"
+  },
+  {
+    "id": "automotive-0020",
+    "word": "fuel",
+    "phonetic": "/'fjuәl/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a substance that can be consumed to produce energy",
+        "zh": "n. 燃料, 木炭"
+      },
+      {
+        "en": "v. provide with a combustible substance that provides energy",
+        "zh": "vt. 加燃料, 供燃料"
+      },
+      {
+        "en": "v. provide with fuel",
+        "zh": "vi. 得到燃料"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"fuel\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“fuel”。"
+      }
+    ],
+    "imageQuery": "fuel",
+    "memoryTip": "fuel - n. 燃料, 木炭"
+  },
+  {
+    "id": "automotive-0021",
+    "word": "signal",
+    "phonetic": "/'signl/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. any nonverbal action or gesture that encodes a message",
+        "zh": "n. 信号, 暗号, 近因, 导火线"
+      },
+      {
+        "en": "n. any incitement to action",
+        "zh": "vt. 向...作信号, 标志, 用信号通知"
+      },
+      {
+        "en": "n. an electric quantity (voltage or current or field strength) whose modulation represents coded information about the source from which it comes",
+        "zh": "vi. 发信号"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"signal\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“signal”。"
+      }
+    ],
+    "imageQuery": "signal",
+    "memoryTip": "signal - n. 信号, 暗号, 近因, 导火线"
+  },
+  {
+    "id": "automotive-0022",
+    "word": "emergency",
+    "phonetic": "/i'mә:dʒәnsi/",
+    "partOfSpeech": [
+      "j.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a sudden unforeseen crisis (usually involving danger) that requires immediate action",
+        "zh": "n. 紧急状况, 紧急事件, 紧急需要"
+      },
+      {
+        "en": "n. a state in which martial law applies",
+        "zh": "[化] 紧急情况"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"emergency\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“emergency”。"
+      }
+    ],
+    "imageQuery": "emergency",
+    "memoryTip": "emergency - n. 紧急状况, 紧急事件, 紧急需要"
+  },
+  {
+    "id": "automotive-0023",
+    "word": "mirror",
+    "phonetic": "/'mirә/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. polished surface that forms images by reflecting light",
+        "zh": "n. 镜子, 写真, 典范"
+      },
+      {
+        "en": "n. a faithful depiction or reflection",
+        "zh": "vt. 反映, 映出"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"mirror\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“mirror”。"
+      }
+    ],
+    "imageQuery": "mirror",
+    "memoryTip": "mirror - n. 镜子, 写真, 典范"
+  },
+  {
+    "id": "automotive-0024",
+    "word": "wheel",
+    "phonetic": "/hwi:l/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)",
+        "zh": "n. 轮子, 车轮, 轮, 方向盘, 旋转, 机构, 重要人物"
+      },
+      {
+        "en": "n. forces that provide energy and direction",
+        "zh": "vt. 使旋转, 转动, 使转向"
+      },
+      {
+        "en": "n. a circular helm to control the rudder of a vessel",
+        "zh": "vi. 旋转, 转弯, 盘旋"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"wheel\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“wheel”。"
+      }
+    ],
+    "imageQuery": "wheel",
+    "memoryTip": "wheel - n. 轮子, 车轮, 轮, 方向盘, 旋转, 机构, 重要人物"
+  },
+  {
+    "id": "automotive-0025",
+    "word": "maintenance",
+    "phonetic": "/'meintәnәns/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. means of maintenance of a family or group",
+        "zh": "n. 维护, 保持, 维修, 生活费用, 坚持, 扶养"
+      },
+      {
+        "en": "n. the unauthorized interference in a legal action by a person having no interest in it (as by helping one party with money or otherwise to continue the action) so as to obstruct justice or promote unnecessary litigation or unsettle the peace of the community",
+        "zh": "[计] 维护; 维修"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"maintenance\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“maintenance”。"
+      }
+    ],
+    "imageQuery": "maintenance",
+    "memoryTip": "maintenance - n. 维护, 保持, 维修, 生活费用, 坚持, 扶养"
+  },
+  {
+    "id": "automotive-0026",
+    "word": "efficiency",
+    "phonetic": "/i'fiʃәnsi/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the ratio of the output to the input of any system",
+        "zh": "n. 效率, 效能, 功效"
+      },
+      {
+        "en": "n. skillfulness in avoiding wasted time and effort",
+        "zh": "[医] 效率, 效力"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"efficiency\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“efficiency”。"
+      }
+    ],
+    "imageQuery": "efficiency",
+    "memoryTip": "efficiency - n. 效率, 效能, 功效"
+  },
+  {
+    "id": "automotive-0027",
+    "word": "dealer",
+    "phonetic": "/'di:lә/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a firm engaged in trading",
+        "zh": "n. 经销商, 商人"
+      },
+      {
+        "en": "n. a seller of illicit goods",
+        "zh": "[经] 交易员, 贩卖商"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"dealer\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“dealer”。"
+      }
+    ],
+    "imageQuery": "dealer",
+    "memoryTip": "dealer - n. 经销商, 商人"
+  },
+  {
+    "id": "automotive-0028",
+    "word": "electric",
+    "phonetic": "/i'lektik/",
+    "partOfSpeech": [
+      "j.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a car that is powered by electricity",
+        "zh": "a. 电的, 导电的, 电动的"
+      },
+      {
+        "en": "a. using or providing or producing or transmitting or operated by electricity",
+        "zh": "[医] 电的"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"electric\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“electric”。"
+      }
+    ],
+    "imageQuery": "electric",
+    "memoryTip": "electric - a. 电的, 导电的, 电动的"
+  },
+  {
+    "id": "automotive-0029",
+    "word": "repair",
+    "phonetic": "/ri'pєә/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the act of putting something in working order again",
+        "zh": "n. 修理, 补救, 修复"
+      },
+      {
+        "en": "n. a formal way of referring to the condition of something",
+        "zh": "vt. 修理, 修补, 补救, 恢复, 补偿"
+      },
+      {
+        "en": "v. restore by replacing a part or putting together what is torn or broken",
+        "zh": "vi. 修理, 修补, 补救, 恢复, 去, 常去, 集合"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"repair\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“repair”。"
+      }
+    ],
+    "imageQuery": "repair",
+    "memoryTip": "repair - n. 修理, 补救, 修复"
+  },
+  {
+    "id": "automotive-0030",
+    "word": "garage",
+    "phonetic": "/gә'rɑ:ʒ. 'gærɑ:ʒ/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. an outbuilding (or part of a building) for housing automobiles",
+        "zh": "n. 车库, 汽车修理厂, 机库"
+      },
+      {
+        "en": "n. a repair shop where cars and trucks are serviced and repaired",
+        "zh": "vt. 把车送入修车场"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"garage\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“garage”。"
+      }
+    ],
+    "imageQuery": "garage",
+    "memoryTip": "garage - n. 车库, 汽车修理厂, 机库"
+  },
+  {
+    "id": "automotive-0031",
+    "word": "inspection",
+    "phonetic": "/in'spekʃәn/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a formal or official examination",
+        "zh": "n. 检验, 检查, 视察"
+      },
+      {
+        "en": "",
+        "zh": "[医] 检查, 视察, 监督, 望诊"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"inspection\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“inspection”。"
+      }
+    ],
+    "imageQuery": "inspection",
+    "memoryTip": "inspection - n. 检验, 检查, 视察"
+  },
+  {
+    "id": "automotive-0032",
+    "word": "grip",
+    "phonetic": "/grip/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the friction between a body and the surface on which it moves (as between an automobile tire and the road)",
+        "zh": "n. 紧握, 柄, 握力, 握手方式, 手提包, 掌握, 支配, 控制"
+      },
+      {
+        "en": "n. worker who moves the camera around while a film or television show is being made",
+        "zh": "vt. 抓紧, 抱住, 吸住, 掌握"
+      },
+      {
+        "en": "n. an intellectual hold or understanding",
+        "zh": "vi. 握牢, 有吸引力"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"grip\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“grip”。"
+      }
+    ],
+    "imageQuery": "grip",
+    "memoryTip": "grip - n. 紧握, 柄, 握力, 握手方式, 手提包, 掌握, 支配, 控制"
+  },
+  {
+    "id": "automotive-0033",
+    "word": "gear",
+    "phonetic": "/giә/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a toothed wheel that engages another toothed mechanism in order to change the speed or direction of transmitted motion",
+        "zh": "n. 齿轮, 工具"
+      },
+      {
+        "en": "n. a mechanism for transmitting motion for some specific purpose (as the steering gear of a vehicle)",
+        "zh": "vt. 以齿轮连起, 开动, 使适应, 安排"
+      },
+      {
+        "en": "n. equipment consisting of miscellaneous articles needed for a particular operation or sport etc.",
+        "zh": "vi. 连接上, 适合"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"gear\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“gear”。"
+      }
+    ],
+    "imageQuery": "gear",
+    "memoryTip": "gear - n. 齿轮, 工具"
+  },
+  {
+    "id": "automotive-0034",
+    "word": "battery",
+    "phonetic": "/'bætәri/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. group of guns or missile launchers operated together at one place",
+        "zh": "n. 电池, 殴打"
+      },
+      {
+        "en": "n. a device that produces electricity; may have several primary or secondary cells arranged in parallel or series",
+        "zh": "[化] 蓄电池"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"battery\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“battery”。"
+      }
+    ],
+    "imageQuery": "battery",
+    "memoryTip": "battery - n. 电池, 殴打"
+  },
+  {
+    "id": "automotive-0035",
+    "word": "fleet",
+    "phonetic": "/fli:t/",
+    "partOfSpeech": [
+      "v.",
+      "j.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. group of aircraft operating together under the same ownership",
+        "zh": "n. 舰队, 港湾, 小河"
+      },
+      {
+        "en": "n. group of motor vehicles operating together under the same ownership",
+        "zh": "a. 快速的, 敏捷的, 浅的, 短暂的"
+      },
+      {
+        "en": "n. a group of steamships operating together under the same ownership",
+        "zh": "adv. 浅"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"fleet\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“fleet”。"
+      }
+    ],
+    "imageQuery": "fleet",
+    "memoryTip": "fleet - n. 舰队, 港湾, 小河"
+  },
+  {
+    "id": "automotive-0036",
+    "word": "emission",
+    "phonetic": "/i'miʃәn/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the act of emitting; causing to flow forth",
+        "zh": "n. 发射, 射出, 发行"
+      },
+      {
+        "en": "n. the release of electrons from parent atoms",
+        "zh": "[医] 发射, 遗精"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"emission\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“emission”。"
+      }
+    ],
+    "imageQuery": "emission",
+    "memoryTip": "emission - n. 发射, 射出, 发行"
+  },
+  {
+    "id": "automotive-0037",
+    "word": "cab",
+    "phonetic": "/kæb/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a compartment at the front of a motor vehicle or locomotive where driver sits",
+        "zh": "n. 出租车, 出租汽车, 出租马车"
+      },
+      {
+        "en": "n. small two-wheeled horse-drawn carriage; with two seats and a folding hood",
+        "zh": "vi. 乘出租马车(或汽车)"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"cab\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“cab”。"
+      }
+    ],
+    "imageQuery": "cab",
+    "memoryTip": "cab - n. 出租车, 出租汽车, 出租马车"
+  },
+  {
+    "id": "automotive-0038",
+    "word": "transmission",
+    "phonetic": "/træns'miʃәn/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the act of sending a message; causing a message to be transmitted",
+        "zh": "n. 传输, 传送, 变速器"
+      },
+      {
+        "en": "n. communication by means of transmitted signals",
+        "zh": "[计] 传输"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"transmission\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“transmission”。"
+      }
+    ],
+    "imageQuery": "transmission",
+    "memoryTip": "transmission - n. 传输, 传送, 变速器"
+  },
+  {
+    "id": "automotive-0039",
+    "word": "suspension",
+    "phonetic": "/sә'spenʃәn/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a mixture in which fine particles are suspended in a fluid where they are supported by buoyancy",
+        "zh": "n. 悬挂, 暂停, 中止"
+      },
+      {
+        "en": "n. an interruption in the intensity or amount of something",
+        "zh": "[化] 悬浮; 悬浮体; 悬浮液"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"suspension\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“suspension”。"
+      }
+    ],
+    "imageQuery": "suspension",
+    "memoryTip": "suspension - n. 悬挂, 暂停, 中止"
+  },
+  {
+    "id": "automotive-0040",
+    "word": "parking",
+    "phonetic": "/'pɑ:kiŋ/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. space in which vehicles can be parked",
+        "zh": "n. 停车"
+      },
+      {
+        "en": "n. the act of maneuvering a vehicle into a location where it can be left temporarily",
+        "zh": "a. 停车的"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"parking\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“parking”。"
+      }
+    ],
+    "imageQuery": "parking",
+    "memoryTip": "parking - n. 停车"
+  },
+  {
+    "id": "automotive-0041",
+    "word": "clutch",
+    "phonetic": "/klʌtʃ/",
+    "partOfSpeech": [
+      "n.",
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "n. a tense critical situation",
+        "zh": "n. 抓紧, 掌握, 离合器, 一窝小鸡"
+      },
+      {
+        "en": "n. a number of birds hatched at the same time",
+        "zh": "vt. 抓住, 踩汽车离合器踏板"
+      },
+      {
+        "en": "n. a pedal or lever that engages or disengages a rotating shaft and a driving mechanism",
+        "zh": "vi. 抓"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"clutch\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“clutch”。"
+      }
+    ],
+    "imageQuery": "clutch",
+    "memoryTip": "clutch - n. 抓紧, 掌握, 离合器, 一窝小鸡"
+  },
+  {
+    "id": "automotive-0042",
+    "word": "steer",
+    "phonetic": "/stiә/",
+    "partOfSpeech": [
+      "n.",
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "v. direct the course; determine the direction of travelling",
+        "zh": "vt. 引导, 驾驶, 航行, 控制"
+      },
+      {
+        "en": "v. direct (oneself) somewhere",
+        "zh": "vi. 驾驶, 掌舵, 行驶"
+      },
+      {
+        "en": "",
+        "zh": "n. 驾驶指示, 劝告"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"steer\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“steer”。"
+      }
+    ],
+    "imageQuery": "steer",
+    "memoryTip": "steer - vt. 引导, 驾驶, 航行, 控制"
+  },
+  {
+    "id": "automotive-0043",
+    "word": "mechanic",
+    "phonetic": "/mi'kænik/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "s. resembling the action of a machine",
+        "zh": "n. 机械工, 技工"
+      },
+      {
+        "en": "",
+        "zh": "a. 手工的"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"mechanic\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“mechanic”。"
+      }
+    ],
+    "imageQuery": "mechanic",
+    "memoryTip": "mechanic - n. 机械工, 技工"
+  },
+  {
+    "id": "automotive-0044",
+    "word": "trunk",
+    "phonetic": "/trʌŋk/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the main stem of a tree; usually covered with bark; the bole is usually the part that is commercially useful for lumber",
+        "zh": "n. 树干, 干线, 躯干, 主干, 象鼻, 箱子"
+      },
+      {
+        "en": "n. luggage consisting of a large strong case used when traveling or for storage",
+        "zh": "vt. 把...放入旅行箱内"
+      },
+      {
+        "en": "",
+        "zh": "a. 树干的, 躯干的, 干线的, 箱形的"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"trunk\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“trunk”。"
+      }
+    ],
+    "imageQuery": "trunk",
+    "memoryTip": "trunk - n. 树干, 干线, 躯干, 主干, 象鼻, 箱子"
+  },
+  {
+    "id": "automotive-0045",
+    "word": "brake",
+    "phonetic": "/breik/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a restraint used to slow or stop a vehicle",
+        "zh": "n. 刹车, 阻碍, 丛林"
+      },
+      {
+        "en": "n. any of various ferns of the genus Pteris having pinnately compound leaves and including several popular houseplants",
+        "zh": "v. 刹车"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"brake\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“brake”。"
+      }
+    ],
+    "imageQuery": "brake",
+    "memoryTip": "brake - n. 刹车, 阻碍, 丛林"
+  },
+  {
+    "id": "automotive-0046",
+    "word": "accelerate",
+    "phonetic": "/әk'selәreit/",
+    "partOfSpeech": [
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "v. move faster",
+        "zh": "v. 加速, 促进"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"accelerate\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“accelerate”。"
+      }
+    ],
+    "imageQuery": "accelerate",
+    "memoryTip": "accelerate - v. 加速, 促进"
+  },
+  {
+    "id": "automotive-0047",
+    "word": "motorist",
+    "phonetic": "/'mәutәrist/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. someone who drives (or travels in) an automobile",
+        "zh": "n. 开汽车者, 驾车旅行的人"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"motorist\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“motorist”。"
+      }
+    ],
+    "imageQuery": "motorist",
+    "memoryTip": "motorist - n. 开汽车者, 驾车旅行的人"
+  },
+  {
+    "id": "automotive-0048",
+    "word": "warranty",
+    "phonetic": "/'wɒ:rәnti/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n a written assurance that some product or service will be provided or will meet certain specifications",
+        "zh": "n. 正当理由, 授权, 担保, 保证, 根据"
+      },
+      {
+        "en": "",
+        "zh": "[经] 保单, 担保书, 保证书"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"warranty\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“warranty”。"
+      }
+    ],
+    "imageQuery": "warranty",
+    "memoryTip": "warranty - n. 正当理由, 授权, 担保, 保证, 根据"
+  },
+  {
+    "id": "automotive-0049",
+    "word": "bump",
+    "phonetic": "/bʌmp/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a lump on the body caused by a blow",
+        "zh": "n. 撞击, 肿块"
+      },
+      {
+        "en": "v. knock against with force or violence",
+        "zh": "vt. 碰撞"
+      },
+      {
+        "en": "v. dance erotically or dance with the pelvis thrust forward",
+        "zh": "vi. 撞, 颠簸而行"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"bump\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“bump”。"
+      }
+    ],
+    "imageQuery": "bump",
+    "memoryTip": "bump - n. 撞击, 肿块"
+  },
+  {
+    "id": "automotive-0050",
+    "word": "license",
+    "phonetic": "/'laisns/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a legal document giving official permission to do something",
+        "zh": "n. 执照, 许可证, 特许"
+      },
+      {
+        "en": "n. freedom to deviate deliberately from normally applicable rules or practices (especially in behavior or speech)",
+        "zh": "vt. 许可, 特许"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"license\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“license”。"
+      }
+    ],
+    "imageQuery": "license",
+    "memoryTip": "license - n. 执照, 许可证, 特许"
+  },
+  {
+    "id": "automotive-0051",
+    "word": "navigation",
+    "phonetic": "/.nævi'geiʃәn/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the guidance of ships or airplanes from place to place",
+        "zh": "n. 航行, 航海, 导航"
+      },
+      {
+        "en": "n. ship traffic",
+        "zh": "[经] 航空, 航海, 航船"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"navigation\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“navigation”。"
+      }
+    ],
+    "imageQuery": "navigation",
+    "memoryTip": "navigation - n. 航行, 航海, 导航"
+  },
+  {
+    "id": "automotive-0052",
+    "word": "torque",
+    "phonetic": "/tɒ:k/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n a twisting force",
+        "zh": "n. 扭转力, 转矩, 项圈"
+      },
+      {
+        "en": "",
+        "zh": "[化] 转矩"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"torque\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“torque”。"
+      }
+    ],
+    "imageQuery": "torque",
+    "memoryTip": "torque - n. 扭转力, 转矩, 项圈"
+  },
+  {
+    "id": "automotive-0053",
+    "word": "pedal",
+    "phonetic": "/'pedl/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a lever that is operated with the foot",
+        "zh": "n. 踏板, 脚蹬子"
+      },
+      {
+        "en": "v. operate the pedals on a keyboard instrument",
+        "zh": "a. 脚的, 脚踏的"
+      },
+      {
+        "en": "a. of or relating to the feet",
+        "zh": "vt. 用脚踏动"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"pedal\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“pedal”。"
+      }
+    ],
+    "imageQuery": "pedal",
+    "memoryTip": "pedal - n. 踏板, 脚蹬子"
+  },
+  {
+    "id": "automotive-0054",
+    "word": "sensor",
+    "phonetic": "/'sensә/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n any device that receives a signal or stimulus (as heat or pressure or light or motion etc.) and responds to it in a distinctive manner",
+        "zh": "n. 传感器"
+      },
+      {
+        "en": "",
+        "zh": "[计] 检测器"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"sensor\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“sensor”。"
+      }
+    ],
+    "imageQuery": "sensor",
+    "memoryTip": "sensor - n. 传感器"
+  },
+  {
+    "id": "automotive-0055",
+    "word": "hybrid",
+    "phonetic": "/'haibrid/",
+    "partOfSpeech": [
+      "j.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a composite of mixed origin",
+        "zh": "n. 混血儿, 杂种, 混合物"
+      },
+      {
+        "en": "n. (genetics) an organism that is the offspring of genetically dissimilar parents or stock; especially offspring produced by breeding plants or animals of different varieties or breeds or species",
+        "zh": "a. 混合的, 杂种的, 混合语的"
+      },
+      {
+        "en": "s. produced by crossbreeding",
+        "zh": "[计] NetWare的主机实用程序, 双重用户建立程序"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"hybrid\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“hybrid”。"
+      }
+    ],
+    "imageQuery": "hybrid",
+    "memoryTip": "hybrid - n. 混血儿, 杂种, 混合物"
+  },
+  {
+    "id": "automotive-0056",
+    "word": "headlight",
+    "phonetic": "/'hedlait/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a powerful light with reflector; attached to the front of an automobile or locomotive",
+        "zh": "n. 前灯, 桅灯"
+      },
+      {
+        "en": "",
+        "zh": "[电] 车前灯"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"headlight\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“headlight”。"
+      }
+    ],
+    "imageQuery": "headlight",
+    "memoryTip": "headlight - n. 前灯, 桅灯"
+  },
+  {
+    "id": "automotive-0057",
+    "word": "tire",
+    "phonetic": "/taiә/",
+    "partOfSpeech": [
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "n. hoop that covers a wheel",
+        "zh": "n. 轮胎, 头饰"
+      },
+      {
+        "en": "v. lose interest or become bored with something or somebody",
+        "zh": "vt. 使疲倦, 使厌烦, 打扮"
+      },
+      {
+        "en": "v. exhaust or get tired through overuse or great strain or stress",
+        "zh": "vi. 疲劳, 厌倦"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"tire\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“tire”。"
+      }
+    ],
+    "imageQuery": "tire",
+    "memoryTip": "tire - n. 轮胎, 头饰"
+  },
+  {
+    "id": "automotive-0058",
+    "word": "charging",
+    "phonetic": "/'tʃɑ:dʒiŋ/",
+    "partOfSpeech": [
+      "j.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "v to make a rush at or sudden attack upon, as in battle",
+        "zh": "[计] 计费的"
+      },
+      {
+        "en": "v blame for, make a claim of wrongdoing or misbehavior against",
+        "zh": "[化] 充电; 装料"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"charging\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“charging”。"
+      }
+    ],
+    "imageQuery": "charging",
+    "memoryTip": "charging - [计] 计费的"
+  },
+  {
+    "id": "automotive-0059",
+    "word": "automobile",
+    "phonetic": "/'ɒ:tәmәbi:l/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "v. travel in an automobile",
+        "zh": "n. 汽车"
+      },
+      {
+        "en": "",
+        "zh": "[机] 汽车"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"automobile\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“automobile”。"
+      }
+    ],
+    "imageQuery": "automobile",
+    "memoryTip": "automobile - n. 汽车"
+  },
+  {
+    "id": "automotive-0060",
+    "word": "ignition",
+    "phonetic": "/ig'niʃәn/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the process of initiating combustion or catching fire",
+        "zh": "n. 点火, 点燃"
+      },
+      {
+        "en": "n. the mechanism that ignites the fuel in an internal-combustion engine",
+        "zh": "[化] 点火; 着火"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"ignition\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“ignition”。"
+      }
+    ],
+    "imageQuery": "ignition",
+    "memoryTip": "ignition - n. 点火, 点燃"
+  },
+  {
+    "id": "automotive-0061",
+    "word": "turbo",
+    "phonetic": "/'tә:bәu/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. Any one of numerous marine gastropods of the genus Turbo or",
+        "zh": "n. 涡轮增压器"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"turbo\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“turbo”。"
+      }
+    ],
+    "imageQuery": "turbo",
+    "memoryTip": "turbo - n. 涡轮增压器"
+  },
+  {
+    "id": "automotive-0062",
+    "word": "traction",
+    "phonetic": "/'trækʃәn/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. (orthopedics) the act of pulling on a bone or limb (as in a fracture) to relieve pressure or align parts in a special way during healing",
+        "zh": "n. 曳, 牵引, 牵引力"
+      },
+      {
+        "en": "",
+        "zh": "[医] 牵引"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"traction\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“traction”。"
+      }
+    ],
+    "imageQuery": "traction",
+    "memoryTip": "traction - n. 曳, 牵引, 牵引力"
+  },
+  {
+    "id": "automotive-0063",
+    "word": "dashboard",
+    "phonetic": "/'dæʃbɒ:d/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. instrument panel on an automobile or airplane containing dials and controls",
+        "zh": "n. 仪表板, 挡泥板"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"dashboard\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“dashboard”。"
+      }
+    ],
+    "imageQuery": "dashboard",
+    "memoryTip": "dashboard - n. 仪表板, 挡泥板"
+  },
+  {
+    "id": "automotive-0064",
+    "word": "sedan",
+    "phonetic": "/si'dæn/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a car that is closed and that has front and rear seats and two or four doors",
+        "zh": "n. 轿车, 轿子"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"sedan\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“sedan”。"
+      }
+    ],
+    "imageQuery": "sedan",
+    "memoryTip": "sedan - n. 轿车, 轿子"
+  },
+  {
+    "id": "automotive-0065",
+    "word": "speedometer",
+    "phonetic": "/spi:'dɒmitә/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a meter fixed to a vehicle that measures and displays its speed",
+        "zh": "n. 速度计, 里程计"
+      },
+      {
+        "en": "",
+        "zh": "[机] 里程计, 速度计"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"speedometer\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“speedometer”。"
+      }
+    ],
+    "imageQuery": "speedometer",
+    "memoryTip": "speedometer - n. 速度计, 里程计"
+  },
+  {
+    "id": "automotive-0066",
+    "word": "windshield",
+    "phonetic": "/'windʃi:ld/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. transparent screen (as of glass) to protect occupants of a vehicle",
+        "zh": "n. 挡风玻璃"
+      },
+      {
+        "en": "",
+        "zh": "[电] 风遮蔽"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"windshield\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“windshield”。"
+      }
+    ],
+    "imageQuery": "windshield",
+    "memoryTip": "windshield - n. 挡风玻璃"
+  },
+  {
+    "id": "automotive-0067",
+    "word": "airbag",
+    "phonetic": "/'eәbæ^/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "",
+        "zh": "[机] 空气囊"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"airbag\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“airbag”。"
+      }
+    ],
+    "imageQuery": "airbag",
+    "memoryTip": "airbag - [机] 空气囊"
+  },
+  {
+    "id": "automotive-0068",
+    "word": "wheelbase",
+    "phonetic": "/'hwi:lbeis/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the distance from the center of a car's front wheel to the rear axle",
+        "zh": "n. 轴距"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"wheelbase\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“wheelbase”。"
+      }
+    ],
+    "imageQuery": "wheelbase",
+    "memoryTip": "wheelbase - n. 轴距"
+  }
+]

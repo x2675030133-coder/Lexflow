@@ -1,0 +1,1594 @@
+[
+  {
+    "id": "ai-tech-0001",
+    "word": "system",
+    "phonetic": "/'sistәm/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. instrumentality that combines interrelated interacting artifacts designed to work as a coherent entity",
+        "zh": "n. 系统, 体系, 制度, 方式, 秩序, 分类原则"
+      },
+      {
+        "en": "n. a group of independent but interrelated elements comprising a unified whole",
+        "zh": "[计] 系统; 体制; 体系"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"system\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“system”。"
+      }
+    ],
+    "imageQuery": "system",
+    "memoryTip": "system - n. 系统, 体系, 制度, 方式, 秩序, 分类原则"
+  },
+  {
+    "id": "ai-tech-0002",
+    "word": "language",
+    "phonetic": "/'læŋgwidʒ/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a systematic means of communicating by the use of sounds or conventional symbols",
+        "zh": "n. 语言, 文字, 措辞"
+      },
+      {
+        "en": "n. the mental faculty or power of vocal communication",
+        "zh": "[计] 语言"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"language\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“language”。"
+      }
+    ],
+    "imageQuery": "language",
+    "memoryTip": "language - n. 语言, 文字, 措辞"
+  },
+  {
+    "id": "ai-tech-0003",
+    "word": "voice",
+    "phonetic": "/vɒis/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the distinctive quality or pitch or condition of a person's speech",
+        "zh": "n. 声音, 嗓音, 嗓子, 愿望, 发言权, 表达, 喉舌, 语态"
+      },
+      {
+        "en": "n. the sound made by the vibration of vocal folds modified by the resonance of the vocal tract",
+        "zh": "vt. 表达, 吐露, 调音"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"voice\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“voice”。"
+      }
+    ],
+    "imageQuery": "voice",
+    "memoryTip": "voice - n. 声音, 嗓音, 嗓子, 愿望, 发言权, 表达, 喉舌, 语态"
+  },
+  {
+    "id": "ai-tech-0004",
+    "word": "training",
+    "phonetic": "/'treiniŋ/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. activity leading to skilled behavior",
+        "zh": "n. 训练, 培养"
+      },
+      {
+        "en": "",
+        "zh": "[医] 训练"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"training\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“training”。"
+      }
+    ],
+    "imageQuery": "training",
+    "memoryTip": "training - n. 训练, 培养"
+  },
+  {
+    "id": "ai-tech-0005",
+    "word": "learn",
+    "phonetic": "/lә:n/",
+    "partOfSpeech": [
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "v. gain knowledge or skills",
+        "zh": "vt. 学习；认识到；得知"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"learn\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“learn”。"
+      }
+    ],
+    "imageQuery": "learn",
+    "memoryTip": "learn - vt. 学习；认识到；得知"
+  },
+  {
+    "id": "ai-tech-0006",
+    "word": "model",
+    "phonetic": "/'mɒdәl/",
+    "partOfSpeech": [
+      "v.",
+      "j.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a hypothetical description of a complex entity or process",
+        "zh": "n. 模型, 模范, 模特儿"
+      },
+      {
+        "en": "n. a type of product",
+        "zh": "a. 模范的, 作模型用的"
+      },
+      {
+        "en": "n. a person who poses for a photographer or painter or sculptor",
+        "zh": "vi. 做模型, 做模特儿"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"model\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“model”。"
+      }
+    ],
+    "imageQuery": "model",
+    "memoryTip": "model - n. 模型, 模范, 模特儿"
+  },
+  {
+    "id": "ai-tech-0007",
+    "word": "data",
+    "phonetic": "/'deitә/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a collection of facts from which conclusions may be drawn",
+        "zh": "pl. 资料, 数据"
+      },
+      {
+        "en": "",
+        "zh": "[计] 数据; DOS内部命令:用于显示或设定系统的日期"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"data\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“data”。"
+      }
+    ],
+    "imageQuery": "data",
+    "memoryTip": "data - pl. 资料, 数据"
+  },
+  {
+    "id": "ai-tech-0008",
+    "word": "computer",
+    "phonetic": "/kәm'pju:tә/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a machine for performing calculations automatically",
+        "zh": "n. 电脑, 电子计算机"
+      },
+      {
+        "en": "",
+        "zh": "[计] 计算机"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"computer\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“computer”。"
+      }
+    ],
+    "imageQuery": "computer",
+    "memoryTip": "computer - n. 电脑, 电子计算机"
+  },
+  {
+    "id": "ai-tech-0009",
+    "word": "future",
+    "phonetic": "/'fju:tʃә/",
+    "partOfSpeech": [
+      "j.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the time yet to come",
+        "zh": "n. 未来, 将来"
+      },
+      {
+        "en": "n. a verb tense that expresses actions or states in the future",
+        "zh": "a. 将来的, 未来的"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"future\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“future”。"
+      }
+    ],
+    "imageQuery": "future",
+    "memoryTip": "future - n. 未来, 将来"
+  },
+  {
+    "id": "ai-tech-0010",
+    "word": "pattern",
+    "phonetic": "/'pætәn/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a model considered worthy of imitation",
+        "zh": "n. 模范, 典型, 式样, 样品, 图案, 格调, 模式"
+      },
+      {
+        "en": "v. form a pattern",
+        "zh": "vt. 模仿, 仿造, 以图案装饰"
+      },
+      {
+        "en": "",
+        "zh": "vi. 形成图案"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"pattern\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“pattern”。"
+      }
+    ],
+    "imageQuery": "pattern",
+    "memoryTip": "pattern - n. 模范, 典型, 式样, 样品, 图案, 格调, 模式"
+  },
+  {
+    "id": "ai-tech-0011",
+    "word": "analysis",
+    "phonetic": "/ә'nælәsis/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. an investigation of the component parts of a whole and their relations in making up the whole",
+        "zh": "n. 分析"
+      },
+      {
+        "en": "n. the abstract separation of a whole into its constituent parts in order to study the parts and their relations",
+        "zh": "[计] 分析机; 分析员; 分析; 分析程序"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"analysis\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“analysis”。"
+      }
+    ],
+    "imageQuery": "analysis",
+    "memoryTip": "analysis - n. 分析"
+  },
+  {
+    "id": "ai-tech-0012",
+    "word": "machine",
+    "phonetic": "/mә'ʃi:n/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. any mechanical or electrical device that transmits or modifies energy to perform or assist in the performance of human tasks",
+        "zh": "n. 机器, 机械装置, 机构, 自动售货机, 机械般工作的人"
+      },
+      {
+        "en": "n. an efficient person",
+        "zh": "vt. 以机器制造"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"machine\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“machine”。"
+      }
+    ],
+    "imageQuery": "machine",
+    "memoryTip": "machine - n. 机器, 机械装置, 机构, 自动售货机, 机械般工作的人"
+  },
+  {
+    "id": "ai-tech-0013",
+    "word": "growth",
+    "phonetic": "/grәuθ/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. (biology) the process of an individual organism growing organically; a purely biological unfolding of events involved in an organism changing gradually from a simple to a more complex level",
+        "zh": "n. 生长, 栽培, 增长"
+      },
+      {
+        "en": "n. a progression from simpler to more complex forms",
+        "zh": "[计] 等比级数"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"growth\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“growth”。"
+      }
+    ],
+    "imageQuery": "growth",
+    "memoryTip": "growth - n. 生长, 栽培, 增长"
+  },
+  {
+    "id": "ai-tech-0014",
+    "word": "version",
+    "phonetic": "/'vә:ʒәn/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. an interpretation of a matter from a particular viewpoint",
+        "zh": "n. 一种描述, 版本, 译文"
+      },
+      {
+        "en": "n. something a little different from others of the same type",
+        "zh": "[计] 版本"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"version\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“version”。"
+      }
+    ],
+    "imageQuery": "version",
+    "memoryTip": "version - n. 一种描述, 版本, 译文"
+  },
+  {
+    "id": "ai-tech-0015",
+    "word": "context",
+    "phonetic": "/'kɒntekst/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. discourse that surrounds a language unit and helps to determine its interpretation",
+        "zh": "n. 上下文, 背景, 来龙去脉"
+      },
+      {
+        "en": "n. the set of facts or circumstances that surround a situation or event",
+        "zh": "n. 上下文"
+      },
+      {
+        "en": "",
+        "zh": "[计] 上下文"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"context\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“context”。"
+      }
+    ],
+    "imageQuery": "context",
+    "memoryTip": "context - n. 上下文, 背景, 来龙去脉"
+  },
+  {
+    "id": "ai-tech-0016",
+    "word": "deep",
+    "phonetic": "/di:p/",
+    "partOfSpeech": [
+      "r.",
+      "j.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the central and most intense or profound part",
+        "zh": "a. 深的"
+      },
+      {
+        "en": "n. literary term for an ocean",
+        "zh": "adv. 深入地"
+      },
+      {
+        "en": "a. relatively deep or strong; affecting one deeply",
+        "zh": "n. 深渊, 深处"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"deep\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“deep”。"
+      }
+    ],
+    "imageQuery": "deep",
+    "memoryTip": "deep - a. 深的"
+  },
+  {
+    "id": "ai-tech-0017",
+    "word": "network",
+    "phonetic": "/'netwә:k/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. an interconnected system of things or people",
+        "zh": "n. 网络, 广播网, 网状物"
+      },
+      {
+        "en": "n. (broadcasting) a communication system consisting of a group of broadcasting stations that all transmit the same programs",
+        "zh": "[计] 网络"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"network\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“network”。"
+      }
+    ],
+    "imageQuery": "network",
+    "memoryTip": "network - n. 网络, 广播网, 网状物"
+  },
+  {
+    "id": "ai-tech-0018",
+    "word": "scale",
+    "phonetic": "/skeil/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. an ordered reference standard",
+        "zh": "n. 刻度, 衡量, 比例, 比例尺, 数值范围, 等级, 规模, 天平, 秤, 鳞, 积垢"
+      },
+      {
+        "en": "n. relative magnitude",
+        "zh": "vt. 依比例决定, 攀登, 测量, 绘制, 刮鳞, 使生垢, 过秤"
+      },
+      {
+        "en": "n. the ratio between the size of something and a representation of it",
+        "zh": "vi. 剥落, 生水垢, 重量为, 攀登, 衡量"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"scale\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“scale”。"
+      }
+    ],
+    "imageQuery": "scale",
+    "memoryTip": "scale - n. 刻度, 衡量, 比例, 比例尺, 数值范围, 等级, 规模, 天平, 秤, 鳞, 积垢"
+  },
+  {
+    "id": "ai-tech-0019",
+    "word": "agent",
+    "phonetic": "/'eidʒәnt/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. an active and efficient cause; capable of producing a certain effect",
+        "zh": "n. 代理商, 政府代表, 动原, 媒介"
+      },
+      {
+        "en": "n. a representative who acts on behalf of other persons or organizations",
+        "zh": "[计] 代理程序"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"agent\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“agent”。"
+      }
+    ],
+    "imageQuery": "agent",
+    "memoryTip": "agent - n. 代理商, 政府代表, 动原, 媒介"
+  },
+  {
+    "id": "ai-tech-0020",
+    "word": "engine",
+    "phonetic": "/'endʒin/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. motor that converts thermal energy to mechanical work",
+        "zh": "n. 引擎, 发动机, 机车"
+      },
+      {
+        "en": "n. something used to achieve a purpose",
+        "zh": "vt. 安装发动机于"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"engine\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“engine”。"
+      }
+    ],
+    "imageQuery": "engine",
+    "memoryTip": "engine - n. 引擎, 发动机, 机车"
+  },
+  {
+    "id": "ai-tech-0021",
+    "word": "generate",
+    "phonetic": "/'dʒenәreit/",
+    "partOfSpeech": [
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "v. bring into existence",
+        "zh": "vt. 产生, 发生, 导致"
+      },
+      {
+        "en": "v. produce (energy)",
+        "zh": "[电] 产生"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"generate\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“generate”。"
+      }
+    ],
+    "imageQuery": "generate",
+    "memoryTip": "generate - vt. 产生, 发生, 导致"
+  },
+  {
+    "id": "ai-tech-0022",
+    "word": "device",
+    "phonetic": "/di'vais/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. an instrumentality invented for a particular purpose",
+        "zh": "n. 装置, 设计, 策略, 发明物, 设备"
+      },
+      {
+        "en": "n. something in an artistic work designed to achieve a particular effect",
+        "zh": "[计] 设备; DOS内部命令:该命令要求DOS安装一个设备驱动程序"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"device\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“device”。"
+      }
+    ],
+    "imageQuery": "device",
+    "memoryTip": "device - n. 装置, 设计, 策略, 发明物, 设备"
+  },
+  {
+    "id": "ai-tech-0023",
+    "word": "vision",
+    "phonetic": "/'viʒәn/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a vivid mental image",
+        "zh": "n. 视觉, 眼光, 视力, 幻想"
+      },
+      {
+        "en": "n. the perceptual experience of seeing",
+        "zh": "vt. 梦见, 想象, 显示"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"vision\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“vision”。"
+      }
+    ],
+    "imageQuery": "vision",
+    "memoryTip": "vision - n. 视觉, 眼光, 视力, 幻想"
+  },
+  {
+    "id": "ai-tech-0024",
+    "word": "signal",
+    "phonetic": "/'signl/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. any nonverbal action or gesture that encodes a message",
+        "zh": "n. 信号, 暗号, 近因, 导火线"
+      },
+      {
+        "en": "n. any incitement to action",
+        "zh": "vt. 向...作信号, 标志, 用信号通知"
+      },
+      {
+        "en": "n. an electric quantity (voltage or current or field strength) whose modulation represents coded information about the source from which it comes",
+        "zh": "vi. 发信号"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"signal\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“signal”。"
+      }
+    ],
+    "imageQuery": "signal",
+    "memoryTip": "signal - n. 信号, 暗号, 近因, 导火线"
+  },
+  {
+    "id": "ai-tech-0025",
+    "word": "framework",
+    "phonetic": "/'freimwә:k/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the underlying structure",
+        "zh": "n. 结构, 骨架, 参照标准, 准则, 观点"
+      },
+      {
+        "en": "n. a structure supporting or containing something",
+        "zh": "[医] 构架组织"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"framework\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“framework”。"
+      }
+    ],
+    "imageQuery": "framework",
+    "memoryTip": "framework - n. 结构, 骨架, 参照标准, 准则, 观点"
+  },
+  {
+    "id": "ai-tech-0026",
+    "word": "layer",
+    "phonetic": "/'leiә/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. single thickness of usually some homogeneous substance",
+        "zh": "n. 层, 产卵鸡, 放置者"
+      },
+      {
+        "en": "n. a relatively thin sheetlike expanse or region lying over or under another",
+        "zh": "vt. 分层堆积, 压植"
+      },
+      {
+        "en": "n. a hen that lays eggs",
+        "zh": "[计] 层"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"layer\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“layer”。"
+      }
+    ],
+    "imageQuery": "layer",
+    "memoryTip": "layer - n. 层, 产卵鸡, 放置者"
+  },
+  {
+    "id": "ai-tech-0027",
+    "word": "predict",
+    "phonetic": "/pri'dikt/",
+    "partOfSpeech": [
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "v. make a prediction about; tell in advance",
+        "zh": "v. 预知, 预言, 预报"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"predict\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“predict”。"
+      }
+    ],
+    "imageQuery": "predict",
+    "memoryTip": "predict - v. 预知, 预言, 预报"
+  },
+  {
+    "id": "ai-tech-0028",
+    "word": "cloud",
+    "phonetic": "/klaud/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. any collection of particles (e.g., smoke or dust) or gases that is visible",
+        "zh": "n. 云, 阴暗, 烟雾, 疑团"
+      },
+      {
+        "en": "n. a visible mass of water or ice particles suspended at a considerable altitude",
+        "zh": "vt. 以云遮敝, 笼罩, 使黯然"
+      },
+      {
+        "en": "n. out of touch with reality",
+        "zh": "vi. 乌云密布, 阴沉"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"cloud\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“cloud”。"
+      }
+    ],
+    "imageQuery": "cloud",
+    "memoryTip": "cloud - n. 云, 阴暗, 烟雾, 疑团"
+  },
+  {
+    "id": "ai-tech-0029",
+    "word": "AI",
+    "phonetic": "/ai/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n an agency of the United States Army responsible for providing timely and relevant and accurate and synchronized intelligence to tactical and operational and strategic level commanders",
+        "zh": "[计] 附加信息, 人工智能"
+      },
+      {
+        "en": "n the branch of computer science that deal with writing computer programs that can solve problems creatively",
+        "zh": "[化] 人工智能"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"AI\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“AI”。"
+      }
+    ],
+    "imageQuery": "AI",
+    "memoryTip": "AI - [计] 附加信息, 人工智能"
+  },
+  {
+    "id": "ai-tech-0030",
+    "word": "intelligence",
+    "phonetic": "/in'telidʒәns/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the ability to comprehend; to understand and profit from experience",
+        "zh": "n. 智力, 情报, 信息"
+      },
+      {
+        "en": "n. a unit responsible for gathering and interpreting information about an enemy",
+        "zh": "[医] 智力"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"intelligence\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“intelligence”。"
+      }
+    ],
+    "imageQuery": "intelligence",
+    "memoryTip": "intelligence - n. 智力, 情报, 信息"
+  },
+  {
+    "id": "ai-tech-0031",
+    "word": "transform",
+    "phonetic": "/træns'fɒ:m/",
+    "partOfSpeech": [
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "v. subject to a mathematical transformation",
+        "zh": "vt. 使转换, 改变, 改造, 使...变形"
+      },
+      {
+        "en": "v. change or alter in form, appearance, or nature",
+        "zh": "vi. 改变, 转化, 变换"
+      },
+      {
+        "en": "v. change in outward structure or looks",
+        "zh": "[计] 变换"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"transform\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“transform”。"
+      }
+    ],
+    "imageQuery": "transform",
+    "memoryTip": "transform - vt. 使转换, 改变, 改造, 使...变形"
+  },
+  {
+    "id": "ai-tech-0032",
+    "word": "assistant",
+    "phonetic": "/ә'sistәnt/",
+    "partOfSpeech": [
+      "j.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a person who contributes to the fulfillment of a need or furtherance of an effort or purpose",
+        "zh": "n. 助手, 助理, 助教"
+      },
+      {
+        "en": "",
+        "zh": "a. 有帮助的, 辅助的, 助理的"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"assistant\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“assistant”。"
+      }
+    ],
+    "imageQuery": "assistant",
+    "memoryTip": "assistant - n. 助手, 助理, 助教"
+  },
+  {
+    "id": "ai-tech-0033",
+    "word": "logic",
+    "phonetic": "/'lɒdʒik/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the branch of philosophy that analyzes inference",
+        "zh": "n. 逻辑, 逻辑学, 推理的方法, 推理, 逻辑性"
+      },
+      {
+        "en": "n. reasoned and reasonable judgment",
+        "zh": "[计] 逻辑"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"logic\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“logic”。"
+      }
+    ],
+    "imageQuery": "logic",
+    "memoryTip": "logic - n. 逻辑, 逻辑学, 推理的方法, 推理, 逻辑性"
+  },
+  {
+    "id": "ai-tech-0034",
+    "word": "prompt",
+    "phonetic": "/prɒmpt/",
+    "partOfSpeech": [
+      "n.",
+      "j.",
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "n. a cue given to a performer (usually the beginning of the next line to be spoken)",
+        "zh": "n. 激励, 提示, 提醒物, 提词, 付款期限"
+      },
+      {
+        "en": "n. (computer science) a symbol that appears on the computer screen to indicate that the computer is ready to receive a command",
+        "zh": "a. 迅速的, 敏捷的, 立刻的, 提词员的"
+      },
+      {
+        "en": "v. serve as the inciting cause of",
+        "zh": "vt. 激励, 鼓动, 提示"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"prompt\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“prompt”。"
+      }
+    ],
+    "imageQuery": "prompt",
+    "memoryTip": "prompt - n. 激励, 提示, 提醒物, 提词, 付款期限"
+  },
+  {
+    "id": "ai-tech-0035",
+    "word": "digital",
+    "phonetic": "/'didʒitәl/",
+    "partOfSpeech": [
+      "j.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "a. displaying numbers rather than scale positions",
+        "zh": "a. 数字显示的, 数字的"
+      },
+      {
+        "en": "a. relating to or performed with the fingers",
+        "zh": "n. 数字仪表, 数字式电子表(或时钟)"
+      },
+      {
+        "en": "a. of a circuit or device that represents magnitudes in digits",
+        "zh": "[计] 数字, 数字式"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"digital\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“digital”。"
+      }
+    ],
+    "imageQuery": "digital",
+    "memoryTip": "digital - a. 数字显示的, 数字的"
+  },
+  {
+    "id": "ai-tech-0036",
+    "word": "accuracy",
+    "phonetic": "/'ækjurәsi/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the quality of being near to the true value",
+        "zh": "n. 精确, 正确"
+      },
+      {
+        "en": "n. (mathematics) the number of significant figures given in a number",
+        "zh": "[计] 准确度"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"accuracy\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“accuracy”。"
+      }
+    ],
+    "imageQuery": "accuracy",
+    "memoryTip": "accuracy - n. 精确, 正确"
+  },
+  {
+    "id": "ai-tech-0037",
+    "word": "forecast",
+    "phonetic": "/'fɒ:kɑ:st/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "v. predict in advance",
+        "zh": "n. 预想, 预测, 预报"
+      },
+      {
+        "en": "",
+        "zh": "vt. 预想, 预测, 预报"
+      },
+      {
+        "en": "",
+        "zh": "[计] 趋势预测"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"forecast\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“forecast”。"
+      }
+    ],
+    "imageQuery": "forecast",
+    "memoryTip": "forecast - n. 预想, 预测, 预报"
+  },
+  {
+    "id": "ai-tech-0038",
+    "word": "graph",
+    "phonetic": "/græf/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a visual representation of the relations between certain quantities plotted with reference to a set of axes",
+        "zh": "n. 曲线图, 图表, 图形"
+      },
+      {
+        "en": "v. represent by means of a graph",
+        "zh": "[计] 图形"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"graph\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“graph”。"
+      }
+    ],
+    "imageQuery": "graph",
+    "memoryTip": "graph - n. 曲线图, 图表, 图形"
+  },
+  {
+    "id": "ai-tech-0039",
+    "word": "semantic",
+    "phonetic": "/si'mæntik/",
+    "partOfSpeech": [
+      "j."
+    ],
+    "definitions": [
+      {
+        "en": "a. of or relating to meaning or the study of meaning",
+        "zh": "a. 语义的"
+      },
+      {
+        "en": "",
+        "zh": "[计] 语义"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"semantic\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“semantic”。"
+      }
+    ],
+    "imageQuery": "semantic",
+    "memoryTip": "semantic - a. 语义的"
+  },
+  {
+    "id": "ai-tech-0040",
+    "word": "query",
+    "phonetic": "/'kwiәri/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n an instance of questioning",
+        "zh": "n. 疑问, 疑问号, 质问, 查询"
+      },
+      {
+        "en": "v pose a question",
+        "zh": "v. 询问, 质问"
+      },
+      {
+        "en": "",
+        "zh": "[计] 查询"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"query\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“query”。"
+      }
+    ],
+    "imageQuery": "query",
+    "memoryTip": "query - n. 疑问, 疑问号, 质问, 查询"
+  },
+  {
+    "id": "ai-tech-0041",
+    "word": "vector",
+    "phonetic": "/'vektә/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a variable quantity that can be resolved into components",
+        "zh": "n. 矢量, 传病媒介"
+      },
+      {
+        "en": "n. a straight line segment whose length is magnitude and whose orientation in space is direction",
+        "zh": "vt. (用无线电)导引, 给...导航"
+      },
+      {
+        "en": "n. any agent (person or animal or microorganism) that carries and transmits a disease",
+        "zh": "[计] 矢量; 向量"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"vector\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“vector”。"
+      }
+    ],
+    "imageQuery": "vector",
+    "memoryTip": "vector - n. 矢量, 传病媒介"
+  },
+  {
+    "id": "ai-tech-0042",
+    "word": "token",
+    "phonetic": "/'tәukәn/",
+    "partOfSpeech": [
+      "j.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. an individual instance of a type of symbol",
+        "zh": "n. 表征, 记号, 代币"
+      },
+      {
+        "en": "n. something serving as a sign of something else",
+        "zh": "a. 象征的, 表意的"
+      },
+      {
+        "en": "n. a metal or plastic disk that can be redeemed or used in designated slot machines",
+        "zh": "[计] 记号"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"token\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“token”。"
+      }
+    ],
+    "imageQuery": "token",
+    "memoryTip": "token - n. 表征, 记号, 代币"
+  },
+  {
+    "id": "ai-tech-0043",
+    "word": "robot",
+    "phonetic": "/'rәubәt/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n a mechanism that can move automatically",
+        "zh": "n. 机械人, 自动机械, 机械般工作的人"
+      },
+      {
+        "en": "",
+        "zh": "[计] 机器人; 自动机"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"robot\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“robot”。"
+      }
+    ],
+    "imageQuery": "robot",
+    "memoryTip": "robot - n. 机械人, 自动机械, 机械般工作的人"
+  },
+  {
+    "id": "ai-tech-0044",
+    "word": "inference",
+    "phonetic": "/'infәrәns/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the reasoning involved in drawing a conclusion or making a logical judgment on the basis of circumstantial evidence and prior conclusions rather than on the basis of direct observation",
+        "zh": "n. 推论"
+      },
+      {
+        "en": "",
+        "zh": "[法] 推论, 推理, 推断"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"inference\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“inference”。"
+      }
+    ],
+    "imageQuery": "inference",
+    "memoryTip": "inference - n. 推论"
+  },
+  {
+    "id": "ai-tech-0045",
+    "word": "algorithm",
+    "phonetic": "/'ælgәriðm/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a precise rule (or set of rules) specifying how to solve some problem",
+        "zh": "n. 算法"
+      },
+      {
+        "en": "",
+        "zh": "[计] 算法"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"algorithm\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“algorithm”。"
+      }
+    ],
+    "imageQuery": "algorithm",
+    "memoryTip": "algorithm - n. 算法"
+  },
+  {
+    "id": "ai-tech-0046",
+    "word": "neural",
+    "phonetic": "/'njuәrәl/",
+    "partOfSpeech": [
+      "j."
+    ],
+    "definitions": [
+      {
+        "en": "a. of or relating to neurons",
+        "zh": "a. 神经的, 神经系统的, 神经中枢的, 背的"
+      },
+      {
+        "en": "",
+        "zh": "[医] 神经的"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"neural\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“neural”。"
+      }
+    ],
+    "imageQuery": "neural",
+    "memoryTip": "neural - a. 神经的, 神经系统的, 神经中枢的, 背的"
+  },
+  {
+    "id": "ai-tech-0047",
+    "word": "deploy",
+    "phonetic": "/di'plɒi/",
+    "partOfSpeech": [
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "v. place troops or weapons in battle formation",
+        "zh": "v. 展开, 配置"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"deploy\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“deploy”。"
+      }
+    ],
+    "imageQuery": "deploy",
+    "memoryTip": "deploy - v. 展开, 配置"
+  },
+  {
+    "id": "ai-tech-0048",
+    "word": "hybrid",
+    "phonetic": "/'haibrid/",
+    "partOfSpeech": [
+      "j.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a composite of mixed origin",
+        "zh": "n. 混血儿, 杂种, 混合物"
+      },
+      {
+        "en": "n. (genetics) an organism that is the offspring of genetically dissimilar parents or stock; especially offspring produced by breeding plants or animals of different varieties or breeds or species",
+        "zh": "a. 混合的, 杂种的, 混合语的"
+      },
+      {
+        "en": "s. produced by crossbreeding",
+        "zh": "[计] NetWare的主机实用程序, 双重用户建立程序"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"hybrid\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“hybrid”。"
+      }
+    ],
+    "imageQuery": "hybrid",
+    "memoryTip": "hybrid - n. 混血儿, 杂种, 混合物"
+  },
+  {
+    "id": "ai-tech-0049",
+    "word": "compute",
+    "phonetic": "/kәm'pju:t/",
+    "partOfSpeech": [
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "v make a mathematical calculation or computation",
+        "zh": "v. 计算, 估算"
+      },
+      {
+        "en": "",
+        "zh": "n. 计算, 估算"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"compute\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“compute”。"
+      }
+    ],
+    "imageQuery": "compute",
+    "memoryTip": "compute - v. 计算, 估算"
+  },
+  {
+    "id": "ai-tech-0050",
+    "word": "automation",
+    "phonetic": "/.ɒ:tә'meiʃәn/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the act of implementing the control of equipment with advanced technology; usually involving electronic hardware",
+        "zh": "n. 自动化, 自动操作"
+      },
+      {
+        "en": "n. the condition of being automatically operated or controlled",
+        "zh": "[计] 自动学; 自动化"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"automation\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“automation”。"
+      }
+    ],
+    "imageQuery": "automation",
+    "memoryTip": "automation - n. 自动化, 自动操作"
+  },
+  {
+    "id": "ai-tech-0051",
+    "word": "metric",
+    "phonetic": "/'metrik/",
+    "partOfSpeech": [
+      "j."
+    ],
+    "definitions": [
+      {
+        "en": "a. based on the meter as a standard of measurement",
+        "zh": "a. 公尺的, 公制的, 计量的"
+      },
+      {
+        "en": "",
+        "zh": "[医] 测量的, 米制的, 公制的"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"metric\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“metric”。"
+      }
+    ],
+    "imageQuery": "metric",
+    "memoryTip": "metric - a. 公尺的, 公制的, 计量的"
+  },
+  {
+    "id": "ai-tech-0052",
+    "word": "benchmark",
+    "phonetic": "",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a standard by which something can be measured or judged",
+        "zh": "[计] 基准程序; 基准"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"benchmark\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“benchmark”。"
+      }
+    ],
+    "imageQuery": "benchmark",
+    "memoryTip": "benchmark - [计] 基准程序; 基准"
+  },
+  {
+    "id": "ai-tech-0053",
+    "word": "analyze",
+    "phonetic": "/'ænәlaiz/",
+    "partOfSpeech": [
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "v. consider in detail and subject to an analysis in order to discover essential features or meaning",
+        "zh": "vt. 分析, 细察, 分解"
+      },
+      {
+        "en": "v. make a mathematical, chemical, or grammatical analysis of; break down into components or essential features",
+        "zh": "[机] 分析"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"analyze\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“analyze”。"
+      }
+    ],
+    "imageQuery": "analyze",
+    "memoryTip": "analyze - vt. 分析, 细察, 分解"
+  },
+  {
+    "id": "ai-tech-0054",
+    "word": "adaptive",
+    "phonetic": "/ә'dæptiv/",
+    "partOfSpeech": [
+      "j."
+    ],
+    "definitions": [
+      {
+        "en": "a. having a capacity for adaptation",
+        "zh": "a. 适应的, 能适应的"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"adaptive\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“adaptive”。"
+      }
+    ],
+    "imageQuery": "adaptive",
+    "memoryTip": "adaptive - a. 适应的, 能适应的"
+  },
+  {
+    "id": "ai-tech-0055",
+    "word": "dataset",
+    "phonetic": "",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "",
+        "zh": "[电] 资料组"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"dataset\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“dataset”。"
+      }
+    ],
+    "imageQuery": "dataset",
+    "memoryTip": "dataset - [电] 资料组"
+  },
+  {
+    "id": "ai-tech-0056",
+    "word": "retrain",
+    "phonetic": "/ri:'trein/",
+    "partOfSpeech": [
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "v. teach new skills",
+        "zh": "vt. 重新训练, 再训练"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"retrain\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“retrain”。"
+      }
+    ],
+    "imageQuery": "retrain",
+    "memoryTip": "retrain - vt. 重新训练, 再训练"
+  },
+  {
+    "id": "ai-tech-0057",
+    "word": "optimize",
+    "phonetic": "/'ɒptimaiz/",
+    "partOfSpeech": [
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "v. make optimal; get the most out of; use best",
+        "zh": "vt. 使完美, 使完善, 充分利用, 乐观地对待, 优化"
+      },
+      {
+        "en": "v. modify to achieve maximum efficiency in storage capacity or time or cost",
+        "zh": "vi. 持乐观态度"
+      },
+      {
+        "en": "v. act as an optimist and take a sunny view of the world",
+        "zh": "[计] 优化"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"optimize\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“optimize”。"
+      }
+    ],
+    "imageQuery": "optimize",
+    "memoryTip": "optimize - vt. 使完美, 使完善, 充分利用, 乐观地对待, 优化"
+  },
+  {
+    "id": "ai-tech-0058",
+    "word": "workflow",
+    "phonetic": "/'wɜ:kfləʊ/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n progress (or rate of progress) in work being done",
+        "zh": "工作流程"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"workflow\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“workflow”。"
+      }
+    ],
+    "imageQuery": "workflow",
+    "memoryTip": "workflow - 工作流程"
+  },
+  {
+    "id": "ai-tech-0059",
+    "word": "BOT",
+    "phonetic": "/bɔt/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. botfly larva; typically develops inside the body of a horse or sheep or human",
+        "zh": "[计] 磁带开始标志, 计算机角色"
+      },
+      {
+        "en": "",
+        "zh": "[医] 肤蝇[类]幼虫"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"BOT\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“BOT”。"
+      }
+    ],
+    "imageQuery": "BOT",
+    "memoryTip": "BOT - [计] 磁带开始标志, 计算机角色"
+  }
+]

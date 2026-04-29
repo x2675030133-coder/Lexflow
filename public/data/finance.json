@@ -1,0 +1,1843 @@
+[
+  {
+    "id": "finance-0001",
+    "word": "interest",
+    "phonetic": "/'intrist/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a sense of concern with and curiosity about someone or something",
+        "zh": "n. 兴趣, 嗜好, 利息, 利益, 爱好, 趣味, 势力"
+      },
+      {
+        "en": "n. the power of attracting or holding one's attention (because it is unusual or exciting etc.)",
+        "zh": "vt. 使感兴趣, 与...有关系"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"interest\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“interest”。"
+      }
+    ],
+    "imageQuery": "interest",
+    "memoryTip": "interest - n. 兴趣, 嗜好, 利息, 利益, 爱好, 趣味, 势力"
+  },
+  {
+    "id": "finance-0002",
+    "word": "money",
+    "phonetic": "/'mʌni/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the most common medium of exchange; functions as legal tender",
+        "zh": "n. 金钱, 一笔款, 财富, 货币, 金额"
+      },
+      {
+        "en": "n. wealth reckoned in terms of money",
+        "zh": "[经] 货币, 金钱, 财产"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"money\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“money”。"
+      }
+    ],
+    "imageQuery": "money",
+    "memoryTip": "money - n. 金钱, 一笔款, 财富, 货币, 金额"
+  },
+  {
+    "id": "finance-0003",
+    "word": "market",
+    "phonetic": "/'mɑ:kit/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the world of commercial activity where goods and services are bought and sold",
+        "zh": "n. 市场, 交易, 集市, 推销地区, 行情, 市面, 销路"
+      },
+      {
+        "en": "n. the customers for a particular product or service",
+        "zh": "vt. 在市场上交易, 使上市, 销售"
+      },
+      {
+        "en": "n. the securities markets in the aggregate",
+        "zh": "vi. 在市场上买卖"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"market\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“market”。"
+      }
+    ],
+    "imageQuery": "market",
+    "memoryTip": "market - n. 市场, 交易, 集市, 推销地区, 行情, 市面, 销路"
+  },
+  {
+    "id": "finance-0004",
+    "word": "rate",
+    "phonetic": "/reit/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a magnitude or frequency relative to a time unit",
+        "zh": "n. 比率, 率, 速度, 价格, 费用, 等级"
+      },
+      {
+        "en": "n. amount of a charge or payment relative to some basis",
+        "zh": "vt. 估价, 认为, 鉴定等级, 责骂"
+      },
+      {
+        "en": "n. a quantity or amount or measure considered as a proportion of another quantity or amount or measure",
+        "zh": "vi. 被评价, 责骂"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"rate\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“rate”。"
+      }
+    ],
+    "imageQuery": "rate",
+    "memoryTip": "rate - n. 比率, 率, 速度, 价格, 费用, 等级"
+  },
+  {
+    "id": "finance-0005",
+    "word": "cost",
+    "phonetic": "/kɒst/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the total spent for goods or services including money and time and labor",
+        "zh": "n. 代价, 价值, 费用"
+      },
+      {
+        "en": "v. be priced at",
+        "zh": "vi. 花费"
+      },
+      {
+        "en": "v. require to lose, suffer, or sacrifice",
+        "zh": "vt. 使失去, 值, 使花费"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"cost\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“cost”。"
+      }
+    ],
+    "imageQuery": "cost",
+    "memoryTip": "cost - n. 代价, 价值, 费用"
+  },
+  {
+    "id": "finance-0006",
+    "word": "value",
+    "phonetic": "/'vælju:/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a numerical quantity measured or assigned or computed",
+        "zh": "n. 价值, 价格, 购买力, 评价, 估价, 计算结果"
+      },
+      {
+        "en": "n. the quality (positive or negative) that renders something desirable or valuable",
+        "zh": "vt. 评价, 估价, 重视"
+      },
+      {
+        "en": "n. the amount (of money or goods or services) that is considered to be a fair equivalent for something else",
+        "zh": "[计] 计算结果"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"value\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“value”。"
+      }
+    ],
+    "imageQuery": "value",
+    "memoryTip": "value - n. 价值, 价格, 购买力, 评价, 估价, 计算结果"
+  },
+  {
+    "id": "finance-0007",
+    "word": "bank",
+    "phonetic": "/bæŋk/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. sloping land (especially the slope beside a body of water)",
+        "zh": "n. 银行, 堤, 岸"
+      },
+      {
+        "en": "n. a long ridge or pile",
+        "zh": "[医] 库"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"bank\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“bank”。"
+      }
+    ],
+    "imageQuery": "bank",
+    "memoryTip": "bank - n. 银行, 堤, 岸"
+  },
+  {
+    "id": "finance-0008",
+    "word": "return",
+    "phonetic": "/ri'tә:n/",
+    "partOfSpeech": [
+      "n.",
+      "j.",
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "n. a coming to or returning home",
+        "zh": "n. 回来, 返回, 来回票, 归还, 报答, 利润率, 报告书"
+      },
+      {
+        "en": "n. the occurrence of a change in direction back in the opposite direction",
+        "zh": "a. 返回的, 回程的, 报答的, 反向的, 重现的, 复原的"
+      },
+      {
+        "en": "n. the act of going back to a prior location",
+        "zh": "vi. 返回, 归还, 回来"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"return\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“return”。"
+      }
+    ],
+    "imageQuery": "return",
+    "memoryTip": "return - n. 回来, 返回, 来回票, 归还, 报答, 利润率, 报告书"
+  },
+  {
+    "id": "finance-0009",
+    "word": "trade",
+    "phonetic": "/treid/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the commercial exchange (buying and selling on domestic or international markets) of goods and services",
+        "zh": "n. 贸易, 商业, 交易, 生意, 职业, 顾客, 信风"
+      },
+      {
+        "en": "n. the skilled practice of a practical occupation",
+        "zh": "vi. 进行交易, 做买卖, 经商, 对换, 购物"
+      },
+      {
+        "en": "n. the business given to a commercial establishment by its customers",
+        "zh": "vt. 用...进行交换"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"trade\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“trade”。"
+      }
+    ],
+    "imageQuery": "trade",
+    "memoryTip": "trade - n. 贸易, 商业, 交易, 生意, 职业, 顾客, 信风"
+  },
+  {
+    "id": "finance-0010",
+    "word": "account",
+    "phonetic": "/ә'kaunt/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a formal contractual relationship established to provide for regular banking or brokerage or business services",
+        "zh": "n. 报告, 解释, 估价, 理由, 利润, 算账, 帐目"
+      },
+      {
+        "en": "n. importance or value",
+        "zh": "vi. 报帐, 解释, 导致, 报偿, 占, 杀死"
+      },
+      {
+        "en": "n. a statement of recent transactions and the resulting balance",
+        "zh": "vt. 认为"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"account\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“account”。"
+      }
+    ],
+    "imageQuery": "account",
+    "memoryTip": "account - n. 报告, 解释, 估价, 理由, 利润, 算账, 帐目"
+  },
+  {
+    "id": "finance-0011",
+    "word": "tax",
+    "phonetic": "/tæks/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. charge against a citizen's person or property or activity for the support of government",
+        "zh": "n. 税, 税款, 重负, 会费"
+      },
+      {
+        "en": "v. levy a tax on",
+        "zh": "vt. 课以税, 使负重荷, 斥责"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"tax\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“tax”。"
+      }
+    ],
+    "imageQuery": "tax",
+    "memoryTip": "tax - n. 税, 税款, 重负, 会费"
+  },
+  {
+    "id": "finance-0012",
+    "word": "share",
+    "phonetic": "/ʃєә/",
+    "partOfSpeech": [
+      "n.",
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "n. assets belonging to or due to or contributed by an individual person or group",
+        "zh": "n. 部分, 参与, 一份, 参股, 份额"
+      },
+      {
+        "en": "n. any of the equal portions into which the capital stock of a corporation is divided and ownership of which is evidenced by a stock certificate",
+        "zh": "vt. 均分, 分担, 分享, 分配, 共有"
+      },
+      {
+        "en": "v. have in common",
+        "zh": "vi. 分享"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"share\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“share”。"
+      }
+    ],
+    "imageQuery": "share",
+    "memoryTip": "share - n. 部分, 参与, 一份, 参股, 份额"
+  },
+  {
+    "id": "finance-0013",
+    "word": "charge",
+    "phonetic": "/tʃɑ:dʒ/",
+    "partOfSpeech": [
+      "i.",
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. an impetuous rush toward someone or something",
+        "zh": "n. 指控, 费用, 冲锋, 电荷, 炸药, 主管, 被托管人, 命令"
+      },
+      {
+        "en": "n. (criminal law) a pleading describing some wrong or offense",
+        "zh": "vt. 控诉, 加罪于, 使充满, 使充电, 使承担"
+      },
+      {
+        "en": "n. the price charged for some article or service",
+        "zh": "vi. 冲锋, 要价, 收费"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"charge\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“charge”。"
+      }
+    ],
+    "imageQuery": "charge",
+    "memoryTip": "charge - n. 指控, 费用, 冲锋, 电荷, 炸药, 主管, 被托管人, 命令"
+  },
+  {
+    "id": "finance-0014",
+    "word": "statement",
+    "phonetic": "/'steitmәnt/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a message that is stated or declared; a communication (oral or written) setting forth particulars or facts etc",
+        "zh": "n. 陈述, 指令, 声明"
+      },
+      {
+        "en": "n. (music) the presentation of a musical theme",
+        "zh": "[计] 程序语句; 语句"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"statement\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“statement”。"
+      }
+    ],
+    "imageQuery": "statement",
+    "memoryTip": "statement - n. 陈述, 指令, 声明"
+  },
+  {
+    "id": "finance-0015",
+    "word": "capital",
+    "phonetic": "/'kæpitәl/",
+    "partOfSpeech": [
+      "j.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. assets available for use in the production of further assets",
+        "zh": "n. 首都, 大写字母, 资本"
+      },
+      {
+        "en": "n. wealth in the form of money or property owned by a person or business and human resources of economic value",
+        "zh": "a. 首都的, 重要的"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"capital\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“capital”。"
+      }
+    ],
+    "imageQuery": "capital",
+    "memoryTip": "capital - n. 首都, 大写字母, 资本"
+  },
+  {
+    "id": "finance-0016",
+    "word": "income",
+    "phonetic": "/'inkʌm/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the financial gain (earned or unearned) accruing over a given period of time",
+        "zh": "n. 收入, 收益, 流入"
+      },
+      {
+        "en": "",
+        "zh": "[经] 收益"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"income\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“income”。"
+      }
+    ],
+    "imageQuery": "income",
+    "memoryTip": "income - n. 收入, 收益, 流入"
+  },
+  {
+    "id": "finance-0017",
+    "word": "risk",
+    "phonetic": "/risk/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a venture undertaken without regard to possible loss or injury",
+        "zh": "n. 冒险, 危险, 保险额"
+      },
+      {
+        "en": "n. the probability of becoming infected given that exposure to an infectious agent has occurred",
+        "zh": "vt. 冒...的危险, 冒险干"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"risk\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“risk”。"
+      }
+    ],
+    "imageQuery": "risk",
+    "memoryTip": "risk - n. 冒险, 危险, 保险额"
+  },
+  {
+    "id": "finance-0018",
+    "word": "investment",
+    "phonetic": "/in'vestmәnt/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. money that is invested with an expectation of profit",
+        "zh": "n. 投资"
+      },
+      {
+        "en": "n. the commitment of something other than money (time, energy, or effort) to a project with the expectation of some worthwhile result",
+        "zh": "[医] 包埋料, 围模料, 包埋法, 围模法"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"investment\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“investment”。"
+      }
+    ],
+    "imageQuery": "investment",
+    "memoryTip": "investment - n. 投资"
+  },
+  {
+    "id": "finance-0019",
+    "word": "economy",
+    "phonetic": "/i'kɒnәmi/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the system of production and distribution and consumption",
+        "zh": "n. 经济, 理财, 节约"
+      },
+      {
+        "en": "n. the efficient use of resources",
+        "zh": "[医] 经济, 整体"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"economy\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“economy”。"
+      }
+    ],
+    "imageQuery": "economy",
+    "memoryTip": "economy - n. 经济, 理财, 节约"
+  },
+  {
+    "id": "finance-0020",
+    "word": "fund",
+    "phonetic": "/fʌnd/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a reserve of money set aside for some purpose",
+        "zh": "n. 基金, 资金, 存款, 财源, 贮藏"
+      },
+      {
+        "en": "v. convert (short-term floating debt) into long-term debt that bears fixed interest and is represented by bonds",
+        "zh": "vt. 提供资金, 积累"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"fund\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“fund”。"
+      }
+    ],
+    "imageQuery": "fund",
+    "memoryTip": "fund - n. 基金, 资金, 存款, 财源, 贮藏"
+  },
+  {
+    "id": "finance-0021",
+    "word": "profit",
+    "phonetic": "/'prɒfit/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the advantageous quality of being beneficial",
+        "zh": "n. 利润, 赢利, 利益"
+      },
+      {
+        "en": "v. derive a benefit from",
+        "zh": "vi. 有益, 获利, 赚钱"
+      },
+      {
+        "en": "v. make a profit; gain money or materially",
+        "zh": "vt. 有益于"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"profit\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“profit”。"
+      }
+    ],
+    "imageQuery": "profit",
+    "memoryTip": "profit - n. 利润, 赢利, 利益"
+  },
+  {
+    "id": "finance-0022",
+    "word": "commission",
+    "phonetic": "/kә'miʃәn/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a fee for services rendered based on a percentage of an amount received or collected or agreed to be paid (as distinguished from a salary)",
+        "zh": "n. 委任状, 任官令, 所委职责, 佣金, 犯, 委托, 所托之事"
+      },
+      {
+        "en": "n. the act of granting authority to undertake certain functions",
+        "zh": "vt. 委任, 委托制作, 使服役"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"commission\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“commission”。"
+      }
+    ],
+    "imageQuery": "commission",
+    "memoryTip": "commission - n. 委任状, 任官令, 所委职责, 佣金, 犯, 委托, 所托之事"
+  },
+  {
+    "id": "finance-0023",
+    "word": "payment",
+    "phonetic": "/'peimәnt/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a sum of money paid or a claim discharged",
+        "zh": "n. 付款, 支付的款项(或实物), 偿还, 报应, 惩罚"
+      },
+      {
+        "en": "n. the act of paying money",
+        "zh": "[经] 支付, 缴纳, 支付款额"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"payment\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“payment”。"
+      }
+    ],
+    "imageQuery": "payment",
+    "memoryTip": "payment - n. 付款, 支付的款项(或实物), 偿还, 报应, 惩罚"
+  },
+  {
+    "id": "finance-0024",
+    "word": "budget",
+    "phonetic": "/'bʌdʒit/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a sum of money allocated for a particular purpose",
+        "zh": "n. 预算"
+      },
+      {
+        "en": "n. a summary of intended expenditures along with proposals for how to meet them",
+        "zh": "vi. 编预算"
+      },
+      {
+        "en": "v. make a budget",
+        "zh": "vt. 编入预算, 安排"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"budget\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“budget”。"
+      }
+    ],
+    "imageQuery": "budget",
+    "memoryTip": "budget - n. 预算"
+  },
+  {
+    "id": "finance-0025",
+    "word": "stock",
+    "phonetic": "/stɒk/",
+    "partOfSpeech": [
+      "v.",
+      "j.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the capital raised by a corporation through the issue of shares entitling holders to an ownership interest (equity)",
+        "zh": "n. 树干, 祖先, 血统, 原料, 备料, 库存, 牲畜, 股票, 股份, 保留剧目"
+      },
+      {
+        "en": "n. the merchandise that a shop has on hand",
+        "zh": "a. 存货的, 常备的, 平凡的, 普通的, 股票的, 保留剧目的, 繁殖用的"
+      },
+      {
+        "en": "n. the handle of a handgun or the butt end of a rifle or shotgun or part of the support of a machine gun or artillery gun",
+        "zh": "vt. 装把手于, 进货, 备有, 放牧"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"stock\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“stock”。"
+      }
+    ],
+    "imageQuery": "stock",
+    "memoryTip": "stock - n. 树干, 祖先, 血统, 原料, 备料, 库存, 牲畜, 股票, 股份, 保留剧目"
+  },
+  {
+    "id": "finance-0026",
+    "word": "exchange",
+    "phonetic": "/iks'tʃeindʒ/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. chemical process in which one atom or ion or group changes places with another",
+        "zh": "n. 交换, (电话)交换局, 交换机, 汇兑, 交易所"
+      },
+      {
+        "en": "n. a mutual expression of views (especially an unpleasant one)",
+        "zh": "v. 交换, 交易, 兑换"
+      },
+      {
+        "en": "n. the act of changing one thing for another thing",
+        "zh": "[计] 交换; 电话局"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"exchange\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“exchange”。"
+      }
+    ],
+    "imageQuery": "exchange",
+    "memoryTip": "exchange - n. 交换, (电话)交换局, 交换机, 汇兑, 交易所"
+  },
+  {
+    "id": "finance-0027",
+    "word": "balance",
+    "phonetic": "/'bælәns/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a state of equilibrium",
+        "zh": "n. 平衡, 差额"
+      },
+      {
+        "en": "n. equality between the totals of the credit and debit sides of an account",
+        "zh": "vi. 平衡, 相等"
+      },
+      {
+        "en": "n. equality of distribution",
+        "zh": "vt. 称, 权衡, 比较, 使平衡, 结算, 抵消"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"balance\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“balance”。"
+      }
+    ],
+    "imageQuery": "balance",
+    "memoryTip": "balance - n. 平衡, 差额"
+  },
+  {
+    "id": "finance-0028",
+    "word": "cash",
+    "phonetic": "/kæʃ/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. money in the form of bills or coins",
+        "zh": "n. 现金"
+      },
+      {
+        "en": "n. prompt payment for goods or services in currency or by check",
+        "zh": "vt. 兑现"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"cash\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“cash”。"
+      }
+    ],
+    "imageQuery": "cash",
+    "memoryTip": "cash - n. 现金"
+  },
+  {
+    "id": "finance-0029",
+    "word": "credit",
+    "phonetic": "/'kredit/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. money available for a client to borrow",
+        "zh": "n. 信用, 信任, 荣誉, 贷款, 学分"
+      },
+      {
+        "en": "n. an accounting entry acknowledging income or capital items",
+        "zh": "vt. 归功于, 赞颂, 信任, 相信"
+      },
+      {
+        "en": "n. used in the phrase `to your credit' in order to indicate an achievement deserving praise;",
+        "zh": "[计] 信用量"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"credit\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“credit”。"
+      }
+    ],
+    "imageQuery": "credit",
+    "memoryTip": "credit - n. 信用, 信任, 荣誉, 贷款, 学分"
+  },
+  {
+    "id": "finance-0030",
+    "word": "debt",
+    "phonetic": "/det/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the state of owing something (especially money)",
+        "zh": "n. 债务, 罪过"
+      },
+      {
+        "en": "n. money or goods or services owed by one person to another",
+        "zh": "[经] 借款, 欠款, 债务"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"debt\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“debt”。"
+      }
+    ],
+    "imageQuery": "debt",
+    "memoryTip": "debt - n. 债务, 罪过"
+  },
+  {
+    "id": "finance-0031",
+    "word": "consumer",
+    "phonetic": "/kәn'sju:mә/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a person who uses goods or services",
+        "zh": "n. 消费者"
+      },
+      {
+        "en": "",
+        "zh": "[经] 消费者, 用户"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"consumer\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“consumer”。"
+      }
+    ],
+    "imageQuery": "consumer",
+    "memoryTip": "consumer - n. 消费者"
+  },
+  {
+    "id": "finance-0032",
+    "word": "loan",
+    "phonetic": "/lәun/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the temporary provision of money (usually at interest)",
+        "zh": "n. 贷款, 借出"
+      },
+      {
+        "en": "",
+        "zh": "v. 借, 供应货款, 借给"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"loan\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“loan”。"
+      }
+    ],
+    "imageQuery": "loan",
+    "memoryTip": "loan - n. 贷款, 借出"
+  },
+  {
+    "id": "finance-0033",
+    "word": "asset",
+    "phonetic": "/'æset/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a useful or valuable quality",
+        "zh": "n. 资产, 有益的东西"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"asset\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“asset”。"
+      }
+    ],
+    "imageQuery": "asset",
+    "memoryTip": "asset - n. 资产, 有益的东西"
+  },
+  {
+    "id": "finance-0034",
+    "word": "finance",
+    "phonetic": "/fai'næns/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the commercial activity of providing funds and capital",
+        "zh": "n. 财政, 财务"
+      },
+      {
+        "en": "n. the branch of economics that studies the management of money and other assets",
+        "zh": "vt. 供给...经费, 负担经费"
+      },
+      {
+        "en": "n. the management of money and credit and banking and investments",
+        "zh": "vi. 筹措资金"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"finance\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“finance”。"
+      }
+    ],
+    "imageQuery": "finance",
+    "memoryTip": "finance - n. 财政, 财务"
+  },
+  {
+    "id": "finance-0035",
+    "word": "revenue",
+    "phonetic": "/'revinju:/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n the entire amount of income before any deductions are made",
+        "zh": "n. 收入, 岁入, 税收, 税务局"
+      },
+      {
+        "en": "n government income due to taxation",
+        "zh": "[经] 岁入, 税收, 税务局"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"revenue\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“revenue”。"
+      }
+    ],
+    "imageQuery": "revenue",
+    "memoryTip": "revenue - n. 收入, 岁入, 税收, 税务局"
+  },
+  {
+    "id": "finance-0036",
+    "word": "liability",
+    "phonetic": "/laiә'biliti/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the state of being legally obliged and responsible",
+        "zh": "n. 责任, 债务, 倾向"
+      },
+      {
+        "en": "n. the quality of being something that holds you back",
+        "zh": "[经] 责任, 义务, 负债"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"liability\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“liability”。"
+      }
+    ],
+    "imageQuery": "liability",
+    "memoryTip": "liability - n. 责任, 债务, 倾向"
+  },
+  {
+    "id": "finance-0037",
+    "word": "expense",
+    "phonetic": "/ik'spens/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. amounts paid for goods and services that may be currently tax deductible (as opposed to capital expenditures)",
+        "zh": "n. 费用, 代价, 开支, 损失"
+      },
+      {
+        "en": "n. a detriment or sacrifice",
+        "zh": "[经] 费用, 开支, 将支出转为费用"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"expense\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“expense”。"
+      }
+    ],
+    "imageQuery": "expense",
+    "memoryTip": "expense - n. 费用, 代价, 开支, 损失"
+  },
+  {
+    "id": "finance-0038",
+    "word": "withdraw",
+    "phonetic": "/wið'drɒ:/",
+    "partOfSpeech": [
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "v. pull back or move away or backward",
+        "zh": "vt. 撤回, 取回, 撤消, 使撤退, 拉开, 移开"
+      },
+      {
+        "en": "v. remove (a commodity) from (a supply source)",
+        "zh": "vi. 撤退, 离开"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"withdraw\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“withdraw”。"
+      }
+    ],
+    "imageQuery": "withdraw",
+    "memoryTip": "withdraw - vt. 撤回, 取回, 撤消, 使撤退, 拉开, 移开"
+  },
+  {
+    "id": "finance-0039",
+    "word": "inflation",
+    "phonetic": "/in'fleiʃәn/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a general and progressive increase in prices",
+        "zh": "n. 胀大, 夸张, 通货膨胀"
+      },
+      {
+        "en": "n. (cosmology) a brief exponential expansion of the universe (faster than the speed of light) postulated to have occurred shortly after the big bang",
+        "zh": "[化] 充气吹胀; 膨胀"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"inflation\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“inflation”。"
+      }
+    ],
+    "imageQuery": "inflation",
+    "memoryTip": "inflation - n. 胀大, 夸张, 通货膨胀"
+  },
+  {
+    "id": "finance-0040",
+    "word": "quote",
+    "phonetic": "/kwәut/",
+    "partOfSpeech": [
+      "n.",
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "v. repeat a passage from",
+        "zh": "n. 引用"
+      },
+      {
+        "en": "v. name the price of",
+        "zh": "vt. 引述, 举证, 报(价)"
+      },
+      {
+        "en": "v. refer to for illustration or proof",
+        "zh": "vi. 引用"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"quote\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“quote”。"
+      }
+    ],
+    "imageQuery": "quote",
+    "memoryTip": "quote - n. 引用"
+  },
+  {
+    "id": "finance-0041",
+    "word": "transaction",
+    "phonetic": "/træn'sækʃәn/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the act of transacting within or between groups (as carrying on commercial activities)",
+        "zh": "n. 交易, 办理, 学报, 和解协议"
+      },
+      {
+        "en": "",
+        "zh": "[计] 事务处理"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"transaction\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“transaction”。"
+      }
+    ],
+    "imageQuery": "transaction",
+    "memoryTip": "transaction - n. 交易, 办理, 学报, 和解协议"
+  },
+  {
+    "id": "finance-0042",
+    "word": "currency",
+    "phonetic": "/'kʌrәnsi/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the metal or paper medium of exchange that is presently used",
+        "zh": "n. 货币, 通货, 流通, 通用"
+      },
+      {
+        "en": "n. general acceptance or use",
+        "zh": "[计] 货币, 货币型"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"currency\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“currency”。"
+      }
+    ],
+    "imageQuery": "currency",
+    "memoryTip": "currency - n. 货币, 通货, 流通, 通用"
+  },
+  {
+    "id": "finance-0043",
+    "word": "saving",
+    "phonetic": "/'seiviŋ/",
+    "partOfSpeech": [
+      "j.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "s. characterized by thriftiness",
+        "zh": "n. 存款, 挽救, 节约"
+      },
+      {
+        "en": "",
+        "zh": "a. 搭救的, 节约的, 保留的, 补偿的"
+      },
+      {
+        "en": "",
+        "zh": "prep. 除...之外"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"saving\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“saving”。"
+      }
+    ],
+    "imageQuery": "saving",
+    "memoryTip": "saving - n. 存款, 挽救, 节约"
+  },
+  {
+    "id": "finance-0044",
+    "word": "funding",
+    "phonetic": "/'fʌndiŋ/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n financial resources provided to make some project possible",
+        "zh": "[经] 债务转期"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"funding\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“funding”。"
+      }
+    ],
+    "imageQuery": "funding",
+    "memoryTip": "funding - [经] 债务转期"
+  },
+  {
+    "id": "finance-0045",
+    "word": "wealth",
+    "phonetic": "/welθ/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the state of being rich and affluent; having a plentiful supply of material goods and money",
+        "zh": "n. 财富, 资源, 财产, 丰富, 富裕, 大量"
+      },
+      {
+        "en": "n. the quality of profuse abundance",
+        "zh": "[经] 财富"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"wealth\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“wealth”。"
+      }
+    ],
+    "imageQuery": "wealth",
+    "memoryTip": "wealth - n. 财富, 资源, 财产, 丰富, 富裕, 大量"
+  },
+  {
+    "id": "finance-0046",
+    "word": "deposit",
+    "phonetic": "/di'pɒzit/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the phenomenon of sediment or gravel accumulating",
+        "zh": "n. 存款, 定金, 堆积物"
+      },
+      {
+        "en": "n. money deposited in a bank or some similar institution",
+        "zh": "vt. 存放, 堆积"
+      },
+      {
+        "en": "n. money given as security for an article acquired for temporary use",
+        "zh": "vi. 沉淀"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"deposit\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“deposit”。"
+      }
+    ],
+    "imageQuery": "deposit",
+    "memoryTip": "deposit - n. 存款, 定金, 堆积物"
+  },
+  {
+    "id": "finance-0047",
+    "word": "bond",
+    "phonetic": "/bɒnd/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a certificate of debt (usually interest-bearing or discounted) that is issued by a government or corporation in order to raise money; the issuer is required to pay a fixed sum annually until maturity and then a fixed sum to repay the principal",
+        "zh": "n. 捆绑物, 结合, 债券, 契约, 粘合剂, 保证人, 键, 关栈保留"
+      },
+      {
+        "en": "n. a superior quality of strong durable white writing paper; originally made for printing documents",
+        "zh": "vt. 存入关栈, 使黏合"
+      },
+      {
+        "en": "n. United States civil rights leader who was elected to the legislature in Georgia but was barred from taking his seat because he opposed the Vietnam War (born 1940)",
+        "zh": "vi. 结合"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"bond\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“bond”。"
+      }
+    ],
+    "imageQuery": "bond",
+    "memoryTip": "bond - n. 捆绑物, 结合, 债券, 契约, 粘合剂, 保证人, 键, 关栈保留"
+  },
+  {
+    "id": "finance-0048",
+    "word": "borrow",
+    "phonetic": "/'bɒrәu/",
+    "partOfSpeech": [
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "v. get temporarily",
+        "zh": "vt. 借, 借入, 借用"
+      },
+      {
+        "en": "",
+        "zh": "vi. 借"
+      },
+      {
+        "en": "",
+        "zh": "[计] 借位; 借位数"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"borrow\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“borrow”。"
+      }
+    ],
+    "imageQuery": "borrow",
+    "memoryTip": "borrow - vt. 借, 借入, 借用"
+  },
+  {
+    "id": "finance-0049",
+    "word": "treasury",
+    "phonetic": "/'treʒәri/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the funds of a government or institution or individual",
+        "zh": "n. 国库, 宝库, 财政部, 国库券"
+      },
+      {
+        "en": "n. the government department responsible for collecting and managing and spending public revenues",
+        "zh": "[经] 库存, 国库, 金库"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"treasury\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“treasury”。"
+      }
+    ],
+    "imageQuery": "treasury",
+    "memoryTip": "treasury - n. 国库, 宝库, 财政部, 国库券"
+  },
+  {
+    "id": "finance-0050",
+    "word": "margin",
+    "phonetic": "/'mɑ:dʒin/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the boundary line or the area immediately inside the boundary",
+        "zh": "n. 页边的空白, 边缘, 界限, 余裕, 差数, 差额, 保证金"
+      },
+      {
+        "en": "n. an amount beyond the minimum necessary",
+        "zh": "vt. 加边于, 加旁注于"
+      },
+      {
+        "en": "n. the amount of collateral a customer deposits with a broker when borrowing from the broker to buy securities",
+        "zh": "[计] 页边距"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"margin\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“margin”。"
+      }
+    ],
+    "imageQuery": "margin",
+    "memoryTip": "margin - n. 页边的空白, 边缘, 界限, 余裕, 差数, 差额, 保证金"
+  },
+  {
+    "id": "finance-0051",
+    "word": "dividend",
+    "phonetic": "/'dividend/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. that part of the earnings of a corporation that is distributed to its shareholders; usually paid quarterly",
+        "zh": "n. 被除数, 股利"
+      },
+      {
+        "en": "n. a number to be divided by another number",
+        "zh": "[计] 被除数"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"dividend\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“dividend”。"
+      }
+    ],
+    "imageQuery": "dividend",
+    "memoryTip": "dividend - n. 被除数, 股利"
+  },
+  {
+    "id": "finance-0052",
+    "word": "audit",
+    "phonetic": "/'ɒ:dit/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a methodical examination or review of a condition or situation",
+        "zh": "n. 审计, 查帐"
+      },
+      {
+        "en": "v. examine carefully for accuracy with the intent of verification",
+        "zh": "vt. 查(帐), 旁听"
+      },
+      {
+        "en": "v. attend academic courses without getting credit",
+        "zh": "vi. 查账"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"audit\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“audit”。"
+      }
+    ],
+    "imageQuery": "audit",
+    "memoryTip": "audit - n. 审计, 查帐"
+  },
+  {
+    "id": "finance-0053",
+    "word": "yield",
+    "phonetic": "/ji:ld/",
+    "partOfSpeech": [
+      "n.",
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "n. an amount of a product",
+        "zh": "n. 生产量, 投资收益"
+      },
+      {
+        "en": "v. be the cause or source of",
+        "zh": "vt. 出产, 给予, 让出, 放弃, 使屈服"
+      },
+      {
+        "en": "v. give in, as to influence or pressure",
+        "zh": "vi. 出产, 屈服, 投降, 倒塌"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"yield\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“yield”。"
+      }
+    ],
+    "imageQuery": "yield",
+    "memoryTip": "yield - n. 生产量, 投资收益"
+  },
+  {
+    "id": "finance-0054",
+    "word": "equity",
+    "phonetic": "/'ekwiti/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the difference between the market value of a property and the claims held against it",
+        "zh": "n. 公平, 公正"
+      },
+      {
+        "en": "n. the ownership interest of shareholders in a corporation",
+        "zh": "[经] 权益, 产权"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"equity\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“equity”。"
+      }
+    ],
+    "imageQuery": "equity",
+    "memoryTip": "equity - n. 公平, 公正"
+  },
+  {
+    "id": "finance-0055",
+    "word": "banking",
+    "phonetic": "/'bæŋkiŋ/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. engaging in the business of keeping money for savings and checking accounts or for exchange or for issuing loans and credit etc.",
+        "zh": "n. 银行业务"
+      },
+      {
+        "en": "n. transacting business with a bank; depositing or withdrawing funds or requesting a loan etc.",
+        "zh": "[经] 银行业, 银行事务"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"banking\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“banking”。"
+      }
+    ],
+    "imageQuery": "banking",
+    "memoryTip": "banking - n. 银行业务"
+  },
+  {
+    "id": "finance-0056",
+    "word": "creditor",
+    "phonetic": "/'kreditә/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a person to whom money is owed by a debtor; someone to whom an obligation exists",
+        "zh": "n. 债权人"
+      },
+      {
+        "en": "",
+        "zh": "[法] 债权人, 债主, 贷方"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"creditor\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“creditor”。"
+      }
+    ],
+    "imageQuery": "creditor",
+    "memoryTip": "creditor - n. 债权人"
+  },
+  {
+    "id": "finance-0057",
+    "word": "portfolio",
+    "phonetic": "/pɒ:t'fәuliәu/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a large, flat, thin case for carrying loose papers or drawings or maps; usually leather",
+        "zh": "n. 皮包, 公文包, 部长职务, 有价证券财产目录, 艺术代表作选辑"
+      },
+      {
+        "en": "n. a set of pieces of creative work collected to be shown to potential customers or employers",
+        "zh": "[法] 公文包, 文件夹, 阁员职务"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"portfolio\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“portfolio”。"
+      }
+    ],
+    "imageQuery": "portfolio",
+    "memoryTip": "portfolio - n. 皮包, 公文包, 部长职务, 有价证券财产目录, 艺术代表作选辑"
+  },
+  {
+    "id": "finance-0058",
+    "word": "forecast",
+    "phonetic": "/'fɒ:kɑ:st/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "v. predict in advance",
+        "zh": "n. 预想, 预测, 预报"
+      },
+      {
+        "en": "",
+        "zh": "vt. 预想, 预测, 预报"
+      },
+      {
+        "en": "",
+        "zh": "[计] 趋势预测"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"forecast\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“forecast”。"
+      }
+    ],
+    "imageQuery": "forecast",
+    "memoryTip": "forecast - n. 预想, 预测, 预报"
+  },
+  {
+    "id": "finance-0059",
+    "word": "liquid",
+    "phonetic": "/'likwid/",
+    "partOfSpeech": [
+      "j.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a substance that is liquid at room temperature and pressure",
+        "zh": "n. 液体, 流体, 流音"
+      },
+      {
+        "en": "n. the state in which a substance exhibits a characteristic readiness to flow with little or no tendency to disperse and relatively high incompressibility",
+        "zh": "a. 液体的, 透明的, 明亮的, 流动的, 易变的"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"liquid\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“liquid”。"
+      }
+    ],
+    "imageQuery": "liquid",
+    "memoryTip": "liquid - n. 液体, 流体, 流音"
+  },
+  {
+    "id": "finance-0060",
+    "word": "valuation",
+    "phonetic": "/.vælju'eiʃәn/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. assessed price",
+        "zh": "n. 评价, 估价, 价值判断"
+      },
+      {
+        "en": "",
+        "zh": "[经] 估价, 计价, 评价"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"valuation\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“valuation”。"
+      }
+    ],
+    "imageQuery": "valuation",
+    "memoryTip": "valuation - n. 评价, 估价, 价值判断"
+  },
+  {
+    "id": "finance-0061",
+    "word": "broker",
+    "phonetic": "/'brәukә/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "v. act as a broker",
+        "zh": "n. 掮客, 经纪人"
+      },
+      {
+        "en": "",
+        "zh": "[经] 经纪人, 掮客"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"broker\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“broker”。"
+      }
+    ],
+    "imageQuery": "broker",
+    "memoryTip": "broker - n. 掮客, 经纪人"
+  },
+  {
+    "id": "finance-0062",
+    "word": "insure",
+    "phonetic": "/in'ʃuә/",
+    "partOfSpeech": [
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "v. take out insurance for",
+        "zh": "vt. 保险, 确保"
+      },
+      {
+        "en": "",
+        "zh": "vi. 投保"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"insure\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“insure”。"
+      }
+    ],
+    "imageQuery": "insure",
+    "memoryTip": "insure - vt. 保险, 确保"
+  },
+  {
+    "id": "finance-0063",
+    "word": "invoice",
+    "phonetic": "/'invɒis/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "v. send an bill to",
+        "zh": "n. 发票, 发货单"
+      },
+      {
+        "en": "",
+        "zh": "v. 开发票, 记清单"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"invoice\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“invoice”。"
+      }
+    ],
+    "imageQuery": "invoice",
+    "memoryTip": "invoice - n. 发票, 发货单"
+  },
+  {
+    "id": "finance-0064",
+    "word": "budgeting",
+    "phonetic": "",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "v make a budget",
+        "zh": "[计] 预定, 预算"
+      },
+      {
+        "en": "",
+        "zh": "[经] 预算编制"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"budgeting\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“budgeting”。"
+      }
+    ],
+    "imageQuery": "budgeting",
+    "memoryTip": "budgeting - [计] 预定, 预算"
+  },
+  {
+    "id": "finance-0065",
+    "word": "cashflow",
+    "phonetic": "/'kæʃfləʊ/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "",
+        "zh": "vi. 现金流转"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"cashflow\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“cashflow”。"
+      }
+    ],
+    "imageQuery": "cashflow",
+    "memoryTip": "cashflow - vi. 现金流转"
+  },
+  {
+    "id": "finance-0066",
+    "word": "securities",
+    "phonetic": "/si'kjuәritis/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n the state of being free from danger or injury",
+        "zh": "n. 有价证券"
+      },
+      {
+        "en": "n defense against financial failure; financial independence",
+        "zh": "[经] 证券"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"securities\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“securities”。"
+      }
+    ],
+    "imageQuery": "securities",
+    "memoryTip": "securities - n. 有价证券"
+  }
+]

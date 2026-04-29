@@ -1,0 +1,118 @@
+import type { Article } from './articles';
+
+export const readingExtras: Article[] = [
+  {
+    id: 'art011',
+    titleEn: 'Why Short News Works for Language Learners',
+    titleZh: '为什么短新闻适合语言学习者',
+    category: 'news',
+    date: '2026-04-10',
+    source: 'Learning English',
+    paragraphs: [
+      { en: 'Short news stories are easier to finish and easier to remember.', zh: '短新闻更容易读完，也更容易记住。' },
+      { en: 'They usually contain a clear topic and useful everyday vocabulary.', zh: '它们通常主题明确，而且包含实用的日常词汇。' },
+      { en: 'That makes them ideal for bilingual reading and sentence-by-sentence comparison.', zh: '这让它们非常适合双语阅读和逐句对照。' },
+    ],
+    vocabulary: [
+      { word: 'compact', definition: 'small but complete', phonetic: '/ˈkɑːmpækt/' },
+      { word: 'review', definition: 'to study again', phonetic: '/rɪˈvjuː/' },
+      { word: 'compare', definition: 'to look at two things and notice differences', phonetic: '/kəmˈper/' },
+      { word: 'sentence', definition: 'a group of words expressing a complete idea', phonetic: '/ˈsentəns/' },
+    ],
+  },
+  {
+    id: 'art012',
+    titleEn: 'The Hidden Value of Daily Listening',
+    titleZh: '每日听力练习的隐藏价值',
+    category: 'education',
+    date: '2026-04-09',
+    source: 'Study Notes',
+    paragraphs: [
+      { en: 'A few minutes of focused listening every day can create a strong habit.', zh: '每天专注听几分钟，就能慢慢养成很强的习惯。' },
+      { en: 'When audio is slow and clear, your brain starts recognizing patterns naturally.', zh: '当音频语速慢而清晰时，大脑会自然开始识别模式。' },
+      { en: 'That is why short podcasts and news clips are so useful for learners.', zh: '这也是为什么短播客和新闻片段对学习者很有帮助。' },
+    ],
+    vocabulary: [
+      { word: 'focused', definition: 'paying close attention', phonetic: '/ˈfoʊkəst/' },
+      { word: 'pattern', definition: 'something that repeats in a regular way', phonetic: '/ˈpætərn/' },
+      { word: 'steady', definition: 'regular and not changing suddenly', phonetic: '/ˈstedi/' },
+      { word: 'progress', definition: 'forward movement toward a goal', phonetic: '/ˈprɑːɡres/' },
+    ],
+  },
+  {
+    id: 'art013',
+    titleEn: 'Urban Parks Are Becoming Classroom Spaces',
+    titleZh: '城市公园正在变成课堂空间',
+    category: 'environment',
+    date: '2026-04-08',
+    source: 'City Journal',
+    paragraphs: [
+      { en: 'Many schools are taking students outdoors to study plants and local weather.', zh: '许多学校开始带学生到户外学习植物和本地天气。' },
+      { en: 'The city park is no longer just a place for exercise; it is becoming a living classroom.', zh: '城市公园不再只是锻炼身体的地方，它正在变成一个活的课堂。' },
+      { en: 'This style of learning helps students connect English words with real-world experiences.', zh: '这种学习方式能帮助学生把英语词汇和现实体验联系起来。' },
+    ],
+    vocabulary: [
+      { word: 'outdoors', definition: 'outside buildings', phonetic: '/ˌaʊtˈdɔːrz/' },
+      { word: 'insect', definition: 'a small animal with six legs', phonetic: '/ˈɪnsekt/' },
+      { word: 'living', definition: 'full of life; not artificial', phonetic: '/ˈlɪvɪŋ/' },
+      { word: 'connect', definition: 'to join or relate things together', phonetic: '/kəˈnekt/' },
+    ],
+  },
+  {
+    id: 'art014',
+    titleEn: 'How Podcasts Help You Think in English',
+    titleZh: '播客如何帮助你用英语思考',
+    category: 'technology',
+    date: '2026-04-07',
+    source: 'Learning Lab',
+    paragraphs: [
+      { en: 'Podcasts keep language in motion while you walk, commute, or relax.', zh: '播客能让语言在你走路、通勤或放松时持续“流动”起来。' },
+      { en: 'Repeated listening makes English sound less like isolated words and more like connected meaning.', zh: '反复收听会让英语不再像孤立的单词，而更像连贯的意义。' },
+      { en: 'That shift helps learners start thinking in English instead of translating every line.', zh: '这种变化能帮助学习者开始用英语思考，而不是逐句翻译。' },
+    ],
+    vocabulary: [
+      { word: 'motion', definition: 'the act of moving', phonetic: '/ˈmoʊʃn/' },
+      { word: 'commute', definition: 'to travel regularly between home and work or school', phonetic: '/kəˈmjuːt/' },
+      { word: 'isolated', definition: 'separate from others', phonetic: '/ˈaɪsəleɪtɪd/' },
+      { word: 'translate', definition: 'to change words into another language', phonetic: '/trænzˈleɪt/' },
+    ],
+  },
+  {
+    id: 'art015',
+    titleEn: 'A Cleaner Kitchen Can Make Better English Practice',
+    titleZh: '更整洁的厨房能让英语练习更顺手',
+    category: 'culture',
+    date: '2026-04-06',
+    source: 'Home Learning',
+    paragraphs: [
+      { en: 'Daily routines are one of the easiest ways to memorize English.', zh: '日常流程是记住英语最简单的方法之一。' },
+      { en: 'When you cook or organize your desk, you can name every object out loud in English.', zh: '当你做饭或整理桌面时，可以把每个物品都大声用英语说出来。' },
+      { en: 'Simple actions become vocabulary practice, and vocabulary practice becomes memory.', zh: '简单动作会变成词汇练习，而词汇练习又会慢慢变成记忆。' },
+    ],
+    vocabulary: [
+      { word: 'routine', definition: 'a regular way of doing things', phonetic: '/ruːˈtiːn/' },
+      { word: 'memorize', definition: 'to learn something so that you remember it', phonetic: '/ˈmeməraɪz/' },
+      { word: 'organize', definition: 'to arrange things neatly', phonetic: '/ˈɔːrɡənaɪz/' },
+      { word: 'vocabulary', definition: 'the words used in a language', phonetic: '/voʊˈkæbjələri/' },
+    ],
+  },
+  {
+    id: 'art016',
+    titleEn: 'Remote Work Changed How Teams Communicate',
+    titleZh: '远程办公改变了团队沟通方式',
+    category: 'technology',
+    date: '2026-04-05',
+    source: 'Business Daily',
+    paragraphs: [
+      { en: 'Remote work pushed teams to write more clearly and speak more directly.', zh: '远程办公让团队写作更清楚，说话更直接。' },
+      { en: 'Short messages, clear agendas, and shared notes have become part of daily collaboration.', zh: '简短消息、清晰议程和共享笔记已经成为日常协作的一部分。' },
+      { en: 'For learners, this creates more chances to practice practical English.', zh: '对学习者来说，这也创造了更多练习实用英语的机会。' },
+    ],
+    vocabulary: [
+      { word: 'remote', definition: 'far away; not in the same place', phonetic: '/rɪˈmoʊt/' },
+      { word: 'agenda', definition: 'a list of things to discuss or do', phonetic: '/əˈdʒendə/' },
+      { word: 'collaboration', definition: 'working together', phonetic: '/kəˌlæbəˈreɪʃn/' },
+      { word: 'practical', definition: 'useful in real life', phonetic: '/ˈpræktɪkəl/' },
+    ],
+  },
+];

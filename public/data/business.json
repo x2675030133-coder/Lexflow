@@ -1,0 +1,1881 @@
+[
+  {
+    "id": "business-0001",
+    "word": "company",
+    "phonetic": "/'kʌmpәni/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. an institution created to conduct business",
+        "zh": "n. 公司, 友伴, 交往, 连队, 朋友, 一群"
+      },
+      {
+        "en": "n. small military unit; usually two or three platoons",
+        "zh": "vt. 陪伴"
+      },
+      {
+        "en": "n. the state of being with someone",
+        "zh": "vi. 交往"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"company\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“company”。"
+      }
+    ],
+    "imageQuery": "company",
+    "memoryTip": "company - n. 公司, 友伴, 交往, 连队, 朋友, 一群"
+  },
+  {
+    "id": "business-0002",
+    "word": "service",
+    "phonetic": "/'sә:vis/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. work done by one person or group that benefits another",
+        "zh": "n. 服务, 贡献, 雇佣, 公职, 服役, 功劳, 仪式, 送达, 行政部门"
+      },
+      {
+        "en": "n. an act of help or assistance",
+        "zh": "vt. 保养, 维修"
+      },
+      {
+        "en": "n. the act of public worship following prescribed rules",
+        "zh": "a. 武装部队的, 服务性的, 仆人的, 耐用的"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"service\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“service”。"
+      }
+    ],
+    "imageQuery": "service",
+    "memoryTip": "service - n. 服务, 贡献, 雇佣, 公职, 服役, 功劳, 仪式, 送达, 行政部门"
+  },
+  {
+    "id": "business-0003",
+    "word": "business",
+    "phonetic": "/'biznis/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a commercial or industrial enterprise and the people who constitute it",
+        "zh": "n. 生意, 事情, 业务, 商业, 商行, 职责"
+      },
+      {
+        "en": "n. a rightful concern or responsibility",
+        "zh": "[经] 企业, 商业, 营业"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"business\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“business”。"
+      }
+    ],
+    "imageQuery": "business",
+    "memoryTip": "business - n. 生意, 事情, 业务, 商业, 商行, 职责"
+  },
+  {
+    "id": "business-0004",
+    "word": "market",
+    "phonetic": "/'mɑ:kit/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the world of commercial activity where goods and services are bought and sold",
+        "zh": "n. 市场, 交易, 集市, 推销地区, 行情, 市面, 销路"
+      },
+      {
+        "en": "n. the customers for a particular product or service",
+        "zh": "vt. 在市场上交易, 使上市, 销售"
+      },
+      {
+        "en": "n. the securities markets in the aggregate",
+        "zh": "vi. 在市场上买卖"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"market\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“market”。"
+      }
+    ],
+    "imageQuery": "market",
+    "memoryTip": "market - n. 市场, 交易, 集市, 推销地区, 行情, 市面, 销路"
+  },
+  {
+    "id": "business-0005",
+    "word": "lead",
+    "phonetic": "/li:d. led/",
+    "partOfSpeech": [
+      "n.",
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "n. an advantage held by a competitor in a race",
+        "zh": "n. 铅, 铅条, 领导, 超前量, 领引, 榜样, 主角, 导线"
+      },
+      {
+        "en": "n. a soft heavy toxic malleable metallic element; bluish white when freshly cut but tarnishes readily to dull grey",
+        "zh": "vt. 引导, 带领, 领导, 指挥, 致使, 加铅于, 用铅包"
+      },
+      {
+        "en": "n. evidence pointing to a possible solution",
+        "zh": "vi. 领导, 带头, 导致, 用测深锤测深, 被铅覆盖"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"lead\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“lead”。"
+      }
+    ],
+    "imageQuery": "lead",
+    "memoryTip": "lead - n. 铅, 铅条, 领导, 超前量, 领引, 榜样, 主角, 导线"
+  },
+  {
+    "id": "business-0006",
+    "word": "office",
+    "phonetic": "/'ɒfis/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. place of business where professional or clerical duties are performed",
+        "zh": "n. 办公室, 部, 公职, 职责"
+      },
+      {
+        "en": "n. (of a government or government official) holding an office means being in power",
+        "zh": "[化] 办公室"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"office\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“office”。"
+      }
+    ],
+    "imageQuery": "office",
+    "memoryTip": "office - n. 办公室, 部, 公职, 职责"
+  },
+  {
+    "id": "business-0007",
+    "word": "cost",
+    "phonetic": "/kɒst/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the total spent for goods or services including money and time and labor",
+        "zh": "n. 代价, 价值, 费用"
+      },
+      {
+        "en": "v. be priced at",
+        "zh": "vi. 花费"
+      },
+      {
+        "en": "v. require to lose, suffer, or sacrifice",
+        "zh": "vt. 使失去, 值, 使花费"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"cost\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“cost”。"
+      }
+    ],
+    "imageQuery": "cost",
+    "memoryTip": "cost - n. 代价, 价值, 费用"
+  },
+  {
+    "id": "business-0008",
+    "word": "research",
+    "phonetic": "/ri'sә:tʃ/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. systematic investigation to establish facts",
+        "zh": "n. 研究, 调查, 考察"
+      },
+      {
+        "en": "v. attempt to find out in a systematically and scientific manner",
+        "zh": "vi. 研究, 调查"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"research\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“research”。"
+      }
+    ],
+    "imageQuery": "research",
+    "memoryTip": "research - n. 研究, 调查, 考察"
+  },
+  {
+    "id": "business-0009",
+    "word": "value",
+    "phonetic": "/'vælju:/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a numerical quantity measured or assigned or computed",
+        "zh": "n. 价值, 价格, 购买力, 评价, 估价, 计算结果"
+      },
+      {
+        "en": "n. the quality (positive or negative) that renders something desirable or valuable",
+        "zh": "vt. 评价, 估价, 重视"
+      },
+      {
+        "en": "n. the amount (of money or goods or services) that is considered to be a fair equivalent for something else",
+        "zh": "[计] 计算结果"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"value\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“value”。"
+      }
+    ],
+    "imageQuery": "value",
+    "memoryTip": "value - n. 价值, 价格, 购买力, 评价, 估价, 计算结果"
+  },
+  {
+    "id": "business-0010",
+    "word": "decision",
+    "phonetic": "/di'siʒәn/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the act of making up your mind about something",
+        "zh": "n. 决定, 决心, 决断"
+      },
+      {
+        "en": "n. a position or opinion or judgment reached after consideration",
+        "zh": "[计] 判定"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"decision\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“decision”。"
+      }
+    ],
+    "imageQuery": "decision",
+    "memoryTip": "decision - n. 决定, 决心, 决断"
+  },
+  {
+    "id": "business-0011",
+    "word": "team",
+    "phonetic": "/ti:m/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a cooperative unit (especially in sports)",
+        "zh": "n. 队, 组"
+      },
+      {
+        "en": "n. two or more draft animals that work together to pull something",
+        "zh": "vt. 把马(牛)套在同一辆车上, 把...编成一组"
+      },
+      {
+        "en": "v. form a team",
+        "zh": "vi. 驾驶卡车, 协作"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"team\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“team”。"
+      }
+    ],
+    "imageQuery": "team",
+    "memoryTip": "team - n. 队, 组"
+  },
+  {
+    "id": "business-0012",
+    "word": "plan",
+    "phonetic": "/plæn/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a series of steps to be carried out or goals to be accomplished",
+        "zh": "n. 计划, 方案, 策略, 方法, 进度表, 程序表, 平面图, 设计图, 轮廓, 示意图"
+      },
+      {
+        "en": "n. scale drawing of a structure",
+        "zh": "vt. 计划, 设计, 意欲"
+      },
+      {
+        "en": "v. have the will and intention to carry out some action",
+        "zh": "vi. 订计划"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"plan\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“plan”。"
+      }
+    ],
+    "imageQuery": "plan",
+    "memoryTip": "plan - n. 计划, 方案, 策略, 方法, 进度表, 程序表, 平面图, 设计图, 轮廓, 示意图"
+  },
+  {
+    "id": "business-0013",
+    "word": "product",
+    "phonetic": "/'prɒdʌkt/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. an artifact that has been created by someone or some process",
+        "zh": "n. 产品, 结果, 乘积"
+      },
+      {
+        "en": "n. a quantity obtained by multiplication",
+        "zh": "[化] 生产物"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"product\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“product”。"
+      }
+    ],
+    "imageQuery": "product",
+    "memoryTip": "product - n. 产品, 结果, 乘积"
+  },
+  {
+    "id": "business-0014",
+    "word": "meeting",
+    "phonetic": "/'mi:tiŋ/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a formally arranged gathering",
+        "zh": "n. 会议, 会面"
+      },
+      {
+        "en": "n. a small informal social gathering",
+        "zh": "[法] 会议, 会谈, 集会"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"meeting\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“meeting”。"
+      }
+    ],
+    "imageQuery": "meeting",
+    "memoryTip": "meeting - n. 会议, 会面"
+  },
+  {
+    "id": "business-0015",
+    "word": "trade",
+    "phonetic": "/treid/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the commercial exchange (buying and selling on domestic or international markets) of goods and services",
+        "zh": "n. 贸易, 商业, 交易, 生意, 职业, 顾客, 信风"
+      },
+      {
+        "en": "n. the skilled practice of a practical occupation",
+        "zh": "vi. 进行交易, 做买卖, 经商, 对换, 购物"
+      },
+      {
+        "en": "n. the business given to a commercial establishment by its customers",
+        "zh": "vt. 用...进行交换"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"trade\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“trade”。"
+      }
+    ],
+    "imageQuery": "trade",
+    "memoryTip": "trade - n. 贸易, 商业, 交易, 生意, 职业, 顾客, 信风"
+  },
+  {
+    "id": "business-0016",
+    "word": "project",
+    "phonetic": "/'prɒdʒekt/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a planned undertaking",
+        "zh": "n. 计划, 设计, 事业"
+      },
+      {
+        "en": "v. communicate vividly",
+        "zh": "vt. 计划, 设计, 投掷, 发射, 使凸出, 放映"
+      },
+      {
+        "en": "v. transfer (ideas or principles) from one domain into another",
+        "zh": "vi. 凸出"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"project\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“project”。"
+      }
+    ],
+    "imageQuery": "project",
+    "memoryTip": "project - n. 计划, 设计, 事业"
+  },
+  {
+    "id": "business-0017",
+    "word": "board",
+    "phonetic": "/bɒ:d/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a committee having supervisory powers",
+        "zh": "n. 木板, 甲板, 膳食, 会议桌"
+      },
+      {
+        "en": "n. a stout length of sawn timber; made in a wide variety of sizes and used for many purposes",
+        "zh": "vt. 乘船, 供膳食, 用板覆盖"
+      },
+      {
+        "en": "n. a flat piece of material designed for a special purpose",
+        "zh": "vi. 搭伙"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"board\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“board”。"
+      }
+    ],
+    "imageQuery": "board",
+    "memoryTip": "board - n. 木板, 甲板, 膳食, 会议桌"
+  },
+  {
+    "id": "business-0018",
+    "word": "share",
+    "phonetic": "/ʃєә/",
+    "partOfSpeech": [
+      "n.",
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "n. assets belonging to or due to or contributed by an individual person or group",
+        "zh": "n. 部分, 参与, 一份, 参股, 份额"
+      },
+      {
+        "en": "n. any of the equal portions into which the capital stock of a corporation is divided and ownership of which is evidenced by a stock certificate",
+        "zh": "vt. 均分, 分担, 分享, 分配, 共有"
+      },
+      {
+        "en": "v. have in common",
+        "zh": "vi. 分享"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"share\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“share”。"
+      }
+    ],
+    "imageQuery": "share",
+    "memoryTip": "share - n. 部分, 参与, 一份, 参股, 份额"
+  },
+  {
+    "id": "business-0019",
+    "word": "contract",
+    "phonetic": "/'kɒntrækt/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a binding agreement between two or more persons that is enforceable by law",
+        "zh": "n. 合约, 婚约, 契约"
+      },
+      {
+        "en": "n. (contract bridge) the highest bid becomes the contract setting the number of tricks that the bidder must make",
+        "zh": "vt. 使皱缩, 使缩短, 感染, 订约, 缔结"
+      },
+      {
+        "en": "n. a variety of bridge in which the bidder receives points toward game only for the number of tricks he bid",
+        "zh": "vi. 皱缩, 订约, 收缩"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"contract\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“contract”。"
+      }
+    ],
+    "imageQuery": "contract",
+    "memoryTip": "contract - n. 合约, 婚约, 契约"
+  },
+  {
+    "id": "business-0020",
+    "word": "close",
+    "phonetic": "/klәuz/",
+    "partOfSpeech": [
+      "n.",
+      "r.",
+      "j."
+    ],
+    "definitions": [
+      {
+        "en": "v. move so that an opening or passage is obstructed; make shut",
+        "zh": "n. 结束, 完结"
+      },
+      {
+        "en": "v. become closed",
+        "zh": "a. 靠近的, 亲近的, 亲密的, 严密的, 关闭的, 狭窄的, 秘密的"
+      },
+      {
+        "en": "v. finish or terminate (meetings, speeches, etc.)",
+        "zh": "vt. 关, 结束, 使靠近, 封闭, 使接近"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"close\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“close”。"
+      }
+    ],
+    "imageQuery": "close",
+    "memoryTip": "close - n. 结束, 完结"
+  },
+  {
+    "id": "business-0021",
+    "word": "benefit",
+    "phonetic": "/'benifit/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. financial assistance in time of need",
+        "zh": "n. 利益"
+      },
+      {
+        "en": "n. something that aids or promotes well-being",
+        "zh": "vt. 有益于"
+      },
+      {
+        "en": "n. a performance to raise money for a charitable cause",
+        "zh": "vi. 受益"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"benefit\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“benefit”。"
+      }
+    ],
+    "imageQuery": "benefit",
+    "memoryTip": "benefit - n. 利益"
+  },
+  {
+    "id": "business-0022",
+    "word": "performance",
+    "phonetic": "/pә'fɒ:mәns/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a dramatic or musical entertainment",
+        "zh": "n. 施行, 工作情况, 成绩, 行为, 表现, 演出"
+      },
+      {
+        "en": "n. the act of presenting a play or a piece of music or other entertainment",
+        "zh": "[电] 绩效, 性能"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"performance\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“performance”。"
+      }
+    ],
+    "imageQuery": "performance",
+    "memoryTip": "performance - n. 施行, 工作情况, 成绩, 行为, 表现, 演出"
+  },
+  {
+    "id": "business-0023",
+    "word": "analysis",
+    "phonetic": "/ә'nælәsis/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. an investigation of the component parts of a whole and their relations in making up the whole",
+        "zh": "n. 分析"
+      },
+      {
+        "en": "n. the abstract separation of a whole into its constituent parts in order to study the parts and their relations",
+        "zh": "[计] 分析机; 分析员; 分析; 分析程序"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"analysis\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“analysis”。"
+      }
+    ],
+    "imageQuery": "analysis",
+    "memoryTip": "analysis - n. 分析"
+  },
+  {
+    "id": "business-0024",
+    "word": "demand",
+    "phonetic": "/di'mɑ:nd/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. an urgent or peremptory request",
+        "zh": "n. 要求, 需求, 需要"
+      },
+      {
+        "en": "n. the ability and desire to purchase goods and services",
+        "zh": "v. 要求, 查询"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"demand\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“demand”。"
+      }
+    ],
+    "imageQuery": "demand",
+    "memoryTip": "demand - n. 要求, 需求, 需要"
+  },
+  {
+    "id": "business-0025",
+    "word": "capital",
+    "phonetic": "/'kæpitәl/",
+    "partOfSpeech": [
+      "j.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. assets available for use in the production of further assets",
+        "zh": "n. 首都, 大写字母, 资本"
+      },
+      {
+        "en": "n. wealth in the form of money or property owned by a person or business and human resources of economic value",
+        "zh": "a. 首都的, 重要的"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"capital\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“capital”。"
+      }
+    ],
+    "imageQuery": "capital",
+    "memoryTip": "capital - n. 首都, 大写字母, 资本"
+  },
+  {
+    "id": "business-0026",
+    "word": "income",
+    "phonetic": "/'inkʌm/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the financial gain (earned or unearned) accruing over a given period of time",
+        "zh": "n. 收入, 收益, 流入"
+      },
+      {
+        "en": "",
+        "zh": "[经] 收益"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"income\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“income”。"
+      }
+    ],
+    "imageQuery": "income",
+    "memoryTip": "income - n. 收入, 收益, 流入"
+  },
+  {
+    "id": "business-0027",
+    "word": "manage",
+    "phonetic": "/'mænidʒ/",
+    "partOfSpeech": [
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "v. be in charge of, act on, or dispose of",
+        "zh": "vi. 处理"
+      },
+      {
+        "en": "",
+        "zh": "vt. 管理, 控制, 维持, 达成, 经营, 运用"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"manage\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“manage”。"
+      }
+    ],
+    "imageQuery": "manage",
+    "memoryTip": "manage - vi. 处理"
+  },
+  {
+    "id": "business-0028",
+    "word": "growth",
+    "phonetic": "/grәuθ/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. (biology) the process of an individual organism growing organically; a purely biological unfolding of events involved in an organism changing gradually from a simple to a more complex level",
+        "zh": "n. 生长, 栽培, 增长"
+      },
+      {
+        "en": "n. a progression from simpler to more complex forms",
+        "zh": "[计] 等比级数"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"growth\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“growth”。"
+      }
+    ],
+    "imageQuery": "growth",
+    "memoryTip": "growth - n. 生长, 栽培, 增长"
+  },
+  {
+    "id": "business-0029",
+    "word": "risk",
+    "phonetic": "/risk/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a venture undertaken without regard to possible loss or injury",
+        "zh": "n. 冒险, 危险, 保险额"
+      },
+      {
+        "en": "n. the probability of becoming infected given that exposure to an infectious agent has occurred",
+        "zh": "vt. 冒...的危险, 冒险干"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"risk\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“risk”。"
+      }
+    ],
+    "imageQuery": "risk",
+    "memoryTip": "risk - n. 冒险, 危险, 保险额"
+  },
+  {
+    "id": "business-0030",
+    "word": "resource",
+    "phonetic": "/ri'sɒ:s/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. available source of wealth; a new or reserve supply that can be drawn upon when needed",
+        "zh": "n. 资源, 财力, 办法, 策略, 急智, 消遣"
+      },
+      {
+        "en": "n. a source of aid or support that may be drawn upon when needed",
+        "zh": "[计] 资源"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"resource\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“resource”。"
+      }
+    ],
+    "imageQuery": "resource",
+    "memoryTip": "resource - n. 资源, 财力, 办法, 策略, 急智, 消遣"
+  },
+  {
+    "id": "business-0031",
+    "word": "customer",
+    "phonetic": "/'kʌstәmә/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. someone who pays for goods or services",
+        "zh": "n. 消费者"
+      },
+      {
+        "en": "",
+        "zh": "[化] 顾客"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"customer\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“customer”。"
+      }
+    ],
+    "imageQuery": "customer",
+    "memoryTip": "customer - n. 消费者"
+  },
+  {
+    "id": "business-0032",
+    "word": "profit",
+    "phonetic": "/'prɒfit/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the advantageous quality of being beneficial",
+        "zh": "n. 利润, 赢利, 利益"
+      },
+      {
+        "en": "v. derive a benefit from",
+        "zh": "vi. 有益, 获利, 赚钱"
+      },
+      {
+        "en": "v. make a profit; gain money or materially",
+        "zh": "vt. 有益于"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"profit\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“profit”。"
+      }
+    ],
+    "imageQuery": "profit",
+    "memoryTip": "profit - n. 利润, 赢利, 利益"
+  },
+  {
+    "id": "business-0033",
+    "word": "conference",
+    "phonetic": "/'kɒnfәrәns/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a prearranged meeting for consultation or exchange of information or discussion (especially one with a formal agenda)",
+        "zh": "n. 会议"
+      },
+      {
+        "en": "n. a discussion among participants who have an agreed (serious) topic",
+        "zh": "[经] 会议, 讨论会, 协商会"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"conference\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“conference”。"
+      }
+    ],
+    "imageQuery": "conference",
+    "memoryTip": "conference - n. 会议"
+  },
+  {
+    "id": "business-0034",
+    "word": "proposal",
+    "phonetic": "/prә'pәuzl/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. something proposed (such as a plan or assumption)",
+        "zh": "n. 提议, 计划, 求婚"
+      },
+      {
+        "en": "n. the act of making a proposal",
+        "zh": "[经] 提案, 申请, 投标"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"proposal\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“proposal”。"
+      }
+    ],
+    "imageQuery": "proposal",
+    "memoryTip": "proposal - n. 提议, 计划, 求婚"
+  },
+  {
+    "id": "business-0035",
+    "word": "client",
+    "phonetic": "/'klaiәnt/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a person who seeks the advice of a lawyer",
+        "zh": "n. 客户, 顾客, 委托人"
+      },
+      {
+        "en": "",
+        "zh": "[计] 客户, 客户机, 客户机程序"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"client\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“client”。"
+      }
+    ],
+    "imageQuery": "client",
+    "memoryTip": "client - n. 客户, 顾客, 委托人"
+  },
+  {
+    "id": "business-0036",
+    "word": "goal",
+    "phonetic": "/gәul/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the state of affairs that a plan is intended to achieve and that (when achieved) terminates behavior intended to achieve it",
+        "zh": "n. 目标, 终点, 得分, 球门, 守门员"
+      },
+      {
+        "en": "n. game equipment consisting of the place toward which players of a game try to advance a ball or puck in order to score points",
+        "zh": "vi. 攻门, 射门得分"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"goal\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“goal”。"
+      }
+    ],
+    "imageQuery": "goal",
+    "memoryTip": "goal - n. 目标, 终点, 得分, 球门, 守门员"
+  },
+  {
+    "id": "business-0037",
+    "word": "sales",
+    "phonetic": "",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n income (at invoice values) received for goods and services over some given period of time",
+        "zh": "a. 销售的"
+      },
+      {
+        "en": "n a particular instance of selling",
+        "zh": "[计] 销售"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"sales\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“sales”。"
+      }
+    ],
+    "imageQuery": "sales",
+    "memoryTip": "sales - a. 销售的"
+  },
+  {
+    "id": "business-0038",
+    "word": "supply",
+    "phonetic": "/sә'plai/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. an amount of something available for use",
+        "zh": "n. 补给, 供给, 供应品"
+      },
+      {
+        "en": "n. offering goods and services for sale",
+        "zh": "vt. 补给, 供给, 提供, 补充"
+      },
+      {
+        "en": "v. give something useful or necessary to",
+        "zh": "vi. 替代"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"supply\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“supply”。"
+      }
+    ],
+    "imageQuery": "supply",
+    "memoryTip": "supply - n. 补给, 供给, 供应品"
+  },
+  {
+    "id": "business-0039",
+    "word": "budget",
+    "phonetic": "/'bʌdʒit/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a sum of money allocated for a particular purpose",
+        "zh": "n. 预算"
+      },
+      {
+        "en": "n. a summary of intended expenditures along with proposals for how to meet them",
+        "zh": "vi. 编预算"
+      },
+      {
+        "en": "v. make a budget",
+        "zh": "vt. 编入预算, 安排"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"budget\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“budget”。"
+      }
+    ],
+    "imageQuery": "budget",
+    "memoryTip": "budget - n. 预算"
+  },
+  {
+    "id": "business-0040",
+    "word": "target",
+    "phonetic": "/'tɑ:git/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a reference point to shoot at",
+        "zh": "n. 目标, 靶子, 指标"
+      },
+      {
+        "en": "n. the location of the target that is to be hit",
+        "zh": "vt. 对准, 订指标"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"target\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“target”。"
+      }
+    ],
+    "imageQuery": "target",
+    "memoryTip": "target - n. 目标, 靶子, 指标"
+  },
+  {
+    "id": "business-0041",
+    "word": "strategy",
+    "phonetic": "/'strætidʒi/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the branch of military science dealing with military command and the planning and conduct of a war",
+        "zh": "n. 战略, 策略"
+      },
+      {
+        "en": "",
+        "zh": "[经] 战略, 策略"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"strategy\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“strategy”。"
+      }
+    ],
+    "imageQuery": "strategy",
+    "memoryTip": "strategy - n. 战略, 策略"
+  },
+  {
+    "id": "business-0042",
+    "word": "partner",
+    "phonetic": "/'pɑ:tnә/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a person who is a member of a partnership",
+        "zh": "n. 合伙人, 股东, 伙伴, 伴侣"
+      },
+      {
+        "en": "v. provide with a partner",
+        "zh": "vt. 与...合伙, 组成一对"
+      },
+      {
+        "en": "v. act as a partner",
+        "zh": "vi. 做伙伴, 当助手"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"partner\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“partner”。"
+      }
+    ],
+    "imageQuery": "partner",
+    "memoryTip": "partner - n. 合伙人, 股东, 伙伴, 伴侣"
+  },
+  {
+    "id": "business-0043",
+    "word": "owner",
+    "phonetic": "/'әunә/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. (law) someone who owns (is legal possessor of) a business",
+        "zh": "n. 拥有者, 物主, 所有人"
+      },
+      {
+        "en": "n. a person who owns something",
+        "zh": "[经] 所有者, 物主, 业主"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"owner\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“owner”。"
+      }
+    ],
+    "imageQuery": "owner",
+    "memoryTip": "owner - n. 拥有者, 物主, 所有人"
+  },
+  {
+    "id": "business-0044",
+    "word": "balance",
+    "phonetic": "/'bælәns/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a state of equilibrium",
+        "zh": "n. 平衡, 差额"
+      },
+      {
+        "en": "n. equality between the totals of the credit and debit sides of an account",
+        "zh": "vi. 平衡, 相等"
+      },
+      {
+        "en": "n. equality of distribution",
+        "zh": "vt. 称, 权衡, 比较, 使平衡, 结算, 抵消"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"balance\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“balance”。"
+      }
+    ],
+    "imageQuery": "balance",
+    "memoryTip": "balance - n. 平衡, 差额"
+  },
+  {
+    "id": "business-0045",
+    "word": "deliver",
+    "phonetic": "/di'livә/",
+    "partOfSpeech": [
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "v. deliver (a speech, oration, or idea)",
+        "zh": "vt. 递送, 陈述, 释放, 发表, 引渡, 投递, 交付"
+      },
+      {
+        "en": "v. bring to a destination, make a delivery",
+        "zh": "[经] 交运"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"deliver\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“deliver”。"
+      }
+    ],
+    "imageQuery": "deliver",
+    "memoryTip": "deliver - vt. 递送, 陈述, 释放, 发表, 引渡, 投递, 交付"
+  },
+  {
+    "id": "business-0046",
+    "word": "finance",
+    "phonetic": "/fai'næns/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the commercial activity of providing funds and capital",
+        "zh": "n. 财政, 财务"
+      },
+      {
+        "en": "n. the branch of economics that studies the management of money and other assets",
+        "zh": "vt. 供给...经费, 负担经费"
+      },
+      {
+        "en": "n. the management of money and credit and banking and investments",
+        "zh": "vi. 筹措资金"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"finance\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“finance”。"
+      }
+    ],
+    "imageQuery": "finance",
+    "memoryTip": "finance - n. 财政, 财务"
+  },
+  {
+    "id": "business-0047",
+    "word": "channel",
+    "phonetic": "/'tʃænәl/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a path over which electrical signals can pass",
+        "zh": "n. 海峡, 航道, 频道"
+      },
+      {
+        "en": "n. a passage for water (or other fluids) to flow through",
+        "zh": "vt. 引导, 在...上挖沟, 形成河道"
+      },
+      {
+        "en": "n. a deep and relatively narrow body of water (as in a river or a harbor or a strait linking two larger bodies) that allows the best passage for vessels",
+        "zh": "[计] 信道, 通道"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"channel\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“channel”。"
+      }
+    ],
+    "imageQuery": "channel",
+    "memoryTip": "channel - n. 海峡, 航道, 频道"
+  },
+  {
+    "id": "business-0048",
+    "word": "priority",
+    "phonetic": "/prai'ɒriti/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. preceding in time",
+        "zh": "n. 优先权, 优先"
+      },
+      {
+        "en": "",
+        "zh": "[计] 优先级"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"priority\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“priority”。"
+      }
+    ],
+    "imageQuery": "priority",
+    "memoryTip": "priority - n. 优先权, 优先"
+  },
+  {
+    "id": "business-0049",
+    "word": "approve",
+    "phonetic": "/ә'pru:v/",
+    "partOfSpeech": [
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "v. give sanction to",
+        "zh": "vt. 赞同, 核准, 为...提供证据"
+      },
+      {
+        "en": "v. judge to be right or commendable; think well of",
+        "zh": "vi. 赞许"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"approve\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“approve”。"
+      }
+    ],
+    "imageQuery": "approve",
+    "memoryTip": "approve - vt. 赞同, 核准, 为...提供证据"
+  },
+  {
+    "id": "business-0050",
+    "word": "revenue",
+    "phonetic": "/'revinju:/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n the entire amount of income before any deductions are made",
+        "zh": "n. 收入, 岁入, 税收, 税务局"
+      },
+      {
+        "en": "n government income due to taxation",
+        "zh": "[经] 岁入, 税收, 税务局"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"revenue\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“revenue”。"
+      }
+    ],
+    "imageQuery": "revenue",
+    "memoryTip": "revenue - n. 收入, 岁入, 税收, 税务局"
+  },
+  {
+    "id": "business-0051",
+    "word": "vision",
+    "phonetic": "/'viʒәn/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a vivid mental image",
+        "zh": "n. 视觉, 眼光, 视力, 幻想"
+      },
+      {
+        "en": "n. the perceptual experience of seeing",
+        "zh": "vt. 梦见, 想象, 显示"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"vision\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“vision”。"
+      }
+    ],
+    "imageQuery": "vision",
+    "memoryTip": "vision - n. 视觉, 眼光, 视力, 幻想"
+  },
+  {
+    "id": "business-0052",
+    "word": "trend",
+    "phonetic": "/trend/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n a general direction in which something tends to move",
+        "zh": "n. 趋势, 倾向, 走向"
+      },
+      {
+        "en": "n general line of orientation",
+        "zh": "vi. 倾向, 转向"
+      },
+      {
+        "en": "n a general tendency to change (as of opinion)",
+        "zh": "[计] 趋势"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"trend\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“trend”。"
+      }
+    ],
+    "imageQuery": "trend",
+    "memoryTip": "trend - n. 趋势, 倾向, 走向"
+  },
+  {
+    "id": "business-0053",
+    "word": "shareholder",
+    "phonetic": "/'ʃєә.hәuldә/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n someone who holds shares of stock in a corporation",
+        "zh": "n. 股东"
+      },
+      {
+        "en": "",
+        "zh": "[法] 股东, 股票持有人"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"shareholder\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“shareholder”。"
+      }
+    ],
+    "imageQuery": "shareholder",
+    "memoryTip": "shareholder - n. 股东"
+  },
+  {
+    "id": "business-0054",
+    "word": "presentation",
+    "phonetic": "/.prezәn'teiʃәn/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the activity of formally presenting something (as a prize or reward)",
+        "zh": "n. 赠与, 描述, 介绍"
+      },
+      {
+        "en": "n. a show or display; the act of presenting something to sight or view",
+        "zh": "[计] 简报"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"presentation\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“presentation”。"
+      }
+    ],
+    "imageQuery": "presentation",
+    "memoryTip": "presentation - n. 赠与, 描述, 介绍"
+  },
+  {
+    "id": "business-0055",
+    "word": "invest",
+    "phonetic": "/in'vest/",
+    "partOfSpeech": [
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "v. make an investment",
+        "zh": "vt. 投资, 花费, 笼罩, 授予"
+      },
+      {
+        "en": "v. furnish with power or authority; of kings or emperors",
+        "zh": "vi. 投资, 利用"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"invest\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“invest”。"
+      }
+    ],
+    "imageQuery": "invest",
+    "memoryTip": "invest - vt. 投资, 花费, 笼罩, 授予"
+  },
+  {
+    "id": "business-0056",
+    "word": "negotiate",
+    "phonetic": "/ni'gәuʃieit/",
+    "partOfSpeech": [
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "v. succeed in passing through, around, or over",
+        "zh": "vi. 商议, 谈判, 交涉"
+      },
+      {
+        "en": "",
+        "zh": "vt. 谈妥, 转让, 处理"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"negotiate\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“negotiate”。"
+      }
+    ],
+    "imageQuery": "negotiate",
+    "memoryTip": "negotiate - vi. 商议, 谈判, 交涉"
+  },
+  {
+    "id": "business-0057",
+    "word": "schedule",
+    "phonetic": "/'skedʒuәl/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. an ordered list of times at which things are planned to occur",
+        "zh": "n. 时间表, 一览表, 计划表, 议事日程"
+      },
+      {
+        "en": "v. plan for an activity or event",
+        "zh": "vt. 预定, 编制目录, 制...表, 安排"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"schedule\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“schedule”。"
+      }
+    ],
+    "imageQuery": "schedule",
+    "memoryTip": "schedule - n. 时间表, 一览表, 计划表, 议事日程"
+  },
+  {
+    "id": "business-0058",
+    "word": "consult",
+    "phonetic": "/kәn'sʌlt/",
+    "partOfSpeech": [
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "v. get or ask advice from",
+        "zh": "vi. 商讨, 商量, 协商, 会诊"
+      },
+      {
+        "en": "v. seek information from",
+        "zh": "vt. 向...请教, 查阅, 考虑"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"consult\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“consult”。"
+      }
+    ],
+    "imageQuery": "consult",
+    "memoryTip": "consult - vi. 商讨, 商量, 协商, 会诊"
+  },
+  {
+    "id": "business-0059",
+    "word": "margin",
+    "phonetic": "/'mɑ:dʒin/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the boundary line or the area immediately inside the boundary",
+        "zh": "n. 页边的空白, 边缘, 界限, 余裕, 差数, 差额, 保证金"
+      },
+      {
+        "en": "n. an amount beyond the minimum necessary",
+        "zh": "vt. 加边于, 加旁注于"
+      },
+      {
+        "en": "n. the amount of collateral a customer deposits with a broker when borrowing from the broker to buy securities",
+        "zh": "[计] 页边距"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"margin\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“margin”。"
+      }
+    ],
+    "imageQuery": "margin",
+    "memoryTip": "margin - n. 页边的空白, 边缘, 界限, 余裕, 差数, 差额, 保证金"
+  },
+  {
+    "id": "business-0060",
+    "word": "agenda",
+    "phonetic": "/ә'dʒendә/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a temporally organized plan for matters to be attended to",
+        "zh": "pl. 议程, 日常工作事项"
+      },
+      {
+        "en": "n. a list of matters to be taken up (as at a meeting)",
+        "zh": "[计] 待议事件"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"agenda\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“agenda”。"
+      }
+    ],
+    "imageQuery": "agenda",
+    "memoryTip": "agenda - pl. 议程, 日常工作事项"
+  },
+  {
+    "id": "business-0061",
+    "word": "yield",
+    "phonetic": "/ji:ld/",
+    "partOfSpeech": [
+      "n.",
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "n. an amount of a product",
+        "zh": "n. 生产量, 投资收益"
+      },
+      {
+        "en": "v. be the cause or source of",
+        "zh": "vt. 出产, 给予, 让出, 放弃, 使屈服"
+      },
+      {
+        "en": "v. give in, as to influence or pressure",
+        "zh": "vi. 出产, 屈服, 投降, 倒塌"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"yield\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“yield”。"
+      }
+    ],
+    "imageQuery": "yield",
+    "memoryTip": "yield - n. 生产量, 投资收益"
+  },
+  {
+    "id": "business-0062",
+    "word": "brand",
+    "phonetic": "/brænd/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a recognizable kind",
+        "zh": "n. 商标, 牌子, 烙印"
+      },
+      {
+        "en": "n. identification mark on skin, made by burning",
+        "zh": "vt. 打烙印于"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"brand\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“brand”。"
+      }
+    ],
+    "imageQuery": "brand",
+    "memoryTip": "brand - n. 商标, 牌子, 烙印"
+  },
+  {
+    "id": "business-0063",
+    "word": "update",
+    "phonetic": "/ʌp'deit/",
+    "partOfSpeech": [
+      "n.",
+      "v."
+    ],
+    "definitions": [
+      {
+        "en": "n. news that updates your information",
+        "zh": "vt. 更新, 使现代化"
+      },
+      {
+        "en": "v. modernize or bring up to date",
+        "zh": "n. 更新"
+      },
+      {
+        "en": "v. bring up to date; supply with recent information",
+        "zh": "[计] 更新"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"update\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“update”。"
+      }
+    ],
+    "imageQuery": "update",
+    "memoryTip": "update - vt. 更新, 使现代化"
+  },
+  {
+    "id": "business-0064",
+    "word": "forecast",
+    "phonetic": "/'fɒ:kɑ:st/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "v. predict in advance",
+        "zh": "n. 预想, 预测, 预报"
+      },
+      {
+        "en": "",
+        "zh": "vt. 预想, 预测, 预报"
+      },
+      {
+        "en": "",
+        "zh": "[计] 趋势预测"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"forecast\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“forecast”。"
+      }
+    ],
+    "imageQuery": "forecast",
+    "memoryTip": "forecast - n. 预想, 预测, 预报"
+  },
+  {
+    "id": "business-0065",
+    "word": "deadline",
+    "phonetic": "/'dedlain/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the point in time at which something must be completed",
+        "zh": "n. 最后期限, 截止期限"
+      },
+      {
+        "en": "",
+        "zh": "[经] 截止日期"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"deadline\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“deadline”。"
+      }
+    ],
+    "imageQuery": "deadline",
+    "memoryTip": "deadline - n. 最后期限, 截止期限"
+  },
+  {
+    "id": "business-0066",
+    "word": "workload",
+    "phonetic": "/'wә:klәud/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. work that a person is expected to do in a specified time",
+        "zh": "n. 工作量"
+      },
+      {
+        "en": "",
+        "zh": "[化] 工作量"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"workload\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“workload”。"
+      }
+    ],
+    "imageQuery": "workload",
+    "memoryTip": "workload - n. 工作量"
+  },
+  {
+    "id": "business-0067",
+    "word": "workflow",
+    "phonetic": "/'wɜ:kfləʊ/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n progress (or rate of progress) in work being done",
+        "zh": "工作流程"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"workflow\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“workflow”。"
+      }
+    ],
+    "imageQuery": "workflow",
+    "memoryTip": "workflow - 工作流程"
+  }
+]

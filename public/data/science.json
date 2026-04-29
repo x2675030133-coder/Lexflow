@@ -1,0 +1,1599 @@
+[
+  {
+    "id": "science-0001",
+    "word": "system",
+    "phonetic": "/'sistәm/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. instrumentality that combines interrelated interacting artifacts designed to work as a coherent entity",
+        "zh": "n. 系统, 体系, 制度, 方式, 秩序, 分类原则"
+      },
+      {
+        "en": "n. a group of independent but interrelated elements comprising a unified whole",
+        "zh": "[计] 系统; 体制; 体系"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"system\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“system”。"
+      }
+    ],
+    "imageQuery": "system",
+    "memoryTip": "system - n. 系统, 体系, 制度, 方式, 秩序, 分类原则"
+  },
+  {
+    "id": "science-0002",
+    "word": "water",
+    "phonetic": "/'wɒ:tә/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. binary compound that occurs at room temperature as a clear colorless odorless tasteless liquid; freezes into ice below 0 degrees centigrade and boils above 100 degrees centigrade; widely used as a solvent",
+        "zh": "n. 水, 雨水, 海水, 水位, 水面, 流水"
+      },
+      {
+        "en": "n. once thought to be one of four elements composing the universe (Empedocles)",
+        "zh": "vt. 给...浇水, 供以水, 注入水, 使湿"
+      },
+      {
+        "en": "n. a liquid necessary for the life of most animals and plants",
+        "zh": "vi. 流泪, 流口水, 加水"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"water\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“water”。"
+      }
+    ],
+    "imageQuery": "water",
+    "memoryTip": "water - n. 水, 雨水, 海水, 水位, 水面, 流水"
+  },
+  {
+    "id": "science-0003",
+    "word": "result",
+    "phonetic": "/ri'zʌlt/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. something that results",
+        "zh": "n. 结果, 成绩, 答案"
+      },
+      {
+        "en": "v. issue or terminate (in a specified way, state, etc.); end",
+        "zh": "vi. 产生, 结果, 致使"
+      },
+      {
+        "en": "v. come about or follow as a consequence",
+        "zh": "[计] 结果"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"result\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“result”。"
+      }
+    ],
+    "imageQuery": "result",
+    "memoryTip": "result - n. 结果, 成绩, 答案"
+  },
+  {
+    "id": "science-0004",
+    "word": "control",
+    "phonetic": "/kәn'trәul/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. power to direct or determine",
+        "zh": "n. 控制, 管理, 克制, 控制器, 操纵装置"
+      },
+      {
+        "en": "n. a relation of constraint of one entity (thing or person or group) by another",
+        "zh": "vt. 控制, 操纵, 抑制"
+      },
+      {
+        "en": "n. (physiology) regulation or maintenance of a function or action or reflex etc",
+        "zh": "[计] 控制; 控制器"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"control\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“control”。"
+      }
+    ],
+    "imageQuery": "control",
+    "memoryTip": "control - n. 控制, 管理, 克制, 控制器, 操纵装置"
+  },
+  {
+    "id": "science-0005",
+    "word": "process",
+    "phonetic": "/'prɒses/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. (psychology) the performance of some composite cognitive activity; an operation that affects mental contents",
+        "zh": "n. 程序, 进行, 过程"
+      },
+      {
+        "en": "n. a mental process that you are not directly aware of",
+        "zh": "vt. 加工, 使...接受处理, 对...处置, 对...起诉"
+      },
+      {
+        "en": "n. a natural prolongation or projection from a part of an organism either animal or plant",
+        "zh": "a. 经加工的, 有特殊光效的"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"process\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“process”。"
+      }
+    ],
+    "imageQuery": "process",
+    "memoryTip": "process - n. 程序, 进行, 过程"
+  },
+  {
+    "id": "science-0006",
+    "word": "research",
+    "phonetic": "/ri'sә:tʃ/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. systematic investigation to establish facts",
+        "zh": "n. 研究, 调查, 考察"
+      },
+      {
+        "en": "v. attempt to find out in a systematically and scientific manner",
+        "zh": "vi. 研究, 调查"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"research\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“research”。"
+      }
+    ],
+    "imageQuery": "research",
+    "memoryTip": "research - n. 研究, 调查, 考察"
+  },
+  {
+    "id": "science-0007",
+    "word": "health",
+    "phonetic": "/'helθ/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a healthy state of wellbeing free from disease",
+        "zh": "n. 健康, 卫生, 蓬勃, 健康状态"
+      },
+      {
+        "en": "n. the general condition of body and mind",
+        "zh": "[医] 健康"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"health\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“health”。"
+      }
+    ],
+    "imageQuery": "health",
+    "memoryTip": "health - n. 健康, 卫生, 蓬勃, 健康状态"
+  },
+  {
+    "id": "science-0008",
+    "word": "evidence",
+    "phonetic": "/'evidәns/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. your basis for belief or disbelief; knowledge on which to base belief",
+        "zh": "n. 根据, 证据, 迹象"
+      },
+      {
+        "en": "n. an indication that makes something evident",
+        "zh": "[经] 证据, 凭证"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"evidence\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“evidence”。"
+      }
+    ],
+    "imageQuery": "evidence",
+    "memoryTip": "evidence - n. 根据, 证据, 迹象"
+  },
+  {
+    "id": "science-0009",
+    "word": "model",
+    "phonetic": "/'mɒdәl/",
+    "partOfSpeech": [
+      "v.",
+      "j.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a hypothetical description of a complex entity or process",
+        "zh": "n. 模型, 模范, 模特儿"
+      },
+      {
+        "en": "n. a type of product",
+        "zh": "a. 模范的, 作模型用的"
+      },
+      {
+        "en": "n. a person who poses for a photographer or painter or sculptor",
+        "zh": "vi. 做模型, 做模特儿"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"model\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“model”。"
+      }
+    ],
+    "imageQuery": "model",
+    "memoryTip": "model - n. 模型, 模范, 模特儿"
+  },
+  {
+    "id": "science-0010",
+    "word": "data",
+    "phonetic": "/'deitә/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a collection of facts from which conclusions may be drawn",
+        "zh": "pl. 资料, 数据"
+      },
+      {
+        "en": "",
+        "zh": "[计] 数据; DOS内部命令:用于显示或设定系统的日期"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"data\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“data”。"
+      }
+    ],
+    "imageQuery": "data",
+    "memoryTip": "data - pl. 资料, 数据"
+  },
+  {
+    "id": "science-0011",
+    "word": "nature",
+    "phonetic": "/'neitʃә/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the essential qualities or characteristics by which something is recognized",
+        "zh": "n. 自然, 大自然, 本性, 性格, 性质"
+      },
+      {
+        "en": "n. a causal agent creating and controlling things in the universe",
+        "zh": "[医] 自然, 大自然; 本性, 性能"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"nature\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“nature”。"
+      }
+    ],
+    "imageQuery": "nature",
+    "memoryTip": "nature - n. 自然, 大自然, 本性, 性格, 性质"
+  },
+  {
+    "id": "science-0012",
+    "word": "structure",
+    "phonetic": "/'strʌktʃә/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a thing constructed; a complex entity constructed of many parts",
+        "zh": "n. 结构, 构造, 建筑物"
+      },
+      {
+        "en": "n. the manner of construction of something and the arrangement of its parts",
+        "zh": "vt. 构成, 组织"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"structure\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“structure”。"
+      }
+    ],
+    "imageQuery": "structure",
+    "memoryTip": "structure - n. 结构, 构造, 建筑物"
+  },
+  {
+    "id": "science-0013",
+    "word": "method",
+    "phonetic": "/'meθәd/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a way of doing something, especially a systematic way; implies an orderly logical arrangement (usually in steps)",
+        "zh": "n. 方法, 办法, 条理, 秩序"
+      },
+      {
+        "en": "",
+        "zh": "[医] [方]法"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"method\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“method”。"
+      }
+    ],
+    "imageQuery": "method",
+    "memoryTip": "method - n. 方法, 办法, 条理, 秩序"
+  },
+  {
+    "id": "science-0014",
+    "word": "theory",
+    "phonetic": "/'θiәri/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a well-substantiated explanation of some aspect of the natural world; an organized system of accepted knowledge that applies in a variety of circumstances to explain a specific set of phenomena",
+        "zh": "n. 理论, 学说, 原理, 意见, 推测"
+      },
+      {
+        "en": "n. a belief that can guide behavior",
+        "zh": "[化] 理论"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"theory\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“theory”。"
+      }
+    ],
+    "imageQuery": "theory",
+    "memoryTip": "theory - n. 理论, 学说, 原理, 意见, 推测"
+  },
+  {
+    "id": "science-0015",
+    "word": "test",
+    "phonetic": "/test/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. any standardized procedure for measuring sensitivity or memory or intelligence or aptitude or personality etc",
+        "zh": "n. 测试, 试验, 化验, 检验, 考验, 甲壳"
+      },
+      {
+        "en": "n. the act of undergoing testing",
+        "zh": "vt. 测试, 试验, 化验"
+      },
+      {
+        "en": "n. the act of testing something",
+        "zh": "vi. 接受测验, 进行测试"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"test\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“test”。"
+      }
+    ],
+    "imageQuery": "test",
+    "memoryTip": "test - n. 测试, 试验, 化验, 检验, 考验, 甲壳"
+  },
+  {
+    "id": "science-0016",
+    "word": "factor",
+    "phonetic": "/'fæktә/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. anything that contributes causally to a result",
+        "zh": "n. 因素, 因数, 系数, 基因, 代理人"
+      },
+      {
+        "en": "n. any of the numbers (or symbols) that form a product when multiplied together",
+        "zh": "[计] 因式"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"factor\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“factor”。"
+      }
+    ],
+    "imageQuery": "factor",
+    "memoryTip": "factor - n. 因素, 因数, 系数, 基因, 代理人"
+  },
+  {
+    "id": "science-0017",
+    "word": "analysis",
+    "phonetic": "/ә'nælәsis/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. an investigation of the component parts of a whole and their relations in making up the whole",
+        "zh": "n. 分析"
+      },
+      {
+        "en": "n. the abstract separation of a whole into its constituent parts in order to study the parts and their relations",
+        "zh": "[计] 分析机; 分析员; 分析; 分析程序"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"analysis\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“analysis”。"
+      }
+    ],
+    "imageQuery": "analysis",
+    "memoryTip": "analysis - n. 分析"
+  },
+  {
+    "id": "science-0018",
+    "word": "technology",
+    "phonetic": "/tek'nɒlәdʒi/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the practical application of science to commerce or industry",
+        "zh": "n. 技术, 工业技术, 术语"
+      },
+      {
+        "en": "",
+        "zh": "[医] 技术学, 工艺学"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"technology\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“technology”。"
+      }
+    ],
+    "imageQuery": "technology",
+    "memoryTip": "technology - n. 技术, 工业技术, 术语"
+  },
+  {
+    "id": "science-0019",
+    "word": "energy",
+    "phonetic": "/'enәdʒi/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. (physics) a thermodynamic quantity equivalent to the capacity of a physical system to do work; the units of energy are joules or ergs",
+        "zh": "n. 精力, 精神, 活力, 能量"
+      },
+      {
+        "en": "n. forceful exertion",
+        "zh": "[化] 能; 能量"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"energy\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“energy”。"
+      }
+    ],
+    "imageQuery": "energy",
+    "memoryTip": "energy - n. 精力, 精神, 活力, 能量"
+  },
+  {
+    "id": "science-0020",
+    "word": "cell",
+    "phonetic": "/sel/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. any small compartment",
+        "zh": "n. 单元, 细胞, 电池"
+      },
+      {
+        "en": "n. (biology) the basic structural and functional unit of all organisms; they may exist as independent units of life (as in monads) or may form colonies or tissues as in higher plants and animals",
+        "zh": "[计] 单元"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"cell\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“cell”。"
+      }
+    ],
+    "imageQuery": "cell",
+    "memoryTip": "cell - n. 单元, 细胞, 电池"
+  },
+  {
+    "id": "science-0021",
+    "word": "growth",
+    "phonetic": "/grәuθ/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. (biology) the process of an individual organism growing organically; a purely biological unfolding of events involved in an organism changing gradually from a simple to a more complex level",
+        "zh": "n. 生长, 栽培, 增长"
+      },
+      {
+        "en": "n. a progression from simpler to more complex forms",
+        "zh": "[计] 等比级数"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"growth\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“growth”。"
+      }
+    ],
+    "imageQuery": "growth",
+    "memoryTip": "growth - n. 生长, 栽培, 增长"
+  },
+  {
+    "id": "science-0022",
+    "word": "behaviour",
+    "phonetic": "/bi'heivjә/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n the action or reaction of something (as a machine or substance) under specified circumstances",
+        "zh": "n. 行为, 举止"
+      },
+      {
+        "en": "n (behavioral attributes) the way a person behaves toward other people",
+        "zh": "[计] 特性, 性能, 特点, 行为, 动作, 状态"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"behaviour\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“behaviour”。"
+      }
+    ],
+    "imageQuery": "behaviour",
+    "memoryTip": "behaviour - n. 行为, 举止"
+  },
+  {
+    "id": "science-0023",
+    "word": "science",
+    "phonetic": "/'saiәns/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a particular branch of scientific knowledge",
+        "zh": "n. 科学, 学科, 学问, 自然科学"
+      },
+      {
+        "en": "",
+        "zh": "[医] 科学"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"science\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“science”。"
+      }
+    ],
+    "imageQuery": "science",
+    "memoryTip": "science - n. 科学, 学科, 学问, 自然科学"
+  },
+  {
+    "id": "science-0024",
+    "word": "element",
+    "phonetic": "/'elimәnt/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the most favorable environment for a plant or animal",
+        "zh": "n. 元件, 元素, 要素"
+      },
+      {
+        "en": "n. one of four substances thought in ancient and medieval cosmology to constitute the physical universe",
+        "zh": "[计] 部分; 成分; 单元; 码元; 元件; 元素; 单元"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"element\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“element”。"
+      }
+    ],
+    "imageQuery": "element",
+    "memoryTip": "element - n. 元件, 元素, 要素"
+  },
+  {
+    "id": "science-0025",
+    "word": "surface",
+    "phonetic": "/'sә:fis/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the outer boundary of an artifact or a material layer constituting or resembling such a boundary",
+        "zh": "n. 面, 表面, 水面, 外表, 平面"
+      },
+      {
+        "en": "n. the extended two-dimensional outer boundary of a three-dimensional object",
+        "zh": "a. 表面的, 外观的, 肤浅的, 水面上的"
+      },
+      {
+        "en": "n. the outermost level of the land or sea",
+        "zh": "vt. 使成平面, 使浮出水面"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"surface\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“surface”。"
+      }
+    ],
+    "imageQuery": "surface",
+    "memoryTip": "surface - n. 面, 表面, 水面, 外表, 平面"
+  },
+  {
+    "id": "science-0026",
+    "word": "species",
+    "phonetic": "/'spi:ʃiz/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. (biology) taxonomic group whose members can interbreed",
+        "zh": "n. 种, 类, 外形"
+      },
+      {
+        "en": "n. a specific kind of something",
+        "zh": "[医] 茶剂; 种"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"species\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“species”。"
+      }
+    ],
+    "imageQuery": "species",
+    "memoryTip": "species - n. 种, 类, 外形"
+  },
+  {
+    "id": "science-0027",
+    "word": "trial",
+    "phonetic": "/'traiәl/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. trying something to find out about it",
+        "zh": "n. 审判, 试验, 艰苦, 麻烦事, 考验"
+      },
+      {
+        "en": "n. (law) the determination of a person's innocence or guilt by due process of law",
+        "zh": "a. 审讯的, 试验性的"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"trial\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“trial”。"
+      }
+    ],
+    "imageQuery": "trial",
+    "memoryTip": "trial - n. 审判, 试验, 艰苦, 麻烦事, 考验"
+  },
+  {
+    "id": "science-0028",
+    "word": "impact",
+    "phonetic": "/'impækt/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the striking of one body against another",
+        "zh": "n. 冲击, 冲突, 影响, 效果"
+      },
+      {
+        "en": "n. a forceful consequence; a strong effect",
+        "zh": "vt. 挤入, 撞击, 压紧, 对...发生影响"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"impact\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“impact”。"
+      }
+    ],
+    "imageQuery": "impact",
+    "memoryTip": "impact - n. 冲击, 冲突, 影响, 效果"
+  },
+  {
+    "id": "science-0029",
+    "word": "reaction",
+    "phonetic": "/ri'ækʃәn/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. an idea evoked by some experience",
+        "zh": "n. 反应, 反作用, 反动"
+      },
+      {
+        "en": "n. a bodily process occurring due to the effect of some antecedent stimulus or agent",
+        "zh": "[医] 反应"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"reaction\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“reaction”。"
+      }
+    ],
+    "imageQuery": "reaction",
+    "memoryTip": "reaction - n. 反应, 反作用, 反动"
+  },
+  {
+    "id": "science-0030",
+    "word": "sample",
+    "phonetic": "/'sæmpl/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a small part of something intended as representative of the whole",
+        "zh": "n. 样品, 范例, 样本"
+      },
+      {
+        "en": "n. all or part of a natural object that is collected and preserved as an example of its class",
+        "zh": "vt. 抽样, 尝试"
+      },
+      {
+        "en": "v. take a sample of",
+        "zh": "[计] 示例, 字样"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"sample\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“sample”。"
+      }
+    ],
+    "imageQuery": "sample",
+    "memoryTip": "sample - n. 样品, 范例, 样本"
+  },
+  {
+    "id": "science-0031",
+    "word": "code",
+    "phonetic": "/kәud/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a set of rules or principles or laws (especially written ones)",
+        "zh": "n. 代码, 密码, 法规, 法典"
+      },
+      {
+        "en": "n. a coding system used for transmitting messages requiring brevity or secrecy",
+        "zh": "vt. 把...编码"
+      },
+      {
+        "en": "n. (computer science) the symbolic arrangement of data or instructions in a computer program or the set of such instructions",
+        "zh": "[计] 代码"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"code\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“code”。"
+      }
+    ],
+    "imageQuery": "code",
+    "memoryTip": "code - n. 代码, 密码, 法规, 法典"
+  },
+  {
+    "id": "science-0032",
+    "word": "wave",
+    "phonetic": "/weiv/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. one of a series of ridges that moves across the surface of a liquid (especially across a large body of water)",
+        "zh": "n. 波, 波浪, 波动, 起伏, 高潮, 潮涌, 挥手致意, (气压)突变"
+      },
+      {
+        "en": "n. a movement like that of a sudden occurrence or increase in a specified phenomenon",
+        "zh": "vi. 波动, 飘动, 挥手示意, 起伏"
+      },
+      {
+        "en": "n. (physics) a movement up and down or back and forth",
+        "zh": "vt. 使波动, 使飘扬, 挥舞, 使成波浪形"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"wave\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“wave”。"
+      }
+    ],
+    "imageQuery": "wave",
+    "memoryTip": "wave - n. 波, 波浪, 波动, 起伏, 高潮, 潮涌, 挥手致意, (气压)突变"
+  },
+  {
+    "id": "science-0033",
+    "word": "temperature",
+    "phonetic": "/'temprәtʃә/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the degree of hotness or coldness of a body or environment (corresponding to its molecular activity)",
+        "zh": "n. 温度, 发烧, 热度"
+      },
+      {
+        "en": "n. the somatic sensation of cold or heat",
+        "zh": "[化] 温度"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"temperature\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“temperature”。"
+      }
+    ],
+    "imageQuery": "temperature",
+    "memoryTip": "temperature - n. 温度, 发烧, 热度"
+  },
+  {
+    "id": "science-0034",
+    "word": "experiment",
+    "phonetic": "/ik'sperimәnt/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the act of conducting a controlled test or investigation",
+        "zh": "n. 实验, 试验, 实验仪器"
+      },
+      {
+        "en": "n. the testing of an idea",
+        "zh": "vi. 实验, 尝试"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"experiment\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“experiment”。"
+      }
+    ],
+    "imageQuery": "experiment",
+    "memoryTip": "experiment - n. 实验, 试验, 实验仪器"
+  },
+  {
+    "id": "science-0035",
+    "word": "heat",
+    "phonetic": "/hi:t/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a form of energy that is transferred by a difference in temperature",
+        "zh": "n. 热, 热度, 体温, 高潮"
+      },
+      {
+        "en": "n. the sensation caused by heat energy",
+        "zh": "vi. 加热, 激昂, 加剧"
+      },
+      {
+        "en": "n. the trait of being intensely emotional",
+        "zh": "vt. 把...加热, 使激动"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"heat\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“heat”。"
+      }
+    ],
+    "imageQuery": "heat",
+    "memoryTip": "heat - n. 热, 热度, 体温, 高潮"
+  },
+  {
+    "id": "science-0036",
+    "word": "device",
+    "phonetic": "/di'vais/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. an instrumentality invented for a particular purpose",
+        "zh": "n. 装置, 设计, 策略, 发明物, 设备"
+      },
+      {
+        "en": "n. something in an artistic work designed to achieve a particular effect",
+        "zh": "[计] 设备; DOS内部命令:该命令要求DOS安装一个设备驱动程序"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"device\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“device”。"
+      }
+    ],
+    "imageQuery": "device",
+    "memoryTip": "device - n. 装置, 设计, 策略, 发明物, 设备"
+  },
+  {
+    "id": "science-0037",
+    "word": "observation",
+    "phonetic": "/.ɒbzә:'veiʃәn/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the act of making and recording a measurement",
+        "zh": "n. 观察, 注意, 观测, 观察力"
+      },
+      {
+        "en": "n. the act of observing; taking a patient look",
+        "zh": "[化] 观察"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"observation\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“observation”。"
+      }
+    ],
+    "imageQuery": "observation",
+    "memoryTip": "observation - n. 观察, 注意, 观测, 观察力"
+  },
+  {
+    "id": "science-0038",
+    "word": "signal",
+    "phonetic": "/'signl/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. any nonverbal action or gesture that encodes a message",
+        "zh": "n. 信号, 暗号, 近因, 导火线"
+      },
+      {
+        "en": "n. any incitement to action",
+        "zh": "vt. 向...作信号, 标志, 用信号通知"
+      },
+      {
+        "en": "n. an electric quantity (voltage or current or field strength) whose modulation represents coded information about the source from which it comes",
+        "zh": "vi. 发信号"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"signal\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“signal”。"
+      }
+    ],
+    "imageQuery": "signal",
+    "memoryTip": "signal - n. 信号, 暗号, 近因, 导火线"
+  },
+  {
+    "id": "science-0039",
+    "word": "topic",
+    "phonetic": "/'tɒpik/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. some situation or event that is thought about",
+        "zh": "n. 主题, 论题, 话题"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"topic\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“topic”。"
+      }
+    ],
+    "imageQuery": "topic",
+    "memoryTip": "topic - n. 主题, 论题, 话题"
+  },
+  {
+    "id": "science-0040",
+    "word": "gene",
+    "phonetic": "/dʒi:n/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. (genetics) a segment of DNA that is involved in producing a polypeptide chain; it can include regions preceding and following the coding DNA as well as introns between the exons; it is considered a unit of heredity",
+        "zh": "n. 基因"
+      },
+      {
+        "en": "",
+        "zh": "[化] 基因(遗传因子)"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"gene\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“gene”。"
+      }
+    ],
+    "imageQuery": "gene",
+    "memoryTip": "gene - n. 基因"
+  },
+  {
+    "id": "science-0041",
+    "word": "input",
+    "phonetic": "/'input/",
+    "partOfSpeech": [
+      "v.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a component of production; something that goes into the production of output",
+        "zh": "n. 输入, 输入电路"
+      },
+      {
+        "en": "v. enter (data or a program) into a computer",
+        "zh": "vt. 输入"
+      },
+      {
+        "en": "",
+        "zh": "[计] 输入"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"input\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“input”。"
+      }
+    ],
+    "imageQuery": "input",
+    "memoryTip": "input - n. 输入, 输入电路"
+  },
+  {
+    "id": "science-0042",
+    "word": "laboratory",
+    "phonetic": "/'læbrәtәri/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n a workplace for the conduct of scientific research",
+        "zh": "n. 实验室, 研究室, 化工厂"
+      },
+      {
+        "en": "n a region resembling a laboratory inasmuch as it offers opportunities for observation and practice and experimentation",
+        "zh": "[医] 实验室, 检验室, 化验室"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"laboratory\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“laboratory”。"
+      }
+    ],
+    "imageQuery": "laboratory",
+    "memoryTip": "laboratory - n. 实验室, 研究室, 化工厂"
+  },
+  {
+    "id": "science-0043",
+    "word": "variable",
+    "phonetic": "/'vєәriәbl/",
+    "partOfSpeech": [
+      "j.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. something that is likely to vary; something that is subject to variation",
+        "zh": "n. 易变的事物, 变数, 可变物, 变量"
+      },
+      {
+        "en": "n. a quantity that can assume any of a set of values",
+        "zh": "a. 可变的, 不定的, 易变的, 变量的"
+      },
+      {
+        "en": "n. a symbol (like x or y) that is used in mathematical or logical expressions to represent a variable quantity",
+        "zh": "[计] 变量"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"variable\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“variable”。"
+      }
+    ],
+    "imageQuery": "variable",
+    "memoryTip": "variable - n. 易变的事物, 变数, 可变物, 变量"
+  },
+  {
+    "id": "science-0044",
+    "word": "researcher",
+    "phonetic": "/ri:'sә:tʃә/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n a scientist who devotes himself to doing research",
+        "zh": "n. 研究人员"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"researcher\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“researcher”。"
+      }
+    ],
+    "imageQuery": "researcher",
+    "memoryTip": "researcher - n. 研究人员"
+  },
+  {
+    "id": "science-0045",
+    "word": "chemical",
+    "phonetic": "/'kemikl/",
+    "partOfSpeech": [
+      "j.",
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. material produced by or used in a reaction involving changes in atoms or molecules",
+        "zh": "n. 化学药品"
+      },
+      {
+        "en": "a. relating to or used in chemistry",
+        "zh": "a. 化学的, 化学上用的"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"chemical\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“chemical”。"
+      }
+    ],
+    "imageQuery": "chemical",
+    "memoryTip": "chemical - n. 化学药品"
+  },
+  {
+    "id": "science-0046",
+    "word": "climate",
+    "phonetic": "/'klaimit/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the weather in some location averaged over some long period of time",
+        "zh": "n. 气候, 社会趋势, 气候区"
+      },
+      {
+        "en": "n. the prevailing psychological state",
+        "zh": "[医] 气候"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"climate\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“climate”。"
+      }
+    ],
+    "imageQuery": "climate",
+    "memoryTip": "climate - n. 气候, 社会趋势, 气候区"
+  },
+  {
+    "id": "science-0047",
+    "word": "measurement",
+    "phonetic": "/'meʒәdmәnt/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the act or process of assigning numbers to phenomena according to a rule",
+        "zh": "n. 尺寸, 度量, 度量单位"
+      },
+      {
+        "en": "",
+        "zh": "[计] 度量, 度量单位"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"measurement\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“measurement”。"
+      }
+    ],
+    "imageQuery": "measurement",
+    "memoryTip": "measurement - n. 尺寸, 度量, 度量单位"
+  },
+  {
+    "id": "science-0048",
+    "word": "universe",
+    "phonetic": "/'ju:nivә:s/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. everything that exists anywhere",
+        "zh": "n. 宇宙, 星系, (思想等)范围"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"universe\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“universe”。"
+      }
+    ],
+    "imageQuery": "universe",
+    "memoryTip": "universe - n. 宇宙, 星系, (思想等)范围"
+  },
+  {
+    "id": "science-0049",
+    "word": "planet",
+    "phonetic": "/'plænit/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. (astronomy) any of the nine large celestial bodies in the solar system that revolve around the sun and shine by reflected light; Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, and Pluto in order of their proximity to the sun; viewed from the constellation Hercules, all the planets rotate around the sun in a counterclockwise direction",
+        "zh": "n. 行星, 命运星辰, 杰出的人, 重大影响的事"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"planet\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“planet”。"
+      }
+    ],
+    "imageQuery": "planet",
+    "memoryTip": "planet - n. 行星, 命运星辰, 杰出的人, 重大影响的事"
+  },
+  {
+    "id": "science-0050",
+    "word": "particle",
+    "phonetic": "/'pɑ:tikl/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a body having finite mass and internal structure but negligible dimensions",
+        "zh": "n. 颗粒, 粒子, 质点, 极小量"
+      },
+      {
+        "en": "n. a function word that can be used in English to form phrasal verbs",
+        "zh": "[化] 粒子; 质点"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"particle\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“particle”。"
+      }
+    ],
+    "imageQuery": "particle",
+    "memoryTip": "particle - n. 颗粒, 粒子, 质点, 极小量"
+  },
+  {
+    "id": "science-0051",
+    "word": "hypothesis",
+    "phonetic": "/hai'pɒθәsis/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. a proposal intended to explain certain facts or observations",
+        "zh": "n. 假设"
+      },
+      {
+        "en": "n. a tentative insight into the natural world; a concept that is not yet verified but that if true would explain certain facts or phenomena",
+        "zh": "[化] 假设"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"hypothesis\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“hypothesis”。"
+      }
+    ],
+    "imageQuery": "hypothesis",
+    "memoryTip": "hypothesis - n. 假设"
+  },
+  {
+    "id": "science-0052",
+    "word": "molecule",
+    "phonetic": "/'mɒlikju:l/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. (physics and chemistry) the simplest structural unit of an element or compound",
+        "zh": "n. 分子, 些微"
+      },
+      {
+        "en": "",
+        "zh": "[化] 分子"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"molecule\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“molecule”。"
+      }
+    ],
+    "imageQuery": "molecule",
+    "memoryTip": "molecule - n. 分子, 些微"
+  },
+  {
+    "id": "science-0053",
+    "word": "chemistry",
+    "phonetic": "/'kemistri/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the science of matter; the branch of the natural sciences dealing with the composition of substances and their properties and reactions",
+        "zh": "n. 化学, 化学过程"
+      },
+      {
+        "en": "n. the chemical composition and properties of a substance or object",
+        "zh": "[化] 化学"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"chemistry\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“chemistry”。"
+      }
+    ],
+    "imageQuery": "chemistry",
+    "memoryTip": "chemistry - n. 化学, 化学过程"
+  },
+  {
+    "id": "science-0054",
+    "word": "physics",
+    "phonetic": "/'fiziks/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the science of matter and energy and their interactions",
+        "zh": "n. 物理学, 物理过程, 物理现象"
+      },
+      {
+        "en": "n. the physical properties, phenomena, and laws of something",
+        "zh": "[化] 物理; 物理学"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"physics\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“physics”。"
+      }
+    ],
+    "imageQuery": "physics",
+    "memoryTip": "physics - n. 物理学, 物理过程, 物理现象"
+  },
+  {
+    "id": "science-0055",
+    "word": "density",
+    "phonetic": "/'densiti/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the amount per unit size",
+        "zh": "n. 密度"
+      },
+      {
+        "en": "",
+        "zh": "[化] 密度"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"density\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“density”。"
+      }
+    ],
+    "imageQuery": "density",
+    "memoryTip": "density - n. 密度"
+  },
+  {
+    "id": "science-0056",
+    "word": "atom",
+    "phonetic": "/'ætәm/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. (physics and chemistry) the smallest component of an element having the chemical properties of the element",
+        "zh": "n. 原子, 核能, 微粒, 微量"
+      },
+      {
+        "en": "n. (nontechnical usage) a tiny piece of anything",
+        "zh": "[计] 原子"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"atom\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“atom”。"
+      }
+    ],
+    "imageQuery": "atom",
+    "memoryTip": "atom - n. 原子, 核能, 微粒, 微量"
+  },
+  {
+    "id": "science-0057",
+    "word": "gravity",
+    "phonetic": "/'græviti/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. (physics) the force of attraction between all masses in the universe; especially the attraction of the earth's mass for bodies near its surface",
+        "zh": "n. 地心引力, 重力"
+      },
+      {
+        "en": "n. a solemn and dignified feeling",
+        "zh": "[化] 重力"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"gravity\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“gravity”。"
+      }
+    ],
+    "imageQuery": "gravity",
+    "memoryTip": "gravity - n. 地心引力, 重力"
+  },
+  {
+    "id": "science-0058",
+    "word": "biology",
+    "phonetic": "/bai'ɒlәdʒi/",
+    "partOfSpeech": [
+      "n."
+    ],
+    "definitions": [
+      {
+        "en": "n. the science that studies living organisms",
+        "zh": "n. 生物学"
+      },
+      {
+        "en": "n. characteristic life processes and phenomena of living organisms",
+        "zh": "[化] 生物; 生物学"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"biology\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“biology”。"
+      }
+    ],
+    "imageQuery": "biology",
+    "memoryTip": "biology - n. 生物学"
+  },
+  {
+    "id": "science-0059",
+    "word": "observable",
+    "phonetic": "/әb'zә:vәbl/",
+    "partOfSpeech": [
+      "j."
+    ],
+    "definitions": [
+      {
+        "en": "s capable of being seen or noticed",
+        "zh": "a. 可遵守的, 可庆祝的, 看得见的, 可辨别的, 观测得到的, 值得注意的, 显著的"
+      },
+      {
+        "en": "",
+        "zh": "n. 感觉到的事物, 现象"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I use the word \"observable\" when I study this topic.",
+        "zh": "我在学习这个主题时会用到单词“observable”。"
+      }
+    ],
+    "imageQuery": "observable",
+    "memoryTip": "observable - a. 可遵守的, 可庆祝的, 看得见的, 可辨别的, 观测得到的, 值得注意的, 显著的"
+  }
+]

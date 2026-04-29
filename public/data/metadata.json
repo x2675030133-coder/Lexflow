@@ -1,0 +1,123 @@
+{
+  "version": "4",
+  "generated": "2026-04-20T00:00:00.000Z",
+  "lists": {
+    "primary": {
+      "totalWords": 425
+    },
+    "junior": {
+      "totalWords": 1603
+    },
+    "senior": {
+      "totalWords": 3677
+    },
+    "zhongkao": {
+      "totalWords": 1200
+    },
+    "gaokao": {
+      "totalWords": 3500
+    },
+    "zhuanshengben": {
+      "totalWords": 3200
+    },
+    "postgraduate-core": {
+      "totalWords": 4500
+    },
+    "postgraduate-highfreq": {
+      "totalWords": 2200
+    },
+    "cet4": {
+      "totalWords": 3849
+    },
+    "cet6": {
+      "totalWords": 5407
+    },
+    "tem4": {
+      "totalWords": 4500
+    },
+    "tem8": {
+      "totalWords": 6500
+    },
+    "ket": {
+      "totalWords": 1500
+    },
+    "pet": {
+      "totalWords": 2500
+    },
+    "fce": {
+      "totalWords": 3600
+    },
+    "cae": {
+      "totalWords": 4200
+    },
+    "ielts": {
+      "totalWords": 5040
+    },
+    "toefl": {
+      "totalWords": 6974
+    },
+    "gre": {
+      "totalWords": 7504
+    },
+    "gmat": {
+      "totalWords": 5200
+    },
+    "sat": {
+      "totalWords": 5000
+    },
+    "act": {
+      "totalWords": 3600
+    },
+    "oxford3000": {
+      "totalWords": 3000
+    },
+    "oxford5000": {
+      "totalWords": 5000
+    },
+    "high-frequency": {
+      "totalWords": 3000
+    },
+    "awl": {
+      "totalWords": 1200
+    },
+    "news-core": {
+      "totalWords": 1800
+    },
+    "speaking-phrases": {
+      "totalWords": 1600
+    },
+    "writing-upgrade": {
+      "totalWords": 1800
+    },
+    "phrasal-verbs": {
+      "totalWords": 900
+    },
+    "ai-tech": {
+      "totalWords": 59
+    },
+    "programming": {
+      "totalWords": 68
+    },
+    "business": {
+      "totalWords": 67
+    },
+    "science": {
+      "totalWords": 59
+    },
+    "automotive": {
+      "totalWords": 68
+    },
+    "medical": {
+      "totalWords": 67
+    },
+    "finance": {
+      "totalWords": 66
+    },
+    "legal": {
+      "totalWords": 900
+    },
+    "travel": {
+      "totalWords": 900
+    }
+  }
+}
