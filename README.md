@@ -1,30 +1,39 @@
 # LexFlow
 
-LexFlow 是一个面向英语学习者的开源学习平台，集成词汇学习、阅读训练、听力练习、视频学习、发音练习、复习管理、账号同步和 AI 辅助内容生成等功能。
+LexFlow 是一个面向英语学习者的开源学习平台，围绕背单词、听力口语、双语阅读、音标发音、学习统计、账号同步和内容生成工作流构建。
 
-LexFlow is an open-source English learning platform with vocabulary study, reading practice, listening exercises, video learning, pronunciation practice, review tools, account sync, and AI-assisted content generation.
+LexFlow is an open-source English learning platform focused on vocabulary study, listening and speaking practice, bilingual reading, pronunciation training, learning analytics, account sync, and content-generation workflows.
 
 ## 中文说明
 
-### 项目功能
+### 核心功能
 
-- 词汇学习：支持多级别词库、单词详情、例句、释义、搭配、音标和复习记录。
-- 发音练习：提供发音练习页面、录音卡片、录音保存和发音进度记录。
-- 阅读训练：内置双语阅读内容，支持文章阅读、阅读进度和阅读词汇增强。
-- 听力练习：支持播客、语料播放、听力训练和学习进度记录。
-- 视频学习：提供视频学习列表和练习入口。
-- 用户系统：基于 Supabase 的注册、登录、资料管理、账号进度同步和云同步能力。
-- 内容生成：提供阅读内容生成、主题词库生成、单词例句重建、单词搭配重建、阅读词汇增强和搭配校验脚本。
-- 后端代理：提供 Node.js 服务用于新闻、翻译、图片、AI 内容生成和阅读库数据接口。
+- 背单词：支持多级别词库、主题词库、单词详情、释义、例句、搭配、音标、收藏和复习记录。
+- 学习与复习：提供学习页、复习页、词书页和单词详情页，记录学习状态、复习时间和掌握情况。
+- 听力口语：支持听力材料列表、语料练习、播客列表和单集播客练习。
+- 音标发音：提供音标发音页面、发音示例、录音练习、录音反馈、收藏和练习进度记录。
+- 双语阅读：提供文章列表、文章阅读页、阅读进度、阅读词汇信息和阅读库刷新能力。
+- 学习统计：展示学习数据、复习情况、听力/阅读/发音等进度概览。
+- 学习工具：集中放置辅助学习入口和工具页。
+- 账号系统：基于 Supabase 实现注册、登录、个人资料、偏好设置、安全设置和云同步。
+- 进度同步：支持按账号隔离本地学习数据，并将词汇、听力、阅读、播客和发音进度同步到账号。
+- 帮助与合规页面：包含帮助中心、新手指南、账号管理说明、FAQ、隐私政策、使用条款和赞助页面。
+- 内容生成：提供阅读内容、主题词库、单词例句、单词搭配、阅读词汇增强和搭配校验脚本。
+- 后端代理：提供 Node.js 服务，用于阅读库、新闻源、翻译、图片、AI 内容生成和播客/阅读数据接口。
+
+### 当前没有的功能
+
+- 本项目当前版本不包含视频学习模块。
+- 开源版本不包含个人收款码，赞助页使用占位内容。
 
 ### 技术栈
 
 - React
 - TypeScript
 - Vite
+- Tailwind CSS
 - Supabase
 - Node.js
-- Tailwind CSS
 
 ### 本地运行
 
@@ -33,16 +42,21 @@ npm install
 npm run dev
 ```
 
-如果需要启动后端代理服务：
+启动后端代理服务：
 
 ```bash
 npm run server:dev
 ```
 
-### 常用脚本
+构建生产版本：
 
 ```bash
 npm run build
+```
+
+### 常用脚本
+
+```bash
 npm run lint
 npm run generate:reading
 npm run generate:topics
@@ -52,9 +66,18 @@ npm run enrich:reading-vocab
 npm run validate:collocations
 ```
 
+脚本用途：
+
+- `generate:reading`：生成或刷新双语阅读内容。
+- `generate:topics`：生成主题词库。
+- `generate:examples`：重建单词例句。
+- `generate:collocations`：重建单词搭配。
+- `enrich:reading-vocab`：补充阅读文章中的重点词汇信息。
+- `validate:collocations`：校验单词搭配数据。
+
 ### 环境变量
 
-复制 `.env.example` 为 `.env`，然后按需填写配置：
+复制 `.env.example` 为 `.env`，然后按需填写：
 
 ```bash
 cp .env.example .env
@@ -70,16 +93,14 @@ cp .env.example .env
 - `DEEPL_API_KEY`
 - `PEXELS_API_KEY`
 
-注意：真实 API Key 不应该提交到 GitHub。请只提交 `.env.example`，并把真实密钥放在本地 `.env`、服务器环境变量或 GitHub Secrets 中。
+真实 API Key 不应该提交到 GitHub。请只提交 `.env.example`，并把真实密钥放在本地 `.env`、服务器环境变量、部署平台环境变量或 GitHub Secrets 中。
 
-### 数据与内容生成
+### 数据说明
 
-- `npm run generate:reading`：生成双语阅读内容。
-- `npm run generate:topics`：生成主题词库。
-- `npm run generate:examples`：重建单词例句。
-- `npm run generate:collocations`：重建单词搭配。
-- `npm run enrich:reading-vocab`：增强阅读文章词汇信息。
-- `npm run validate:collocations`：校验词汇搭配数据。
+- `public/data` 存放前端可直接读取的词库和阅读数据。
+- `server/data` 存放后端阅读库快照数据。
+- `scripts/data` 存放生成脚本使用的缓存数据。
+- 大型本地词典数据库和压缩包不应提交到仓库。
 
 如果需要使用本地 ECDICT 数据，请参考：
 
@@ -87,33 +108,42 @@ cp .env.example .env
 
 ### 安全说明
 
-- `.env`、`.env.local`、`node_modules`、`dist`、缓存、日志文件和本地数据库文件不应提交。
-- `VITE_` 开头的变量会被打包到前端代码中，不适合存放私密 API Key。
-- 私密 API Key 应通过后端代理或服务器环境变量使用。
-- Supabase 的 anon key 可以公开使用，但必须正确配置 Row Level Security。
-- 开源版本不包含个人收款码，赞助页面使用占位内容。
+- 不要提交 `.env`、`.env.local`、`node_modules`、`dist`、`.cache`、日志文件、构建缓存和本地数据库文件。
+- `VITE_` 开头的变量会被打包进前端代码，不适合存放私密 API Key。
+- 私密 API Key 应通过后端代理或服务器端环境变量使用。
+- Supabase anon key 可以公开使用，但必须正确配置 Row Level Security。
+- 开源版本中的帮助邮箱和赞助信息均为占位内容，请在部署自己的版本时替换。
 
 ## English
 
-### Features
+### Core Features
 
-- Vocabulary learning: word lists, word detail pages, examples, definitions, collocations, phonetics, and review progress.
-- Pronunciation practice: pronunciation page, recording card, saved recordings, and pronunciation progress tracking.
-- Reading practice: bilingual articles, article reading, reading progress, and enriched reading vocabulary.
-- Listening practice: podcasts, corpus playback, listening exercises, and learning progress tracking.
-- Video learning: video learning pages and practice flows.
-- User system: Supabase-based authentication, profile management, account progress sync, and cloud sync.
-- Content generation: scripts for reading generation, topic wordlists, word examples, word collocations, reading vocabulary enrichment, and collocation validation.
-- Backend proxy: Node.js service for news, translation, images, AI content generation, and reading library APIs.
+- Vocabulary study: multi-level word lists, topic word lists, word detail pages, definitions, examples, collocations, phonetics, favorites, and review records.
+- Learning and review: learning page, review page, wordbook, and word detail flows with progress and review scheduling.
+- Listening and speaking: listening material list, corpus practice, podcast list, and episode-level podcast practice.
+- Pronunciation training: phonetics page, pronunciation examples, recording practice, recording feedback, favorites, and practice progress.
+- Bilingual reading: article list, article reading page, reading progress, article vocabulary data, and reading library refresh support.
+- Learning analytics: dashboard for vocabulary, listening, reading, podcast, and pronunciation progress.
+- Learning tools: a dedicated tools page for study utilities and entry points.
+- Account system: Supabase-based registration, login, profile, preferences, security settings, and cloud sync.
+- Progress sync: account-scoped local data and sync for vocabulary, listening, reading, podcast, and pronunciation progress.
+- Help and policy pages: help center, beginner guide, account management guide, FAQ, privacy policy, terms, and support page.
+- Content generation: scripts for reading content, topic wordlists, word examples, word collocations, reading vocabulary enrichment, and collocation validation.
+- Backend proxy: Node.js service for reading libraries, news sources, translation, images, AI content generation, and podcast/reading APIs.
+
+### Not Included
+
+- This version does not include a video learning module.
+- The open-source version does not include personal payment QR codes. The support page uses placeholder content.
 
 ### Tech Stack
 
 - React
 - TypeScript
 - Vite
+- Tailwind CSS
 - Supabase
 - Node.js
-- Tailwind CSS
 
 ### Getting Started
 
@@ -122,16 +152,21 @@ npm install
 npm run dev
 ```
 
-To start the backend proxy server:
+Start the backend proxy server:
 
 ```bash
 npm run server:dev
 ```
 
-### Scripts
+Build for production:
 
 ```bash
 npm run build
+```
+
+### Scripts
+
+```bash
 npm run lint
 npm run generate:reading
 npm run generate:topics
@@ -140,6 +175,15 @@ npm run generate:collocations
 npm run enrich:reading-vocab
 npm run validate:collocations
 ```
+
+Script purposes:
+
+- `generate:reading`: generate or refresh bilingual reading content.
+- `generate:topics`: generate topic wordlists.
+- `generate:examples`: rebuild word examples.
+- `generate:collocations`: rebuild word collocations.
+- `enrich:reading-vocab`: enrich key vocabulary for reading articles.
+- `validate:collocations`: validate collocation data.
 
 ### Environment Variables
 
@@ -159,16 +203,14 @@ Common variables:
 - `DEEPL_API_KEY`
 - `PEXELS_API_KEY`
 
-Do not commit real API keys to GitHub. Commit only `.env.example`, and store real secrets in your local `.env`, server environment variables, or GitHub Secrets.
+Do not commit real API keys to GitHub. Commit only `.env.example`, and store real secrets in your local `.env`, server environment variables, deployment platform environment variables, or GitHub Secrets.
 
-### Data and Content Generation
+### Data Notes
 
-- `npm run generate:reading`: generate bilingual reading content.
-- `npm run generate:topics`: generate topic wordlists.
-- `npm run generate:examples`: rebuild word examples.
-- `npm run generate:collocations`: rebuild word collocations.
-- `npm run enrich:reading-vocab`: enrich article vocabulary data.
-- `npm run validate:collocations`: validate collocation data.
+- `public/data` contains frontend-readable vocabulary and reading data.
+- `server/data` contains backend reading library snapshots.
+- `scripts/data` contains cache data used by generation scripts.
+- Large local dictionary databases and archives should not be committed.
 
 For local ECDICT data import, see:
 
@@ -176,11 +218,11 @@ For local ECDICT data import, see:
 
 ### Security Notes
 
-- Do not commit `.env`, `.env.local`, `node_modules`, `dist`, caches, logs, or local database files.
+- Do not commit `.env`, `.env.local`, `node_modules`, `dist`, `.cache`, logs, build caches, or local database files.
 - Variables prefixed with `VITE_` are exposed to frontend bundles and must not contain private API keys.
 - Private API keys should be used through a backend proxy or server-side environment variables.
 - Supabase anon keys can be public, but Row Level Security must be configured correctly.
-- The open-source version does not include personal payment QR codes. The support page uses placeholder content.
+- The help email and support information in the open-source version are placeholders. Replace them when deploying your own version.
 
 ## License
 
