@@ -19,21 +19,20 @@ const rawWords: Word[] = [
       { part: 'bandon', type: 'root', meaning: '控制 control' }
     ],
     collocations: [
-      { en: 'abandon hope', zh: '放弃希望' },
-      { en: 'abandon ship', zh: '弃船' },
-      { en: 'completely abandon', zh: '彻底放弃' },
-      { en: 'abandon a plan', zh: '放弃计划' }
+      { en: 'abandon hope', zh: '放弃希望', pattern: '动词 + 名词' },
+      { en: 'abandon ship', zh: '弃船', pattern: '动词 + 名词' },
+      { en: 'completely abandon', zh: '彻底放弃', pattern: '副词 + 动词' },
+      { en: 'abandon a plan', zh: '放弃计划', pattern: '动词 + 名词' }
     ],
     synonyms: ['desert', 'forsake', 'give up'],
     antonyms: ['keep', 'maintain', 'continue'],
-    memoryTip: '谐音"一本蛋"——一本书上画了个蛋，被人抛弃'
   },
   {
     id: 'w002', word: 'ability', phonetic: '/əˈbɪləti/',
     partOfSpeech: ['n.'],
     definitions: [
-      { en: 'the fact that somebody/something is able to do something', zh: '能力；才' },
-      { en: 'a level of skill or intelligence', zh: '才智；本' }
+      { en: 'the fact that somebody/something is able to do something', zh: '能力；才能' },
+      { en: 'a level of skill or intelligence', zh: '才智；本领' }
     ],
     examples: [
       { en: 'She has the ability to solve complex problems.', zh: '她有解决复杂问题的能力' },
@@ -46,20 +45,19 @@ const rawWords: Word[] = [
       { part: '-ity', type: 'suffix', meaning: '名词后缀' }
     ],
     collocations: [
-      { en: 'ability to do', zh: '做……的能力' },
-      { en: 'natural ability', zh: '天赋' },
-      { en: 'demonstrate ability', zh: '展示能力' }
+      { en: 'ability to do', zh: '做……的能力', pattern: '名词 + 介词' },
+      { en: 'natural ability', zh: '天赋', pattern: '形容词 + 名词' },
+      { en: 'demonstrate ability', zh: '展示能力', pattern: '动词 + 名词' }
     ],
     synonyms: ['capability', 'capacity', 'talent'],
     antonyms: ['inability', 'incapacity'],
-    memoryTip: 'able(能够) + ity  能够做到  能力'
   },
   {
     id: 'w003', word: 'absorb', phonetic: '/əbˈzɔːrb/',
     partOfSpeech: ['v.'],
     definitions: [
-      { en: 'to take in a liquid, gas, or other substance', zh: '吸收（液体、气体等' },
-      { en: 'to interest somebody very much', zh: '吸引（注意力）；使全神贯' }
+      { en: 'to take in a liquid, gas, or other substance', zh: '吸收（液体、气体等）' },
+      { en: 'to interest somebody very much', zh: '吸引（注意力）；使全神贯注' }
     ],
     examples: [
       { en: 'The sponge absorbed all the water.', zh: '海绵吸收了所有的水' },
@@ -72,13 +70,12 @@ const rawWords: Word[] = [
       { part: 'sorb', type: 'root', meaning: ' suck' }
     ],
     collocations: [
-      { en: 'absorb knowledge', zh: '吸收知识' },
-      { en: 'fully absorbed', zh: '全神贯注' },
-      { en: 'absorb information', zh: '吸收信息' }
+      { en: 'absorb knowledge', zh: '吸收知识', pattern: '动词 + 名词' },
+      { en: 'fully absorbed', zh: '全神贯注', pattern: '副词 + 形容词' },
+      { en: 'absorb information', zh: '吸收信息', pattern: '动词 + 名词' }
     ],
     synonyms: ['soak up', 'take in', 'engross'],
     antonyms: ['emit', 'release', 'repel'],
-    memoryTip: '吸收(absorb)就像海绵一样，把知识都吸进'
   },
   {
     id: 'w004', word: 'adventure', phonetic: '/ədˈventʃər/',
@@ -99,13 +96,12 @@ const rawWords: Word[] = [
       { part: '-ure', type: 'suffix', meaning: '名词后缀' }
     ],
     collocations: [
-      { en: 'adventure story', zh: '冒险故事' },
-      { en: 'go on an adventure', zh: '去冒' },
-      { en: 'adventure tourism', zh: '探险旅游' }
+      { en: 'adventure story', zh: '冒险故事', pattern: '名词 + 名词' },
+      { en: 'go on an adventure', zh: '去冒险', pattern: '动词 + 名词' },
+      { en: 'adventure tourism', zh: '探险旅游', pattern: '名词 + 名词' }
     ],
     synonyms: ['expedition', 'quest', 'journey'],
     antonyms: ['boredom', 'routine'],
-    memoryTip: '想象自己 ad)冒险(venture)的场'
   },
   {
     id: 'w005', word: 'beautiful', phonetic: '/ˈbjuːtɪfl/',
@@ -125,20 +121,19 @@ const rawWords: Word[] = [
       { part: '-ful', type: 'suffix', meaning: '充满 full of' }
     ],
     collocations: [
-      { en: 'beautiful scenery', zh: '美丽的风' },
-      { en: 'absolutely beautiful', zh: '绝对美丽' },
-      { en: 'beautiful weather', zh: '好天' }
+      { en: 'beautiful scenery', zh: '美丽的风景', pattern: '形容词 + 名词' },
+      { en: 'absolutely beautiful', zh: '绝对美丽', pattern: '副词 + 形容词' },
+      { en: 'beautiful weather', zh: '好天气', pattern: '形容词 + 名词' }
     ],
     synonyms: ['gorgeous', 'stunning', 'attractive'],
     antonyms: ['ugly', 'hideous', 'unattractive'],
-    memoryTip: 'beauty(美丽) + ful(充满) = 充满美丽'
   },
   {
     id: 'w006', word: 'challenge', phonetic: '/ˈtʃælɪndʒ/',
     partOfSpeech: ['n.', 'v.'],
     definitions: [
       { en: 'a new or difficult task that tests ability and skill', zh: '挑战；艰巨的任务' },
-      { en: 'to question whether something is true or legal', zh: '质疑；质' }
+      { en: 'to question whether something is true or legal', zh: '质疑；质问' }
     ],
     examples: [
       { en: 'Finding a solution to this problem is a real challenge.', zh: '找到这个问题的解决方案是一个真正的挑战' },
@@ -148,14 +143,13 @@ const rawWords: Word[] = [
     etymology: 'challenge 源自拉丁 calumnia(诽谤)  挑战',
     synonyms: ['dare', 'contest', 'test'],
     antonyms: ['ease', 'simplicity'],
-    memoryTip: ' cha) l) leng) ge)  查了零几个挑'
   },
   {
     id: 'w007', word: 'determine', phonetic: '/dɪˈtɜːrmɪn/',
     partOfSpeech: ['v.'],
     definitions: [
       { en: 'to discover the facts about something', zh: '确定；查明；测定' },
-      { en: 'to make something happen in a particular way', zh: '决定；影' }
+      { en: 'to make something happen in a particular way', zh: '决定；影响' }
     ],
     examples: [
       { en: 'An investigation was carried out to determine the cause.', zh: '进行了调查以确定原因' },
@@ -168,20 +162,19 @@ const rawWords: Word[] = [
       { part: 'termin', type: 'root', meaning: '界限 boundary' }
     ],
     collocations: [
-      { en: 'determine the cause', zh: '确定原因' },
-      { en: 'determine the outcome', zh: '决定结果' },
-      { en: 'be determined to', zh: '决心' }
+      { en: 'determine the cause', zh: '确定原因', pattern: '动词 + 名词' },
+      { en: 'determine the outcome', zh: '决定结果', pattern: '动词 + 名词' },
+      { en: 'be determined to', zh: '决心', pattern: '系动词 + 形容词' }
     ],
     synonyms: ['decide', 'resolve', 'establish'],
     antonyms: ['hesitate', 'waver'],
-    memoryTip: 'de(  + term(学期) + ine  这个学期的目标已经确定了'
   },
   {
     id: 'w008', word: 'environment', phonetic: '/ɪnˈvaɪrənmənt/',
     partOfSpeech: ['n.'],
     definitions: [
-      { en: 'the natural world in which people, animals and plants live', zh: '自然环境；生态环' },
-      { en: 'the conditions that affect the behavior of somebody/something', zh: '环境；客观环' }
+      { en: 'the natural world in which people, animals and plants live', zh: '自然环境；生态环境' },
+      { en: 'the conditions that affect the behavior of somebody/something', zh: '环境；客观环境' }
     ],
     examples: [
       { en: 'We must protect the environment.', zh: '我们必须保护环境' },
@@ -194,19 +187,18 @@ const rawWords: Word[] = [
       { part: '-ment', type: 'suffix', meaning: '名词后缀' }
     ],
     collocations: [
-      { en: 'protect the environment', zh: '保护环境' },
-      { en: 'working environment', zh: '工作环境' },
-      { en: 'natural environment', zh: '自然环境' }
+      { en: 'protect the environment', zh: '保护环境', pattern: '动词 + 名词' },
+      { en: 'working environment', zh: '工作环境', pattern: '名词 + 名词' },
+      { en: 'natural environment', zh: '自然环境', pattern: '形容词 + 名词' }
     ],
     synonyms: ['surroundings', 'habitat', 'setting'],
     antonyms: [],
-    memoryTip: ' environ) ment)  被环境所包围'
   },
   {
     id: 'w009', word: 'frequency', phonetic: '/ˈfriːkwənsi/',
     partOfSpeech: ['n.'],
     definitions: [
-      { en: 'the rate at which something happens or is repeated', zh: '频率；频' },
+      { en: 'the rate at which something happens or is repeated', zh: '频率；频次' },
       { en: 'the number of times that a wave is produced in a given period', zh: '（物理）频率' }
     ],
     examples: [
@@ -220,20 +212,19 @@ const rawWords: Word[] = [
       { part: '-cy', type: 'suffix', meaning: '名词后缀' }
     ],
     collocations: [
-      { en: 'high frequency', zh: '高频' },
-      { en: 'low frequency', zh: '低频' },
-      { en: 'frequency of use', zh: '使用频率' }
+      { en: 'high frequency', zh: '高频', pattern: '形容词 + 名词' },
+      { en: 'low frequency', zh: '低频', pattern: '形容词 + 名词' },
+      { en: 'frequency of use', zh: '使用频率', pattern: '名词 + 介词' }
     ],
     synonyms: ['rate', 'occurrence', 'regularity'],
     antonyms: ['rarity', 'infrequency'],
-    memoryTip: 'free(自由) + quency  自由出现的频'
   },
   {
     id: 'w010', word: 'generous', phonetic: '/ˈdʒenərəs/',
     partOfSpeech: ['adj.'],
     definitions: [
-      { en: 'willing to give money, help, kindness more than is usual or expected', zh: '慷慨的；大方' },
-      { en: 'more than is necessary; abundant', zh: '丰富的；充裕' }
+      { en: 'willing to give money, help, kindness more than is usual or expected', zh: '慷慨的；大方的' },
+      { en: 'more than is necessary; abundant', zh: '丰富的；充裕的' }
     ],
     examples: [
       { en: 'She is very generous with her time.', zh: '她非常慷慨地付出自己的时间' },
@@ -246,13 +237,12 @@ const rawWords: Word[] = [
       { part: '-ous', type: 'suffix', meaning: '形容词后缀' }
     ],
     collocations: [
-      { en: 'generous donation', zh: '慷慨捐赠' },
-      { en: 'generous offer', zh: '慷慨的提' },
-      { en: 'generous with', zh: '对……慷' }
+      { en: 'generous donation', zh: '慷慨捐赠', pattern: '形容词 + 名词' },
+      { en: 'generous offer', zh: '慷慨的提议', pattern: '形容词 + 名词' },
+      { en: 'generous with', zh: '对……慷慨', pattern: '形容词 + 介词' }
     ],
     synonyms: ['liberal', 'charitable', 'benevolent'],
     antonyms: ['stingy', 'miserly', 'selfish'],
-    memoryTip: '将军(gener)很大 ous)  慷慨'
   },
   {
     id: 'w011', word: 'hesitate', phonetic: '/ˈhezɪteɪt/',
@@ -269,7 +259,6 @@ const rawWords: Word[] = [
     etymology: 'hesit(黏住) + ate  黏住了不  犹豫',
     synonyms: ['pause', 'waver', 'falter'],
     antonyms: ['decide', 'resolve', 'act'],
-    memoryTip: 'he(  + sit(  + ate(   他坐着吃饭时犹豫不'
   },
   {
     id: 'w012', word: 'imagine', phonetic: '/ɪˈmædʒɪn/',
@@ -286,14 +275,13 @@ const rawWords: Word[] = [
     etymology: 'imag(形象) + ine  在脑中形成形  想象',
     synonyms: ['envision', 'visualize', 'picture'],
     antonyms: [],
-    memoryTip: 'image(图像) + ine  在脑中产生图  想象'
   },
   {
     id: 'w013', word: 'knowledge', phonetic: '/ˈnɒlɪdʒ/',
     partOfSpeech: ['n.'],
     definitions: [
       { en: 'information, understanding and skills gained through education or experience', zh: '知识；学问；了解' },
-      { en: 'awareness or familiarity gained by experience of a fact or situation', zh: '认识；知' }
+      { en: 'awareness or familiarity gained by experience of a fact or situation', zh: '认识；知晓' }
     ],
     examples: [
       { en: 'She has a wide knowledge of history.', zh: '她有广博的历史知识' },
@@ -303,14 +291,13 @@ const rawWords: Word[] = [
     etymology: 'know(知道) + ledge  知道的东  知识',
     synonyms: ['wisdom', 'learning', 'understanding'],
     antonyms: ['ignorance', 'stupidity'],
-    memoryTip: 'know(知道) + ledge(架子)  知识放在架子'
   },
   {
     id: 'w014', word: 'magnificent', phonetic: '/mæɡˈnɪfɪsnt/',
     partOfSpeech: ['adj.'],
     definitions: [
-      { en: 'extremely attractive and impressive', zh: '壮丽的；宏伟的；华丽' },
-      { en: 'very good; excellent', zh: '极好的；出色' }
+      { en: 'extremely attractive and impressive', zh: '壮丽的；宏伟的；华丽的' },
+      { en: 'very good; excellent', zh: '极好的；出色的' }
     ],
     examples: [
       { en: 'The view from the mountain was magnificent.', zh: '从山上看到的景色非常壮丽' },
@@ -320,7 +307,6 @@ const rawWords: Word[] = [
     etymology: 'magn(  + ific(  + ent  做得很大  壮丽',
     synonyms: ['splendid', 'grand', 'majestic'],
     antonyms: ['modest', 'ordinary', 'plain'],
-    memoryTip: 'magni(放大) + ficent  被放大的  壮丽'
   },
   {
     id: 'w015', word: 'necessary', phonetic: '/ˈnesəsəri/',
@@ -337,14 +323,13 @@ const rawWords: Word[] = [
     etymology: 'ne-(  + cess(让步) + ary  不可让步  必要',
     synonyms: ['essential', 'required', 'vital'],
     antonyms: ['unnecessary', 'optional', 'dispensable'],
-    memoryTip: ' ne) ces) sary)必要的食'
   },
   {
     id: 'w016', word: 'opportunity', phonetic: '/ˌɒpərˈtjuːnəti/',
     partOfSpeech: ['n.'],
     definitions: [
-      { en: 'a time when a particular situation makes it possible to do or achieve something', zh: '机会；时' },
-      { en: 'a chance for employment or promotion', zh: '就业机会；晋升机' }
+      { en: 'a time when a particular situation makes it possible to do or achieve something', zh: '机会；时机' },
+      { en: 'a chance for employment or promotion', zh: '就业机会；晋升机会' }
     ],
     examples: [
       { en: 'This is a golden opportunity for us.', zh: '这对我们来说是一个黄金机会' },
@@ -354,7 +339,6 @@ const rawWords: Word[] = [
     etymology: 'op-(朝向) + port(港口) + unity  朝向港口  机会来临',
     synonyms: ['chance', 'occasion', 'opening'],
     antonyms: ['misfortune', 'obstacle'],
-    memoryTip: 'op(  + port(港口) + unity(统一)  哦！港口统一了，机会来了'
   },
   {
     id: 'w017', word: 'patience', phonetic: '/ˈpeɪʃns/',
@@ -371,14 +355,13 @@ const rawWords: Word[] = [
     etymology: 'pati(忍受) + ence(名词后缀)  忍受的能  耐心',
     synonyms: ['tolerance', 'endurance', 'perseverance'],
     antonyms: ['impatience', 'intolerance'],
-    memoryTip: 'patient(病人)  病人需要耐心(patience)等待康复'
   },
   {
     id: 'w018', word: 'revolution', phonetic: '/ˌrevəˈluːʃn/',
     partOfSpeech: ['n.'],
     definitions: [
-      { en: 'a great change in conditions, ways of working, beliefs', zh: '革命；巨' },
-      { en: 'a complete circular movement around a point', zh: '旋转；公' }
+      { en: 'a great change in conditions, ways of working, beliefs', zh: '革命；巨变' },
+      { en: 'a complete circular movement around a point', zh: '旋转；公转' }
     ],
     examples: [
       { en: 'The Industrial Revolution changed the world.', zh: '工业革命改变了世界' },
@@ -388,7 +371,6 @@ const rawWords: Word[] = [
     etymology: 're-(再次) + volut(  + ion  再次转变  革命',
     synonyms: ['rebellion', 'upheaval', 'transformation'],
     antonyms: ['stagnation', 'stability'],
-    memoryTip: 're(  + volution(旋转)  世界再次旋转  革命'
   },
   {
     id: 'w019', word: 'significant', phonetic: '/sɪɡˈnɪfɪkənt/',
@@ -405,14 +387,13 @@ const rawWords: Word[] = [
     etymology: 'sign(标记) + ific(  + ant  做出标记  重要',
     synonyms: ['important', 'notable', 'meaningful'],
     antonyms: ['insignificant', 'minor', 'trivial'],
-    memoryTip: 'sign(签名)  需要签名的文件一定是重要 significant)'
   },
   {
     id: 'w020', word: 'technology', phonetic: '/tekˈnɒlədʒi/',
     partOfSpeech: ['n.'],
     definitions: [
       { en: 'scientific knowledge used in practical ways in industry', zh: '技术；科技' },
-      { en: 'machinery or equipment developed from scientific knowledge', zh: '技术设备；技术手' }
+      { en: 'machinery or equipment developed from scientific knowledge', zh: '技术设备；技术手段' }
     ],
     examples: [
       { en: 'Modern technology has transformed our lives.', zh: '现代科技改变了我们的生活' },
@@ -422,14 +403,13 @@ const rawWords: Word[] = [
     etymology: 'techno(技  + logy(学科)  技艺的学科  技',
     synonyms: ['innovation', 'engineering', 'science'],
     antonyms: [],
-    memoryTip: 'tech(技  + no + logy(   学习技  科技'
   },
   {
     id: 'w021', word: 'universal', phonetic: '/ˌjuːnɪˈvɜːrsl/',
     partOfSpeech: ['adj.'],
     definitions: [
       { en: 'done by or involving all the people in the world', zh: '全世界的；普遍的' },
-      { en: 'true or right at all times and in all places', zh: '通用的；万能' }
+      { en: 'true or right at all times and in all places', zh: '通用的；万能的' }
     ],
     examples: [
       { en: 'Music is a universal language.', zh: '音乐是一种通用的语言' },
@@ -439,7 +419,6 @@ const rawWords: Word[] = [
     etymology: 'uni-(一) + vers(  + al  转成一体的  普遍',
     synonyms: ['global', 'worldwide', 'general'],
     antonyms: ['local', 'particular', 'specific'],
-    memoryTip: 'universe(宇宙)  宇宙级别  普遍 universal)'
   },
   {
     id: 'w022', word: 'volunteer', phonetic: '/ˌvɒlənˈtɪər/',
@@ -456,14 +435,13 @@ const rawWords: Word[] = [
     etymology: 'volunt(自愿) + eer(   自愿的人  志愿',
     synonyms: ['helper', 'assistant', 'contributor'],
     antonyms: ['conscript', 'draftee'],
-    memoryTip: 'volunt(自愿) + eer  自愿参与的人  志愿'
   },
   {
     id: 'w023', word: 'wisdom', phonetic: '/ˈwɪzdəm/',
     partOfSpeech: ['n.'],
     definitions: [
-      { en: 'the ability to make sensible decisions and give good advice', zh: '智慧；才' },
-      { en: 'the knowledge that a society or culture has gained over a long period of time', zh: '学问；知' }
+      { en: 'the ability to make sensible decisions and give good advice', zh: '智慧；才智' },
+      { en: 'the knowledge that a society or culture has gained over a long period of time', zh: '学问；知识' }
     ],
     examples: [
       { en: 'She spoke with great wisdom.', zh: '她说话充满了智慧' },
@@ -473,13 +451,12 @@ const rawWords: Word[] = [
     etymology: 'wis(知道) + dom(状   知道的状  智慧',
     synonyms: ['sagacity', 'insight', 'intelligence'],
     antonyms: ['foolishness', 'stupidity', 'ignorance'],
-    memoryTip: 'wise(聪明  + dom(王国)  聪明的王  智慧'
   },
   {
     id: 'w024', word: 'extraordinary', phonetic: '/ɪkˈstrɔːrdnəri/',
     partOfSpeech: ['adj.'],
     definitions: [
-      { en: 'very unusual, special, or surprising', zh: '非凡的；特别的；惊人' },
+      { en: 'very unusual, special, or surprising', zh: '非凡的；特别的；惊人的' },
       { en: 'not normal or ordinary; greater or better than usual', zh: '不寻常的；非一般的' }
     ],
     examples: [
@@ -493,13 +470,12 @@ const rawWords: Word[] = [
       { part: 'ordinary', type: 'root', meaning: '普通的 ordinary' }
     ],
     collocations: [
-      { en: 'extraordinary talent', zh: '非凡的才' },
-      { en: 'extraordinary achievement', zh: '非凡的成' },
-      { en: 'truly extraordinary', zh: '真正非凡' }
+      { en: 'extraordinary talent', zh: '非凡的才能', pattern: '形容词 + 名词' },
+      { en: 'extraordinary achievement', zh: '非凡的成就', pattern: '形容词 + 名词' },
+      { en: 'truly extraordinary', zh: '真正非凡', pattern: '副词 + 形容词' }
     ],
     synonyms: ['remarkable', 'exceptional', 'phenomenal'],
     antonyms: ['ordinary', 'common', 'normal'],
-    memoryTip: 'extra(额外  + ordinary(普通的)  超出普通的  非凡'
   },
   {
     id: 'w025', word: 'enthusiasm', phonetic: '/ɪnˈθjuːziæzəm/',
@@ -520,20 +496,19 @@ const rawWords: Word[] = [
       { part: '-iasm', type: 'suffix', meaning: '状态后缀' }
     ],
     collocations: [
-      { en: 'great enthusiasm', zh: '极大的热' },
-      { en: 'show enthusiasm', zh: '表现出热' },
-      { en: 'enthusiasm for', zh: '对……的热情' }
+      { en: 'great enthusiasm', zh: '极大的热情', pattern: '形容词 + 名词' },
+      { en: 'show enthusiasm', zh: '表现出热情', pattern: '动词 + 名词' },
+      { en: 'enthusiasm for', zh: '对……的热情', pattern: '名词 + 介词' }
     ],
     synonyms: ['passion', 'eagerness', 'zeal'],
     antonyms: ['apathy', 'indifference', 'boredom'],
-    memoryTip: 'en(进入) + thusi(  + asm  进入热的状  热情'
   },
   {
     id: 'w026', word: 'compromise', phonetic: '/ˈkɒmprəmaɪz/',
     partOfSpeech: ['n.', 'v.'],
     definitions: [
       { en: 'an agreement made between two sides in which each side gives up some demands', zh: '妥协；折中；和解' },
-      { en: 'to weaken a position or reputation', zh: '损害；危' }
+      { en: 'to weaken a position or reputation', zh: '损害；危及' }
     ],
     examples: [
       { en: 'They reached a compromise after long negotiations.', zh: '经过长时间谈判，他们达成了妥协' },
@@ -546,13 +521,12 @@ const rawWords: Word[] = [
       { part: 'promise', type: 'root', meaning: '承诺 promise' }
     ],
     collocations: [
-      { en: 'reach a compromise', zh: '达成妥协' },
-      { en: 'willing to compromise', zh: '愿意妥协' },
-      { en: 'compromise on', zh: '在……上妥协' }
+      { en: 'reach a compromise', zh: '达成妥协', pattern: '动词 + 名词' },
+      { en: 'willing to compromise', zh: '愿意妥协', pattern: '形容词 + 不定式' },
+      { en: 'compromise on', zh: '在……上妥协', pattern: '动词 + 介词' }
     ],
     synonyms: ['settlement', 'agreement', 'concession'],
     antonyms: ['dispute', 'disagreement', 'conflict'],
-    memoryTip: 'com(共同) + promise(承诺)  大家共同做出承诺  妥协'
   },
   {
     id: 'w027', word: 'demonstrate', phonetic: '/ˈdemənstreɪt/',
@@ -573,20 +547,19 @@ const rawWords: Word[] = [
       { part: '-ate', type: 'suffix', meaning: '动词后缀' }
     ],
     collocations: [
-      { en: 'demonstrate ability', zh: '展示能力' },
-      { en: 'clearly demonstrate', zh: '清楚地证' },
-      { en: 'demonstrate how', zh: '演示如何' }
+      { en: 'demonstrate ability', zh: '展示能力', pattern: '动词 + 名词' },
+      { en: 'clearly demonstrate', zh: '清楚地证明', pattern: '副词 + 动词' },
+      { en: 'demonstrate how', zh: '演示如何', pattern: '动词 + 名词' }
     ],
     synonyms: ['show', 'prove', 'illustrate'],
     antonyms: ['hide', 'conceal', 'disprove'],
-    memoryTip: 'demo(演示) + nstrate  做演  展示；证'
   },
   {
     id: 'w028', word: 'perspective', phonetic: '/pərˈspektɪv/',
     partOfSpeech: ['n.'],
     definitions: [
       { en: 'a particular attitude towards something; a way of thinking about something', zh: '观点；视角；看法' },
-      { en: 'the ability to think about problems and decisions in a reasonable way', zh: '洞察力；判断' }
+      { en: 'the ability to think about problems and decisions in a reasonable way', zh: '洞察力；判断力' }
     ],
     examples: [
       { en: 'Try to see the problem from a different perspective.', zh: '试着从不同的角度看待这个问题' },
@@ -600,13 +573,12 @@ const rawWords: Word[] = [
       { part: '-ive', type: 'suffix', meaning: '形容 名词后缀' }
     ],
     collocations: [
-      { en: 'from a perspective', zh: '从某个角' },
-      { en: 'gain perspective', zh: '获得视角' },
-      { en: 'different perspective', zh: '不同的视' }
+      { en: 'from a perspective', zh: '从某个角度', pattern: '介词 + 名词' },
+      { en: 'gain perspective', zh: '获得视角', pattern: '动词 + 名词' },
+      { en: 'different perspective', zh: '不同的视角', pattern: '形容词 + 名词' }
     ],
     synonyms: ['viewpoint', 'outlook', 'standpoint'],
     antonyms: [],
-    memoryTip: 'per(通过) + spect(  + ive  通过看到  视角'
   },
   {
     id: 'w029', word: 'accomplish', phonetic: '/əˈkɒmplɪʃ/',
@@ -627,20 +599,19 @@ const rawWords: Word[] = [
       { part: 'plish', type: 'root', meaning: '填满 fill' }
     ],
     collocations: [
-      { en: 'accomplish a goal', zh: '实现目标' },
-      { en: 'accomplish a task', zh: '完成任务' },
-      { en: 'accomplish nothing', zh: '一事无' }
+      { en: 'accomplish a goal', zh: '实现目标', pattern: '动词 + 名词' },
+      { en: 'accomplish a task', zh: '完成任务', pattern: '动词 + 名词' },
+      { en: 'accomplish nothing', zh: '一事无成', pattern: '动词 + 名词' }
     ],
     synonyms: ['achieve', 'complete', 'fulfill'],
     antonyms: ['fail', 'abandon', 'neglect'],
-    memoryTip: 'a + com(完全) + plish(完成)  全部完成  实现'
   },
   {
     id: 'w030', word: 'phenomenon', phonetic: '/fɪˈnɒmɪnən/',
     partOfSpeech: ['n.'],
     definitions: [
-      { en: 'a fact or an event in nature or society that can be observed', zh: '现象；事' },
-      { en: 'a person or thing that is very successful or impressive', zh: '非凡的人（或事物' }
+      { en: 'a fact or an event in nature or society that can be observed', zh: '现象；事件' },
+      { en: 'a person or thing that is very successful or impressive', zh: '非凡的人（或事物）' }
     ],
     examples: [
       { en: 'Globalization is a worldwide phenomenon.', zh: '全球化是一个世界性的现象' },
@@ -650,14 +621,13 @@ const rawWords: Word[] = [
     etymology: 'pheno-(显示) + menon(事物)  显示出来的事  现象',
     synonyms: ['occurrence', 'event', 'marvel'],
     antonyms: [],
-    memoryTip: 'phone(电话) + no + men(   电话里没有人是个奇怪现'
   },
   {
     id: 'w031', word: 'appreciate', phonetic: '/əˈpriːʃieɪt/',
     partOfSpeech: ['v.'],
     definitions: [
-      { en: 'to recognize the good qualities of somebody/something', zh: '欣赏；赏' },
-      { en: 'to be grateful for something', zh: '感激；感' }
+      { en: 'to recognize the good qualities of somebody/something', zh: '欣赏；赏识' },
+      { en: 'to be grateful for something', zh: '感激；感谢' }
     ],
     examples: [
       { en: 'I really appreciate your help.', zh: '我非常感谢你的帮助' },
@@ -671,13 +641,12 @@ const rawWords: Word[] = [
       { part: '-ate', type: 'suffix', meaning: '动词后缀' }
     ],
     collocations: [
-      { en: 'deeply appreciate', zh: '深深感激' },
-      { en: 'appreciate the beauty', zh: '欣赏' },
-      { en: 'appreciate your help', zh: '感谢你的帮助' }
+      { en: 'deeply appreciate', zh: '深深感激', pattern: '副词 + 动词' },
+      { en: 'appreciate the beauty', zh: '欣赏美', pattern: '动词 + 名词' },
+      { en: 'appreciate your help', zh: '感谢你的帮助', pattern: '动词 + 名词' }
     ],
     synonyms: ['value', 'cherish', 'be grateful'],
     antonyms: ['depreciate', 'disregard', 'undervalue'],
-    memoryTip: 'a + price(价格) + ate  给出价值评  欣赏'
   },
   {
     id: 'w032', word: 'brilliant', phonetic: '/ˈbrɪliənt/',
@@ -694,13 +663,12 @@ const rawWords: Word[] = [
     etymology: 'brill(闪耀) + iant  闪耀  杰出',
     synonyms: ['outstanding', 'exceptional', 'dazzling'],
     antonyms: ['dull', 'mediocre', 'dim'],
-    memoryTip: '宝石(brill)闪耀(iant)  像宝石一样闪耀  杰出'
   },
   {
     id: 'w033', word: 'consequence', phonetic: '/ˈkɒnsɪkwəns/',
     partOfSpeech: ['n.'],
     definitions: [
-      { en: 'a result or effect of an action or condition', zh: '结果；后' },
+      { en: 'a result or effect of an action or condition', zh: '结果；后果' },
       { en: 'importance or relevance', zh: '重要性；重大' }
     ],
     examples: [
@@ -715,13 +683,12 @@ const rawWords: Word[] = [
       { part: '-ence', type: 'suffix', meaning: '名词后缀' }
     ],
     collocations: [
-      { en: 'as a consequence', zh: '因此；结' },
-      { en: 'face consequences', zh: '面对后果' },
-      { en: 'serious consequences', zh: '严重后果' }
+      { en: 'as a consequence', zh: '因此；结果', pattern: '介词 + 名词' },
+      { en: 'face consequences', zh: '面对后果', pattern: '动词 + 名词' },
+      { en: 'serious consequences', zh: '严重后果', pattern: '形容词 + 名词' }
     ],
     synonyms: ['result', 'outcome', 'effect'],
     antonyms: ['cause', 'origin', 'source'],
-    memoryTip: 'con + sequence(序列)  按序列发生的  后果'
   },
   {
     id: 'w034', word: 'efficient', phonetic: '/ɪˈfɪʃnt/',
@@ -742,13 +709,12 @@ const rawWords: Word[] = [
       { part: '-ient', type: 'suffix', meaning: '形容词后缀' }
     ],
     collocations: [
-      { en: 'highly efficient', zh: '高效' },
-      { en: 'energy efficient', zh: '节能' },
-      { en: 'cost efficient', zh: '经济高效' }
+      { en: 'highly efficient', zh: '高效', pattern: '副词 + 形容词' },
+      { en: 'energy efficient', zh: '节能', pattern: '名词 + 形容词' },
+      { en: 'cost efficient', zh: '经济高效', pattern: '名词 + 形容词' }
     ],
     synonyms: ['productive', 'effective', 'competent'],
     antonyms: ['inefficient', 'wasteful', 'unproductive'],
-    memoryTip: 'effect(效果) + ient  有效果的  高效'
   },
   {
     id: 'w035', word: 'influence', phonetic: '/ˈɪnfluəns/',
@@ -769,13 +735,12 @@ const rawWords: Word[] = [
       { part: '-ence', type: 'suffix', meaning: '名词后缀' }
     ],
     collocations: [
-      { en: 'have influence on', zh: '对……有影响' },
-      { en: 'under the influence', zh: '在影响下' },
-      { en: 'strong influence', zh: '强烈影响' }
+      { en: 'have influence on', zh: '对……有影响', pattern: '动词 + 名词' },
+      { en: 'under the influence', zh: '在影响下', pattern: '介词 + 名词' },
+      { en: 'strong influence', zh: '强烈影响', pattern: '形容词 + 名词' }
     ],
     synonyms: ['impact', 'effect', 'sway'],
     antonyms: [],
-    memoryTip: 'in(进入) + flu(流感) + ence  像流感一样传播影'
   },
   {
     id: 'w036', word: 'gradually', phonetic: '/ˈɡrædʒuəli/',
@@ -792,7 +757,6 @@ const rawWords: Word[] = [
     etymology: 'gradu(  + al + ly  一步一步地  逐渐',
     synonyms: ['slowly', 'steadily', 'progressively'],
     antonyms: ['suddenly', 'abruptly', 'immediately'],
-    memoryTip: 'graduate(毕业)  像毕业一样逐渐(gradually)成长'
   },
   {
     id: 'w037', word: 'desperate', phonetic: '/ˈdespərət/',
@@ -813,13 +777,12 @@ const rawWords: Word[] = [
       { part: '-ate', type: 'suffix', meaning: '形容词后缀' }
     ],
     collocations: [
-      { en: 'desperate situation', zh: '绝望的处' },
-      { en: 'desperate attempt', zh: '孤注一掷的尝试' },
-      { en: 'desperate for', zh: '迫切需' }
+      { en: 'desperate situation', zh: '绝望的处境', pattern: '形容词 + 名词' },
+      { en: 'desperate attempt', zh: '孤注一掷的尝试', pattern: '形容词 + 名词' },
+      { en: 'desperate for', zh: '迫切需要', pattern: '形容词 + 介词' }
     ],
     synonyms: ['hopeless', 'frantic', 'urgent'],
     antonyms: ['hopeful', 'calm', 'content'],
-    memoryTip: 'de(去掉) + sper(希望) + ate  去掉希望  绝望'
   },
   {
     id: 'w038', word: 'inevitable', phonetic: '/ɪnˈevɪtəbl/',
@@ -840,13 +803,12 @@ const rawWords: Word[] = [
       { part: '-able', type: 'suffix', meaning: '能……的' }
     ],
     collocations: [
-      { en: 'inevitable result', zh: '必然结果' },
-      { en: 'seem inevitable', zh: '似乎不可避免' },
-      { en: 'virtually inevitable', zh: '几乎不可避免' }
+      { en: 'inevitable result', zh: '必然结果', pattern: '形容词 + 名词' },
+      { en: 'seem inevitable', zh: '似乎不可避免', pattern: '系动词 + 形容词' },
+      { en: 'virtually inevitable', zh: '几乎不可避免', pattern: '副词 + 形容词' }
     ],
     synonyms: ['unavoidable', 'inescapable', 'certain'],
     antonyms: ['avoidable', 'preventable', 'uncertain'],
-    memoryTip: 'in(  + evit(exit，  + able  逃不掉的  不可避免'
   },
   {
     id: 'w039', word: 'sufficient', phonetic: '/səˈfɪʃnt/',
@@ -862,7 +824,6 @@ const rawWords: Word[] = [
     etymology: 'suf-(  + fic(  + ient  在下面做好了  足够',
     synonyms: ['enough', 'adequate', 'ample'],
     antonyms: ['insufficient', 'inadequate', 'lacking'],
-    memoryTip: 'su(  + fficient  苏先生觉得这些已经足够了'
   },
   {
     id: 'w040', word: 'vocabulary', phonetic: '/vəˈkæbjələri/',
@@ -879,7 +840,6 @@ const rawWords: Word[] = [
     etymology: 'vocab(  + ulary  能叫出来  词汇',
     synonyms: ['lexicon', 'terminology', 'glossary'],
     antonyms: [],
-    memoryTip: 'vocal(声音) + bury(   把声音埋进脑  记住词汇'
   },
   {
     id: 'w041', word: 'ambiguous', phonetic: '/æmˈbɪɡjuəs/',
@@ -895,7 +855,6 @@ const rawWords: Word[] = [
     etymology: 'ambi-(两边) + ig(驱动) + uous  被两边驱  模棱两可',
     synonyms: ['vague', 'unclear', 'equivocal'],
     antonyms: ['clear', 'definite', 'unambiguous'],
-    memoryTip: 'ambi(两个) + guous  两个意思都  模棱两可'
   },
   {
     id: 'w042', word: 'authentic', phonetic: '/ɔːˈθentɪk/',
@@ -912,7 +871,6 @@ const rawWords: Word[] = [
     etymology: 'auth(自己) + entic  自己  真实',
     synonyms: ['genuine', 'real', 'original'],
     antonyms: ['fake', 'counterfeit', 'false'],
-    memoryTip: 'author(作   作者亲手写  真实 authentic)'
   },
   {
     id: 'w043', word: 'beneficial', phonetic: '/ˌbenɪˈfɪʃl/',
@@ -932,13 +890,12 @@ const rawWords: Word[] = [
       { part: '-ial', type: 'suffix', meaning: '形容词后缀' }
     ],
     collocations: [
-      { en: 'beneficial effect', zh: '有益的效' },
-      { en: 'mutually beneficial', zh: '互利' },
-      { en: 'beneficial to health', zh: '有益健康' }
+      { en: 'beneficial effect', zh: '有益的效果', pattern: '形容词 + 名词' },
+      { en: 'mutually beneficial', zh: '互利', pattern: '副词 + 形容词' },
+      { en: 'beneficial to health', zh: '有益健康', pattern: '形容词 + 介词' }
     ],
     synonyms: ['advantageous', 'helpful', 'favorable'],
     antonyms: ['harmful', 'detrimental', 'damaging'],
-    memoryTip: 'bene(  + ficial  好的效果  有益'
   },
   {
     id: 'w044', word: 'catastrophe', phonetic: '/kəˈtæstrəfi/',
@@ -954,7 +911,6 @@ const rawWords: Word[] = [
     etymology: 'cata-(向下) + strophe(   向下翻转  灾难',
     synonyms: ['disaster', 'calamity', 'tragedy'],
     antonyms: ['blessing', 'fortune', 'miracle'],
-    memoryTip: 'cat(  + a + strophe  猫打翻了一  灾难'
   },
   {
     id: 'w045', word: 'diligent', phonetic: '/ˈdɪlɪdʒənt/',
@@ -970,7 +926,6 @@ const rawWords: Word[] = [
     etymology: 'di-(加强) + lig(选择) + ent  认真选择  勤奋',
     synonyms: ['industrious', 'hardworking', 'assiduous'],
     antonyms: ['lazy', 'idle', 'negligent'],
-    memoryTip: 'dili(地里) + gent(   在地里干活的  勤奋'
   },
   {
     id: 'w046', word: 'elaborate', phonetic: '/ɪˈlæbərət/',
@@ -987,7 +942,6 @@ const rawWords: Word[] = [
     etymology: 'e-(  + labor(劳动) + ate  精心劳动做出  精心制作',
     synonyms: ['detailed', 'intricate', 'complex'],
     antonyms: ['simple', 'plain', 'basic'],
-    memoryTip: 'e + labor(劳动) + ate  付出劳动精心  精心制作'
   },
   {
     id: 'w047', word: 'fundamental', phonetic: '/ˌfʌndəˈmentl/',
@@ -1004,7 +958,6 @@ const rawWords: Word[] = [
     etymology: 'fund(基底) + a + ment + al  基底  基本',
     synonyms: ['basic', 'essential', 'primary'],
     antonyms: ['secondary', 'minor', 'peripheral'],
-    memoryTip: 'fund(基金) + amental  像基金一样是基本  基本'
   },
   {
     id: 'w048', word: 'guarantee', phonetic: '/ˌɡærənˈtiː/',
@@ -1021,7 +974,6 @@ const rawWords: Word[] = [
     etymology: 'guarant(保护) + ee  保护  保证',
     synonyms: ['promise', 'assurance', 'warranty'],
     antonyms: [],
-    memoryTip: ' gua) ran) tee)  挂上牌子保证质量'
   },
   {
     id: 'w049', word: 'hypothesis', phonetic: '/haɪˈpɒθəsɪs/',
@@ -1037,7 +989,6 @@ const rawWords: Word[] = [
     etymology: 'hypo-(下面) + thesis(论点)  放在下面的论  假说',
     synonyms: ['theory', 'assumption', 'proposition'],
     antonyms: ['fact', 'proof', 'certainty'],
-    memoryTip: 'hypo(低于) + thesis(论文)  低于论文级别  假说'
   },
   {
     id: 'w050', word: 'implement', phonetic: '/ˈɪmplɪment/',
@@ -1055,7 +1006,6 @@ const rawWords: Word[] = [
     etymology: 'im-(进入) + ple(填满) + ment  填满进去  实施',
     synonyms: ['execute', 'carry out', 'apply'],
     antonyms: ['ignore', 'neglect', 'abandon'],
-    memoryTip: 'im(进入) + ple(  + ment  让计划充分执  实施'
   },
   {
     id: 'w051', word: 'justify', phonetic: '/ˈdʒʌstɪfaɪ/',
@@ -1072,13 +1022,12 @@ const rawWords: Word[] = [
     etymology: 'just(公正) + ify(   使公  证明有理',
     synonyms: ['defend', 'vindicate', 'validate'],
     antonyms: ['condemn', 'accuse', 'blame'],
-    memoryTip: 'just(公正  + ify(   使之变得公正  证明有理'
   },
   {
     id: 'w052', word: 'legitimate', phonetic: '/lɪˈdʒɪtɪmət/',
     partOfSpeech: ['adj.'],
     definitions: [
-      { en: 'conforming to the law or to rules', zh: '合法的；正当' },
+      { en: 'conforming to the law or to rules', zh: '合法的；正当的' },
       { en: 'able to be defended with logic; reasonable', zh: '合理的；合情合理' }
     ],
     examples: [
@@ -1089,7 +1038,6 @@ const rawWords: Word[] = [
     etymology: 'legit(法律) + imate  符合法律  合法',
     synonyms: ['lawful', 'legal', 'valid'],
     antonyms: ['illegal', 'illegitimate', 'unlawful'],
-    memoryTip: 'legit(合法) + imate  合法  legitimate'
   },
   {
     id: 'w053', word: 'manipulate', phonetic: '/məˈnɪpjuleɪt/',
@@ -1106,14 +1054,13 @@ const rawWords: Word[] = [
     etymology: 'mani(  + pul(  + ate  用手  操纵',
     synonyms: ['control', 'influence', 'exploit'],
     antonyms: ['liberate', 'release', 'free'],
-    memoryTip: 'mani(  + pulate  用手操纵  操纵'
   },
   {
     id: 'w054', word: 'negotiate', phonetic: '/nɪˈɡoʊʃieɪt/',
     partOfSpeech: ['v.'],
     definitions: [
-      { en: 'to try to reach an agreement by discussion', zh: '谈判；协' },
-      { en: 'to find a way through or around something', zh: '通过；越' }
+      { en: 'to try to reach an agreement by discussion', zh: '谈判；协商' },
+      { en: 'to find a way through or around something', zh: '通过；越过' }
     ],
     examples: [
       { en: 'The two countries are negotiating a peace treaty.', zh: '两国正在谈判一项和平条约' },
@@ -1123,7 +1070,6 @@ const rawWords: Word[] = [
     etymology: 'neg-(否定) + oti(休闲) + ate  不休  忙于谈判',
     synonyms: ['discuss', 'bargain', 'mediate'],
     antonyms: ['refuse', 'reject', 'ignore'],
-    memoryTip: 'neg(  + otiate  双方  ，然后开始谈'
   },
   {
     id: 'w055', word: 'obligation', phonetic: '/ˌɒblɪˈɡeɪʃn/',
@@ -1139,7 +1085,6 @@ const rawWords: Word[] = [
     etymology: 'ob-(朝向) + lig(  + ation  被绑住的  义务',
     synonyms: ['duty', 'responsibility', 'commitment'],
     antonyms: ['freedom', 'choice', 'option'],
-    memoryTip: 'ob + ligation(   被道德法律绑  义务'
   },
   {
     id: 'w056', word: 'paradox', phonetic: '/ˈpærədɒks/',
@@ -1155,7 +1100,6 @@ const rawWords: Word[] = [
     etymology: 'para-(超越) + dox(观点)  超越常规观点  悖论',
     synonyms: ['contradiction', 'anomaly', 'puzzle'],
     antonyms: ['truth', 'certainty', 'consistency'],
-    memoryTip: 'para(旁边) + dox(观点)  旁边有矛盾的观点  悖论'
   },
   {
     id: 'w057', word: 'reluctant', phonetic: '/rɪˈlʌktənt/',
@@ -1171,7 +1115,6 @@ const rawWords: Word[] = [
     etymology: 're-(  + luct(挣扎) + ant  反抗挣扎  不情愿的',
     synonyms: ['unwilling', 'hesitant', 'disinclined'],
     antonyms: ['willing', 'eager', 'enthusiastic'],
-    memoryTip: 're(反复) + luct(  + ant  反复被拉也不愿去  不情愿的'
   },
   {
     id: 'w058', word: 'sophisticated', phonetic: '/səˈfɪstɪkeɪtɪd/',
@@ -1188,13 +1131,12 @@ const rawWords: Word[] = [
     etymology: 'sophist(智  + icated  像智者一样的  老练',
     synonyms: ['refined', 'cultured', 'advanced'],
     antonyms: ['naive', 'simple', 'unsophisticated'],
-    memoryTip: 'sophist(哲学  + icated  像哲学家一样世  老练'
   },
   {
     id: 'w059', word: 'thorough', phonetic: '/ˈθɜːroʊ/',
     partOfSpeech: ['adj.'],
     definitions: [
-      { en: 'complete with regard to every detail; not superficial', zh: '彻底的；全面的；详尽' }
+      { en: 'complete with regard to every detail; not superficial', zh: '彻底的；全面的；详尽的' }
     ],
     examples: [
       { en: 'The police made a thorough investigation.', zh: '警方进行了彻底的调查' },
@@ -1204,13 +1146,12 @@ const rawWords: Word[] = [
     etymology: 'through(通过) 的古英语形式  从头到尾通过  彻底',
     synonyms: ['complete', 'comprehensive', 'exhaustive'],
     antonyms: ['superficial', 'careless', 'incomplete'],
-    memoryTip: 'thorough  through  从头到尾穿过  彻底'
   },
   {
     id: 'w060', word: 'unanimous', phonetic: '/juˈnænɪməs/',
     partOfSpeech: ['adj.'],
     definitions: [
-      { en: 'fully in agreement; with everyone agreeing', zh: '全体一致的；无异议' }
+      { en: 'fully in agreement; with everyone agreeing', zh: '全体一致的；无异议的' }
     ],
     examples: [
       { en: 'The committee was unanimous in its decision.', zh: '委员会的决定是一致的' },
@@ -1220,7 +1161,6 @@ const rawWords: Word[] = [
     etymology: 'un-(一) + anim(心灵) + ous  一条心  全体一致的',
     synonyms: ['united', 'agreed', 'collective'],
     antonyms: ['divided', 'disagreed', 'split'],
-    memoryTip: 'uni(统一) + animo(  + us  所有人同心  全体一致的'
   },
   {
     id: 'w061', word: 'versatile', phonetic: '/ˈvɜːrsətl/',
@@ -1236,13 +1176,12 @@ const rawWords: Word[] = [
     etymology: 'vers(  + atile  能转向各方面  多才多艺',
     synonyms: ['adaptable', 'flexible', 'multifaceted'],
     antonyms: ['limited', 'inflexible', 'specialized'],
-    memoryTip: 'vers(  + atile  能转换各种角  多才多艺'
   },
   {
     id: 'w062', word: 'withstand', phonetic: '/wɪðˈstænd/',
     partOfSpeech: ['v.'],
     definitions: [
-      { en: 'to remain undamaged or unaffected by; to resist', zh: '承受；经受住；抵' }
+      { en: 'to remain undamaged or unaffected by; to resist', zh: '承受；经受住；抵抗' }
     ],
     examples: [
       { en: 'The bridge was designed to withstand earthquakes.', zh: '这座桥被设计成能承受地震' },
@@ -1252,14 +1191,13 @@ const rawWords: Word[] = [
     etymology: 'with-(对抗) + stand(站立)  站在对面抵抗  抵挡',
     synonyms: ['resist', 'endure', 'survive'],
     antonyms: ['yield', 'surrender', 'collapse'],
-    memoryTip: 'with(  + stand(   站着和困难对  承受'
   },
   {
     id: 'w063', word: 'yield', phonetic: '/jiːld/',
     partOfSpeech: ['v.', 'n.'],
     definitions: [
       { en: 'to produce or provide a result, gain, or financial return', zh: '产生；产出；带来' },
-      { en: 'to give way to pressure or demands', zh: '屈服；让' }
+      { en: 'to give way to pressure or demands', zh: '屈服；让步' }
     ],
     examples: [
       { en: 'The investment yielded a high return.', zh: '这项投资带来了高回报' },
@@ -1269,13 +1207,12 @@ const rawWords: Word[] = [
     etymology: '源自古英 gieldan(支付)  产出；让',
     synonyms: ['produce', 'generate', 'surrender'],
     antonyms: ['resist', 'withhold', 'deny'],
-    memoryTip: '一(yi) e) ld)树产出很多果  yield  产出'
   },
   {
     id: 'w064', word: 'zealous', phonetic: '/ˈzeləs/',
     partOfSpeech: ['adj.'],
     definitions: [
-      { en: 'having or showing great energy or enthusiasm', zh: '热心的；热情的；狂热' }
+      { en: 'having or showing great energy or enthusiasm', zh: '热心的；热情的；狂热的' }
     ],
     examples: [
       { en: 'She was a zealous supporter of the cause.', zh: '她是这项事业的热心支持者' },
@@ -1285,14 +1222,13 @@ const rawWords: Word[] = [
     etymology: 'zeal(热情) + ous  充满热情  热心',
     synonyms: ['enthusiastic', 'passionate', 'fervent'],
     antonyms: ['apathetic', 'indifferent', 'lukewarm'],
-    memoryTip: 'zeal(热情) + ous  充满热情  热心'
   },
   {
     id: 'w065', word: 'contemplate', phonetic: '/ˈkɒntəmpleɪt/',
     partOfSpeech: ['v.'],
     definitions: [
-      { en: 'to think about something carefully for a long time', zh: '沉思；深思熟' },
-      { en: 'to look at something thoughtfully', zh: '注视；凝' }
+      { en: 'to think about something carefully for a long time', zh: '沉思；深思熟虑' },
+      { en: 'to look at something thoughtfully', zh: '注视；凝视' }
     ],
     examples: [
       { en: 'She sat contemplating the meaning of life.', zh: '她坐着沉思生命的意义' },
@@ -1302,14 +1238,13 @@ const rawWords: Word[] = [
     etymology: 'con-(共同) + templ(  + ate  在庙里沉  深',
     synonyms: ['consider', 'ponder', 'meditate'],
     antonyms: ['ignore', 'disregard', 'neglect'],
-    memoryTip: 'con + temple(寺庙)  在寺庙里沉  深思熟'
   },
   {
     id: 'w066', word: 'diversity', phonetic: '/daɪˈvɜːrsəti/',
     partOfSpeech: ['n.'],
     definitions: [
       { en: 'the state of being different or having variety', zh: '多样性；差异' },
-      { en: 'inclusion of different types of people', zh: '多元' }
+      { en: 'inclusion of different types of people', zh: '多元化' }
     ],
     examples: [
       { en: 'Cultural diversity enriches society.', zh: '文化多样性丰富了社会' },
@@ -1319,7 +1254,6 @@ const rawWords: Word[] = [
     etymology: 'di-(分开) + vers(  + ity  转向不同方向  多样',
     synonyms: ['variety', 'range', 'multiplicity'],
     antonyms: ['uniformity', 'sameness', 'homogeneity'],
-    memoryTip: 'diverse(多样  + ity  多样'
   },
   {
     id: 'w067', word: 'empathy', phonetic: '/ˈempəθi/',
@@ -1338,13 +1272,12 @@ const rawWords: Word[] = [
       { part: 'pathy', type: 'root', meaning: '感情 feeling' }
     ],
     collocations: [
-      { en: 'show empathy', zh: '表现出同理心' },
-      { en: 'lack of empathy', zh: '缺乏同理' },
-      { en: 'empathy for', zh: '对……的同理' }
+      { en: 'show empathy', zh: '表现出同理心', pattern: '动词 + 名词' },
+      { en: 'lack of empathy', zh: '缺乏同理心', pattern: '名词 + 介词' },
+      { en: 'empathy for', zh: '对……的同理心', pattern: '名词 + 介词' }
     ],
     synonyms: ['compassion', 'understanding', 'sympathy'],
     antonyms: ['apathy', 'indifference', 'callousness'],
-    memoryTip: 'em(进入) + path(感情) + y  进入别人的感  同理'
   },
   {
     id: 'w068', word: 'flourish', phonetic: '/ˈflɜːrɪʃ/',
@@ -1361,13 +1294,12 @@ const rawWords: Word[] = [
     etymology: 'flour(  + ish  像花一样绽  繁荣',
     synonyms: ['thrive', 'prosper', 'bloom'],
     antonyms: ['decline', 'wither', 'languish'],
-    memoryTip: 'flour(面粉/  + ish  像花一样盛开  繁荣'
   },
   {
     id: 'w069', word: 'gratitude', phonetic: '/ˈɡrætɪtjuːd/',
     partOfSpeech: ['n.'],
     definitions: [
-      { en: 'the quality of being thankful; readiness to show appreciation', zh: '感激；感' }
+      { en: 'the quality of being thankful; readiness to show appreciation', zh: '感激；感谢' }
     ],
     examples: [
       { en: 'She expressed her gratitude with a warm smile.', zh: '她用温暖的微笑表达了感激之情' },
@@ -1377,7 +1309,6 @@ const rawWords: Word[] = [
     etymology: 'grat(感谢) + itude(状   感谢的状  感激',
     synonyms: ['thankfulness', 'appreciation', 'gratefulness'],
     antonyms: ['ingratitude', 'ungratefulness'],
-    memoryTip: 'grate(感恩  + itude  感恩的状  感激'
   },
   {
     id: 'w070', word: 'integrity', phonetic: '/ɪnˈteɡrəti/',
@@ -1397,13 +1328,12 @@ const rawWords: Word[] = [
       { part: '-ity', type: 'suffix', meaning: '名词后缀' }
     ],
     collocations: [
-      { en: 'personal integrity', zh: '个人操守' },
-      { en: 'structural integrity', zh: '结构完整' },
-      { en: 'maintain integrity', zh: '保持正直' }
+      { en: 'personal integrity', zh: '个人操守', pattern: '形容词 + 名词' },
+      { en: 'structural integrity', zh: '结构完整性', pattern: '形容词 + 名词' },
+      { en: 'maintain integrity', zh: '保持正直', pattern: '动词 + 名词' }
     ],
     synonyms: ['honesty', 'honor', 'morality'],
     antonyms: ['dishonesty', 'corruption', 'deceit'],
-    memoryTip: 'integer(整数)  完整的、不分裂  正直(integrity)'
   }
 ];
 
@@ -1414,6 +1344,7 @@ export function getRandomOptions(currentWord: Word, count: number = 3): Word[] {
   const shuffled = others.sort(() => Math.random() - 0.5);
   return shuffled.slice(0, count);
 }
+
 
 
 

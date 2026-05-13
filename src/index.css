@@ -3,6 +3,7 @@
   --motion-ease: cubic-bezier(0.4, 0, 0.2, 1);
   --apple-blue: #0071e3;
   --apple-green: #34c759;
+  --site-scale: 0.84;
   --spring-easing: cubic-bezier(0.3, 1.5, 0.5, 1);
   --apple-ease: cubic-bezier(0.25, 0.1, 0.25, 1);
   --apple-spring: cubic-bezier(0.3, 1.5, 0.6, 1);
@@ -43,6 +44,27 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+}
+
+.site-scale-shell {
+  transform-origin: top center;
+}
+
+@supports (zoom: 1) {
+  .site-scale-shell {
+    zoom: var(--site-scale);
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@supports not (zoom: 1) {
+  .site-scale-shell {
+    transform: scale(var(--site-scale));
+    transform-origin: top center;
+    width: 100%;
+    margin: 0;
+  }
 }
 
 /* Apple Premium Animated Background */

@@ -11,6 +11,7 @@ import https from 'https';
 import http from 'http';
 import { fileURLToPath } from 'url';
 import { createRequire } from 'module';
+import { buildFallbackExamples } from './word-example-generator.mjs';
 
 const require = createRequire(import.meta.url);
 const Database = require('better-sqlite3');
@@ -22,6 +23,7 @@ const __dirname = path.dirname(__filename);
 const DATA_DIR = path.join(__dirname, 'data');
 const OUTPUT_DIR = path.join(__dirname, '..', 'public', 'data');
 const ECDICT_URL = 'https://github.com/skywind3000/ECDICT/releases/download/1.0.28/ecdict-sqlite-28.zip';
+const EXAMPLE_COUNT = Math.max(1, Number(process.env.WORD_EXAMPLE_COUNT || 2));
 
 // tag → 词表 ID 映射
 const TAG_MAP = {
@@ -188,10 +190,11 @@ function convertToAppFormat(row, listId, index) {
   }
 
   // 生成例句
-  const examples = [{
-    en: `I need to learn the word "${word}".`,
-    zh: `我需要学习单词"${word}"。`,
-  }];
+  const examples = buildFallbackExamples({
+    word,
+    partOfSpeech,
+    definitions,
+  }, EXAMPLE_COUNT);
 
   return {
     id: `${listId}-${String(index + 1).padStart(4, '0')}`,

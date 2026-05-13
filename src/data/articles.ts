@@ -6,6 +6,7 @@ export interface ArticleParagraph {
 export interface ArticleVocab {
   word: string;
   definition: string;
+  definitionZh?: string;
   phonetic: string;
 }
 

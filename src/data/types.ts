@@ -17,6 +17,7 @@ export interface EtymologyPart {
 export interface Collocation {
   en: string;
   zh: string;
+  pattern?: string;
 }
 
 export interface Word {
@@ -32,7 +33,6 @@ export interface Word {
   collocations?: Collocation[];
   synonyms?: string[];
   antonyms?: string[];
-  memoryTip?: string;
 }
 
 export interface WordList {
@@ -54,6 +54,7 @@ export interface LearningRecord {
   nextReviewDate: string;
   level: number;
   mastered: boolean;
+  updatedAt?: string;
 }
 
 export interface UserProgress {
@@ -65,6 +66,7 @@ export interface UserProgress {
   lastStudyDate: string;
   records: Record<string, LearningRecord>;
   favorites: string[];
+  updatedAt?: string;
 }
 
 export interface DailyStats {

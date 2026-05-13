@@ -1,7 +1,7 @@
 import type { Word } from '../data/types';
 
 const DB_NAME = 'wordwise_cache';
-const DB_VERSION = 3;
+const DB_VERSION = 4;
 const STORE_NAME = 'wordLists';
 
 type DerivedWordListConfig = {

@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-05-06T02:58:35.554Z",
+  "articleCount": 600,
+  "sourceMode": "fallback",
+  "provider": "template",
+  "sourceBriefCount": 0,
+  "sourceNames": [
+    "LexFlow Studio"
+  ],
+  "targetArticleCount": 300,
+  "generationSchedule": {
+    "hour": 2,
+    "minute": 0,
+    "label": "每天 02:00"
+  },
+  "batchIndex": 1
+}

@@ -23,12 +23,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"service\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“service”。"
+        "en": "The service at this restaurant is excellent.",
+        "zh": "这家餐厅的服务非常好。"
+      },
+      {
+        "en": "We need to service the car regularly.",
+        "zh": "我们需要定期保养汽车。"
       }
     ],
     "imageQuery": "service",
-    "memoryTip": "service - n. 服务, 贡献, 雇佣, 公职, 服役, 功劳, 仪式, 送达, 行政部门"
+    "collocations": []
   },
   {
     "id": "automotive-0002",
@@ -49,12 +53,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"car\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“car”。"
+        "en": "My car is parked outside the house.",
+        "zh": "我的车停在房子外面。"
+      },
+      {
+        "en": "She drives her car to work every day.",
+        "zh": "她每天开车去上班。"
       }
     ],
     "imageQuery": "car",
-    "memoryTip": "car - n. 汽车, 客车"
+    "collocations": []
   },
   {
     "id": "automotive-0003",
@@ -75,12 +83,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"road\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“road”。"
+        "en": "The road is very busy during rush hour.",
+        "zh": "这条路在高峰时段非常繁忙。"
+      },
+      {
+        "en": "We took a different road to avoid traffic.",
+        "zh": "我们走了另一条路以避开交通拥堵。"
       }
     ],
     "imageQuery": "road",
-    "memoryTip": "road - n. 路, 道路, 公路, 途径, 方法"
+    "collocations": []
   },
   {
     "id": "automotive-0004",
@@ -97,12 +109,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"door\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“door”。"
+        "en": "Please close the door when you leave.",
+        "zh": "离开时请关上门。"
+      },
+      {
+        "en": "The door to the garden is open.",
+        "zh": "通往花园的门是开着的。"
       }
     ],
     "imageQuery": "door",
-    "memoryTip": "door - n. 门"
+    "collocations": []
   },
   {
     "id": "automotive-0005",
@@ -128,12 +144,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"drive\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“drive”。"
+        "en": "She can drive a car very well.",
+        "zh": "她车开得很好。"
+      },
+      {
+        "en": "We took a long drive through the countryside.",
+        "zh": "我们开车长途穿越了乡村。"
       }
     ],
     "imageQuery": "drive",
-    "memoryTip": "drive - n. 驾车, 快车道, 推进力, 驱动, 动力, 击球, 驱动器"
+    "collocations": []
   },
   {
     "id": "automotive-0006",
@@ -154,12 +174,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"performance\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“performance”。"
+        "en": "The performance of the engine is excellent.",
+        "zh": "发动机的性能非常好。"
+      },
+      {
+        "en": "Her performance in the play was amazing.",
+        "zh": "她在剧中的表演令人惊叹。"
       }
     ],
     "imageQuery": "performance",
-    "memoryTip": "performance - n. 施行, 工作情况, 成绩, 行为, 表现, 演出"
+    "collocations": []
   },
   {
     "id": "automotive-0007",
@@ -185,12 +209,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"oil\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“oil”。"
+        "en": "We need to change the oil in the car.",
+        "zh": "我们需要更换汽车机油。"
+      },
+      {
+        "en": "Oil is used to cook many dishes.",
+        "zh": "油用于烹饪许多菜肴。"
       }
     ],
     "imageQuery": "oil",
-    "memoryTip": "oil - n. 油, 石油, 油画颜料"
+    "collocations": []
   },
   {
     "id": "automotive-0008",
@@ -211,12 +239,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"software\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“software”。"
+        "en": "This software helps you edit photos easily.",
+        "zh": "这个软件帮助你轻松编辑照片。"
+      },
+      {
+        "en": "We installed new software on the computer.",
+        "zh": "我们在电脑上安装了新软件。"
       }
     ],
     "imageQuery": "software",
-    "memoryTip": "software - n. 软件"
+    "collocations": []
   },
   {
     "id": "automotive-0009",
@@ -237,12 +269,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"safety\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“safety”。"
+        "en": "Safety is very important in the workplace.",
+        "zh": "安全在工作场所非常重要。"
+      },
+      {
+        "en": "Always wear a seatbelt for safety.",
+        "zh": "为了安全，请始终系好安全带。"
       }
     ],
     "imageQuery": "safety",
-    "memoryTip": "safety - n. 安全, 保险, 平安, 保安设备"
+    "collocations": []
   },
   {
     "id": "automotive-0010",
@@ -263,12 +299,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"driver\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“driver”。"
+        "en": "The driver stopped the bus at the station.",
+        "zh": "司机在车站停了公交车。"
+      },
+      {
+        "en": "You need a good driver for this software.",
+        "zh": "你需要一个好的驱动程序来运行这个软件。"
       }
     ],
     "imageQuery": "driver",
-    "memoryTip": "driver - n. 驾驶员, 驱动器, 驱动程序"
+    "collocations": []
   },
   {
     "id": "automotive-0011",
@@ -294,12 +334,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"speed\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“speed”。"
+        "en": "The car is moving at high speed.",
+        "zh": "汽车正在高速行驶。"
+      },
+      {
+        "en": "We need to speed up the process.",
+        "zh": "我们需要加快进程。"
       }
     ],
     "imageQuery": "speed",
-    "memoryTip": "speed - n. 速率, 速度, 迅速"
+    "collocations": []
   },
   {
     "id": "automotive-0012",
@@ -325,12 +369,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"route\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“route”。"
+        "en": "We planned the shortest route to the city.",
+        "zh": "我们规划了去城市的最短路线。"
+      },
+      {
+        "en": "The GPS will route us around traffic.",
+        "zh": "GPS会为我们规划绕过交通拥堵的路线。"
       }
     ],
     "imageQuery": "route",
-    "memoryTip": "route - n. 路径, 途径, 路线"
+    "collocations": []
   },
   {
     "id": "automotive-0013",
@@ -351,12 +399,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"vehicle\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“vehicle”。"
+        "en": "A car is a common type of vehicle.",
+        "zh": "汽车是一种常见的交通工具。"
+      },
+      {
+        "en": "The vehicle was parked in the garage.",
+        "zh": "车辆停在车库里。"
       }
     ],
     "imageQuery": "vehicle",
-    "memoryTip": "vehicle - n. 交通工具, 车辆, 传播媒介"
+    "collocations": []
   },
   {
     "id": "automotive-0014",
@@ -377,12 +429,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"engine\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“engine”。"
+        "en": "The car engine is very powerful.",
+        "zh": "汽车引擎非常强大。"
+      },
+      {
+        "en": "The search engine finds results fast.",
+        "zh": "搜索引擎快速找到结果。"
       }
     ],
     "imageQuery": "engine",
-    "memoryTip": "engine - n. 引擎, 发动机, 机车"
+    "collocations": []
   },
   {
     "id": "automotive-0015",
@@ -408,12 +464,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"traffic\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“traffic”。"
+        "en": "There is heavy traffic on the highway.",
+        "zh": "高速公路上交通拥堵。"
+      },
+      {
+        "en": "Traffic lights help control the flow of cars.",
+        "zh": "交通灯帮助控制车流。"
       }
     ],
     "imageQuery": "traffic",
-    "memoryTip": "traffic - n. 交通, 通行, 运输, 交通量, 贸易, 交易, 交往, 通信量"
+    "collocations": []
   },
   {
     "id": "automotive-0016",
@@ -435,12 +495,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"plate\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“plate”。"
+        "en": "She put the food on a clean plate.",
+        "zh": "她把食物放在一个干净的盘子上。"
+      },
+      {
+        "en": "The car has a license plate on the back.",
+        "zh": "汽车后面有车牌。"
       }
     ],
     "imageQuery": "plate",
-    "memoryTip": "plate - n. 碟, 盘子, 盆中物, 金属板, 图版, 金银餐具, 印版, 金属牌(照)"
+    "collocations": []
   },
   {
     "id": "automotive-0017",
@@ -457,12 +521,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"lane\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“lane”。"
+        "en": "Stay in your lane while driving.",
+        "zh": "开车时请待在您的车道内。"
+      },
+      {
+        "en": "We walked down a narrow lane between houses.",
+        "zh": "我们沿着房子之间的一条狭窄小巷走着。"
       }
     ],
     "imageQuery": "lane",
-    "memoryTip": "lane - n. 小路, 巷, 弄, 单行道"
+    "collocations": []
   },
   {
     "id": "automotive-0018",
@@ -488,12 +556,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"motor\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“motor”。"
+        "en": "The motor in this fan is very quiet.",
+        "zh": "这个风扇的马达非常安静。"
+      },
+      {
+        "en": "He started the motor of the boat.",
+        "zh": "他启动了船的发动机。"
       }
     ],
     "imageQuery": "motor",
-    "memoryTip": "motor - n. 马达, 发动机, 原动力, 汽车"
+    "collocations": []
   },
   {
     "id": "automotive-0019",
@@ -514,12 +586,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"warning\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“warning”。"
+        "en": "The warning light came on in the car.",
+        "zh": "车上的警示灯亮了。"
+      },
+      {
+        "en": "He gave a warning about the bad weather.",
+        "zh": "他发出了关于恶劣天气的警告。"
       }
     ],
     "imageQuery": "warning",
-    "memoryTip": "warning - n. 警告, 预告, 预兆, 通知"
+    "collocations": []
   },
   {
     "id": "automotive-0020",
@@ -545,12 +621,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"fuel\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“fuel”。"
+        "en": "The car needs more fuel to run.",
+        "zh": "汽车需要更多燃料才能运行。"
+      },
+      {
+        "en": "We fuel the generator with gasoline.",
+        "zh": "我们用汽油给发电机加燃料。"
       }
     ],
     "imageQuery": "fuel",
-    "memoryTip": "fuel - n. 燃料, 木炭"
+    "collocations": []
   },
   {
     "id": "automotive-0021",
@@ -576,12 +656,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"signal\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“signal”。"
+        "en": "The traffic signal turned green.",
+        "zh": "交通信号灯变绿了。"
+      },
+      {
+        "en": "She gave a signal to start the race.",
+        "zh": "她发出信号开始比赛。"
       }
     ],
     "imageQuery": "signal",
-    "memoryTip": "signal - n. 信号, 暗号, 近因, 导火线"
+    "collocations": []
   },
   {
     "id": "automotive-0022",
@@ -603,12 +687,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"emergency\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“emergency”。"
+        "en": "Call 911 in an emergency situation.",
+        "zh": "在紧急情况下拨打911。"
+      },
+      {
+        "en": "The hospital has an emergency room.",
+        "zh": "医院设有急诊室。"
       }
     ],
     "imageQuery": "emergency",
-    "memoryTip": "emergency - n. 紧急状况, 紧急事件, 紧急需要"
+    "collocations": []
   },
   {
     "id": "automotive-0023",
@@ -630,12 +718,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"mirror\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“mirror”。"
+        "en": "She looked at herself in the mirror.",
+        "zh": "她看着镜子里的自己。"
+      },
+      {
+        "en": "The lake mirrored the mountains perfectly.",
+        "zh": "湖面完美地映出了山峦。"
       }
     ],
     "imageQuery": "mirror",
-    "memoryTip": "mirror - n. 镜子, 写真, 典范"
+    "collocations": []
   },
   {
     "id": "automotive-0024",
@@ -661,12 +753,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"wheel\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“wheel”。"
+        "en": "The car has a flat wheel.",
+        "zh": "这辆车有一个瘪了的轮子。"
+      },
+      {
+        "en": "He turned the wheel to the left.",
+        "zh": "他把方向盘向左转。"
       }
     ],
     "imageQuery": "wheel",
-    "memoryTip": "wheel - n. 轮子, 车轮, 轮, 方向盘, 旋转, 机构, 重要人物"
+    "collocations": []
   },
   {
     "id": "automotive-0025",
@@ -687,12 +783,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"maintenance\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“maintenance”。"
+        "en": "Regular maintenance keeps the car safe.",
+        "zh": "定期维护让汽车安全。"
+      },
+      {
+        "en": "He pays for the maintenance of his house.",
+        "zh": "他支付房屋的维修费用。"
       }
     ],
     "imageQuery": "maintenance",
-    "memoryTip": "maintenance - n. 维护, 保持, 维修, 生活费用, 坚持, 扶养"
+    "collocations": []
   },
   {
     "id": "automotive-0026",
@@ -713,12 +813,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"efficiency\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“efficiency”。"
+        "en": "This machine works with great efficiency.",
+        "zh": "这台机器工作效率很高。"
+      },
+      {
+        "en": "We need to improve our energy efficiency.",
+        "zh": "我们需要提高能源效率。"
       }
     ],
     "imageQuery": "efficiency",
-    "memoryTip": "efficiency - n. 效率, 效能, 功效"
+    "collocations": []
   },
   {
     "id": "automotive-0027",
@@ -739,12 +843,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"dealer\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“dealer”。"
+        "en": "The car dealer offered a good price.",
+        "zh": "汽车经销商给出了一个好价格。"
+      },
+      {
+        "en": "He bought the painting from an art dealer.",
+        "zh": "他从一位艺术品经销商那里买了这幅画。"
       }
     ],
     "imageQuery": "dealer",
-    "memoryTip": "dealer - n. 经销商, 商人"
+    "collocations": []
   },
   {
     "id": "automotive-0028",
@@ -766,12 +874,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"electric\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“electric”。"
+        "en": "She drives an electric car.",
+        "zh": "她开一辆电动汽车。"
+      },
+      {
+        "en": "The electric fan is very quiet.",
+        "zh": "这个电风扇非常安静。"
       }
     ],
     "imageQuery": "electric",
-    "memoryTip": "electric - a. 电的, 导电的, 电动的"
+    "collocations": []
   },
   {
     "id": "automotive-0029",
@@ -797,12 +909,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"repair\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“repair”。"
+        "en": "He can repair the broken chair.",
+        "zh": "他能修理这把坏了的椅子。"
+      },
+      {
+        "en": "The repair took two hours.",
+        "zh": "修理花了两个小时。"
       }
     ],
     "imageQuery": "repair",
-    "memoryTip": "repair - n. 修理, 补救, 修复"
+    "collocations": []
   },
   {
     "id": "automotive-0030",
@@ -823,12 +939,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"garage\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“garage”。"
+        "en": "I park my car in the garage.",
+        "zh": "我把车停在车库里。"
+      },
+      {
+        "en": "The garage is full of tools.",
+        "zh": "车库里放满了工具。"
       }
     ],
     "imageQuery": "garage",
-    "memoryTip": "garage - n. 车库, 汽车修理厂, 机库"
+    "collocations": []
   },
   {
     "id": "automotive-0031",
@@ -849,12 +969,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"inspection\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“inspection”。"
+        "en": "The building passed the safety inspection.",
+        "zh": "这栋建筑通过了安全检查。"
+      },
+      {
+        "en": "We need a thorough inspection of the car.",
+        "zh": "我们需要对汽车进行一次彻底检查。"
       }
     ],
     "imageQuery": "inspection",
-    "memoryTip": "inspection - n. 检验, 检查, 视察"
+    "collocations": []
   },
   {
     "id": "automotive-0032",
@@ -880,12 +1004,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"grip\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“grip”。"
+        "en": "He has a strong grip on the rope.",
+        "zh": "他紧紧抓住绳子。"
+      },
+      {
+        "en": "The tires have good grip on the road.",
+        "zh": "轮胎在路面上抓地力很好。"
       }
     ],
     "imageQuery": "grip",
-    "memoryTip": "grip - n. 紧握, 柄, 握力, 握手方式, 手提包, 掌握, 支配, 控制"
+    "collocations": []
   },
   {
     "id": "automotive-0033",
@@ -911,12 +1039,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"gear\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“gear”。"
+        "en": "Shift the gear to drive faster.",
+        "zh": "换挡以开得更快。"
+      },
+      {
+        "en": "The bike has many gears for hills.",
+        "zh": "这辆自行车有很多档位用于爬坡。"
       }
     ],
     "imageQuery": "gear",
-    "memoryTip": "gear - n. 齿轮, 工具"
+    "collocations": []
   },
   {
     "id": "automotive-0034",
@@ -937,12 +1069,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"battery\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“battery”。"
+        "en": "The battery in my phone is dead.",
+        "zh": "我手机里的电池没电了。"
+      },
+      {
+        "en": "I need to buy a new car battery.",
+        "zh": "我需要买一个新的汽车电池。"
       }
     ],
     "imageQuery": "battery",
-    "memoryTip": "battery - n. 电池, 殴打"
+    "collocations": []
   },
   {
     "id": "automotive-0035",
@@ -969,12 +1105,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"fleet\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“fleet”。"
+        "en": "The company has a fleet of trucks.",
+        "zh": "这家公司有一队卡车。"
+      },
+      {
+        "en": "A fleet of ships sailed across the ocean.",
+        "zh": "一支舰队驶过了大洋。"
       }
     ],
     "imageQuery": "fleet",
-    "memoryTip": "fleet - n. 舰队, 港湾, 小河"
+    "collocations": []
   },
   {
     "id": "automotive-0036",
@@ -995,12 +1135,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"emission\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“emission”。"
+        "en": "The car produces low carbon emission.",
+        "zh": "这辆车产生低碳排放。"
+      },
+      {
+        "en": "We must reduce factory emissions.",
+        "zh": "我们必须减少工厂排放。"
       }
     ],
     "imageQuery": "emission",
-    "memoryTip": "emission - n. 发射, 射出, 发行"
+    "collocations": []
   },
   {
     "id": "automotive-0037",
@@ -1021,12 +1165,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"cab\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“cab”。"
+        "en": "I took a cab to the airport.",
+        "zh": "我坐出租车去了机场。"
+      },
+      {
+        "en": "The cab driver was very friendly.",
+        "zh": "出租车司机非常友好。"
       }
     ],
     "imageQuery": "cab",
-    "memoryTip": "cab - n. 出租车, 出租汽车, 出租马车"
+    "collocations": []
   },
   {
     "id": "automotive-0038",
@@ -1047,12 +1195,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"transmission\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“transmission”。"
+        "en": "The car has an automatic transmission.",
+        "zh": "这辆车有自动变速器。"
+      },
+      {
+        "en": "The transmission of data is fast.",
+        "zh": "数据传输很快。"
       }
     ],
     "imageQuery": "transmission",
-    "memoryTip": "transmission - n. 传输, 传送, 变速器"
+    "collocations": []
   },
   {
     "id": "automotive-0039",
@@ -1073,12 +1225,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"suspension\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“suspension”。"
+        "en": "The car's suspension is very smooth.",
+        "zh": "这辆车的悬挂系统非常平稳。"
+      },
+      {
+        "en": "He faced suspension from school.",
+        "zh": "他面临停学处分。"
       }
     ],
     "imageQuery": "suspension",
-    "memoryTip": "suspension - n. 悬挂, 暂停, 中止"
+    "collocations": []
   },
   {
     "id": "automotive-0040",
@@ -1099,12 +1255,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"parking\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“parking”。"
+        "en": "There is no parking on this street.",
+        "zh": "这条街上不准停车。"
+      },
+      {
+        "en": "I found a parking spot near the store.",
+        "zh": "我在商店附近找到了一个停车位。"
       }
     ],
     "imageQuery": "parking",
-    "memoryTip": "parking - n. 停车"
+    "collocations": []
   },
   {
     "id": "automotive-0041",
@@ -1130,12 +1290,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"clutch\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“clutch”。"
+        "en": "Press the clutch to change gears.",
+        "zh": "踩离合器换挡。"
+      },
+      {
+        "en": "He held the bag in a tight clutch.",
+        "zh": "他紧紧抓住包。"
       }
     ],
     "imageQuery": "clutch",
-    "memoryTip": "clutch - n. 抓紧, 掌握, 离合器, 一窝小鸡"
+    "collocations": []
   },
   {
     "id": "automotive-0042",
@@ -1161,12 +1325,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"steer\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“steer”。"
+        "en": "Steer the car towards the exit.",
+        "zh": "把车驶向出口。"
+      },
+      {
+        "en": "He tried to steer the conversation.",
+        "zh": "他试图引导谈话。"
       }
     ],
     "imageQuery": "steer",
-    "memoryTip": "steer - vt. 引导, 驾驶, 航行, 控制"
+    "collocations": []
   },
   {
     "id": "automotive-0043",
@@ -1187,12 +1355,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"mechanic\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“mechanic”。"
+        "en": "The mechanic fixed my car quickly.",
+        "zh": "机械师很快修好了我的车。"
+      },
+      {
+        "en": "She works as a mechanic in a garage.",
+        "zh": "她在修车厂当机械师。"
       }
     ],
     "imageQuery": "mechanic",
-    "memoryTip": "mechanic - n. 机械工, 技工"
+    "collocations": []
   },
   {
     "id": "automotive-0044",
@@ -1217,12 +1389,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"trunk\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“trunk”。"
+        "en": "Put the bags in the car trunk.",
+        "zh": "把包放在汽车后备箱里。"
+      },
+      {
+        "en": "The tree has a thick trunk.",
+        "zh": "这棵树有粗壮的树干。"
       }
     ],
     "imageQuery": "trunk",
-    "memoryTip": "trunk - n. 树干, 干线, 躯干, 主干, 象鼻, 箱子"
+    "collocations": []
   },
   {
     "id": "automotive-0045",
@@ -1244,12 +1420,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"brake\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“brake”。"
+        "en": "Use the brake to stop the car.",
+        "zh": "用刹车来停车。"
+      },
+      {
+        "en": "He pressed the brake pedal hard.",
+        "zh": "他用力踩下刹车踏板。"
       }
     ],
     "imageQuery": "brake",
-    "memoryTip": "brake - n. 刹车, 阻碍, 丛林"
+    "collocations": []
   },
   {
     "id": "automotive-0046",
@@ -1266,12 +1446,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"accelerate\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“accelerate”。"
+        "en": "Press the pedal to accelerate.",
+        "zh": "踩踏板加速。"
+      },
+      {
+        "en": "The car can accelerate very fast.",
+        "zh": "这辆车加速很快。"
       }
     ],
     "imageQuery": "accelerate",
-    "memoryTip": "accelerate - v. 加速, 促进"
+    "collocations": []
   },
   {
     "id": "automotive-0047",
@@ -1288,12 +1472,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"motorist\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“motorist”。"
+        "en": "The motorist stopped at the red light.",
+        "zh": "开车的人在红灯前停下了。"
+      },
+      {
+        "en": "A motorist should always wear a seatbelt.",
+        "zh": "开车的人应该始终系安全带。"
       }
     ],
     "imageQuery": "motorist",
-    "memoryTip": "motorist - n. 开汽车者, 驾车旅行的人"
+    "collocations": []
   },
   {
     "id": "automotive-0048",
@@ -1314,12 +1502,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"warranty\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“warranty”。"
+        "en": "The phone comes with a one-year warranty.",
+        "zh": "这部手机有一年保修期。"
+      },
+      {
+        "en": "Check the warranty before buying the product.",
+        "zh": "购买产品前检查保修单。"
       }
     ],
     "imageQuery": "warranty",
-    "memoryTip": "warranty - n. 正当理由, 授权, 担保, 保证, 根据"
+    "collocations": []
   },
   {
     "id": "automotive-0049",
@@ -1345,12 +1537,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"bump\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“bump”。"
+        "en": "I felt a bump on the road.",
+        "zh": "我感觉到路上有个颠簸。"
+      },
+      {
+        "en": "He got a bump on his head.",
+        "zh": "他头上撞了个包。"
       }
     ],
     "imageQuery": "bump",
-    "memoryTip": "bump - n. 撞击, 肿块"
+    "collocations": []
   },
   {
     "id": "automotive-0050",
@@ -1372,12 +1568,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"license\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“license”。"
+        "en": "She passed her driving license test.",
+        "zh": "她通过了驾照考试。"
+      },
+      {
+        "en": "You need a license to sell food.",
+        "zh": "你需要许可证才能卖食品。"
       }
     ],
     "imageQuery": "license",
-    "memoryTip": "license - n. 执照, 许可证, 特许"
+    "collocations": []
   },
   {
     "id": "automotive-0051",
@@ -1398,12 +1598,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"navigation\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“navigation”。"
+        "en": "The GPS helps with navigation.",
+        "zh": "GPS帮助导航。"
+      },
+      {
+        "en": "Navigation on the river is tricky.",
+        "zh": "在河上航行很棘手。"
       }
     ],
     "imageQuery": "navigation",
-    "memoryTip": "navigation - n. 航行, 航海, 导航"
+    "collocations": []
   },
   {
     "id": "automotive-0052",
@@ -1424,12 +1628,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"torque\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“torque”。"
+        "en": "The engine produces high torque.",
+        "zh": "这台发动机产生高扭矩。"
+      },
+      {
+        "en": "Torque is important for pulling heavy loads.",
+        "zh": "扭矩对于拉动重物很重要。"
       }
     ],
     "imageQuery": "torque",
-    "memoryTip": "torque - n. 扭转力, 转矩, 项圈"
+    "collocations": []
   },
   {
     "id": "automotive-0053",
@@ -1455,12 +1663,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"pedal\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“pedal”。"
+        "en": "Press the pedal to go faster.",
+        "zh": "踩踏板加速。"
+      },
+      {
+        "en": "The bike pedal is broken.",
+        "zh": "自行车的踏板坏了。"
       }
     ],
     "imageQuery": "pedal",
-    "memoryTip": "pedal - n. 踏板, 脚蹬子"
+    "collocations": []
   },
   {
     "id": "automotive-0054",
@@ -1481,12 +1693,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"sensor\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“sensor”。"
+        "en": "The sensor detects movement.",
+        "zh": "传感器检测到移动。"
+      },
+      {
+        "en": "A light sensor turns on the lamp.",
+        "zh": "光传感器打开灯。"
       }
     ],
     "imageQuery": "sensor",
-    "memoryTip": "sensor - n. 传感器"
+    "collocations": []
   },
   {
     "id": "automotive-0055",
@@ -1512,12 +1728,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"hybrid\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“hybrid”。"
+        "en": "This car is a hybrid that uses less fuel.",
+        "zh": "这辆车是混合动力车，耗油更少。"
+      },
+      {
+        "en": "The plant is a hybrid of two species.",
+        "zh": "这种植物是两个物种的杂交种。"
       }
     ],
     "imageQuery": "hybrid",
-    "memoryTip": "hybrid - n. 混血儿, 杂种, 混合物"
+    "collocations": []
   },
   {
     "id": "automotive-0056",
@@ -1538,12 +1758,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"headlight\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“headlight”。"
+        "en": "Turn on the headlight when it's dark.",
+        "zh": "天黑时打开前灯。"
+      },
+      {
+        "en": "One headlight is not working.",
+        "zh": "一个前灯不亮了。"
       }
     ],
     "imageQuery": "headlight",
-    "memoryTip": "headlight - n. 前灯, 桅灯"
+    "collocations": []
   },
   {
     "id": "automotive-0057",
@@ -1568,12 +1792,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"tire\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“tire”。"
+        "en": "The tire is flat and needs air.",
+        "zh": "轮胎瘪了，需要打气。"
+      },
+      {
+        "en": "I need to change the car tire.",
+        "zh": "我需要换汽车轮胎。"
       }
     ],
     "imageQuery": "tire",
-    "memoryTip": "tire - n. 轮胎, 头饰"
+    "collocations": []
   },
   {
     "id": "automotive-0058",
@@ -1595,12 +1823,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"charging\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“charging”。"
+        "en": "The phone is charging on the desk.",
+        "zh": "手机在桌上充电。"
+      },
+      {
+        "en": "He is charging the battery for the car.",
+        "zh": "他正在给汽车电池充电。"
       }
     ],
     "imageQuery": "charging",
-    "memoryTip": "charging - [计] 计费的"
+    "collocations": []
   },
   {
     "id": "automotive-0059",
@@ -1621,12 +1853,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"automobile\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“automobile”。"
+        "en": "The automobile industry is growing.",
+        "zh": "汽车工业正在增长。"
+      },
+      {
+        "en": "She bought a new automobile last week.",
+        "zh": "她上周买了一辆新汽车。"
       }
     ],
     "imageQuery": "automobile",
-    "memoryTip": "automobile - n. 汽车"
+    "collocations": []
   },
   {
     "id": "automotive-0060",
@@ -1647,12 +1883,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"ignition\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“ignition”。"
+        "en": "Turn the key to start the ignition.",
+        "zh": "转动钥匙启动点火。"
+      },
+      {
+        "en": "The ignition system needs repair.",
+        "zh": "点火系统需要修理。"
       }
     ],
     "imageQuery": "ignition",
-    "memoryTip": "ignition - n. 点火, 点燃"
+    "collocations": []
   },
   {
     "id": "automotive-0061",
@@ -1669,12 +1909,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"turbo\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“turbo”。"
+        "en": "The car has a turbo engine.",
+        "zh": "这辆车有涡轮增压发动机。"
+      },
+      {
+        "en": "Turbo boost gives more power.",
+        "zh": "涡轮增压提供更多动力。"
       }
     ],
     "imageQuery": "turbo",
-    "memoryTip": "turbo - n. 涡轮增压器"
+    "collocations": []
   },
   {
     "id": "automotive-0062",
@@ -1695,12 +1939,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"traction\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“traction”。"
+        "en": "The tires have good traction on ice.",
+        "zh": "轮胎在冰上抓地力很好。"
+      },
+      {
+        "en": "Traction is important for safety.",
+        "zh": "牵引力对安全很重要。"
       }
     ],
     "imageQuery": "traction",
-    "memoryTip": "traction - n. 曳, 牵引, 牵引力"
+    "collocations": []
   },
   {
     "id": "automotive-0063",
@@ -1717,12 +1965,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"dashboard\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“dashboard”。"
+        "en": "The dashboard shows the speed.",
+        "zh": "仪表板显示速度。"
+      },
+      {
+        "en": "He checked the dashboard for warnings.",
+        "zh": "他检查仪表板上的警告。"
       }
     ],
     "imageQuery": "dashboard",
-    "memoryTip": "dashboard - n. 仪表板, 挡泥板"
+    "collocations": []
   },
   {
     "id": "automotive-0064",
@@ -1739,12 +1991,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"sedan\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“sedan”。"
+        "en": "She drives a blue sedan.",
+        "zh": "她开一辆蓝色轿车。"
+      },
+      {
+        "en": "The sedan has four doors.",
+        "zh": "这辆轿车有四个门。"
       }
     ],
     "imageQuery": "sedan",
-    "memoryTip": "sedan - n. 轿车, 轿子"
+    "collocations": []
   },
   {
     "id": "automotive-0065",
@@ -1765,12 +2021,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"speedometer\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“speedometer”。"
+        "en": "The speedometer shows how fast we are going.",
+        "zh": "速度计显示我们开得有多快。"
+      },
+      {
+        "en": "Check the speedometer before you drive faster.",
+        "zh": "开快之前先看一下速度计。"
       }
     ],
     "imageQuery": "speedometer",
-    "memoryTip": "speedometer - n. 速度计, 里程计"
+    "collocations": []
   },
   {
     "id": "automotive-0066",
@@ -1791,12 +2051,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"windshield\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“windshield”。"
+        "en": "The windshield is dirty and needs cleaning.",
+        "zh": "挡风玻璃脏了，需要清洁。"
+      },
+      {
+        "en": "A bird hit the windshield of my car.",
+        "zh": "一只鸟撞到了我的车挡风玻璃。"
       }
     ],
     "imageQuery": "windshield",
-    "memoryTip": "windshield - n. 挡风玻璃"
+    "collocations": []
   },
   {
     "id": "automotive-0067",
@@ -1813,12 +2077,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"airbag\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“airbag”。"
+        "en": "The airbag saved his life in the crash.",
+        "zh": "安全气囊在车祸中救了他的命。"
+      },
+      {
+        "en": "Modern cars have an airbag for safety.",
+        "zh": "现代汽车装有安全气囊以保安全。"
       }
     ],
     "imageQuery": "airbag",
-    "memoryTip": "airbag - [机] 空气囊"
+    "collocations": []
   },
   {
     "id": "automotive-0068",
@@ -1835,11 +2103,15 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"wheelbase\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“wheelbase”。"
+        "en": "A longer wheelbase makes the car more stable.",
+        "zh": "较长的轴距使汽车更稳定。"
+      },
+      {
+        "en": "The wheelbase of this truck is very long.",
+        "zh": "这辆卡车的轴距非常长。"
       }
     ],
     "imageQuery": "wheelbase",
-    "memoryTip": "wheelbase - n. 轴距"
+    "collocations": []
   }
 ]

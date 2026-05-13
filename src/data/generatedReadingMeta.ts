@@ -6,6 +6,7 @@ export interface GeneratedReadingMeta {
   sourceBriefCount: number;
   sourceNames: string[];
   targetArticleCount?: number;
+  batchIndex?: number;
   generationSchedule?: {
     hour: number;
     minute: number;
@@ -14,15 +15,16 @@ export interface GeneratedReadingMeta {
 }
 
 export const generatedReadingMeta: GeneratedReadingMeta = {
-  "generatedAt": "2026-04-22T06:55:05.444Z",
-  "articleCount": 40,
+  "generatedAt": "2026-05-06T02:58:35.417Z",
+  "articleCount": 300,
   "sourceMode": "fallback",
-  "provider": "deepseek",
-  "sourceBriefCount": 16,
+  "provider": "template",
+  "sourceBriefCount": 0,
   "sourceNames": [
-    "AI Editor"
+    "LexFlow Studio"
   ],
-  "targetArticleCount": 20,
+  "targetArticleCount": 300,
+  "batchIndex": 1,
   "generationSchedule": {
     "hour": 2,
     "minute": 0,

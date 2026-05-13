@@ -18,12 +18,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"health\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“health”。"
+        "en": "Good health is very important for everyone.",
+        "zh": "良好的健康对每个人都很重要。"
+      },
+      {
+        "en": "She exercises every day to keep her health.",
+        "zh": "她每天锻炼以保持健康。"
       }
     ],
     "imageQuery": "health",
-    "memoryTip": "health - n. 健康, 卫生, 蓬勃, 健康状态"
+    "collocations": []
   },
   {
     "id": "medical-0002",
@@ -45,12 +49,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"patient\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“patient”。"
+        "en": "The patient is in the hospital.",
+        "zh": "病人在医院里。"
+      },
+      {
+        "en": "Please be patient with me.",
+        "zh": "请对我耐心一点。"
       }
     ],
     "imageQuery": "patient",
-    "memoryTip": "patient - n. 病人, 承受者"
+    "collocations": []
   },
   {
     "id": "medical-0003",
@@ -76,12 +84,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"condition\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“condition”。"
+        "en": "The car is in good condition.",
+        "zh": "这辆车状况良好。"
+      },
+      {
+        "en": "You must meet the condition.",
+        "zh": "你必须满足这个条件。"
       }
     ],
     "imageQuery": "condition",
-    "memoryTip": "condition - n. 情况, 条件"
+    "collocations": []
   },
   {
     "id": "medical-0004",
@@ -107,12 +119,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"care\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“care”。"
+        "en": "Please take care of your younger sister.",
+        "zh": "请照顾好你的妹妹。"
+      },
+      {
+        "en": "I don't care what others think about me.",
+        "zh": "我不在乎别人怎么看我。"
       }
     ],
     "imageQuery": "care",
-    "memoryTip": "care - n. 小心, 照料, 忧虑"
+    "collocations": []
   },
   {
     "id": "medical-0005",
@@ -133,12 +149,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"hospital\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“hospital”。"
+        "en": "He went to the hospital for a checkup.",
+        "zh": "他去医院做检查。"
+      },
+      {
+        "en": "The hospital is near my house.",
+        "zh": "医院在我家附近。"
       }
     ],
     "imageQuery": "hospital",
-    "memoryTip": "hospital - n. 医院"
+    "collocations": []
   },
   {
     "id": "medical-0006",
@@ -164,12 +184,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"test\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“test”。"
+        "en": "We have a math test tomorrow.",
+        "zh": "我们明天有数学考试。"
+      },
+      {
+        "en": "Please test the new software carefully.",
+        "zh": "请仔细测试新软件。"
       }
     ],
     "imageQuery": "test",
-    "memoryTip": "test - n. 测试, 试验, 化验, 检验, 考验, 甲壳"
+    "collocations": []
   },
   {
     "id": "medical-0007",
@@ -195,12 +219,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"doctor\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“doctor”。"
+        "en": "The doctor checked my temperature.",
+        "zh": "医生量了我的体温。"
+      },
+      {
+        "en": "She wants to become a doctor someday.",
+        "zh": "她希望有一天成为医生。"
       }
     ],
     "imageQuery": "doctor",
-    "memoryTip": "doctor - n. 医生, 博士"
+    "collocations": []
   },
   {
     "id": "medical-0008",
@@ -222,12 +250,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"pressure\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“pressure”。"
+        "en": "The pressure is too high.",
+        "zh": "压力太大了。"
+      },
+      {
+        "en": "She works well under pressure.",
+        "zh": "她在压力下工作得很好。"
       }
     ],
     "imageQuery": "pressure",
-    "memoryTip": "pressure - n. 压, 榨, 按, 强制, 压力, 压迫, 压强"
+    "collocations": []
   },
   {
     "id": "medical-0009",
@@ -248,12 +280,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"treatment\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“treatment”。"
+        "en": "The doctor gave him a new treatment.",
+        "zh": "医生给了他一种新疗法。"
+      },
+      {
+        "en": "Fair treatment is important for everyone.",
+        "zh": "公平对待对每个人都很重要。"
       }
     ],
     "imageQuery": "treatment",
-    "memoryTip": "treatment - n. 治疗, 待遇, 处理"
+    "collocations": []
   },
   {
     "id": "medical-0010",
@@ -274,12 +310,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"disease\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“disease”。"
+        "en": "This disease can be treated easily.",
+        "zh": "这种疾病很容易治疗。"
+      },
+      {
+        "en": "He has a rare heart disease.",
+        "zh": "他患有一种罕见的心脏病。"
       }
     ],
     "imageQuery": "disease",
-    "memoryTip": "disease - n. 疾病, 弊病"
+    "collocations": []
   },
   {
     "id": "medical-0011",
@@ -301,12 +341,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"blood\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“blood”。"
+        "en": "Blood is thicker than water.",
+        "zh": "血浓于水。"
+      },
+      {
+        "en": "He donated blood to help others.",
+        "zh": "他献血帮助他人。"
       }
     ],
     "imageQuery": "blood",
-    "memoryTip": "blood - n. 血, 血统, 流血, 气质, 生命"
+    "collocations": []
   },
   {
     "id": "medical-0012",
@@ -332,12 +376,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"weight\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“weight”。"
+        "en": "What is your weight in kilograms?",
+        "zh": "你的体重是多少公斤？"
+      },
+      {
+        "en": "He lifted a heavy weight at the gym.",
+        "zh": "他在健身房举起了很重的重量。"
       }
     ],
     "imageQuery": "weight",
-    "memoryTip": "weight - n. 重, 重量, 体重, 砝码, 重大, 影响, 力量"
+    "collocations": []
   },
   {
     "id": "medical-0013",
@@ -363,12 +411,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"pain\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“pain”。"
+        "en": "She felt a sharp pain in her leg.",
+        "zh": "她感到腿上一阵剧痛。"
+      },
+      {
+        "en": "The pain of losing a friend is real.",
+        "zh": "失去朋友的痛苦是真实的。"
       }
     ],
     "imageQuery": "pain",
-    "memoryTip": "pain - n. 痛苦, 疼痛, 辛苦"
+    "collocations": []
   },
   {
     "id": "medical-0014",
@@ -389,12 +441,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"injury\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“injury”。"
+        "en": "He suffered a serious leg injury.",
+        "zh": "他腿部受了重伤。"
+      },
+      {
+        "en": "The injury kept him out of the game.",
+        "zh": "这次受伤使他无法参赛。"
       }
     ],
     "imageQuery": "injury",
-    "memoryTip": "injury - n. 伤害, 侮辱"
+    "collocations": []
   },
   {
     "id": "medical-0015",
@@ -415,12 +471,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"appointment\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“appointment”。"
+        "en": "I have a doctor's appointment at three.",
+        "zh": "我三点有个医生预约。"
+      },
+      {
+        "en": "She got an appointment as manager.",
+        "zh": "她被任命为经理。"
       }
     ],
     "imageQuery": "appointment",
-    "memoryTip": "appointment - n. 约会, 委任的职位, 委派"
+    "collocations": []
   },
   {
     "id": "medical-0016",
@@ -441,12 +501,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"temperature\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“temperature”。"
+        "en": "The temperature outside is very high today.",
+        "zh": "今天外面的温度很高。"
+      },
+      {
+        "en": "She has a fever and her temperature is 39 degrees.",
+        "zh": "她发烧了，体温是39度。"
       }
     ],
     "imageQuery": "temperature",
-    "memoryTip": "temperature - n. 温度, 发烧, 热度"
+    "collocations": []
   },
   {
     "id": "medical-0017",
@@ -472,12 +536,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"nurse\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“nurse”。"
+        "en": "The nurse helped the patient.",
+        "zh": "护士帮助了病人。"
+      },
+      {
+        "en": "She wants to nurse her baby.",
+        "zh": "她想哺乳她的宝宝。"
       }
     ],
     "imageQuery": "nurse",
-    "memoryTip": "nurse - n. 护士, 保姆, 奶妈"
+    "collocations": []
   },
   {
     "id": "medical-0018",
@@ -498,12 +566,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"vital\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“vital”。"
+        "en": "Water is vital for all living things.",
+        "zh": "水对所有生物至关重要。"
+      },
+      {
+        "en": "Exercise is vital for good health.",
+        "zh": "锻炼对健康至关重要。"
       }
     ],
     "imageQuery": "vital",
-    "memoryTip": "vital - a. 生命的, 重要的, 充满活力的, 生死攸关的, 致命的"
+    "collocations": []
   },
   {
     "id": "medical-0019",
@@ -525,12 +597,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"emergency\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“emergency”。"
+        "en": "Call 911 in an emergency situation.",
+        "zh": "在紧急情况下拨打911。"
+      },
+      {
+        "en": "The hospital has an emergency room.",
+        "zh": "医院设有急诊室。"
       }
     ],
     "imageQuery": "emergency",
-    "memoryTip": "emergency - n. 紧急状况, 紧急事件, 紧急需要"
+    "collocations": []
   },
   {
     "id": "medical-0020",
@@ -551,12 +627,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"gene\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“gene”。"
+        "en": "The gene determines eye color in humans.",
+        "zh": "基因决定人类的眼睛颜色。"
+      },
+      {
+        "en": "Scientists study how genes are inherited.",
+        "zh": "科学家研究基因如何遗传。"
       }
     ],
     "imageQuery": "gene",
-    "memoryTip": "gene - n. 基因"
+    "collocations": []
   },
   {
     "id": "medical-0021",
@@ -577,12 +657,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"recovery\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“recovery”。"
+        "en": "His recovery from the illness was very fast.",
+        "zh": "他从疾病中恢复得很快。"
+      },
+      {
+        "en": "The economy is showing signs of recovery.",
+        "zh": "经济正在显示出复苏的迹象。"
       }
     ],
     "imageQuery": "recovery",
-    "memoryTip": "recovery - n. 恢复, 复原, 痊愈, 重获"
+    "collocations": []
   },
   {
     "id": "medical-0022",
@@ -603,12 +687,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"symptom\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“symptom”。"
+        "en": "A fever is a common symptom.",
+        "zh": "发烧是一种常见症状。"
+      },
+      {
+        "en": "Coughing can be a symptom of cold.",
+        "zh": "咳嗽可能是感冒的症状。"
       }
     ],
     "imageQuery": "symptom",
-    "memoryTip": "symptom - n. 症状, 征候, 征兆"
+    "collocations": []
   },
   {
     "id": "medical-0023",
@@ -629,12 +717,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"medicine\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“medicine”。"
+        "en": "Take this medicine after meals.",
+        "zh": "饭后服用这种药。"
+      },
+      {
+        "en": "She studies medicine at university.",
+        "zh": "她在大学学医学。"
       }
     ],
     "imageQuery": "medicine",
-    "memoryTip": "medicine - n. 药, 医学, 内科"
+    "collocations": []
   },
   {
     "id": "medical-0024",
@@ -655,12 +747,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"infection\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“infection”。"
+        "en": "The infection spread quickly.",
+        "zh": "感染迅速扩散。"
+      },
+      {
+        "en": "She got a skin infection.",
+        "zh": "她得了皮肤感染。"
       }
     ],
     "imageQuery": "infection",
-    "memoryTip": "infection - n. 传染, 影响, 传染病"
+    "collocations": []
   },
   {
     "id": "medical-0025",
@@ -681,12 +777,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"anxiety\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“anxiety”。"
+        "en": "She felt anxiety before the big test.",
+        "zh": "她在重要考试前感到焦虑。"
+      },
+      {
+        "en": "His anxiety about flying made him nervous.",
+        "zh": "他对飞行的焦虑让他紧张不安。"
       }
     ],
     "imageQuery": "anxiety",
-    "memoryTip": "anxiety - n. 焦虑, 忧虑, 令人焦虑的事"
+    "collocations": []
   },
   {
     "id": "medical-0026",
@@ -707,12 +807,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"consultation\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“consultation”。"
+        "en": "We had a consultation with the doctor.",
+        "zh": "我们与医生进行了咨询。"
+      },
+      {
+        "en": "The consultation lasted for thirty minutes.",
+        "zh": "这次会诊持续了三十分钟。"
       }
     ],
     "imageQuery": "consultation",
-    "memoryTip": "consultation - n. 请教, 咨询, 磋商会"
+    "collocations": []
   },
   {
     "id": "medical-0027",
@@ -729,12 +833,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"surgery\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“surgery”。"
+        "en": "He needs surgery on his knee.",
+        "zh": "他需要做膝盖手术。"
+      },
+      {
+        "en": "The surgery was successful and quick.",
+        "zh": "手术成功且迅速。"
       }
     ],
     "imageQuery": "surgery",
-    "memoryTip": "surgery - n. 外科, 手术, 手术室, 换球术"
+    "collocations": []
   },
   {
     "id": "medical-0028",
@@ -756,12 +864,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"ward\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“ward”。"
+        "en": "The patient is in the children's ward.",
+        "zh": "病人在儿童病房。"
+      },
+      {
+        "en": "She is the ward of her uncle.",
+        "zh": "她是她叔叔的被监护人。"
       }
     ],
     "imageQuery": "ward",
-    "memoryTip": "ward - n. 病房, 守卫, 保卫, 保护, 监护, 牢房, 行政区, 锁孔内的榫舌"
+    "collocations": []
   },
   {
     "id": "medical-0029",
@@ -787,12 +899,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"dose\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“dose”。"
+        "en": "Take one dose of medicine every morning.",
+        "zh": "每天早上服用一剂药。"
+      },
+      {
+        "en": "The doctor prescribed a small dose.",
+        "zh": "医生开了小剂量。"
       }
     ],
     "imageQuery": "dose",
-    "memoryTip": "dose - n. 剂量, 服用量"
+    "collocations": []
   },
   {
     "id": "medical-0030",
@@ -813,12 +929,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"urgent\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“urgent”。"
+        "en": "This is an urgent message for you.",
+        "zh": "这是给你的紧急消息。"
+      },
+      {
+        "en": "She needs urgent medical attention.",
+        "zh": "她需要紧急医疗护理。"
       }
     ],
     "imageQuery": "urgent",
-    "memoryTip": "urgent - a. 紧急的, 急迫的, 催逼的"
+    "collocations": []
   },
   {
     "id": "medical-0031",
@@ -839,12 +959,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"clinic\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“clinic”。"
+        "en": "The clinic opens at nine.",
+        "zh": "诊所九点开门。"
+      },
+      {
+        "en": "She works at a local clinic.",
+        "zh": "她在当地一家诊所工作。"
       }
     ],
     "imageQuery": "clinic",
-    "memoryTip": "clinic - n. 诊所, 临床教学"
+    "collocations": []
   },
   {
     "id": "medical-0032",
@@ -870,12 +994,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"wound\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“wound”。"
+        "en": "He cleaned the wound with water.",
+        "zh": "他用水清洗了伤口。"
+      },
+      {
+        "en": "The soldier suffered a serious wound in battle.",
+        "zh": "士兵在战斗中受了重伤。"
       }
     ],
     "imageQuery": "wound",
-    "memoryTip": "wound - n. 创伤, 伤口, 伤疤, 伤害, 痛苦"
+    "collocations": []
   },
   {
     "id": "medical-0033",
@@ -896,12 +1024,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"therapy\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“therapy”。"
+        "en": "She is undergoing physical therapy.",
+        "zh": "她正在接受物理治疗。"
+      },
+      {
+        "en": "Therapy helps him manage stress.",
+        "zh": "治疗帮助他管理压力。"
       }
     ],
     "imageQuery": "therapy",
-    "memoryTip": "therapy - n. 治疗"
+    "collocations": []
   },
   {
     "id": "medical-0034",
@@ -922,12 +1054,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"virus\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“virus”。"
+        "en": "The virus spread quickly through the school.",
+        "zh": "病毒在学校里迅速传播。"
+      },
+      {
+        "en": "My computer has a virus that slows it down.",
+        "zh": "我的电脑有一个病毒，让它变慢了。"
       }
     ],
     "imageQuery": "virus",
-    "memoryTip": "virus - n. 病毒, 滤过性病毒, 毒害"
+    "collocations": []
   },
   {
     "id": "medical-0035",
@@ -948,12 +1084,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"oxygen\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“oxygen”。"
+        "en": "We need oxygen to breathe.",
+        "zh": "我们需要氧气来呼吸。"
+      },
+      {
+        "en": "Plants produce oxygen during the day.",
+        "zh": "植物在白天产生氧气。"
       }
     ],
     "imageQuery": "oxygen",
-    "memoryTip": "oxygen - n. 氧"
+    "collocations": []
   },
   {
     "id": "medical-0036",
@@ -974,12 +1114,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"diagnosis\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“diagnosis”。"
+        "en": "The diagnosis was confirmed by tests.",
+        "zh": "诊断由测试确认。"
+      },
+      {
+        "en": "Early diagnosis can save lives.",
+        "zh": "早期诊断能挽救生命。"
       }
     ],
     "imageQuery": "diagnosis",
-    "memoryTip": "diagnosis - n. 诊断"
+    "collocations": []
   },
   {
     "id": "medical-0037",
@@ -1005,12 +1149,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"pulse\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“pulse”。"
+        "en": "The doctor checked his pulse rate.",
+        "zh": "医生检查了他的脉搏率。"
+      },
+      {
+        "en": "Her pulse was weak after the long run.",
+        "zh": "长跑后她的脉搏很弱。"
       }
     ],
     "imageQuery": "pulse",
-    "memoryTip": "pulse - n. 脉冲, 脉搏, 情绪, 意向, 拍子, 豆类"
+    "collocations": []
   },
   {
     "id": "medical-0038",
@@ -1031,12 +1179,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"prevention\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“prevention”。"
+        "en": "Prevention is better than cure.",
+        "zh": "预防胜于治疗。"
+      },
+      {
+        "en": "They work on crime prevention programs.",
+        "zh": "他们致力于犯罪预防项目。"
       }
     ],
     "imageQuery": "prevention",
-    "memoryTip": "prevention - n. 阻止, 妨碍, 预防"
+    "collocations": []
   },
   {
     "id": "medical-0039",
@@ -1057,12 +1209,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"tablet\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“tablet”。"
+        "en": "He takes a tablet for his headache.",
+        "zh": "他吃了一片药来治头痛。"
+      },
+      {
+        "en": "She writes notes on a tablet.",
+        "zh": "她在平板上记笔记。"
       }
     ],
     "imageQuery": "tablet",
-    "memoryTip": "tablet - n. 平板, 门牌, 笔记簿, 碑, 匾, 药片"
+    "collocations": []
   },
   {
     "id": "medical-0040",
@@ -1088,12 +1244,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"scan\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“scan”。"
+        "en": "Please scan the document for errors.",
+        "zh": "请扫描文档检查错误。"
+      },
+      {
+        "en": "He scanned the room quickly.",
+        "zh": "他快速扫视了房间。"
       }
     ],
     "imageQuery": "scan",
-    "memoryTip": "scan - n. 审视, 浏览, 扫描, 细查"
+    "collocations": []
   },
   {
     "id": "medical-0041",
@@ -1119,12 +1279,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"cure\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“cure”。"
+        "en": "The doctor cured her of the illness.",
+        "zh": "医生治好了她的病。"
+      },
+      {
+        "en": "There is no cure for the common cold.",
+        "zh": "普通感冒没有治愈方法。"
       }
     ],
     "imageQuery": "cure",
-    "memoryTip": "cure - n. 治疗, 治愈, 治疗法"
+    "collocations": []
   },
   {
     "id": "medical-0042",
@@ -1146,12 +1310,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"fever\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“fever”。"
+        "en": "She has a high fever today.",
+        "zh": "她今天发高烧。"
+      },
+      {
+        "en": "The fever made him feel weak.",
+        "zh": "发烧让他感到虚弱。"
       }
     ],
     "imageQuery": "fever",
-    "memoryTip": "fever - n. 发烧, 发热, 热病"
+    "collocations": []
   },
   {
     "id": "medical-0043",
@@ -1172,12 +1340,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"prescription\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“prescription”。"
+        "en": "The doctor gave me a prescription.",
+        "zh": "医生给了我一张处方。"
+      },
+      {
+        "en": "You need a prescription for this drug.",
+        "zh": "这种药需要处方。"
       }
     ],
     "imageQuery": "prescription",
-    "memoryTip": "prescription - n. 处方, 命令, 指定"
+    "collocations": []
   },
   {
     "id": "medical-0044",
@@ -1198,12 +1370,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"immune\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“immune”。"
+        "en": "Vaccines help you become immune to diseases.",
+        "zh": "疫苗帮助你免疫疾病。"
+      },
+      {
+        "en": "He is immune to criticism from others.",
+        "zh": "他对别人的批评免疫。"
       }
     ],
     "imageQuery": "immune",
-    "memoryTip": "immune - a. 免疫的, 免除的, 不受影响的"
+    "collocations": []
   },
   {
     "id": "medical-0045",
@@ -1220,12 +1396,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"screening\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“screening”。"
+        "en": "The screening for cancer is important.",
+        "zh": "癌症筛查很重要。"
+      },
+      {
+        "en": "She went for a health screening yesterday.",
+        "zh": "她昨天去做了健康筛查。"
       }
     ],
     "imageQuery": "screening",
-    "memoryTip": "screening - [医] 筛选, 筛分(如普查癌、结核等病), 萤光屏检查"
+    "collocations": []
   },
   {
     "id": "medical-0046",
@@ -1246,12 +1426,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"rehabilitation\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“rehabilitation”。"
+        "en": "He is in rehabilitation after the accident.",
+        "zh": "事故后他正在康复中。"
+      },
+      {
+        "en": "Rehabilitation helps people recover their strength.",
+        "zh": "康复帮助人们恢复体力。"
       }
     ],
     "imageQuery": "rehabilitation",
-    "memoryTip": "rehabilitation - n. 复原"
+    "collocations": []
   },
   {
     "id": "medical-0047",
@@ -1272,12 +1456,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"hygiene\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“hygiene”。"
+        "en": "Good hygiene prevents illness.",
+        "zh": "良好的卫生习惯可以预防疾病。"
+      },
+      {
+        "en": "She studies hygiene at school.",
+        "zh": "她在学校学习卫生学。"
       }
     ],
     "imageQuery": "hygiene",
-    "memoryTip": "hygiene - n. 卫生保健, 卫生学, 保健法"
+    "collocations": []
   },
   {
     "id": "medical-0048",
@@ -1299,12 +1487,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"epidemic\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“epidemic”。"
+        "en": "The flu epidemic spread quickly.",
+        "zh": "流感疫情迅速蔓延。"
+      },
+      {
+        "en": "An epidemic affected many people.",
+        "zh": "一场流行病影响了许多人。"
       }
     ],
     "imageQuery": "epidemic",
-    "memoryTip": "epidemic - n. 传染病, 流行病"
+    "collocations": []
   },
   {
     "id": "medical-0049",
@@ -1330,12 +1522,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"fatigue\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“fatigue”。"
+        "en": "After the long run, he felt great fatigue.",
+        "zh": "长跑后，他感到非常疲劳。"
+      },
+      {
+        "en": "Working all day can cause mental fatigue.",
+        "zh": "整天工作会导致精神疲劳。"
       }
     ],
     "imageQuery": "fatigue",
-    "memoryTip": "fatigue - n. 疲乏, 疲劳"
+    "collocations": []
   },
   {
     "id": "medical-0050",
@@ -1357,12 +1553,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"fracture\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“fracture”。"
+        "en": "He suffered a fracture in his leg after the fall.",
+        "zh": "他摔倒后腿部骨折了。"
+      },
+      {
+        "en": "The bone may fracture if you apply too much pressure.",
+        "zh": "如果施加太大压力，骨头可能会断裂。"
       }
     ],
     "imageQuery": "fracture",
-    "memoryTip": "fracture - n. 破碎, 骨折"
+    "collocations": []
   },
   {
     "id": "medical-0051",
@@ -1383,12 +1583,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"vaccine\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“vaccine”。"
+        "en": "The vaccine protects against the flu virus.",
+        "zh": "疫苗预防流感病毒。"
+      },
+      {
+        "en": "Children receive a vaccine for measles.",
+        "zh": "儿童接种麻疹疫苗。"
       }
     ],
     "imageQuery": "vaccine",
-    "memoryTip": "vaccine - n. 牛痘苗, 疫苗"
+    "collocations": []
   },
   {
     "id": "medical-0052",
@@ -1409,12 +1613,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"anatomy\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“anatomy”。"
+        "en": "She studied human anatomy in college.",
+        "zh": "她在大学学习了人体解剖学。"
+      },
+      {
+        "en": "Anatomy is the study of body structure.",
+        "zh": "解剖学是研究身体结构的学科。"
       }
     ],
     "imageQuery": "anatomy",
-    "memoryTip": "anatomy - n. 剖析, 解剖学, 骨骼, 结构"
+    "collocations": []
   },
   {
     "id": "medical-0053",
@@ -1435,12 +1643,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"nutrition\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“nutrition”。"
+        "en": "Good nutrition is important for health.",
+        "zh": "良好的营养对健康很重要。"
+      },
+      {
+        "en": "She studies nutrition at the university.",
+        "zh": "她在大学学习营养学。"
       }
     ],
     "imageQuery": "nutrition",
-    "memoryTip": "nutrition - n. 营养, 营养学"
+    "collocations": []
   },
   {
     "id": "medical-0054",
@@ -1461,12 +1673,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"outpatient\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“outpatient”。"
+        "en": "The outpatient clinic opens at eight.",
+        "zh": "门诊部八点开门。"
+      },
+      {
+        "en": "He is an outpatient at the hospital.",
+        "zh": "他是这家医院的门诊病人。"
       }
     ],
     "imageQuery": "outpatient",
-    "memoryTip": "outpatient - n. 门诊病人"
+    "collocations": []
   },
   {
     "id": "medical-0055",
@@ -1487,12 +1703,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"allergy\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“allergy”。"
+        "en": "She has an allergy to peanuts.",
+        "zh": "她对花生过敏。"
+      },
+      {
+        "en": "His allergy causes sneezing in spring.",
+        "zh": "他的过敏症导致春天打喷嚏。"
       }
     ],
     "imageQuery": "allergy",
-    "memoryTip": "allergy - n. 变应性, 反感, 厌恶"
+    "collocations": []
   },
   {
     "id": "medical-0056",
@@ -1513,12 +1733,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"pharmacy\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“pharmacy”。"
+        "en": "I bought medicine at the local pharmacy.",
+        "zh": "我在当地药房买了药。"
+      },
+      {
+        "en": "She works as a pharmacist in a busy pharmacy.",
+        "zh": "她在一家繁忙的药房做药剂师。"
       }
     ],
     "imageQuery": "pharmacy",
-    "memoryTip": "pharmacy - n. 药房, 配药学, 制药业"
+    "collocations": []
   },
   {
     "id": "medical-0057",
@@ -1535,12 +1759,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"bloodstream\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“bloodstream”。"
+        "en": "The medicine enters the bloodstream quickly.",
+        "zh": "药物迅速进入血流。"
+      },
+      {
+        "en": "Infection can spread through the bloodstream.",
+        "zh": "感染可通过血流传播。"
       }
     ],
     "imageQuery": "bloodstream",
-    "memoryTip": "bloodstream - n. 血流"
+    "collocations": []
   },
   {
     "id": "medical-0058",
@@ -1561,12 +1789,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"dehydration\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“dehydration”。"
+        "en": "Drink water to avoid dehydration.",
+        "zh": "喝水以避免脱水。"
+      },
+      {
+        "en": "Dehydration can cause headaches and fatigue.",
+        "zh": "脱水会导致头痛和疲劳。"
       }
     ],
     "imageQuery": "dehydration",
-    "memoryTip": "dehydration - n. 脱水"
+    "collocations": []
   },
   {
     "id": "medical-0059",
@@ -1587,12 +1819,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"stethoscope\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“stethoscope”。"
+        "en": "The doctor used a stethoscope to check my heart.",
+        "zh": "医生用听诊器检查我的心脏。"
+      },
+      {
+        "en": "She hung the stethoscope around her neck.",
+        "zh": "她把听诊器挂在脖子上。"
       }
     ],
     "imageQuery": "stethoscope",
-    "memoryTip": "stethoscope - n. 听诊器"
+    "collocations": []
   },
   {
     "id": "medical-0060",
@@ -1613,12 +1849,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"radiology\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“radiology”。"
+        "en": "She works in the radiology department.",
+        "zh": "她在放射科工作。"
+      },
+      {
+        "en": "Radiology uses X-rays to diagnose diseases.",
+        "zh": "放射学使用X光诊断疾病。"
       }
     ],
     "imageQuery": "radiology",
-    "memoryTip": "radiology - n. 辐射学, 放射学"
+    "collocations": []
   },
   {
     "id": "medical-0061",
@@ -1635,12 +1875,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"paramedic\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“paramedic”。"
+        "en": "The paramedic arrived quickly at the scene.",
+        "zh": "急救人员迅速到达现场。"
+      },
+      {
+        "en": "A paramedic can give emergency treatment.",
+        "zh": "急救人员能提供紧急治疗。"
       }
     ],
     "imageQuery": "paramedic",
-    "memoryTip": "paramedic - n. 伞兵军医, 伞降急救人员"
+    "collocations": []
   },
   {
     "id": "medical-0062",
@@ -1661,12 +1905,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"immunization\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“immunization”。"
+        "en": "Immunization protects children from diseases.",
+        "zh": "免疫接种保护儿童免受疾病侵害。"
+      },
+      {
+        "en": "She got her immunization shot today.",
+        "zh": "她今天打了免疫针。"
       }
     ],
     "imageQuery": "immunization",
-    "memoryTip": "immunization - n. 免疫"
+    "collocations": []
   },
   {
     "id": "medical-0063",
@@ -1687,12 +1935,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"cardiology\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“cardiology”。"
+        "en": "Cardiology is the study of the heart.",
+        "zh": "心脏病学是研究心脏的学科。"
+      },
+      {
+        "en": "He visited a cardiology specialist.",
+        "zh": "他去看了一位心脏病学专家。"
       }
     ],
     "imageQuery": "cardiology",
-    "memoryTip": "cardiology - n. 心脏病学"
+    "collocations": []
   },
   {
     "id": "medical-0064",
@@ -1713,12 +1965,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"dermatology\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“dermatology”。"
+        "en": "Dermatology deals with skin problems.",
+        "zh": "皮肤病学处理皮肤问题。"
+      },
+      {
+        "en": "She has an appointment in dermatology.",
+        "zh": "她在皮肤科有个预约。"
       }
     ],
     "imageQuery": "dermatology",
-    "memoryTip": "dermatology - n. 皮肤医学, 皮肤病学"
+    "collocations": []
   },
   {
     "id": "medical-0065",
@@ -1735,12 +1991,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"wellness\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“wellness”。"
+        "en": "Wellness includes physical and mental health.",
+        "zh": "健康包括身体和心理健康。"
+      },
+      {
+        "en": "She practices wellness through exercise and diet.",
+        "zh": "她通过锻炼和饮食保持健康。"
       }
     ],
     "imageQuery": "wellness",
-    "memoryTip": "wellness - n. 健康"
+    "collocations": []
   },
   {
     "id": "medical-0066",
@@ -1757,12 +2017,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"rehab\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“rehab”。"
+        "en": "He is in rehab after the surgery.",
+        "zh": "手术后他正在康复中。"
+      },
+      {
+        "en": "Rehab helps patients recover their strength.",
+        "zh": "康复帮助病人恢复体力。"
       }
     ],
     "imageQuery": "rehab",
-    "memoryTip": "rehab - n. 修复（等于rehabilitation）"
+    "collocations": []
   },
   {
     "id": "medical-0067",
@@ -1779,11 +2043,15 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"xray\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“xray”。"
+        "en": "The doctor ordered an X-ray of my chest.",
+        "zh": "医生给我开了胸部X光检查。"
+      },
+      {
+        "en": "X-ray images show the bones clearly.",
+        "zh": "X光图像清晰地显示骨骼。"
       }
     ],
     "imageQuery": "xray",
-    "memoryTip": "xray - n. X光"
+    "collocations": []
   }
 ]

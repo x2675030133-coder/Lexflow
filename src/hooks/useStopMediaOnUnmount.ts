@@ -1,10 +1,11 @@
 import { useEffect } from 'react';
+import { stopSpeechPlayback } from '../utils/speechPlayback';
 
 export function stopPageMedia() {
   if (typeof window === 'undefined') return;
 
   try {
-    window.speechSynthesis?.cancel();
+    stopSpeechPlayback();
   } catch {
     // Ignore browser-specific errors.
   }

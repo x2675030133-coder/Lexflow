@@ -15,6 +15,16 @@ export default function WordbookPage() {
   useStopMediaOnUnmount();
 
   useEffect(() => {
+    const refresh = () => setProgress(getProgress());
+    window.addEventListener('storage', refresh);
+    window.addEventListener('el-progress-changed', refresh as EventListener);
+    return () => {
+      window.removeEventListener('storage', refresh);
+      window.removeEventListener('el-progress-changed', refresh as EventListener);
+    };
+  }, []);
+
+  useEffect(() => {
     let cancelled = false;
 
     (async () => {
@@ -95,7 +105,9 @@ export default function WordbookPage() {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4">
                     <button
+                      type="button"
                       onClick={() => speak(word.word)}
+                      aria-label={`朗读 ${word.word}`}
                       className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-50 transition-colors hover:bg-blue-100"
                     >
                       <Volume2 className="h-5 w-5 text-blue-600" />
@@ -110,7 +122,9 @@ export default function WordbookPage() {
                   </div>
                   <div className="flex items-center gap-2">
                     <button
+                      type="button"
                       onClick={() => removeFavorite(word.id)}
+                      aria-label={`从生词本移除 ${word.word}`}
                       className="flex h-9 w-9 items-center justify-center rounded-full text-gray-300 transition-colors hover:bg-red-50 hover:text-red-500"
                     >
                       <Trash2 className="h-4 w-4" />

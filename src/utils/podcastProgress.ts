@@ -1,18 +1,13 @@
-const STORAGE_KEY = 'el_podcast_progress';
+import { emitProgressChanged, readScopedJson, STORAGE_BASE_KEYS, writeScopedJson } from './scopedStorage';
 
 function readIds(): string[] {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return [];
-    const parsed = JSON.parse(raw);
-    return Array.isArray(parsed) ? parsed.filter((item) => typeof item === 'string') : [];
-  } catch {
-    return [];
-  }
+  const ids = readScopedJson<string[]>(STORAGE_BASE_KEYS.podcast, []);
+  return Array.isArray(ids) ? ids.filter((item) => typeof item === 'string') : [];
 }
 
 function writeIds(ids: string[]): void {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(Array.from(new Set(ids))));
+  writeScopedJson(STORAGE_BASE_KEYS.podcast, Array.from(new Set(ids)));
+  emitProgressChanged();
 }
 
 export function getLearnedPodcastIds(): Set<string> {
@@ -31,3 +26,6 @@ export function markPodcastLearned(id: string): void {
   }
 }
 
+export function saveLearnedPodcastIds(ids: string[]): void {
+  writeIds(ids);
+}

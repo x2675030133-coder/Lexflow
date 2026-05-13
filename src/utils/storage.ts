@@ -1,50 +1,76 @@
-import type { UserProgress, DailyStats } from '../data/types';
+import type { DailyStats, UserProgress } from '../data/types';
+import {
+  emitProgressChanged,
+  readScopedJson,
+  STORAGE_BASE_KEYS,
+  writeScopedJson,
+} from './scopedStorage';
 
-const STORAGE_KEYS = {
-  PROGRESS: 'el_user_progress',
-  DAILY_STATS: 'el_daily_stats',
-  SETTINGS: 'el_settings',
-};
+function today() {
+  return new Date().toISOString().split('T')[0];
+}
 
-const defaultProgress: UserProgress = {
-  currentListId: 'cet4',
-  dailyGoal: 20,
-  learnedToday: 0,
-  totalLearned: 0,
-  streak: 0,
-  lastStudyDate: '',
-  records: {},
-  favorites: [],
-};
+export function createDefaultProgress(): UserProgress {
+  return {
+    currentListId: 'cet4',
+    dailyGoal: 20,
+    learnedToday: 0,
+    totalLearned: 0,
+    streak: 0,
+    lastStudyDate: '',
+    records: {},
+    favorites: [],
+    updatedAt: '',
+  };
+}
+
+function normalizeProgress(progress: UserProgress): UserProgress {
+  const records = progress.records && typeof progress.records === 'object' && !Array.isArray(progress.records)
+    ? progress.records
+    : {};
+  const favorites = Array.isArray(progress.favorites)
+    ? Array.from(new Set(progress.favorites.map((item) => String(item || '').trim()).filter(Boolean)))
+    : [];
+  const next: UserProgress = {
+    ...createDefaultProgress(),
+    ...progress,
+    records,
+    favorites,
+  };
+
+  if (next.lastStudyDate !== today()) {
+    next.learnedToday = 0;
+  }
+
+  return next;
+}
 
 export function getProgress(): UserProgress {
-  const data = localStorage.getItem(STORAGE_KEYS.PROGRESS);
-  if (!data) return { ...defaultProgress };
-  const progress = JSON.parse(data) as UserProgress;
-  const today = new Date().toISOString().split('T')[0];
-  if (progress.lastStudyDate !== today) {
-    progress.learnedToday = 0;
-  }
-  return progress;
+  return normalizeProgress(readScopedJson<UserProgress>(STORAGE_BASE_KEYS.progress, createDefaultProgress()));
 }
 
 export function saveProgress(progress: UserProgress): void {
-  localStorage.setItem(STORAGE_KEYS.PROGRESS, JSON.stringify(progress));
+  const next = normalizeProgress({
+    ...progress,
+    updatedAt: new Date().toISOString(),
+  });
+  writeScopedJson(STORAGE_BASE_KEYS.progress, next);
+  emitProgressChanged();
 }
 
 export function getDailyStats(): DailyStats[] {
-  const data = localStorage.getItem(STORAGE_KEYS.DAILY_STATS);
-  if (!data) return [];
-  return JSON.parse(data) as DailyStats[];
+  const stats = readScopedJson<DailyStats[]>(STORAGE_BASE_KEYS.dailyStats, []);
+  return Array.isArray(stats) ? stats : [];
 }
 
 export function saveDailyStats(stats: DailyStats[]): void {
-  localStorage.setItem(STORAGE_KEYS.DAILY_STATS, JSON.stringify(stats));
+  writeScopedJson(STORAGE_BASE_KEYS.dailyStats, Array.isArray(stats) ? stats.slice(-30) : []);
+  emitProgressChanged();
 }
 
 export function addDailyStat(stat: DailyStats): void {
   const stats = getDailyStats();
-  const existingIndex = stats.findIndex(s => s.date === stat.date);
+  const existingIndex = stats.findIndex((item) => item.date === stat.date);
   if (existingIndex >= 0) {
     stats[existingIndex] = {
       ...stats[existingIndex],
@@ -68,15 +94,15 @@ export function calculateNextReview(level: number): string {
 }
 
 export function updateStreak(progress: UserProgress): UserProgress {
-  const today = new Date().toISOString().split('T')[0];
+  const currentToday = today();
   const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
 
-  if (progress.lastStudyDate === today) return progress;
+  if (progress.lastStudyDate === currentToday) return progress;
   if (progress.lastStudyDate === yesterday) {
     progress.streak += 1;
-  } else if (progress.lastStudyDate !== today) {
+  } else if (progress.lastStudyDate !== currentToday) {
     progress.streak = 1;
   }
-  progress.lastStudyDate = today;
+  progress.lastStudyDate = currentToday;
   return progress;
 }

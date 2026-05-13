@@ -14,14 +14,16 @@ import {
 import { words } from '../data/words';
 import { allListeningExercises } from '../data/listeningLibrary';
 import { getAllArticles } from '../data/readingLibrary';
+import { PHONEME_LOOKUP } from '../data/phonetics';
 import { getLearnedListeningIds } from '../utils/listeningProgress';
 import { getLearnedPodcastIds } from '../utils/podcastProgress';
+import { getPronunciationProgress } from '../utils/pronunciationProgress';
 import { getReadArticleIds } from '../utils/readingProgress';
 import { loadWordList } from '../utils/wordListService';
 import { getDailyStats, getProgress } from '../utils/storage';
 
 type DetailMode = 'today' | 'mastered';
-type DetailTab = 'words' | 'listening' | 'podcasts' | 'reading';
+type DetailTab = 'words' | 'listening' | 'podcasts' | 'reading' | 'pronunciation';
 
 type DetailEntry = {
   id: string;
@@ -57,10 +59,35 @@ function loadPodcastTitleMap(): Map<string, { title: string; source?: string }> 
 }
 
 export default function DashboardPage() {
-  const progress = getProgress();
-  const stats = getDailyStats();
+  const [progress, setProgress] = useState(() => getProgress());
+  const [stats, setStats] = useState(() => getDailyStats());
+  const [learnedListeningIds, setLearnedListeningIds] = useState(() => Array.from(getLearnedListeningIds()));
+  const [learnedPodcastIds, setLearnedPodcastIds] = useState(() => Array.from(getLearnedPodcastIds()));
+  const [pronunciationProgress, setPronunciationProgress] = useState(() => getPronunciationProgress());
+  const [readArticleIds, setReadArticleIds] = useState(() => Array.from(getReadArticleIds()));
   const [detailMode, setDetailMode] = useState<DetailMode | null>(null);
   const [activeTab, setActiveTab] = useState<DetailTab>('words');
+
+  useEffect(() => {
+    function refresh() {
+      setProgress(getProgress());
+      setStats(getDailyStats());
+      setLearnedListeningIds(Array.from(getLearnedListeningIds()));
+      setLearnedPodcastIds(Array.from(getLearnedPodcastIds()));
+      setPronunciationProgress(getPronunciationProgress());
+      setReadArticleIds(Array.from(getReadArticleIds()));
+    }
+
+    refresh();
+    window.addEventListener('storage', refresh);
+    window.addEventListener('el-progress-changed', refresh as EventListener);
+    window.addEventListener('el-pronunciation-changed', refresh as EventListener);
+    return () => {
+      window.removeEventListener('storage', refresh);
+      window.removeEventListener('el-progress-changed', refresh as EventListener);
+      window.removeEventListener('el-pronunciation-changed', refresh as EventListener);
+    };
+  }, []);
 
   const records = useMemo(() => Object.values(progress.records), [progress.records]);
   const today = useMemo(() => new Date().toISOString().split('T')[0], []);
@@ -72,6 +99,8 @@ export default function DashboardPage() {
   const totalAttempts = records.reduce((sum, record) => sum + record.correctCount + record.wrongCount, 0);
   const totalCorrect = records.reduce((sum, record) => sum + record.correctCount, 0);
   const accuracy = totalAttempts > 0 ? Math.round((totalCorrect / totalAttempts) * 100) : 0;
+  const pronunciationPracticedCount = pronunciationProgress.practiced.length;
+  const pronunciationFavoriteCount = pronunciationProgress.favorites.length;
 
   const wordMap = useMemo(() => {
     const map = new Map<string, (typeof words)[number]>();
@@ -119,9 +148,6 @@ export default function DashboardPage() {
   }, []);
 
   const podcastTitleMap = useMemo(loadPodcastTitleMap, []);
-  const learnedListeningIds = useMemo(() => Array.from(getLearnedListeningIds()), []);
-  const learnedPodcastIds = useMemo(() => Array.from(getLearnedPodcastIds()), []);
-  const readArticleIds = useMemo(() => Array.from(getReadArticleIds()), []);
 
   const todayWordEntries = useMemo<DetailEntry[]>(
     () =>
@@ -186,6 +212,20 @@ export default function DashboardPage() {
     [learnedPodcastIds, podcastTitleMap],
   );
 
+  const pronunciationEntries = useMemo<DetailEntry[]>(
+    () =>
+      pronunciationProgress.practiced.map((soundId) => {
+        const sound = PHONEME_LOOKUP[soundId];
+        return {
+          id: soundId,
+          title: sound?.symbol || soundId,
+          subtitle: sound?.examples?.join(' · ') || '音标练习',
+          meta: sound ? sound.cue : '练习过的音标',
+        };
+      }),
+    [pronunciationProgress.practiced],
+  );
+
   const readingEntries = useMemo<DetailEntry[]>(
     () =>
       readArticleIds.map((id) => {
@@ -241,6 +281,14 @@ export default function DashboardPage() {
       color: '#af52de',
       clickable: false,
     },
+    {
+      key: 'pronunciation' as const,
+      icon: Headphones,
+      label: '音标练习',
+      value: pronunciationPracticedCount,
+      color: '#0ea5e9',
+      clickable: true,
+    },
   ];
 
   const detailTabs = detailMode === 'mastered'
@@ -250,6 +298,7 @@ export default function DashboardPage() {
         { key: 'listening' as const, label: `听力 ${listeningEntries.length}`, icon: Headphones },
         { key: 'podcasts' as const, label: `播客 ${podcastEntries.length}`, icon: Podcast },
         { key: 'reading' as const, label: `阅读 ${readingEntries.length}`, icon: FileText },
+        { key: 'pronunciation' as const, label: `音标 ${pronunciationEntries.length}`, icon: Headphones },
       ];
 
   const activeEntries = useMemo<DetailEntry[]>(() => {
@@ -268,14 +317,22 @@ export default function DashboardPage() {
         return podcastEntries;
       case 'reading':
         return readingEntries;
+      case 'pronunciation':
+        return pronunciationEntries;
       default:
         return [];
     }
-  }, [detailMode, activeTab, masteredWordEntries, todayWordEntries, listeningEntries, podcastEntries, readingEntries]);
+  }, [detailMode, activeTab, masteredWordEntries, todayWordEntries, listeningEntries, podcastEntries, readingEntries, pronunciationEntries]);
 
-  const detailTitle = detailMode === 'mastered' ? '已掌握明细' : '学习明细';
+  const detailTitle = detailMode === 'mastered'
+    ? '已掌握明细'
+    : activeTab === 'pronunciation'
+      ? '音标练习明细'
+      : '学习明细';
   const detailHint = detailMode === 'mastered'
     ? '这里展示你已掌握的词汇，可用于复习巩固。'
+    : activeTab === 'pronunciation'
+      ? `这里展示你练过的音标，收藏 ${pronunciationFavoriteCount} 个。`
     : activeTab === 'words'
       ? '这里展示今天学习/复习过的单词。'
       : '这里展示当前账号累计学习过的内容。';
@@ -283,6 +340,11 @@ export default function DashboardPage() {
   const openDetail = (mode: DetailMode) => {
     setDetailMode(mode);
     setActiveTab('words');
+  };
+
+  const openPronunciationDetail = () => {
+    setDetailMode('today');
+    setActiveTab('pronunciation');
   };
 
   return (
@@ -294,7 +356,7 @@ export default function DashboardPage() {
         </p>
       </header>
 
-      <section className="mb-16 grid gap-8 md:grid-cols-4">
+      <section className="mb-16 grid gap-8 md:grid-cols-3 xl:grid-cols-5">
         {metrics.map((item, index) => {
           const Icon = item.icon;
           const isClickable = item.clickable;
@@ -306,6 +368,7 @@ export default function DashboardPage() {
               type="button"
               onClick={() => {
                 if (isClickable && mode) openDetail(mode);
+                if (isClickable && item.key === 'pronunciation') openPronunciationDetail();
               }}
               style={{ animationDelay: `${index * 100}ms` }}
               className={`apple-card animate-stat-in flex flex-col items-start p-10 text-left ${

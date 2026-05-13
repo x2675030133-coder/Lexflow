@@ -14,7 +14,11 @@ export default function VocabularyPage() {
   useEffect(() => {
     const handleStorage = () => setProgress(getProgress());
     window.addEventListener('storage', handleStorage);
-    return () => window.removeEventListener('storage', handleStorage);
+    window.addEventListener('el-progress-changed', handleStorage as EventListener);
+    return () => {
+      window.removeEventListener('storage', handleStorage);
+      window.removeEventListener('el-progress-changed', handleStorage as EventListener);
+    };
   }, []);
 
   useEffect(() => {
@@ -68,9 +72,12 @@ export default function VocabularyPage() {
 
   const todayProgress = `${progress.learnedToday}/${progress.dailyGoal}`;
   const favoriteCount = progress.favorites.length;
+  const todayKey = new Date().toISOString().split('T')[0];
+  const learnedRecordCount = Object.values(progress.records).filter((record) => {
+    return record.correctCount > 0 && !record.mastered;
+  }).length;
   const reviewCount = Object.values(progress.records).filter((record) => {
-    const today = new Date().toISOString().split('T')[0];
-    return record.nextReviewDate <= today && !record.mastered;
+    return record.correctCount > 0 && record.nextReviewDate <= todayKey && !record.mastered;
   }).length;
 
   const getListStats = (listId: string, totalWords: number) => {
@@ -118,7 +125,7 @@ export default function VocabularyPage() {
           </div>
           <div>
             <div className="font-black text-[24px] text-[#1d1d1f] mb-2 tracking-tight">复习单词</div>
-            <div className="text-[#86868b] text-[14px] font-bold uppercase tracking-widest">{reviewCount} 个单词待复习</div>
+            <div className="text-[#86868b] text-[14px] font-bold uppercase tracking-widest">{reviewCount} 个到期复习 · 已学 {learnedRecordCount} 个</div>
           </div>
         </Link>
 

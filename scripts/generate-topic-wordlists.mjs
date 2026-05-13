@@ -1,18 +1,58 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { createRequire } from 'node:module';
+import {
+  buildFallbackExamples,
+  normalizeWordKey,
+  loadEnvFile,
+} from './word-example-generator.mjs';
 
 const require = createRequire(import.meta.url);
 const Database = require('better-sqlite3');
 
+loadEnvFile();
+
 const ROOT = process.cwd();
 const DB_PATH = path.join(ROOT, 'scripts', 'data', 'stardict.db');
+const CACHE_PATH = path.join(ROOT, 'scripts', 'data', 'word-examples-cache.json');
 const OUTPUT_DIR = path.join(ROOT, 'public', 'data');
 const METADATA_PATH = path.join(OUTPUT_DIR, 'metadata.json');
 const DATAMUSE_ENABLED = ['1', 'true', 'yes'].includes(String(process.env.DATAMUSE_ENABLED || '').toLowerCase());
 const DATAMUSE_LIMIT = Number(process.env.DATAMUSE_LIMIT || 24);
 const DEEPL_API_KEY = process.env.VITE_DEEPL_API_KEY || process.env.READING_DEEPL_API_KEY || '';
 const DEEPL_API_BASE = process.env.VITE_DEEPL_API_BASE || 'https://api-free.deepl.com';
+const EXAMPLE_COUNT = Math.max(1, Number(process.env.WORD_EXAMPLE_COUNT || 2));
+
+let exampleCacheMap = null;
+
+async function loadExampleCache() {
+  if (exampleCacheMap) return exampleCacheMap;
+  try {
+    const cache = JSON.parse(await fs.readFile(CACHE_PATH, 'utf8'));
+    exampleCacheMap = new Map();
+    if (cache?.words && typeof cache.words === 'object') {
+      for (const [word, examples] of Object.entries(cache.words)) {
+        const list = Array.isArray(examples) ? examples : [];
+        const valid = list
+          .map(e => ({ en: String(e?.en || '').trim(), zh: String(e?.zh || '').trim() }))
+          .filter(e => e.en && e.zh)
+          .slice(0, EXAMPLE_COUNT);
+        if (valid.length > 0) {
+          exampleCacheMap.set(normalizeWordKey(word), valid);
+        }
+      }
+    }
+    return exampleCacheMap;
+  } catch {
+    exampleCacheMap = new Map();
+    return exampleCacheMap;
+  }
+}
+
+function getCachedExamples(word) {
+  if (!exampleCacheMap) return null;
+  return exampleCacheMap.get(normalizeWordKey(word)) || null;
+}
 
 const TOPICS = [
   {
@@ -193,39 +233,40 @@ function buildDefinitions(row, word) {
 function buildWord(row, index, listId) {
   const word = normalize(row.word);
   const definitions = buildDefinitions(row, word);
+  const partOfSpeech = parsePartsOfSpeech(row.pos);
+  const cached = getCachedExamples(word);
   return {
     id: `${listId}-${String(index + 1).padStart(4, '0')}`,
     word,
     phonetic: row.phonetic ? `/${normalize(row.phonetic)}/` : '',
-    partOfSpeech: parsePartsOfSpeech(row.pos),
+    partOfSpeech,
     definitions,
-    examples: [
-      {
-        en: `I use the word "${word}" when I study this topic.`,
-        zh: `我在学习这个主题时会用到单词“${word}”。`,
-      },
-    ],
+    examples: cached || buildFallbackExamples({
+      word,
+      partOfSpeech,
+      definitions,
+    }, EXAMPLE_COUNT),
     imageQuery: word,
-    memoryTip: definitions[0]?.zh ? `${word} - ${definitions[0].zh}` : word,
   };
 }
 
 function buildFallbackRemoteWord(word, index, listId) {
   const clean = normalize(word);
+  const definitions = [{ en: clean, zh: clean }];
+  const partOfSpeech = ['n.'];
+  const cached = getCachedExamples(clean);
   return {
     id: `${listId}-remote-${String(index + 1).padStart(4, '0')}`,
     word: clean,
     phonetic: '',
-    partOfSpeech: ['n.'],
-    definitions: [{ en: clean, zh: clean }],
-    examples: [
-      {
-        en: `I use the word "${clean}" when I study this topic.`,
-        zh: `我在学习这个主题时会用到单词“${clean}”。`,
-      },
-    ],
+    partOfSpeech,
+    definitions,
+    examples: cached || buildFallbackExamples({
+      word: clean,
+      partOfSpeech,
+      definitions,
+    }, EXAMPLE_COUNT),
     imageQuery: clean,
-    memoryTip: clean,
   };
 }
 
@@ -329,7 +370,7 @@ async function fetchDictionaryApiEntry(word) {
       phonetic: phonetic ? phonetic : '',
       partOfSpeech: partOfSpeech.length ? partOfSpeech.slice(0, 3) : ['n.'],
       definitionTexts: definitionTexts.length ? definitionTexts : [clean],
-      exampleTexts: exampleTexts.length ? exampleTexts.slice(0, 2) : [`I use the word "${clean}" when I study this topic.`],
+      exampleTexts: exampleTexts.length ? exampleTexts.slice(0, 2) : [],
       origin: normalize(entry.origin || ''),
     };
   } catch {
@@ -381,13 +422,19 @@ async function enrichRemoteEntries(remoteWords, listId) {
       };
     });
 
-    const examples = entry.exampleTexts.map((text) => {
-      const zh = translated?.[cursor++] || '';
-      return {
-        en: text,
-        zh: zh || text,
-      };
-    });
+    const examples = entry.exampleTexts.length > 0
+      ? entry.exampleTexts.map((text) => {
+          const zh = translated?.[cursor++] || '';
+          return {
+            en: text,
+            zh: zh || text,
+          };
+        })
+      : getCachedExamples(normalize(entry.word)) || buildFallbackExamples({
+          word: normalize(entry.word),
+          partOfSpeech: entry.partOfSpeech,
+          definitions,
+        }, EXAMPLE_COUNT);
 
     return {
       id: `${listId}-remote-${String(index + 1).padStart(4, '0')}`,
@@ -398,7 +445,6 @@ async function enrichRemoteEntries(remoteWords, listId) {
       examples,
       imageQuery: normalize(entry.word),
       etymology: entry.origin || undefined,
-      memoryTip: definitions[0]?.zh ? `${normalize(entry.word)} - ${definitions[0].zh}` : normalize(entry.word),
     };
   });
 }
@@ -427,6 +473,7 @@ async function writeMetadata(topicCounts) {
 }
 
 async function main() {
+  await loadExampleCache();
   const dbPath = findDbFile();
   const db = new Database(dbPath, { readonly: true });
   const generatedCounts = {};

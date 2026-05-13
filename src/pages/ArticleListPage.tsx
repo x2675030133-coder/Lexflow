@@ -39,7 +39,7 @@ export default function ArticleListPage() {
     () => (selectedCategory === 'all' ? articles : articles.filter((article) => article.category === selectedCategory)),
     [articles, selectedCategory],
   );
-  const readCount = filtered.filter((article) => isArticleRead(article.id)).length;
+  const readCount = filtered.filter((article) => isArticleRead(article)).length;
 
   useEffect(() => {
     const revealElements = () => {
@@ -235,7 +235,7 @@ export default function ArticleListPage() {
         ) : (
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 reveal-section">
             {filtered.map((article) => {
-              const read = isArticleRead(article.id);
+              const read = isArticleRead(article);
 
               return (
                 <Link

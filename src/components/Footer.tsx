@@ -24,6 +24,7 @@ export default function Footer() {
             <ul className="space-y-3 p-0 text-sm font-semibold list-none">
               <li><Link to="/vocabulary" className="text-gray-700 no-underline hover:text-blue-600">背单词</Link></li>
               <li><Link to="/listening" className="text-gray-700 no-underline hover:text-blue-600">听力口语</Link></li>
+              <li><Link to="/pronunciation" className="text-gray-700 no-underline hover:text-blue-600">音标发音</Link></li>
               <li><Link to="/reading" className="text-gray-700 no-underline hover:text-blue-600">双语阅读</Link></li>
               <li><Link to="/dashboard" className="text-gray-700 no-underline hover:text-blue-600">学习统计</Link></li>
               <li><Link to="/tools" className="text-gray-700 no-underline hover:text-blue-600">学习工具</Link></li>

@@ -22,12 +22,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"company\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“company”。"
+        "en": "She works for a big company in the city.",
+        "zh": "她在城里一家大公司工作。"
+      },
+      {
+        "en": "I enjoy the company of my good friends.",
+        "zh": "我喜欢有好朋友陪伴。"
       }
     ],
     "imageQuery": "company",
-    "memoryTip": "company - n. 公司, 友伴, 交往, 连队, 朋友, 一群"
+    "collocations": []
   },
   {
     "id": "business-0002",
@@ -53,12 +57,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"service\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“service”。"
+        "en": "The service at this restaurant is excellent.",
+        "zh": "这家餐厅的服务非常好。"
+      },
+      {
+        "en": "We need to service the car regularly.",
+        "zh": "我们需要定期保养汽车。"
       }
     ],
     "imageQuery": "service",
-    "memoryTip": "service - n. 服务, 贡献, 雇佣, 公职, 服役, 功劳, 仪式, 送达, 行政部门"
+    "collocations": []
   },
   {
     "id": "business-0003",
@@ -79,12 +87,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"business\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“business”。"
+        "en": "He runs a small business selling coffee.",
+        "zh": "他经营一家卖咖啡的小生意。"
+      },
+      {
+        "en": "It is my business to finish this report.",
+        "zh": "完成这份报告是我的职责。"
       }
     ],
     "imageQuery": "business",
-    "memoryTip": "business - n. 生意, 事情, 业务, 商业, 商行, 职责"
+    "collocations": []
   },
   {
     "id": "business-0004",
@@ -110,12 +122,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"market\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“market”。"
+        "en": "We buy fresh fruit at the local market.",
+        "zh": "我们在当地市场买新鲜水果。"
+      },
+      {
+        "en": "The company wants to market its new product.",
+        "zh": "这家公司想推销它的新产品。"
       }
     ],
     "imageQuery": "market",
-    "memoryTip": "market - n. 市场, 交易, 集市, 推销地区, 行情, 市面, 销路"
+    "collocations": []
   },
   {
     "id": "business-0005",
@@ -141,12 +157,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"lead\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“lead”。"
+        "en": "She will lead the team to victory.",
+        "zh": "她会带领团队走向胜利。"
+      },
+      {
+        "en": "Pencils used to be made with lead.",
+        "zh": "铅笔过去是用铅做的。"
       }
     ],
     "imageQuery": "lead",
-    "memoryTip": "lead - n. 铅, 铅条, 领导, 超前量, 领引, 榜样, 主角, 导线"
+    "collocations": []
   },
   {
     "id": "business-0006",
@@ -167,12 +187,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"office\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“office”。"
+        "en": "I go to the office every morning.",
+        "zh": "我每天早上都去办公室。"
+      },
+      {
+        "en": "He holds an important office in the government.",
+        "zh": "他在政府中担任重要职务。"
       }
     ],
     "imageQuery": "office",
-    "memoryTip": "office - n. 办公室, 部, 公职, 职责"
+    "collocations": []
   },
   {
     "id": "business-0007",
@@ -198,12 +222,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"cost\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“cost”。"
+        "en": "The cost of this book is ten dollars.",
+        "zh": "这本书的价格是十美元。"
+      },
+      {
+        "en": "How much does it cost to buy a car?",
+        "zh": "买一辆车要花多少钱？"
       }
     ],
     "imageQuery": "cost",
-    "memoryTip": "cost - n. 代价, 价值, 费用"
+    "collocations": []
   },
   {
     "id": "business-0008",
@@ -225,12 +253,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"research\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“research”。"
+        "en": "Scientists research new ways to cure diseases.",
+        "zh": "科学家研究治疗疾病的新方法。"
+      },
+      {
+        "en": "She does research on climate change.",
+        "zh": "她做关于气候变化的研究。"
       }
     ],
     "imageQuery": "research",
-    "memoryTip": "research - n. 研究, 调查, 考察"
+    "collocations": []
   },
   {
     "id": "business-0009",
@@ -256,12 +288,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"value\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“value”。"
+        "en": "This painting has great value to collectors.",
+        "zh": "这幅画对收藏家来说很有价值。"
+      },
+      {
+        "en": "I value your opinion on this matter.",
+        "zh": "我很重视你在这件事上的意见。"
       }
     ],
     "imageQuery": "value",
-    "memoryTip": "value - n. 价值, 价格, 购买力, 评价, 估价, 计算结果"
+    "collocations": []
   },
   {
     "id": "business-0010",
@@ -282,12 +318,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"decision\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“decision”。"
+        "en": "She made a decision to study abroad.",
+        "zh": "她决定出国留学。"
+      },
+      {
+        "en": "The decision was difficult but necessary.",
+        "zh": "这个决定很困难但很有必要。"
       }
     ],
     "imageQuery": "decision",
-    "memoryTip": "decision - n. 决定, 决心, 决断"
+    "collocations": []
   },
   {
     "id": "business-0011",
@@ -313,12 +353,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"team\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“team”。"
+        "en": "Our team won the basketball game yesterday.",
+        "zh": "我们队昨天赢了篮球比赛。"
+      },
+      {
+        "en": "We need to team up to finish the project.",
+        "zh": "我们需要合作来完成这个项目。"
       }
     ],
     "imageQuery": "team",
-    "memoryTip": "team - n. 队, 组"
+    "collocations": []
   },
   {
     "id": "business-0012",
@@ -344,12 +388,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"plan\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“plan”。"
+        "en": "We have a plan for the weekend trip.",
+        "zh": "我们有一个周末旅行的计划。"
+      },
+      {
+        "en": "I plan to visit my family next month.",
+        "zh": "我计划下个月去看望家人。"
       }
     ],
     "imageQuery": "plan",
-    "memoryTip": "plan - n. 计划, 方案, 策略, 方法, 进度表, 程序表, 平面图, 设计图, 轮廓, 示意图"
+    "collocations": []
   },
   {
     "id": "business-0013",
@@ -370,12 +418,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"product\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“product”。"
+        "en": "This product is made from natural ingredients.",
+        "zh": "这个产品是用天然成分制成的。"
+      },
+      {
+        "en": "The company launched a new product last week.",
+        "zh": "公司上周推出了一款新产品。"
       }
     ],
     "imageQuery": "product",
-    "memoryTip": "product - n. 产品, 结果, 乘积"
+    "collocations": []
   },
   {
     "id": "business-0014",
@@ -396,12 +448,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"meeting\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“meeting”。"
+        "en": "We have a meeting at three o'clock.",
+        "zh": "我们三点有个会议。"
+      },
+      {
+        "en": "The meeting was very productive and helpful.",
+        "zh": "这次会议很有成效且很有帮助。"
       }
     ],
     "imageQuery": "meeting",
-    "memoryTip": "meeting - n. 会议, 会面"
+    "collocations": []
   },
   {
     "id": "business-0015",
@@ -427,12 +483,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"trade\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“trade”。"
+        "en": "They trade goods with other countries.",
+        "zh": "他们与其他国家进行货物贸易。"
+      },
+      {
+        "en": "He learned the trade of a carpenter.",
+        "zh": "他学了木匠的手艺。"
       }
     ],
     "imageQuery": "trade",
-    "memoryTip": "trade - n. 贸易, 商业, 交易, 生意, 职业, 顾客, 信风"
+    "collocations": []
   },
   {
     "id": "business-0016",
@@ -458,12 +518,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"project\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“project”。"
+        "en": "The school project is due next Friday.",
+        "zh": "学校项目下周五截止。"
+      },
+      {
+        "en": "They plan to project the movie on the wall.",
+        "zh": "他们计划把电影投射在墙上。"
       }
     ],
     "imageQuery": "project",
-    "memoryTip": "project - n. 计划, 设计, 事业"
+    "collocations": []
   },
   {
     "id": "business-0017",
@@ -489,12 +553,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"board\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“board”。"
+        "en": "The board of directors meets every month.",
+        "zh": "董事会每月开会。"
+      },
+      {
+        "en": "He nailed a board to fix the fence.",
+        "zh": "他钉了一块木板来修篱笆。"
       }
     ],
     "imageQuery": "board",
-    "memoryTip": "board - n. 木板, 甲板, 膳食, 会议桌"
+    "collocations": []
   },
   {
     "id": "business-0018",
@@ -520,12 +588,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"share\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“share”。"
+        "en": "Please share your food with your sister.",
+        "zh": "请和你的妹妹分享食物。"
+      },
+      {
+        "en": "She bought shares in the technology company.",
+        "zh": "她买了那家科技公司的股票。"
       }
     ],
     "imageQuery": "share",
-    "memoryTip": "share - n. 部分, 参与, 一份, 参股, 份额"
+    "collocations": []
   },
   {
     "id": "business-0019",
@@ -551,12 +623,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"contract\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“contract”。"
+        "en": "He signed a contract to buy the house.",
+        "zh": "他签了买房子的合同。"
+      },
+      {
+        "en": "Metal contracts when it gets cold.",
+        "zh": "金属遇冷会收缩。"
       }
     ],
     "imageQuery": "contract",
-    "memoryTip": "contract - n. 合约, 婚约, 契约"
+    "collocations": []
   },
   {
     "id": "business-0020",
@@ -583,12 +659,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"close\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“close”。"
+        "en": "Please close the door when you leave.",
+        "zh": "你离开时请关上门。"
+      },
+      {
+        "en": "The store will close at nine tonight.",
+        "zh": "商店今晚九点关门。"
       }
     ],
     "imageQuery": "close",
-    "memoryTip": "close - n. 结束, 完结"
+    "collocations": []
   },
   {
     "id": "business-0021",
@@ -614,12 +694,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"benefit\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“benefit”。"
+        "en": "Exercise has many benefits for your health.",
+        "zh": "锻炼对你的健康有很多好处。"
+      },
+      {
+        "en": "This new law will benefit many people.",
+        "zh": "这项新法律将使许多人受益。"
       }
     ],
     "imageQuery": "benefit",
-    "memoryTip": "benefit - n. 利益"
+    "collocations": []
   },
   {
     "id": "business-0022",
@@ -640,12 +724,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"performance\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“performance”。"
+        "en": "The performance of the engine is excellent.",
+        "zh": "发动机的性能非常好。"
+      },
+      {
+        "en": "Her performance in the play was amazing.",
+        "zh": "她在剧中的表演令人惊叹。"
       }
     ],
     "imageQuery": "performance",
-    "memoryTip": "performance - n. 施行, 工作情况, 成绩, 行为, 表现, 演出"
+    "collocations": []
   },
   {
     "id": "business-0023",
@@ -666,12 +754,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"analysis\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“analysis”。"
+        "en": "The analysis took several hours.",
+        "zh": "分析花了几个小时。"
+      },
+      {
+        "en": "We need a careful analysis of this.",
+        "zh": "我们需要对此进行仔细分析。"
       }
     ],
     "imageQuery": "analysis",
-    "memoryTip": "analysis - n. 分析"
+    "collocations": []
   },
   {
     "id": "business-0024",
@@ -693,12 +785,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"demand\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“demand”。"
+        "en": "There is high demand for skilled workers.",
+        "zh": "对熟练工人的需求很高。"
+      },
+      {
+        "en": "The workers demand better working conditions.",
+        "zh": "工人们要求更好的工作条件。"
       }
     ],
     "imageQuery": "demand",
-    "memoryTip": "demand - n. 要求, 需求, 需要"
+    "collocations": []
   },
   {
     "id": "business-0025",
@@ -720,12 +816,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"capital\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“capital”。"
+        "en": "Paris is the capital of France.",
+        "zh": "巴黎是法国的首都。"
+      },
+      {
+        "en": "They need more capital to expand the business.",
+        "zh": "他们需要更多资金来扩大业务。"
       }
     ],
     "imageQuery": "capital",
-    "memoryTip": "capital - n. 首都, 大写字母, 资本"
+    "collocations": []
   },
   {
     "id": "business-0026",
@@ -746,12 +846,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"income\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“income”。"
+        "en": "Her income is enough to live comfortably.",
+        "zh": "她的收入足以舒适地生活。"
+      },
+      {
+        "en": "He reports his income to the tax office.",
+        "zh": "他向税务局申报收入。"
       }
     ],
     "imageQuery": "income",
-    "memoryTip": "income - n. 收入, 收益, 流入"
+    "collocations": []
   },
   {
     "id": "business-0027",
@@ -772,12 +876,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"manage\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“manage”。"
+        "en": "She can manage the team very well.",
+        "zh": "她能把团队管理得很好。"
+      },
+      {
+        "en": "I manage to finish my homework on time.",
+        "zh": "我设法按时完成了作业。"
       }
     ],
     "imageQuery": "manage",
-    "memoryTip": "manage - vi. 处理"
+    "collocations": []
   },
   {
     "id": "business-0028",
@@ -798,12 +906,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"growth\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“growth”。"
+        "en": "The plant shows strong growth.",
+        "zh": "这株植物生长旺盛。"
+      },
+      {
+        "en": "Economic growth is important.",
+        "zh": "经济增长很重要。"
       }
     ],
     "imageQuery": "growth",
-    "memoryTip": "growth - n. 生长, 栽培, 增长"
+    "collocations": []
   },
   {
     "id": "business-0029",
@@ -825,12 +937,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"risk\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“risk”。"
+        "en": "Smoking increases the risk of lung cancer.",
+        "zh": "吸烟增加患肺癌的风险。"
+      },
+      {
+        "en": "Don't risk your health for a job.",
+        "zh": "不要为了工作拿健康冒险。"
       }
     ],
     "imageQuery": "risk",
-    "memoryTip": "risk - n. 冒险, 危险, 保险额"
+    "collocations": []
   },
   {
     "id": "business-0030",
@@ -851,12 +967,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"resource\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“resource”。"
+        "en": "Water is a valuable natural resource.",
+        "zh": "水是一种宝贵的自然资源。"
+      },
+      {
+        "en": "The library is a great resource for students.",
+        "zh": "图书馆对学生来说是很好的资源。"
       }
     ],
     "imageQuery": "resource",
-    "memoryTip": "resource - n. 资源, 财力, 办法, 策略, 急智, 消遣"
+    "collocations": []
   },
   {
     "id": "business-0031",
@@ -877,12 +997,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"customer\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“customer”。"
+        "en": "The customer is always right in this store.",
+        "zh": "在这家店里顾客永远是对的。"
+      },
+      {
+        "en": "We need to satisfy every customer's needs.",
+        "zh": "我们需要满足每位顾客的需求。"
       }
     ],
     "imageQuery": "customer",
-    "memoryTip": "customer - n. 消费者"
+    "collocations": []
   },
   {
     "id": "business-0032",
@@ -908,12 +1032,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"profit\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“profit”。"
+        "en": "The company made a big profit this year.",
+        "zh": "公司今年赚了大钱。"
+      },
+      {
+        "en": "You can profit from learning new skills.",
+        "zh": "你可以从学习新技能中获益。"
       }
     ],
     "imageQuery": "profit",
-    "memoryTip": "profit - n. 利润, 赢利, 利益"
+    "collocations": []
   },
   {
     "id": "business-0033",
@@ -934,12 +1062,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"conference\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“conference”。"
+        "en": "She attended a conference on education.",
+        "zh": "她参加了一个关于教育的会议。"
+      },
+      {
+        "en": "The conference will be held in a hotel.",
+        "zh": "会议将在酒店举行。"
       }
     ],
     "imageQuery": "conference",
-    "memoryTip": "conference - n. 会议"
+    "collocations": []
   },
   {
     "id": "business-0034",
@@ -960,12 +1092,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"proposal\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“proposal”。"
+        "en": "He made a proposal to improve the system.",
+        "zh": "他提出了改进系统的建议。"
+      },
+      {
+        "en": "The proposal was accepted by the committee.",
+        "zh": "这个提案被委员会接受了。"
       }
     ],
     "imageQuery": "proposal",
-    "memoryTip": "proposal - n. 提议, 计划, 求婚"
+    "collocations": []
   },
   {
     "id": "business-0035",
@@ -986,12 +1122,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"client\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“client”。"
+        "en": "The lawyer met with her client this morning.",
+        "zh": "律师今天早上见了她的客户。"
+      },
+      {
+        "en": "Our client is happy with the service.",
+        "zh": "我们的客户对服务很满意。"
       }
     ],
     "imageQuery": "client",
-    "memoryTip": "client - n. 客户, 顾客, 委托人"
+    "collocations": []
   },
   {
     "id": "business-0036",
@@ -1012,12 +1152,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"goal\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“goal”。"
+        "en": "My goal is to learn English this year.",
+        "zh": "我的目标是今年学好英语。"
+      },
+      {
+        "en": "He scored a goal in the last minute.",
+        "zh": "他在最后一分钟进了一球。"
       }
     ],
     "imageQuery": "goal",
-    "memoryTip": "goal - n. 目标, 终点, 得分, 球门, 守门员"
+    "collocations": []
   },
   {
     "id": "business-0037",
@@ -1038,12 +1182,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"sales\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“sales”。"
+        "en": "The sales of this product increased greatly.",
+        "zh": "这个产品的销售额大幅增长。"
+      },
+      {
+        "en": "She works in the sales department of a firm.",
+        "zh": "她在一家公司的销售部门工作。"
       }
     ],
     "imageQuery": "sales",
-    "memoryTip": "sales - a. 销售的"
+    "collocations": []
   },
   {
     "id": "business-0038",
@@ -1069,12 +1217,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"supply\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“supply”。"
+        "en": "We need to supply food for the party.",
+        "zh": "我们需要为派对提供食物。"
+      },
+      {
+        "en": "The water supply is clean and safe.",
+        "zh": "供水是干净安全的。"
       }
     ],
     "imageQuery": "supply",
-    "memoryTip": "supply - n. 补给, 供给, 供应品"
+    "collocations": []
   },
   {
     "id": "business-0039",
@@ -1100,12 +1252,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"budget\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“budget”。"
+        "en": "We need to budget our money carefully.",
+        "zh": "我们需要仔细预算我们的钱。"
+      },
+      {
+        "en": "The project is within the budget limit.",
+        "zh": "这个项目在预算限制之内。"
       }
     ],
     "imageQuery": "budget",
-    "memoryTip": "budget - n. 预算"
+    "collocations": []
   },
   {
     "id": "business-0040",
@@ -1127,12 +1283,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"target\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“target”。"
+        "en": "He hit the target with his arrow.",
+        "zh": "他用箭射中了靶子。"
+      },
+      {
+        "en": "Our target is to finish by Friday.",
+        "zh": "我们的目标是在周五前完成。"
       }
     ],
     "imageQuery": "target",
-    "memoryTip": "target - n. 目标, 靶子, 指标"
+    "collocations": []
   },
   {
     "id": "business-0041",
@@ -1153,12 +1313,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"strategy\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“strategy”。"
+        "en": "We need a new strategy for growth.",
+        "zh": "我们需要一个新的增长策略。"
+      },
+      {
+        "en": "Her strategy helped the team win.",
+        "zh": "她的策略帮助团队获胜。"
       }
     ],
     "imageQuery": "strategy",
-    "memoryTip": "strategy - n. 战略, 策略"
+    "collocations": []
   },
   {
     "id": "business-0042",
@@ -1184,12 +1348,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"partner\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“partner”。"
+        "en": "She is my business partner.",
+        "zh": "她是我的商业伙伴。"
+      },
+      {
+        "en": "I want to partner with you.",
+        "zh": "我想和你合伙。"
       }
     ],
     "imageQuery": "partner",
-    "memoryTip": "partner - n. 合伙人, 股东, 伙伴, 伴侣"
+    "collocations": []
   },
   {
     "id": "business-0043",
@@ -1210,12 +1378,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"owner\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“owner”。"
+        "en": "The owner of the store is kind.",
+        "zh": "这家店的店主很和善。"
+      },
+      {
+        "en": "He is the owner of that car.",
+        "zh": "他是那辆车的车主。"
       }
     ],
     "imageQuery": "owner",
-    "memoryTip": "owner - n. 拥有者, 物主, 所有人"
+    "collocations": []
   },
   {
     "id": "business-0044",
@@ -1241,12 +1413,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"balance\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“balance”。"
+        "en": "Keep your balance on the bike.",
+        "zh": "在自行车上保持平衡。"
+      },
+      {
+        "en": "Check your bank account balance.",
+        "zh": "检查你的银行账户余额。"
       }
     ],
     "imageQuery": "balance",
-    "memoryTip": "balance - n. 平衡, 差额"
+    "collocations": []
   },
   {
     "id": "business-0045",
@@ -1267,12 +1443,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"deliver\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“deliver”。"
+        "en": "Please deliver the package today.",
+        "zh": "请今天递送这个包裹。"
+      },
+      {
+        "en": "She will deliver a speech soon.",
+        "zh": "她很快会发表演讲。"
       }
     ],
     "imageQuery": "deliver",
-    "memoryTip": "deliver - vt. 递送, 陈述, 释放, 发表, 引渡, 投递, 交付"
+    "collocations": []
   },
   {
     "id": "business-0046",
@@ -1298,12 +1478,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"finance\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“finance”。"
+        "en": "He works in finance.",
+        "zh": "他在金融领域工作。"
+      },
+      {
+        "en": "They will finance the project.",
+        "zh": "他们将资助这个项目。"
       }
     ],
     "imageQuery": "finance",
-    "memoryTip": "finance - n. 财政, 财务"
+    "collocations": []
   },
   {
     "id": "business-0047",
@@ -1329,12 +1513,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"channel\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“channel”。"
+        "en": "Change the TV channel, please.",
+        "zh": "请换电视频道。"
+      },
+      {
+        "en": "Water flows through the channel.",
+        "zh": "水流过这条水道。"
       }
     ],
     "imageQuery": "channel",
-    "memoryTip": "channel - n. 海峡, 航道, 频道"
+    "collocations": []
   },
   {
     "id": "business-0048",
@@ -1355,12 +1543,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"priority\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“priority”。"
+        "en": "Safety is our top priority.",
+        "zh": "安全是我们的首要任务。"
+      },
+      {
+        "en": "Finish this task as a priority.",
+        "zh": "优先完成这项任务。"
       }
     ],
     "imageQuery": "priority",
-    "memoryTip": "priority - n. 优先权, 优先"
+    "collocations": []
   },
   {
     "id": "business-0049",
@@ -1381,12 +1573,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"approve\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“approve”。"
+        "en": "The manager will approve your request.",
+        "zh": "经理会批准你的请求。"
+      },
+      {
+        "en": "I approve of your decision.",
+        "zh": "我赞同你的决定。"
       }
     ],
     "imageQuery": "approve",
-    "memoryTip": "approve - vt. 赞同, 核准, 为...提供证据"
+    "collocations": []
   },
   {
     "id": "business-0050",
@@ -1407,12 +1603,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"revenue\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“revenue”。"
+        "en": "The company's revenue increased this year.",
+        "zh": "公司今年的收入增加了。"
+      },
+      {
+        "en": "Tax revenue helps build roads.",
+        "zh": "税收有助于修建道路。"
       }
     ],
     "imageQuery": "revenue",
-    "memoryTip": "revenue - n. 收入, 岁入, 税收, 税务局"
+    "collocations": []
   },
   {
     "id": "business-0051",
@@ -1433,12 +1633,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"vision\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“vision”。"
+        "en": "He has poor vision without glasses.",
+        "zh": "他不戴眼镜视力很差。"
+      },
+      {
+        "en": "She has a clear vision for the future.",
+        "zh": "她对未来有清晰的愿景。"
       }
     ],
     "imageQuery": "vision",
-    "memoryTip": "vision - n. 视觉, 眼光, 视力, 幻想"
+    "collocations": []
   },
   {
     "id": "business-0052",
@@ -1464,12 +1668,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"trend\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“trend”。"
+        "en": "This fashion trend is popular now.",
+        "zh": "这种时尚趋势现在很流行。"
+      },
+      {
+        "en": "The trend shows rising prices.",
+        "zh": "趋势显示价格上涨。"
       }
     ],
     "imageQuery": "trend",
-    "memoryTip": "trend - n. 趋势, 倾向, 走向"
+    "collocations": []
   },
   {
     "id": "business-0053",
@@ -1490,12 +1698,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"shareholder\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“shareholder”。"
+        "en": "The shareholder attended the meeting.",
+        "zh": "股东参加了会议。"
+      },
+      {
+        "en": "Each shareholder owns part of the company.",
+        "zh": "每位股东拥有公司的一部分。"
       }
     ],
     "imageQuery": "shareholder",
-    "memoryTip": "shareholder - n. 股东"
+    "collocations": []
   },
   {
     "id": "business-0054",
@@ -1516,12 +1728,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"presentation\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“presentation”。"
+        "en": "She gave a great presentation today.",
+        "zh": "她今天做了一个很棒的演示。"
+      },
+      {
+        "en": "The presentation lasted one hour.",
+        "zh": "这个演示持续了一个小时。"
       }
     ],
     "imageQuery": "presentation",
-    "memoryTip": "presentation - n. 赠与, 描述, 介绍"
+    "collocations": []
   },
   {
     "id": "business-0055",
@@ -1542,12 +1758,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"invest\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“invest”。"
+        "en": "I want to invest in stocks.",
+        "zh": "我想投资股票。"
+      },
+      {
+        "en": "They invest time in learning.",
+        "zh": "他们投入时间学习。"
       }
     ],
     "imageQuery": "invest",
-    "memoryTip": "invest - vt. 投资, 花费, 笼罩, 授予"
+    "collocations": []
   },
   {
     "id": "business-0056",
@@ -1568,12 +1788,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"negotiate\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“negotiate”。"
+        "en": "We need to negotiate the price.",
+        "zh": "我们需要协商价格。"
+      },
+      {
+        "en": "They will negotiate a new contract.",
+        "zh": "他们将谈判一份新合同。"
       }
     ],
     "imageQuery": "negotiate",
-    "memoryTip": "negotiate - vi. 商议, 谈判, 交涉"
+    "collocations": []
   },
   {
     "id": "business-0057",
@@ -1595,12 +1819,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"schedule\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“schedule”。"
+        "en": "Check the train schedule online.",
+        "zh": "在线查看火车时刻表。"
+      },
+      {
+        "en": "We schedule a meeting for Monday.",
+        "zh": "我们安排周一的会议。"
       }
     ],
     "imageQuery": "schedule",
-    "memoryTip": "schedule - n. 时间表, 一览表, 计划表, 议事日程"
+    "collocations": []
   },
   {
     "id": "business-0058",
@@ -1621,12 +1849,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"consult\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“consult”。"
+        "en": "Consult a doctor if you are sick.",
+        "zh": "如果你生病了，咨询医生。"
+      },
+      {
+        "en": "She will consult the manual first.",
+        "zh": "她会先查阅手册。"
       }
     ],
     "imageQuery": "consult",
-    "memoryTip": "consult - vi. 商讨, 商量, 协商, 会诊"
+    "collocations": []
   },
   {
     "id": "business-0059",
@@ -1651,12 +1883,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"margin\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“margin”。"
+        "en": "Write notes in the margin.",
+        "zh": "在页边空白处写笔记。"
+      },
+      {
+        "en": "The profit margin is very small.",
+        "zh": "利润率非常小。"
       }
     ],
     "imageQuery": "margin",
-    "memoryTip": "margin - n. 页边的空白, 边缘, 界限, 余裕, 差数, 差额, 保证金"
+    "collocations": []
   },
   {
     "id": "business-0060",
@@ -1677,12 +1913,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"agenda\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“agenda”。"
+        "en": "What is on the agenda today?",
+        "zh": "今天的议程是什么？"
+      },
+      {
+        "en": "We have a busy agenda this week.",
+        "zh": "这周我们有一个繁忙的日程。"
       }
     ],
     "imageQuery": "agenda",
-    "memoryTip": "agenda - pl. 议程, 日常工作事项"
+    "collocations": []
   },
   {
     "id": "business-0061",
@@ -1708,12 +1948,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"yield\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“yield”。"
+        "en": "The farm had a good yield this year.",
+        "zh": "农场今年收成很好。"
+      },
+      {
+        "en": "You must yield to oncoming traffic.",
+        "zh": "你必须让行迎面而来的车辆。"
       }
     ],
     "imageQuery": "yield",
-    "memoryTip": "yield - n. 生产量, 投资收益"
+    "collocations": []
   },
   {
     "id": "business-0062",
@@ -1735,12 +1979,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"brand\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“brand”。"
+        "en": "This brand of shoes is popular.",
+        "zh": "这个牌子的鞋很受欢迎。"
+      },
+      {
+        "en": "The cow has a brand on its skin.",
+        "zh": "这头牛皮肤上有一个烙印。"
       }
     ],
     "imageQuery": "brand",
-    "memoryTip": "brand - n. 商标, 牌子, 烙印"
+    "collocations": []
   },
   {
     "id": "business-0063",
@@ -1766,12 +2014,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"update\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“update”。"
+        "en": "Please update the software now.",
+        "zh": "请现在更新软件。"
+      },
+      {
+        "en": "I need an update on the project.",
+        "zh": "我需要项目的最新消息。"
       }
     ],
     "imageQuery": "update",
-    "memoryTip": "update - vt. 更新, 使现代化"
+    "collocations": []
   },
   {
     "id": "business-0064",
@@ -1797,12 +2049,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"forecast\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“forecast”。"
+        "en": "The weather forecast says it will rain.",
+        "zh": "天气预报说会下雨。"
+      },
+      {
+        "en": "Economists forecast a slow growth.",
+        "zh": "经济学家预测增长缓慢。"
       }
     ],
     "imageQuery": "forecast",
-    "memoryTip": "forecast - n. 预想, 预测, 预报"
+    "collocations": []
   },
   {
     "id": "business-0065",
@@ -1823,12 +2079,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"deadline\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“deadline”。"
+        "en": "The deadline is next Friday.",
+        "zh": "截止日期是下周五。"
+      },
+      {
+        "en": "We must meet the deadline.",
+        "zh": "我们必须赶上截止日期。"
       }
     ],
     "imageQuery": "deadline",
-    "memoryTip": "deadline - n. 最后期限, 截止期限"
+    "collocations": []
   },
   {
     "id": "business-0066",
@@ -1849,12 +2109,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"workload\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“workload”。"
+        "en": "My workload is very heavy today.",
+        "zh": "我今天的工作量非常大。"
+      },
+      {
+        "en": "She manages a large workload well.",
+        "zh": "她很好地处理了大量工作。"
       }
     ],
     "imageQuery": "workload",
-    "memoryTip": "workload - n. 工作量"
+    "collocations": []
   },
   {
     "id": "business-0067",
@@ -1871,11 +2135,15 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"workflow\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“workflow”。"
+        "en": "The new software improves our workflow.",
+        "zh": "新软件改进了我们的工作流程。"
+      },
+      {
+        "en": "We need to streamline the workflow process.",
+        "zh": "我们需要简化工作流程。"
       }
     ],
     "imageQuery": "workflow",
-    "memoryTip": "workflow - 工作流程"
+    "collocations": []
   }
 ]

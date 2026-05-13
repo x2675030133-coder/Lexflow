@@ -33,10 +33,19 @@ export function saveSettings(settings: Partial<AppSettings>): AppSettings {
 }
 
 export function speakText(text: string, rate = 0.85) {
-  window.speechSynthesis.cancel();
   const settings = getSettings();
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = settings.accent === 'uk' ? 'en-GB' : 'en-US';
-  utterance.rate = rate;
-  window.speechSynthesis.speak(utterance);
+  speakPlayback(text, {
+    rate,
+    lang: settings.accent === 'uk' ? 'en-GB' : 'en-US',
+  });
+}
+
+export function getAccentSpeechLang() {
+  return getSettings().accent === 'uk' ? 'en-GB' : 'en-US';
+}
+
+import { speakPlayback, stopSpeechPlayback } from './speechPlayback';
+
+export function stopTextSpeech() {
+  stopSpeechPlayback();
 }

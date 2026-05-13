@@ -1,6 +1,8 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
 import type { Session, User } from '@supabase/supabase-js';
 import { supabase, isSupabaseConfigured } from '../lib/supabase';
+import { hydrateAccountProgress, scheduleAccountUpload } from '../utils/accountProgressSync';
+import { DEFAULT_SCOPE, setActiveScope } from '../utils/scopedStorage';
 import { translateAuthError } from '../utils/authErrors';
 
 interface AuthContextType {
@@ -22,7 +24,40 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    let cancelled = false;
+    let runId = 0;
+
+    async function applySession(nextSession: Session | null) {
+      const currentRun = ++runId;
+      const nextUser = nextSession?.user ?? null;
+
+      setSession(nextSession);
+      setUser(nextUser);
+
+      if (!nextUser?.email) {
+        setActiveScope(DEFAULT_SCOPE);
+        if (!cancelled) {
+          setLoading(false);
+        }
+        return;
+      }
+
+      setLoading(true);
+      setActiveScope(nextUser.email);
+
+      try {
+        await hydrateAccountProgress(nextUser.email);
+      } catch {
+        // Keep the session usable even if sync fails.
+      } finally {
+        if (!cancelled && currentRun === runId) {
+          setLoading(false);
+        }
+      }
+    }
+
     if (!isSupabaseConfigured) {
+      setActiveScope(DEFAULT_SCOPE);
       setLoading(false);
       return;
     }
@@ -30,25 +65,54 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     supabase.auth
       .getSession()
       .then(({ data: { session } }) => {
-        setSession(session);
-        setUser(session?.user ?? null);
-        setLoading(false);
+        void applySession(session);
       })
       .catch(() => {
         setSession(null);
         setUser(null);
+        setActiveScope(DEFAULT_SCOPE);
         setLoading(false);
       });
 
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange((_event, nextSession) => {
-      setSession(nextSession);
-      setUser(nextSession?.user ?? null);
+      void applySession(nextSession);
     });
 
-    return () => subscription.unsubscribe();
+    return () => {
+      cancelled = true;
+      subscription.unsubscribe();
+    };
   }, []);
+
+  useEffect(() => {
+    const email = user?.email;
+
+    if (!isSupabaseConfigured || !email) {
+      return undefined;
+    }
+
+    const handleProgressChange = () => {
+      scheduleAccountUpload(email);
+    };
+
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        void hydrateAccountProgress(email);
+      }
+    };
+
+    window.addEventListener('el-progress-changed', handleProgressChange as EventListener);
+    window.addEventListener('storage', handleProgressChange as EventListener);
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      window.removeEventListener('el-progress-changed', handleProgressChange as EventListener);
+      window.removeEventListener('storage', handleProgressChange as EventListener);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, [user?.email]);
 
   const signUp = async (email: string, password: string, username: string) => {
     if (!isSupabaseConfigured) return { error: CONFIG_ERROR };
@@ -76,6 +140,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     setUser(null);
     setSession(null);
+    setActiveScope(DEFAULT_SCOPE);
   };
 
   return (

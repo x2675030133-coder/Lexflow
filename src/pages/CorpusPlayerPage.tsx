@@ -171,9 +171,9 @@ export default function CorpusPlayerPage() {
   if (!lesson) {
     return (
       <div className="max-w-2xl mx-auto px-4 py-16 text-center">
-        <h2 className="text-2xl font-bold text-gray-800 mb-4">δ�ҵ��ÿγ�</h2>
+        <h2 className="text-2xl font-bold text-gray-800 mb-4">未找到课程</h2>
         <Link to="/corpus" className="text-blue-600 hover:underline">
-          ���ؿγ��б�
+          返回课程列表
         </Link>
       </div>
     );
@@ -329,7 +329,7 @@ export default function CorpusPlayerPage() {
             返回列表
           </Link>
           <div className="text-center">
-            <span className="text-sm font-medium text-gray-800">�� {lesson.episode} ��</span>
+            <span className="text-sm font-medium text-gray-800">第 {lesson.episode} 集</span>
             <span className="text-gray-300 mx-2">|</span>
             <span className="text-sm text-gray-500">{lesson.speaker}</span>
           </div>
@@ -350,7 +350,7 @@ export default function CorpusPlayerPage() {
                 }`}
               >
                 <Film className="w-3.5 h-3.5" />
-                ��Ƶģʽ
+                视频模式
               </button>
               <button
                 onClick={() => {
@@ -366,7 +366,7 @@ export default function CorpusPlayerPage() {
                 }`}
               >
                 <MessageSquare className="w-3.5 h-3.5" />
-                �ʶ�ģʽ
+                视听模式
               </button>
             </div>
 
@@ -398,7 +398,7 @@ export default function CorpusPlayerPage() {
                     <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
                       <div className="w-10 h-10 border-3 border-white/30 border-t-white rounded-full animate-spin mb-3" />
                       <p className="text-white/60 text-sm">
-                        {videoLoading ? '���ڲ��ҿɲ�����Ƶ...' : '���ڼ�����Ƶ...'}
+                        {videoLoading ? '正在查找可播放视频...' : '正在加载视频...'}
                       </p>
                     </div>
                   )}
@@ -407,14 +407,15 @@ export default function CorpusPlayerPage() {
                       <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-3">
                         <Film className="w-8 h-8 text-white/50" />
                       </div>
-                      <p className="text-white/70 text-sm mb-1">������Ƶû���ҵ����ѳ����л���������ƵԴ��</p>
-                      <p className="text-white/40 text-xs mb-4">���Զ����ƵԴҲʧ�ܣ����� Pexels API ���ã������л��ʶ�ģʽ��</p>
-                      <p className="text-white/30 text-xs">�γ̣�{lesson.title}</p>
+                      <p className="text-white/70 text-sm mb-1">未找到视频，已尝试切换到备用视频源。</p>
+                      <p className="text-white/40 text-xs mb-4">如果备用视频源也失败，请检查 Pexels API 配置，或切换到视听模式。</p>
+                      <p className="text-white/30 text-xs">课程：{lesson.title}</p>
                       <button
                         onClick={() => setPlayerMode('tts')}
                         className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg text-sm hover:bg-blue-700"
                       >
-                        �л����ʶ�ģʽ                      </button>
+                        切换到视听模式
+                      </button>
                     </div>
                   )}
                   {videoReady && !isPlaying && (
@@ -456,7 +457,7 @@ export default function CorpusPlayerPage() {
                   className={`w-10 h-10 rounded-full flex items-center justify-center transition-colors ${
                     isLooping ? 'bg-blue-100 text-blue-600' : 'bg-gray-100 text-gray-500 hover:bg-gray-200'
                   }`}
-                  title="ѭ������"
+                  title="循环播放"
                 >
                   <Repeat className="w-4 h-4" />
                 </button>
@@ -465,48 +466,48 @@ export default function CorpusPlayerPage() {
                     if (currentLine) speak(currentLine.en, 0.85);
                   }}
                   className="w-10 h-10 rounded-full bg-gray-100 text-gray-500 hover:bg-gray-200 flex items-center justify-center"
-                  title="�ʶ���ǰ��"
+                  title="朗读当前句"
                 >
                   <Volume2 className="w-4 h-4" />
                 </button>
                 <button
                   onClick={prevLine}
                   className="w-10 h-10 rounded-full bg-gray-100 text-gray-500 hover:bg-gray-200 flex items-center justify-center"
-                  title="��һ��"
+                  title="上一句"
                 >
                   <ChevronLeft className="w-5 h-5" />
                 </button>
                 <button
                   onClick={replay}
                   className="w-10 h-10 rounded-full bg-gray-100 text-gray-500 hover:bg-gray-200 flex items-center justify-center"
-                  title="�ز�"
+                  title="重播"
                 >
                   <SkipBack className="w-4 h-4" />
                 </button>
                 <button
                   onClick={togglePlay}
                   className="w-14 h-14 rounded-full bg-blue-600 text-white hover:bg-blue-700 flex items-center justify-center shadow-lg"
-                  title="����/��ͣ"
+                  title="播放 / 暂停"
                 >
                   {isPlaying ? <Pause className="w-6 h-6" /> : <Play className="w-6 h-6 ml-0.5" />}
                 </button>
                 <button
                   onClick={nextLine}
                   className="w-10 h-10 rounded-full bg-gray-100 text-gray-500 hover:bg-gray-200 flex items-center justify-center"
-                  title="��һ��"
+                  title="下一句"
                 >
                   <ChevronRight className="w-5 h-5" />
                 </button>
                 <button
                   onClick={toggleSpeed}
                   className="w-10 h-10 rounded-full bg-gray-100 text-gray-500 hover:bg-gray-200 flex items-center justify-center text-xs font-bold"
-                  title="����"
+                  title="切换语速"
                 >
                   {playbackSpeed}x
                 </button>
                 <button
                   className="w-10 h-10 rounded-full bg-gray-100 text-gray-500 hover:bg-gray-200 flex items-center justify-center"
-                  title="��䲥��"
+                  title="跳到下一句并朗读"
                   onClick={() => {
                     speechSynthesis.cancel();
                     setIsPlaying(false);
@@ -533,7 +534,7 @@ export default function CorpusPlayerPage() {
           <div className="lg:col-span-3">
             <div className="bg-white rounded-2xl border border-gray-100 overflow-hidden h-full flex flex-col">
               <div className="flex items-center justify-between px-5 py-3 border-b border-gray-100">
-                <h3 className="font-bold text-gray-800">��̬��Ļ</h3>
+                <h3 className="font-bold text-gray-800">动态字幕</h3>
                 <div className="flex gap-1">
                   {(['bilingual', 'en', 'zh'] as const).map((mode) => (
                     <button
@@ -545,7 +546,7 @@ export default function CorpusPlayerPage() {
                           : 'bg-gray-100 text-gray-500 hover:bg-gray-200'
                       }`}
                     >
-                      {mode === 'bilingual' ? '˫��' : mode === 'en' ? 'Ӣ��' : '����'}
+                      {mode === 'bilingual' ? '双语' : mode === 'en' ? '英文' : '中文'}
                     </button>
                   ))}
                 </div>
@@ -576,10 +577,10 @@ export default function CorpusPlayerPage() {
                         } transition-opacity`}
                       >
                         <span className="text-xs text-gray-400 mr-auto">{line.id}</span>
-                        <button onClick={(e) => { e.stopPropagation(); goToLine(index); }} className="hover:text-blue-500" title="����">
+                        <button onClick={(e) => { e.stopPropagation(); goToLine(index); }} className="hover:text-blue-500" title="播放">
                           <Play className="w-3.5 h-3.5" />
                         </button>
-                        <button onClick={(e) => { e.stopPropagation(); copyText(line.en); }} className="hover:text-blue-500" title="����">
+                        <button onClick={(e) => { e.stopPropagation(); copyText(line.en); }} className="hover:text-blue-500" title="复制">
                           <Copy className="w-3.5 h-3.5" />
                         </button>
                         <button
@@ -588,11 +589,11 @@ export default function CorpusPlayerPage() {
                             toggleLike(line.id);
                           }}
                           className={likedLines.has(line.id) ? 'text-red-500' : 'hover:text-red-400'}
-                          title="�ղ�"
+                          title="收藏"
                         >
                           <Heart className={`w-3.5 h-3.5 ${likedLines.has(line.id) ? 'fill-red-500' : ''}`} />
                         </button>
-                        <button onClick={(e) => e.stopPropagation()} className="hover:text-blue-500" title="����">
+                        <button onClick={(e) => e.stopPropagation()} className="hover:text-blue-500" title="跟读">
                           <Mic className="w-3.5 h-3.5" />
                         </button>
                         <span className="text-xs text-gray-400">
@@ -647,7 +648,7 @@ export default function CorpusPlayerPage() {
                 <p className="text-gray-700">{highlightDefinitions[selectedWord].en}</p>
               </div>
               <div className="bg-blue-50 rounded-xl p-4">
-                <p className="text-sm text-blue-400 mb-1">����</p>
+                <p className="text-sm text-blue-400 mb-1">中文</p>
                 <p className="text-blue-700 font-medium">{highlightDefinitions[selectedWord].zh}</p>
               </div>
             </div>
@@ -655,7 +656,7 @@ export default function CorpusPlayerPage() {
               onClick={() => setSelectedWord(null)}
               className="w-full mt-4 py-2.5 bg-gray-100 text-gray-600 rounded-xl text-sm font-medium hover:bg-gray-200"
             >
-              �ر�
+              关闭
             </button>
           </div>
         </div>

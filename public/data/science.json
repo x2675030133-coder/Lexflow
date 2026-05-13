@@ -18,12 +18,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"system\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“system”。"
+        "en": "The solar system has eight planets.",
+        "zh": "太阳系有八颗行星。"
+      },
+      {
+        "en": "We need a better system for filing.",
+        "zh": "我们需要一个更好的归档系统。"
       }
     ],
     "imageQuery": "system",
-    "memoryTip": "system - n. 系统, 体系, 制度, 方式, 秩序, 分类原则"
+    "collocations": []
   },
   {
     "id": "science-0002",
@@ -49,12 +53,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"water\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“water”。"
+        "en": "I drink water every day.",
+        "zh": "我每天喝水。"
+      },
+      {
+        "en": "Please water the plants.",
+        "zh": "请给植物浇水。"
       }
     ],
     "imageQuery": "water",
-    "memoryTip": "water - n. 水, 雨水, 海水, 水位, 水面, 流水"
+    "collocations": []
   },
   {
     "id": "science-0003",
@@ -80,12 +88,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"result\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“result”。"
+        "en": "The result of the test is good.",
+        "zh": "测试结果很好。"
+      },
+      {
+        "en": "Hard work results in success.",
+        "zh": "努力工作导致成功。"
       }
     ],
     "imageQuery": "result",
-    "memoryTip": "result - n. 结果, 成绩, 答案"
+    "collocations": []
   },
   {
     "id": "science-0004",
@@ -111,12 +123,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"control\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“control”。"
+        "en": "He can control his anger well.",
+        "zh": "他能很好地控制自己的愤怒。"
+      },
+      {
+        "en": "The remote control is on the table.",
+        "zh": "遥控器在桌子上。"
       }
     ],
     "imageQuery": "control",
-    "memoryTip": "control - n. 控制, 管理, 克制, 控制器, 操纵装置"
+    "collocations": []
   },
   {
     "id": "science-0005",
@@ -142,12 +158,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"process\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“process”。"
+        "en": "The process takes two hours.",
+        "zh": "这个过程需要两个小时。"
+      },
+      {
+        "en": "We process the data carefully.",
+        "zh": "我们仔细处理数据。"
       }
     ],
     "imageQuery": "process",
-    "memoryTip": "process - n. 程序, 进行, 过程"
+    "collocations": []
   },
   {
     "id": "science-0006",
@@ -169,12 +189,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"research\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“research”。"
+        "en": "Scientists research new ways to cure diseases.",
+        "zh": "科学家研究治疗疾病的新方法。"
+      },
+      {
+        "en": "She does research on climate change.",
+        "zh": "她做关于气候变化的研究。"
       }
     ],
     "imageQuery": "research",
-    "memoryTip": "research - n. 研究, 调查, 考察"
+    "collocations": []
   },
   {
     "id": "science-0007",
@@ -195,12 +219,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"health\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“health”。"
+        "en": "Good health is very important for everyone.",
+        "zh": "良好的健康对每个人都很重要。"
+      },
+      {
+        "en": "She exercises every day to keep her health.",
+        "zh": "她每天锻炼以保持健康。"
       }
     ],
     "imageQuery": "health",
-    "memoryTip": "health - n. 健康, 卫生, 蓬勃, 健康状态"
+    "collocations": []
   },
   {
     "id": "science-0008",
@@ -222,12 +250,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"evidence\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“evidence”。"
+        "en": "The police found new evidence.",
+        "zh": "警察找到了新证据。"
+      },
+      {
+        "en": "This evidence proves his innocence.",
+        "zh": "这个证据证明他无罪。"
       }
     ],
     "imageQuery": "evidence",
-    "memoryTip": "evidence - n. 根据, 证据, 迹象"
+    "collocations": []
   },
   {
     "id": "science-0009",
@@ -254,12 +286,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"model\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“model”。"
+        "en": "He built a model airplane.",
+        "zh": "他造了一个模型飞机。"
+      },
+      {
+        "en": "She works as a fashion model.",
+        "zh": "她是一名时装模特。"
       }
     ],
     "imageQuery": "model",
-    "memoryTip": "model - n. 模型, 模范, 模特儿"
+    "collocations": []
   },
   {
     "id": "science-0010",
@@ -280,12 +316,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"data\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“data”。"
+        "en": "The data shows a clear trend.",
+        "zh": "数据显示了一个明显的趋势。"
+      },
+      {
+        "en": "We need to collect more data.",
+        "zh": "我们需要收集更多数据。"
       }
     ],
     "imageQuery": "data",
-    "memoryTip": "data - pl. 资料, 数据"
+    "collocations": []
   },
   {
     "id": "science-0011",
@@ -306,12 +346,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"nature\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“nature”。"
+        "en": "I love spending time in nature.",
+        "zh": "我喜欢在大自然中度过时光。"
+      },
+      {
+        "en": "It is human nature to be curious.",
+        "zh": "好奇是人的天性。"
       }
     ],
     "imageQuery": "nature",
-    "memoryTip": "nature - n. 自然, 大自然, 本性, 性格, 性质"
+    "collocations": []
   },
   {
     "id": "science-0012",
@@ -333,12 +377,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"structure\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“structure”。"
+        "en": "The building has a strong structure.",
+        "zh": "这座建筑结构坚固。"
+      },
+      {
+        "en": "We need to structure our time better.",
+        "zh": "我们需要更好地安排时间。"
       }
     ],
     "imageQuery": "structure",
-    "memoryTip": "structure - n. 结构, 构造, 建筑物"
+    "collocations": []
   },
   {
     "id": "science-0013",
@@ -359,12 +407,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"method\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“method”。"
+        "en": "This method is very effective.",
+        "zh": "这个方法非常有效。"
+      },
+      {
+        "en": "She uses a new method to study.",
+        "zh": "她用一种新方法学习。"
       }
     ],
     "imageQuery": "method",
-    "memoryTip": "method - n. 方法, 办法, 条理, 秩序"
+    "collocations": []
   },
   {
     "id": "science-0014",
@@ -385,12 +437,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"theory\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“theory”。"
+        "en": "Einstein's theory changed science.",
+        "zh": "爱因斯坦的理论改变了科学。"
+      },
+      {
+        "en": "We need to test this theory carefully.",
+        "zh": "我们需要仔细检验这个理论。"
       }
     ],
     "imageQuery": "theory",
-    "memoryTip": "theory - n. 理论, 学说, 原理, 意见, 推测"
+    "collocations": []
   },
   {
     "id": "science-0015",
@@ -416,12 +472,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"test\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“test”。"
+        "en": "We have a math test tomorrow.",
+        "zh": "我们明天有数学考试。"
+      },
+      {
+        "en": "Please test the new software carefully.",
+        "zh": "请仔细测试新软件。"
       }
     ],
     "imageQuery": "test",
-    "memoryTip": "test - n. 测试, 试验, 化验, 检验, 考验, 甲壳"
+    "collocations": []
   },
   {
     "id": "science-0016",
@@ -443,12 +503,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"factor\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“factor”。"
+        "en": "Time is an important factor.",
+        "zh": "时间是一个重要因素。"
+      },
+      {
+        "en": "The cost factor affects our decision.",
+        "zh": "成本因素影响我们的决定。"
       }
     ],
     "imageQuery": "factor",
-    "memoryTip": "factor - n. 因素, 因数, 系数, 基因, 代理人"
+    "collocations": []
   },
   {
     "id": "science-0017",
@@ -469,12 +533,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"analysis\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“analysis”。"
+        "en": "The analysis took several hours.",
+        "zh": "分析花了几个小时。"
+      },
+      {
+        "en": "We need a careful analysis of this.",
+        "zh": "我们需要对此进行仔细分析。"
       }
     ],
     "imageQuery": "analysis",
-    "memoryTip": "analysis - n. 分析"
+    "collocations": []
   },
   {
     "id": "science-0018",
@@ -495,12 +563,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"technology\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“technology”。"
+        "en": "Technology changes our lives every day.",
+        "zh": "技术每天都在改变我们的生活。"
+      },
+      {
+        "en": "New technology makes work easier.",
+        "zh": "新技术让工作更轻松。"
       }
     ],
     "imageQuery": "technology",
-    "memoryTip": "technology - n. 技术, 工业技术, 术语"
+    "collocations": []
   },
   {
     "id": "science-0019",
@@ -521,12 +593,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"energy\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“energy”。"
+        "en": "She has a lot of energy today.",
+        "zh": "她今天精力充沛。"
+      },
+      {
+        "en": "Solar energy is good for the environment.",
+        "zh": "太阳能对环境有益。"
       }
     ],
     "imageQuery": "energy",
-    "memoryTip": "energy - n. 精力, 精神, 活力, 能量"
+    "collocations": []
   },
   {
     "id": "science-0020",
@@ -547,12 +623,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"cell\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“cell”。"
+        "en": "Every living thing has cells.",
+        "zh": "每个生物都有细胞。"
+      },
+      {
+        "en": "He was locked in a small cell.",
+        "zh": "他被锁在一个小牢房里。"
       }
     ],
     "imageQuery": "cell",
-    "memoryTip": "cell - n. 单元, 细胞, 电池"
+    "collocations": []
   },
   {
     "id": "science-0021",
@@ -573,12 +653,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"growth\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“growth”。"
+        "en": "The plant shows strong growth.",
+        "zh": "这株植物生长旺盛。"
+      },
+      {
+        "en": "Economic growth is important.",
+        "zh": "经济增长很重要。"
       }
     ],
     "imageQuery": "growth",
-    "memoryTip": "growth - n. 生长, 栽培, 增长"
+    "collocations": []
   },
   {
     "id": "science-0022",
@@ -599,12 +683,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"behaviour\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“behaviour”。"
+        "en": "His behaviour is very good.",
+        "zh": "他的行为很好。"
+      },
+      {
+        "en": "Good behaviour is important in class.",
+        "zh": "课堂上良好的行为很重要。"
       }
     ],
     "imageQuery": "behaviour",
-    "memoryTip": "behaviour - n. 行为, 举止"
+    "collocations": []
   },
   {
     "id": "science-0023",
@@ -625,12 +713,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"science\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“science”。"
+        "en": "Science helps us understand the world.",
+        "zh": "科学帮助我们理解世界。"
+      },
+      {
+        "en": "She studies science at university.",
+        "zh": "她在大学学习科学。"
       }
     ],
     "imageQuery": "science",
-    "memoryTip": "science - n. 科学, 学科, 学问, 自然科学"
+    "collocations": []
   },
   {
     "id": "science-0024",
@@ -651,12 +743,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"element\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“element”。"
+        "en": "Water is a basic element of life.",
+        "zh": "水是生命的基本元素。"
+      },
+      {
+        "en": "Honesty is an important element in friendship.",
+        "zh": "诚实是友谊中的重要要素。"
       }
     ],
     "imageQuery": "element",
-    "memoryTip": "element - n. 元件, 元素, 要素"
+    "collocations": []
   },
   {
     "id": "science-0025",
@@ -682,12 +778,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"surface\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“surface”。"
+        "en": "The surface of the table is smooth.",
+        "zh": "桌子的表面很光滑。"
+      },
+      {
+        "en": "The fish jumped to the surface.",
+        "zh": "鱼跳到了水面。"
       }
     ],
     "imageQuery": "surface",
-    "memoryTip": "surface - n. 面, 表面, 水面, 外表, 平面"
+    "collocations": []
   },
   {
     "id": "science-0026",
@@ -708,12 +808,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"species\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“species”。"
+        "en": "This species of bird is very rare.",
+        "zh": "这种鸟类非常稀有。"
+      },
+      {
+        "en": "Many species are in danger of extinction.",
+        "zh": "许多物种面临灭绝的危险。"
       }
     ],
     "imageQuery": "species",
-    "memoryTip": "species - n. 种, 类, 外形"
+    "collocations": []
   },
   {
     "id": "science-0027",
@@ -735,12 +839,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"trial\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“trial”。"
+        "en": "The trial will begin next Monday morning.",
+        "zh": "审判将于下周一早上开始。"
+      },
+      {
+        "en": "We need to run a trial of the software.",
+        "zh": "我们需要对软件进行一次试验。"
       }
     ],
     "imageQuery": "trial",
-    "memoryTip": "trial - n. 审判, 试验, 艰苦, 麻烦事, 考验"
+    "collocations": []
   },
   {
     "id": "science-0028",
@@ -762,12 +870,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"impact\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“impact”。"
+        "en": "The news had a big impact on her.",
+        "zh": "这消息对她影响很大。"
+      },
+      {
+        "en": "The car hit the wall with great impact.",
+        "zh": "汽车猛烈撞击了墙壁。"
       }
     ],
     "imageQuery": "impact",
-    "memoryTip": "impact - n. 冲击, 冲突, 影响, 效果"
+    "collocations": []
   },
   {
     "id": "science-0029",
@@ -788,12 +900,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"reaction\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“reaction”。"
+        "en": "Her reaction to the joke was laughter.",
+        "zh": "她对那个笑话的反应是大笑。"
+      },
+      {
+        "en": "I had an allergic reaction to the food.",
+        "zh": "我对那种食物有过敏反应。"
       }
     ],
     "imageQuery": "reaction",
-    "memoryTip": "reaction - n. 反应, 反作用, 反动"
+    "collocations": []
   },
   {
     "id": "science-0030",
@@ -819,12 +935,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"sample\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“sample”。"
+        "en": "Please take a free sample of the product.",
+        "zh": "请拿一份产品的免费样品。"
+      },
+      {
+        "en": "We need to sample the food before buying.",
+        "zh": "我们需要在购买前品尝食物。"
       }
     ],
     "imageQuery": "sample",
-    "memoryTip": "sample - n. 样品, 范例, 样本"
+    "collocations": []
   },
   {
     "id": "science-0031",
@@ -850,12 +970,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"code\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“code”。"
+        "en": "You need to enter the security code to enter.",
+        "zh": "你需要输入安全密码才能进入。"
+      },
+      {
+        "en": "The students are learning how to write code.",
+        "zh": "学生们正在学习如何编写代码。"
       }
     ],
     "imageQuery": "code",
-    "memoryTip": "code - n. 代码, 密码, 法规, 法典"
+    "collocations": []
   },
   {
     "id": "science-0032",
@@ -881,12 +1005,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"wave\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“wave”。"
+        "en": "She waved her hand to say goodbye.",
+        "zh": "她挥手告别。"
+      },
+      {
+        "en": "The wave crashed onto the shore.",
+        "zh": "海浪拍打着海岸。"
       }
     ],
     "imageQuery": "wave",
-    "memoryTip": "wave - n. 波, 波浪, 波动, 起伏, 高潮, 潮涌, 挥手致意, (气压)突变"
+    "collocations": []
   },
   {
     "id": "science-0033",
@@ -907,12 +1035,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"temperature\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“temperature”。"
+        "en": "The temperature outside is very high today.",
+        "zh": "今天外面的温度很高。"
+      },
+      {
+        "en": "She has a fever and her temperature is 39 degrees.",
+        "zh": "她发烧了，体温是39度。"
       }
     ],
     "imageQuery": "temperature",
-    "memoryTip": "temperature - n. 温度, 发烧, 热度"
+    "collocations": []
   },
   {
     "id": "science-0034",
@@ -934,12 +1066,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"experiment\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“experiment”。"
+        "en": "The scientist conducted a simple experiment.",
+        "zh": "科学家进行了一个简单的实验。"
+      },
+      {
+        "en": "They experiment with new recipes in the kitchen.",
+        "zh": "他们在厨房尝试新食谱。"
       }
     ],
     "imageQuery": "experiment",
-    "memoryTip": "experiment - n. 实验, 试验, 实验仪器"
+    "collocations": []
   },
   {
     "id": "science-0035",
@@ -965,12 +1101,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"heat\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“heat”。"
+        "en": "Please heat the soup for dinner.",
+        "zh": "请把汤加热作为晚餐。"
+      },
+      {
+        "en": "The heat from the sun is strong today.",
+        "zh": "今天太阳的热量很强。"
       }
     ],
     "imageQuery": "heat",
-    "memoryTip": "heat - n. 热, 热度, 体温, 高潮"
+    "collocations": []
   },
   {
     "id": "science-0036",
@@ -991,12 +1131,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"device\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“device”。"
+        "en": "This device measures temperature.",
+        "zh": "这个设备测量温度。"
+      },
+      {
+        "en": "She uses a small electronic device.",
+        "zh": "她使用一个小型电子设备。"
       }
     ],
     "imageQuery": "device",
-    "memoryTip": "device - n. 装置, 设计, 策略, 发明物, 设备"
+    "collocations": []
   },
   {
     "id": "science-0037",
@@ -1017,12 +1161,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"observation\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“observation”。"
+        "en": "His observation of the stars was accurate.",
+        "zh": "他对星星的观察很准确。"
+      },
+      {
+        "en": "She made an interesting observation about the painting.",
+        "zh": "她对这幅画做了一个有趣的观察。"
       }
     ],
     "imageQuery": "observation",
-    "memoryTip": "observation - n. 观察, 注意, 观测, 观察力"
+    "collocations": []
   },
   {
     "id": "science-0038",
@@ -1048,12 +1196,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"signal\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“signal”。"
+        "en": "The traffic signal turned green.",
+        "zh": "交通信号灯变绿了。"
+      },
+      {
+        "en": "She gave a signal to start the race.",
+        "zh": "她发出信号开始比赛。"
       }
     ],
     "imageQuery": "signal",
-    "memoryTip": "signal - n. 信号, 暗号, 近因, 导火线"
+    "collocations": []
   },
   {
     "id": "science-0039",
@@ -1070,12 +1222,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"topic\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“topic”。"
+        "en": "The topic of the meeting is education.",
+        "zh": "会议的主题是教育。"
+      },
+      {
+        "en": "She chose a difficult topic for her essay.",
+        "zh": "她为论文选了一个难的话题。"
       }
     ],
     "imageQuery": "topic",
-    "memoryTip": "topic - n. 主题, 论题, 话题"
+    "collocations": []
   },
   {
     "id": "science-0040",
@@ -1096,12 +1252,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"gene\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“gene”。"
+        "en": "The gene determines eye color in humans.",
+        "zh": "基因决定人类的眼睛颜色。"
+      },
+      {
+        "en": "Scientists study how genes are inherited.",
+        "zh": "科学家研究基因如何遗传。"
       }
     ],
     "imageQuery": "gene",
-    "memoryTip": "gene - n. 基因"
+    "collocations": []
   },
   {
     "id": "science-0041",
@@ -1127,12 +1287,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"input\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“input”。"
+        "en": "Please input your password to log in.",
+        "zh": "请输入你的密码以登录。"
+      },
+      {
+        "en": "The teacher values student input in class discussions.",
+        "zh": "老师重视学生在课堂讨论中的输入。"
       }
     ],
     "imageQuery": "input",
-    "memoryTip": "input - n. 输入, 输入电路"
+    "collocations": []
   },
   {
     "id": "science-0042",
@@ -1153,12 +1317,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"laboratory\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“laboratory”。"
+        "en": "Scientists work in a laboratory every day.",
+        "zh": "科学家每天在实验室工作。"
+      },
+      {
+        "en": "The laboratory has new equipment for experiments.",
+        "zh": "实验室有新的实验设备。"
       }
     ],
     "imageQuery": "laboratory",
-    "memoryTip": "laboratory - n. 实验室, 研究室, 化工厂"
+    "collocations": []
   },
   {
     "id": "science-0043",
@@ -1184,12 +1352,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"variable\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“variable”。"
+        "en": "The weather is variable in this region.",
+        "zh": "这个地区的天气是多变的。"
+      },
+      {
+        "en": "Time is a variable in the experiment.",
+        "zh": "时间是实验中的一个变量。"
       }
     ],
     "imageQuery": "variable",
-    "memoryTip": "variable - n. 易变的事物, 变数, 可变物, 变量"
+    "collocations": []
   },
   {
     "id": "science-0044",
@@ -1206,12 +1378,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"researcher\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“researcher”。"
+        "en": "The researcher studied the effects of medicine.",
+        "zh": "研究人员研究了药物的效果。"
+      },
+      {
+        "en": "She is a dedicated researcher in biology.",
+        "zh": "她是一位专注的生物研究人员。"
       }
     ],
     "imageQuery": "researcher",
-    "memoryTip": "researcher - n. 研究人员"
+    "collocations": []
   },
   {
     "id": "science-0045",
@@ -1233,12 +1409,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"chemical\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“chemical”。"
+        "en": "This chemical is dangerous.",
+        "zh": "这种化学品很危险。"
+      },
+      {
+        "en": "Water is a chemical substance.",
+        "zh": "水是一种化学物质。"
       }
     ],
     "imageQuery": "chemical",
-    "memoryTip": "chemical - n. 化学药品"
+    "collocations": []
   },
   {
     "id": "science-0046",
@@ -1259,12 +1439,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"climate\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“climate”。"
+        "en": "The climate in this region is very warm.",
+        "zh": "这个地区的气候非常温暖。"
+      },
+      {
+        "en": "Climate change affects weather patterns.",
+        "zh": "气候变化影响天气模式。"
       }
     ],
     "imageQuery": "climate",
-    "memoryTip": "climate - n. 气候, 社会趋势, 气候区"
+    "collocations": []
   },
   {
     "id": "science-0047",
@@ -1285,12 +1469,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"measurement\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“measurement”。"
+        "en": "The measurement of the table is one meter.",
+        "zh": "这张桌子的尺寸是一米。"
+      },
+      {
+        "en": "Accurate measurement is important in science.",
+        "zh": "精确测量在科学中很重要。"
       }
     ],
     "imageQuery": "measurement",
-    "memoryTip": "measurement - n. 尺寸, 度量, 度量单位"
+    "collocations": []
   },
   {
     "id": "science-0048",
@@ -1307,12 +1495,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"universe\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“universe”。"
+        "en": "The universe is vast and full of stars.",
+        "zh": "宇宙浩瀚，充满了星星。"
+      },
+      {
+        "en": "Scientists study the origins of the universe.",
+        "zh": "科学家研究宇宙的起源。"
       }
     ],
     "imageQuery": "universe",
-    "memoryTip": "universe - n. 宇宙, 星系, (思想等)范围"
+    "collocations": []
   },
   {
     "id": "science-0049",
@@ -1329,12 +1521,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"planet\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“planet”。"
+        "en": "Earth is the third planet from the sun.",
+        "zh": "地球是离太阳第三近的行星。"
+      },
+      {
+        "en": "Mars is often called the Red Planet.",
+        "zh": "火星常被称为红色行星。"
       }
     ],
     "imageQuery": "planet",
-    "memoryTip": "planet - n. 行星, 命运星辰, 杰出的人, 重大影响的事"
+    "collocations": []
   },
   {
     "id": "science-0050",
@@ -1355,12 +1551,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"particle\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“particle”。"
+        "en": "A particle of dust floated in the air.",
+        "zh": "一粒灰尘漂浮在空气中。"
+      },
+      {
+        "en": "Scientists study the particle's movement.",
+        "zh": "科学家研究粒子的运动。"
       }
     ],
     "imageQuery": "particle",
-    "memoryTip": "particle - n. 颗粒, 粒子, 质点, 极小量"
+    "collocations": []
   },
   {
     "id": "science-0051",
@@ -1381,12 +1581,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"hypothesis\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“hypothesis”。"
+        "en": "The scientist tested her hypothesis with experiments.",
+        "zh": "科学家用实验检验了她的假设。"
+      },
+      {
+        "en": "We need to prove or disprove this hypothesis.",
+        "zh": "我们需要证明或反驳这个假设。"
       }
     ],
     "imageQuery": "hypothesis",
-    "memoryTip": "hypothesis - n. 假设"
+    "collocations": []
   },
   {
     "id": "science-0052",
@@ -1407,12 +1611,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"molecule\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“molecule”。"
+        "en": "A water molecule has two hydrogen atoms.",
+        "zh": "一个水分子有两个氢原子。"
+      },
+      {
+        "en": "Scientists study the structure of the molecule.",
+        "zh": "科学家研究分子的结构。"
       }
     ],
     "imageQuery": "molecule",
-    "memoryTip": "molecule - n. 分子, 些微"
+    "collocations": []
   },
   {
     "id": "science-0053",
@@ -1433,12 +1641,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"chemistry\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“chemistry”。"
+        "en": "I study chemistry at school.",
+        "zh": "我在学校学习化学。"
+      },
+      {
+        "en": "They have great chemistry together.",
+        "zh": "他们之间有很好的化学反应。"
       }
     ],
     "imageQuery": "chemistry",
-    "memoryTip": "chemistry - n. 化学, 化学过程"
+    "collocations": []
   },
   {
     "id": "science-0054",
@@ -1459,12 +1671,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"physics\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“physics”。"
+        "en": "She studies physics at the university.",
+        "zh": "她在大学学习物理学。"
+      },
+      {
+        "en": "Physics explains how things move.",
+        "zh": "物理学解释物体如何运动。"
       }
     ],
     "imageQuery": "physics",
-    "memoryTip": "physics - n. 物理学, 物理过程, 物理现象"
+    "collocations": []
   },
   {
     "id": "science-0055",
@@ -1485,12 +1701,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"density\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“density”。"
+        "en": "The population density is high in cities.",
+        "zh": "城市的人口密度很高。"
+      },
+      {
+        "en": "Water has a higher density than air.",
+        "zh": "水的密度比空气高。"
       }
     ],
     "imageQuery": "density",
-    "memoryTip": "density - n. 密度"
+    "collocations": []
   },
   {
     "id": "science-0056",
@@ -1511,12 +1731,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"atom\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“atom”。"
+        "en": "An atom is the smallest part of matter.",
+        "zh": "原子是物质的最小部分。"
+      },
+      {
+        "en": "Water is made of two hydrogen atoms.",
+        "zh": "水由两个氢原子组成。"
       }
     ],
     "imageQuery": "atom",
-    "memoryTip": "atom - n. 原子, 核能, 微粒, 微量"
+    "collocations": []
   },
   {
     "id": "science-0057",
@@ -1537,12 +1761,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"gravity\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“gravity”。"
+        "en": "Gravity pulls objects toward the Earth.",
+        "zh": "重力把物体拉向地球。"
+      },
+      {
+        "en": "He spoke with gravity about the problem.",
+        "zh": "他严肃地谈论这个问题。"
       }
     ],
     "imageQuery": "gravity",
-    "memoryTip": "gravity - n. 地心引力, 重力"
+    "collocations": []
   },
   {
     "id": "science-0058",
@@ -1563,12 +1791,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"biology\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“biology”。"
+        "en": "She studies biology at university.",
+        "zh": "她在大学学习生物学。"
+      },
+      {
+        "en": "Biology helps us understand living things.",
+        "zh": "生物学帮助我们理解生物。"
       }
     ],
     "imageQuery": "biology",
-    "memoryTip": "biology - n. 生物学"
+    "collocations": []
   },
   {
     "id": "science-0059",
@@ -1589,11 +1821,15 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"observable\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“observable”。"
+        "en": "The change is observable to everyone.",
+        "zh": "这个变化对每个人都是可观察的。"
+      },
+      {
+        "en": "Observable data helps in analysis.",
+        "zh": "可观察的数据有助于分析。"
       }
     ],
     "imageQuery": "observable",
-    "memoryTip": "observable - a. 可遵守的, 可庆祝的, 看得见的, 可辨别的, 观测得到的, 值得注意的, 显著的"
+    "collocations": []
   }
 ]

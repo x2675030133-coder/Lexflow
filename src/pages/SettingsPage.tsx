@@ -2,7 +2,9 @@ import { useEffect, useState, type ChangeEvent } from 'react';
 import { ArrowLeft, Download, RotateCcw, Save, Upload } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { wordLists } from '../data/wordLists';
+import { readCurrentAccountSnapshot, writeCurrentAccountSnapshot } from '../utils/accountProgressSync';
 import { getWordListMetadata } from '../utils/wordListService';
+import { clearProgressScope, getActiveScope } from '../utils/scopedStorage';
 import { getProgress, saveProgress } from '../utils/storage';
 
 const DAILY_GOALS = [10, 20, 30, 50, 100];
@@ -34,6 +36,16 @@ export default function SettingsPage() {
   const [metadata, setMetadata] = useState<Record<string, { totalWords: number }>>({});
 
   useEffect(() => {
+    const refresh = () => setProgress(getProgress());
+    window.addEventListener('storage', refresh);
+    window.addEventListener('el-progress-changed', refresh as EventListener);
+    return () => {
+      window.removeEventListener('storage', refresh);
+      window.removeEventListener('el-progress-changed', refresh as EventListener);
+    };
+  }, []);
+
+  useEffect(() => {
     let cancelled = false;
     (async () => {
       const data = await getWordListMetadata();
@@ -58,13 +70,13 @@ export default function SettingsPage() {
 
   const handleReset = () => {
     if (!window.confirm(T.resetConfirm)) return;
-    localStorage.clear();
+    clearProgressScope(getActiveScope());
     window.location.reload();
   };
 
   const handleExport = () => {
     const data = {
-      progress: getProgress(),
+      ...readCurrentAccountSnapshot(),
       exportDate: new Date().toISOString(),
     };
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
@@ -84,11 +96,20 @@ export default function SettingsPage() {
     reader.onload = (ev) => {
       try {
         const data = JSON.parse(String(ev.target?.result ?? '{}'));
-        if (data.progress) {
-          saveProgress(data.progress);
-          setProgress(data.progress);
-          setDailyGoal(data.progress.dailyGoal);
-          setCurrentList(data.progress.currentListId);
+        if (data && typeof data === 'object') {
+          const nextSnapshot = {
+            progress: data.progress || getProgress(),
+            dailyStats: Array.isArray(data.dailyStats) ? data.dailyStats : [],
+            reading: Array.isArray(data.reading) ? data.reading : [],
+            listening: Array.isArray(data.listening) ? data.listening : [],
+            podcasts: Array.isArray(data.podcasts) ? data.podcasts : [],
+            updatedAt: String(data.updatedAt || ''),
+          };
+          writeCurrentAccountSnapshot(nextSnapshot);
+          saveProgress(nextSnapshot.progress);
+          setProgress(nextSnapshot.progress);
+          setDailyGoal(nextSnapshot.progress.dailyGoal);
+          setCurrentList(nextSnapshot.progress.currentListId);
           alert(T.importSuccess);
         }
       } catch {

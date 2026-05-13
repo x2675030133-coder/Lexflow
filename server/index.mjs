@@ -2,8 +2,10 @@ import http from 'node:http';
 import tls from 'node:tls';
 import fs from 'node:fs';
 import path from 'node:path';
+import { spawnSync } from 'node:child_process';
 import { URL } from 'node:url';
 import { fileURLToPath } from 'node:url';
+import { createClient } from '@supabase/supabase-js';
 
 function loadEnvFile() {
   const serverDir = path.dirname(fileURLToPath(import.meta.url));
@@ -51,13 +53,151 @@ const PODCAST_CACHE_DIR = path.join(PROJECT_ROOT, '.cache');
 const PODCAST_CACHE_FILE = path.join(PODCAST_CACHE_DIR, 'podcast-library.json');
 const PODCAST_CACHE_TTL_MS = Number(process.env.PODCAST_CACHE_TTL_MS || 12 * 60 * 60 * 1000);
 const PODCAST_SOURCE_LIMIT = Number(process.env.PODCAST_SOURCE_LIMIT || 8);
+const READING_PROGRESS_FILE = path.join(PODCAST_CACHE_DIR, 'reading-progress.json');
+const USER_PROGRESS_FILE = path.join(PODCAST_CACHE_DIR, 'user-progress.json');
+const READING_LIBRARY_DIR = path.join(SERVER_DIR, 'data');
+const READING_LIBRARY_FILE = path.join(READING_LIBRARY_DIR, 'reading-library.json');
+const READING_LIBRARY_META_FILE = path.join(READING_LIBRARY_DIR, 'reading-library-meta.json');
+const GENERATED_READING_LIBRARY_FILE = path.join(READING_LIBRARY_DIR, 'generated-reading.json');
+const GENERATED_READING_META_FILE = path.join(READING_LIBRARY_DIR, 'generated-reading-meta.json');
+const READING_GENERATOR_SCRIPT = path.join(PROJECT_ROOT, 'scripts', 'generate-reading-content.mjs');
+const ADMIN_ACTIVITY_FILE = path.join(PODCAST_CACHE_DIR, 'admin-activity.json');
+const ADMIN_DASHBOARD_TOKEN = String(process.env.ADMIN_DASHBOARD_TOKEN || '').trim();
+const SUPABASE_URL = String(process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL || '').trim();
+const SUPABASE_SERVICE_ROLE_KEY = String(process.env.SUPABASE_SERVICE_ROLE_KEY || '').trim();
+const SUPABASE_USERS_CACHE_MS = Number(process.env.SUPABASE_USERS_CACHE_MS || 5 * 60 * 1000);
+const SUPABASE_USERS_PAGE_SIZE = Math.max(1, Math.min(1000, Number(process.env.SUPABASE_USERS_PAGE_SIZE || 1000)));
 
 const emailCodes = new Map();
 let podcastLibraryCache = null;
 let podcastLibraryRefreshPromise = null;
+let readingProgressCache = null;
+let userProgressCache = null;
+let adminActivityCache = null;
+let readingLibraryCache = null;
+let readingLibraryRefreshPromise = null;
+let supabaseAdminClient = null;
+let supabaseUserCountCache = {
+  count: null,
+  fetchedAt: 0,
+  source: 'activity',
+  error: '',
+};
 
 function createTimeoutError(label, timeoutMs) {
   return new Error(`${label} timed out after ${Math.ceil(timeoutMs / 1000)}s`);
+}
+
+function ensureCacheDir() {
+  if (!fs.existsSync(PODCAST_CACHE_DIR)) {
+    fs.mkdirSync(PODCAST_CACHE_DIR, { recursive: true });
+  }
+}
+
+function normalizeEmail(email) {
+  return String(email || '').trim().toLowerCase();
+}
+
+function readJsonObjectFile(filePath) {
+  try {
+    if (!fs.existsSync(filePath)) return null;
+    const raw = fs.readFileSync(filePath, 'utf8');
+    const parsed = JSON.parse(raw);
+    if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) return null;
+    return parsed;
+  } catch {
+    return null;
+  }
+}
+
+function writeJsonObjectFile(filePath, payload) {
+  try {
+    ensureCacheDir();
+    fs.writeFileSync(filePath, JSON.stringify(payload, null, 2), 'utf8');
+  } catch {
+    // ignore cache write failures
+  }
+}
+
+function getSupabaseAdminClient() {
+  if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) {
+    return null;
+  }
+
+  if (!supabaseAdminClient) {
+    supabaseAdminClient = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, {
+      auth: {
+        autoRefreshToken: false,
+        persistSession: false,
+      },
+    });
+  }
+
+  return supabaseAdminClient;
+}
+
+async function getRegisteredUsersCount() {
+  const now = Date.now();
+  if (supabaseUserCountCache.count !== null && now - supabaseUserCountCache.fetchedAt < SUPABASE_USERS_CACHE_MS) {
+    return supabaseUserCountCache;
+  }
+
+  const client = getSupabaseAdminClient();
+  if (!client) {
+    const fallbackCount = Object.values(readAdminActivityStore()).filter((entry) => entry && typeof entry === 'object' && !Array.isArray(entry) && entry.verifiedAt).length;
+    supabaseUserCountCache = {
+      count: fallbackCount,
+      fetchedAt: now,
+      source: 'activity',
+      error: SUPABASE_SERVICE_ROLE_KEY ? 'Missing SUPABASE_URL' : 'Missing SUPABASE_SERVICE_ROLE_KEY',
+    };
+    return supabaseUserCountCache;
+  }
+
+  let page = 1;
+  let total = 0;
+
+  try {
+    while (true) {
+      const { data, error } = await client.auth.admin.listUsers({
+        page,
+        perPage: SUPABASE_USERS_PAGE_SIZE,
+      });
+
+      if (error) {
+        throw error;
+      }
+
+      const users = Array.isArray(data?.users) ? data.users : [];
+      total += users.length;
+
+      if (users.length < SUPABASE_USERS_PAGE_SIZE) {
+        break;
+      }
+
+      page += 1;
+      if (page > 1000) {
+        break;
+      }
+    }
+
+    supabaseUserCountCache = {
+      count: total,
+      fetchedAt: now,
+      source: 'supabase',
+      error: '',
+    };
+  } catch (error) {
+    const fallbackCount = Object.values(readAdminActivityStore()).filter((entry) => entry && typeof entry === 'object' && !Array.isArray(entry) && entry.verifiedAt).length;
+    supabaseUserCountCache = {
+      count: fallbackCount,
+      fetchedAt: now,
+      source: 'activity',
+      error: error instanceof Error ? error.message : 'Failed to load Supabase user count',
+    };
+  }
+
+  return supabaseUserCountCache;
 }
 
 async function fetchWithTimeout(input, init = {}, label = 'Request', timeoutMs = EXTERNAL_API_TIMEOUT_MS) {
@@ -461,6 +601,575 @@ function writePodcastCacheFile(payload) {
   }
 }
 
+function readReadingProgressFile() {
+  try {
+    if (!fs.existsSync(READING_PROGRESS_FILE)) return null;
+    const raw = fs.readFileSync(READING_PROGRESS_FILE, 'utf8');
+    const parsed = JSON.parse(raw);
+    if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) return null;
+    return parsed;
+  } catch {
+    return null;
+  }
+}
+
+function writeReadingProgressFile(payload) {
+  try {
+    if (!fs.existsSync(PODCAST_CACHE_DIR)) {
+      fs.mkdirSync(PODCAST_CACHE_DIR, { recursive: true });
+    }
+    fs.writeFileSync(READING_PROGRESS_FILE, JSON.stringify(payload, null, 2), 'utf8');
+  } catch {
+    // ignore cache write failures
+  }
+}
+
+function normalizeReadingIds(articleIds = []) {
+  return Array.from(
+    new Set(
+      Array.isArray(articleIds)
+        ? articleIds.map((item) => String(item || '').trim()).filter(Boolean)
+        : [],
+    ),
+  );
+}
+
+function readReadingProgressStore() {
+  const cached = readingProgressCache || readReadingProgressFile();
+  if (cached && typeof cached === 'object' && !Array.isArray(cached)) {
+    readingProgressCache = cached;
+    return cached;
+  }
+  return {};
+}
+
+function getReadingProgressEntry(email) {
+  const store = readReadingProgressStore();
+  const normalizedEmail = String(email || '').trim().toLowerCase();
+  const entry = normalizedEmail ? store[normalizedEmail] : null;
+  return {
+    email: normalizedEmail,
+    articleIds: normalizeReadingIds(entry?.articleIds || []),
+    updatedAt: typeof entry?.updatedAt === 'string' ? entry.updatedAt : '',
+  };
+}
+
+function setReadingProgressEntry(email, articleIds = []) {
+  const normalizedEmail = normalizeEmail(email);
+  if (!normalizedEmail) {
+    return null;
+  }
+
+  const store = readReadingProgressStore();
+  const payload = {
+    ...store,
+    [normalizedEmail]: {
+      articleIds: normalizeReadingIds(articleIds),
+      updatedAt: new Date().toISOString(),
+    },
+  };
+
+  readingProgressCache = payload;
+  writeReadingProgressFile(payload);
+  touchAdminActivity(normalizedEmail, 'reading-progress');
+  return getReadingProgressEntry(normalizedEmail);
+}
+
+function ensureDirectory(dirPath) {
+  if (!fs.existsSync(dirPath)) {
+    fs.mkdirSync(dirPath, { recursive: true });
+  }
+}
+
+function writeJsonValueFile(filePath, payload) {
+  try {
+    ensureDirectory(path.dirname(filePath));
+    fs.writeFileSync(filePath, JSON.stringify(payload, null, 2), 'utf8');
+  } catch {
+    // ignore cache write failures
+  }
+}
+
+function normalizeReadingText(value = '') {
+  return String(value || '').replace(/\s+/g, ' ').trim().toLowerCase();
+}
+
+function canonicalizeReadingUrl(value = '') {
+  const raw = String(value || '').trim();
+  if (!raw) return '';
+
+  try {
+    const url = new URL(raw, 'https://lexflow.local');
+    url.hash = '';
+
+    for (const key of Array.from(url.searchParams.keys())) {
+      if (/^(utm_|fbclid|gclid|igshid|mc_cid|mc_eid|ref|source|spm)/i.test(key)) {
+        url.searchParams.delete(key);
+      }
+    }
+
+    const search = Array.from(url.searchParams.entries())
+      .sort(([left], [right]) => left.localeCompare(right))
+      .map(([key, itemValue]) => `${key}=${itemValue}`)
+      .join('&');
+
+    return `${url.origin}${url.pathname}${search ? `?${search}` : ''}`;
+  } catch {
+    return normalizeReadingText(raw);
+  }
+}
+
+function hashReadingString(value = '') {
+  let hash = 2166136261;
+  const text = String(value || '');
+
+  for (let index = 0; index < text.length; index += 1) {
+    hash ^= text.charCodeAt(index);
+    hash = Math.imul(hash, 16777619);
+  }
+
+  return (hash >>> 0).toString(36);
+}
+
+function getReadingArticleIdentity(article = {}) {
+  const paragraphs = Array.isArray(article.paragraphs) ? article.paragraphs : [];
+  const vocabulary = Array.isArray(article.vocabulary) ? article.vocabulary : [];
+  const lead = paragraphs
+    .slice(0, 3)
+    .map((paragraph) => normalizeReadingText(paragraph?.en || ''))
+    .filter(Boolean)
+    .join(' | ');
+  const vocabSeed = vocabulary
+    .slice(0, 5)
+    .map((item) => normalizeReadingText(item?.word || ''))
+    .filter(Boolean)
+    .join(' | ');
+
+  return `reading:${hashReadingString(
+    [
+      canonicalizeReadingUrl(article.sourceUrl || article.url || ''),
+      normalizeReadingText(article.titleEn || article.title || ''),
+      normalizeReadingText(article.titleZh || article.title || ''),
+      normalizeReadingText(article.source || ''),
+      lead,
+      vocabSeed,
+    ]
+      .filter(Boolean)
+      .join(' || '),
+  )}`;
+}
+
+function normalizeReadingArticle(article, index = 0) {
+  if (!article || typeof article !== 'object' || Array.isArray(article)) {
+    return null;
+  }
+
+  const titleEn = String(article.titleEn || article.title || '').trim();
+  const titleZh = String(article.titleZh || article.title || '').trim();
+  const category = ['technology', 'culture', 'education', 'environment', 'news'].includes(article.category)
+    ? article.category
+    : 'news';
+
+  const paragraphs = Array.isArray(article.paragraphs)
+    ? article.paragraphs
+        .filter((item) => item && typeof item === 'object' && !Array.isArray(item))
+        .map((item) => ({
+          en: String(item.en || '').trim(),
+          zh: String(item.zh || '').trim(),
+        }))
+        .filter((item) => item.en && item.zh)
+    : [];
+
+  const vocabulary = Array.isArray(article.vocabulary)
+    ? article.vocabulary
+        .filter((item) => item && typeof item === 'object' && !Array.isArray(item))
+        .map((item) => ({
+          word: String(item.word || '').trim(),
+          definition: String(item.definition || '').trim(),
+          definitionZh: String(item.definitionZh || '').trim() || undefined,
+          phonetic: String(item.phonetic || '').trim(),
+        }))
+        .filter((item) => item.word && item.definition)
+    : [];
+
+  return {
+    id: String(article.id || `reading-${index + 1}-${hashReadingString(titleEn || titleZh || index)}`),
+    titleEn: titleEn || `Reading Article ${index + 1}`,
+    titleZh: titleZh || titleEn || `阅读文章 ${index + 1}`,
+    category,
+    date: /^\d{4}-\d{2}-\d{2}$/.test(article.date) ? article.date : new Date().toISOString().slice(0, 10),
+    source: String(article.source || 'AI Editor').trim() || 'AI Editor',
+    sourceUrl: String(article.sourceUrl || article.url || '').trim() || undefined,
+    paragraphs,
+    vocabulary,
+  };
+}
+
+function normalizeReadingLibraryMeta(meta = {}, articleCount) {
+  return {
+    generatedAt: typeof meta.generatedAt === 'string' ? meta.generatedAt : new Date().toISOString(),
+    articleCount: Number.isFinite(Number(articleCount)) ? Number(articleCount) : Number(meta.articleCount || articleCount || 0),
+    sourceMode: meta.sourceMode === 'model' ? 'model' : 'fallback',
+    provider: typeof meta.provider === 'string' ? meta.provider : 'deepseek',
+    sourceBriefCount: Number.isFinite(Number(meta.sourceBriefCount)) ? Number(meta.sourceBriefCount) : 0,
+    sourceNames: Array.isArray(meta.sourceNames) ? meta.sourceNames.map((item) => String(item || '').trim()).filter(Boolean) : [],
+    targetArticleCount: Number.isFinite(Number(meta.targetArticleCount)) ? Number(meta.targetArticleCount) : undefined,
+    generationSchedule:
+      meta.generationSchedule && typeof meta.generationSchedule === 'object'
+        ? {
+            hour: Number.isFinite(Number(meta.generationSchedule.hour)) ? Number(meta.generationSchedule.hour) : 2,
+            minute: Number.isFinite(Number(meta.generationSchedule.minute)) ? Number(meta.generationSchedule.minute) : 0,
+            label: String(meta.generationSchedule.label || '每天 02:00'),
+          }
+        : undefined,
+    batchIndex: Number.isFinite(Number(meta.batchIndex)) ? Number(meta.batchIndex) : 0,
+  };
+}
+
+function dedupeReadingArticles(articles = []) {
+  const seen = new Set();
+  const unique = [];
+
+  for (const article of articles) {
+    const normalized = normalizeReadingArticle(article, unique.length);
+    if (!normalized) continue;
+
+    const identity = getReadingArticleIdentity(normalized);
+    if (seen.has(identity)) continue;
+    seen.add(identity);
+    unique.push(normalized);
+  }
+
+  unique.sort((left, right) => {
+    const leftDate = Date.parse(left.date || '');
+    const rightDate = Date.parse(right.date || '');
+    if (Number.isNaN(leftDate) && Number.isNaN(rightDate)) return 0;
+    if (Number.isNaN(leftDate)) return 1;
+    if (Number.isNaN(rightDate)) return -1;
+    return rightDate - leftDate;
+  });
+
+  return unique;
+}
+
+function readReadingLibrarySnapshot(filePath, metaPath = READING_LIBRARY_META_FILE) {
+  try {
+    if (!fs.existsSync(filePath)) return null;
+    const raw = fs.readFileSync(filePath, 'utf8');
+    const parsed = JSON.parse(raw);
+
+    if (Array.isArray(parsed)) {
+      const meta = readJsonObjectFile(metaPath) || {};
+      return {
+        articles: dedupeReadingArticles(parsed),
+        meta: normalizeReadingLibraryMeta(meta, parsed.length),
+        updatedAt: new Date().toISOString(),
+        batchIndex: Number.isFinite(Number(meta.batchIndex)) ? Number(meta.batchIndex) : 0,
+      };
+    }
+
+    if (!parsed || typeof parsed !== 'object') return null;
+
+    const articles = Array.isArray(parsed.articles) ? parsed.articles : [];
+    const meta = parsed.meta && typeof parsed.meta === 'object' ? parsed.meta : readJsonObjectFile(metaPath) || {};
+    return {
+      articles: dedupeReadingArticles(articles),
+      meta: normalizeReadingLibraryMeta(meta, articles.length),
+      updatedAt: typeof parsed.updatedAt === 'string' ? parsed.updatedAt : new Date().toISOString(),
+      batchIndex: Number.isFinite(Number(parsed.batchIndex)) ? Number(parsed.batchIndex) : Number(meta.batchIndex || 0),
+    };
+  } catch {
+    return null;
+  }
+}
+
+function writeReadingLibrarySnapshot(snapshot) {
+  const payload = {
+    articles: dedupeReadingArticles(snapshot.articles || []),
+    meta: normalizeReadingLibraryMeta(snapshot.meta || {}, snapshot.articles?.length || 0),
+    updatedAt: snapshot.updatedAt || new Date().toISOString(),
+    batchIndex: Number.isFinite(Number(snapshot.batchIndex)) ? Number(snapshot.batchIndex) : Number((snapshot.meta || {}).batchIndex || 0),
+  };
+
+  readingLibraryCache = payload;
+  ensureDirectory(READING_LIBRARY_DIR);
+  writeJsonValueFile(READING_LIBRARY_FILE, payload);
+  writeJsonValueFile(READING_LIBRARY_META_FILE, payload.meta);
+  return payload;
+}
+
+function readGeneratedReadingSnapshot() {
+  return (
+    readReadingLibrarySnapshot(GENERATED_READING_LIBRARY_FILE, GENERATED_READING_META_FILE) ||
+    readReadingLibrarySnapshot(path.join(PROJECT_ROOT, 'public', 'data', 'generated-reading.json'), path.join(PROJECT_ROOT, 'public', 'data', 'generated-reading-meta.json'))
+  );
+}
+
+function getReadingLibraryStore() {
+  if (readingLibraryCache && Array.isArray(readingLibraryCache.articles)) {
+    return readingLibraryCache;
+  }
+
+  const persisted = readReadingLibrarySnapshot(READING_LIBRARY_FILE);
+  if (persisted) {
+    readingLibraryCache = persisted;
+    return persisted;
+  }
+
+  const generated = readGeneratedReadingSnapshot();
+  if (generated) {
+    return writeReadingLibrarySnapshot(generated);
+  }
+
+  const fallback = {
+    articles: dedupeReadingArticles([]),
+    meta: normalizeReadingLibraryMeta({}, 0),
+    updatedAt: new Date().toISOString(),
+    batchIndex: 0,
+  };
+  readingLibraryCache = fallback;
+  return fallback;
+}
+
+function refreshReadingLibraryStore() {
+  if (readingLibraryRefreshPromise) {
+    return readingLibraryRefreshPromise;
+  }
+
+  readingLibraryRefreshPromise = (async () => {
+    const current = getReadingLibraryStore();
+    const nextBatchIndex = Number(current.batchIndex || current.meta?.batchIndex || 0) + 1;
+    const env = {
+      ...process.env,
+      READING_TARGET_ARTICLE_COUNT: String(Number(process.env.READING_TARGET_ARTICLE_COUNT || 300)),
+      READING_MAX_STORED_ARTICLES: String(Number(process.env.READING_MAX_STORED_ARTICLES || 600)),
+      READING_BATCH_INDEX: String(nextBatchIndex),
+    };
+
+    const result = spawnSync(process.execPath, [READING_GENERATOR_SCRIPT], {
+      cwd: PROJECT_ROOT,
+      env,
+      encoding: 'utf8',
+      stdio: ['ignore', 'pipe', 'pipe'],
+    });
+
+    if (result.error) {
+      throw result.error;
+    }
+
+    if (result.status !== 0) {
+      throw new Error(result.stderr || result.stdout || 'Failed to regenerate reading library');
+    }
+
+    const generated = readGeneratedReadingSnapshot();
+    const nextArticles = dedupeReadingArticles([
+      ...(current.articles || []),
+      ...((generated && generated.articles) || []),
+    ]);
+    const meta = normalizeReadingLibraryMeta(
+      {
+        ...(current.meta || {}),
+        ...(generated?.meta || {}),
+        generatedAt: new Date().toISOString(),
+        articleCount: nextArticles.length,
+        targetArticleCount: Number(process.env.READING_TARGET_ARTICLE_COUNT || 300),
+        batchIndex: nextBatchIndex,
+        sourceNames: [...new Set(nextArticles.map((article) => article.source).filter(Boolean))],
+      },
+      nextArticles.length,
+    );
+
+    return writeReadingLibrarySnapshot({
+      articles: nextArticles,
+      meta,
+      updatedAt: new Date().toISOString(),
+      batchIndex: nextBatchIndex,
+    });
+  })();
+
+  return readingLibraryRefreshPromise.finally(() => {
+    readingLibraryRefreshPromise = null;
+  });
+}
+
+function readUserProgressFile() {
+  try {
+    if (!fs.existsSync(USER_PROGRESS_FILE)) return null;
+    const raw = fs.readFileSync(USER_PROGRESS_FILE, 'utf8');
+    const parsed = JSON.parse(raw);
+    if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) return null;
+    return parsed;
+  } catch {
+    return null;
+  }
+}
+
+function writeUserProgressFile(payload) {
+  try {
+    if (!fs.existsSync(PODCAST_CACHE_DIR)) {
+      fs.mkdirSync(PODCAST_CACHE_DIR, { recursive: true });
+    }
+    fs.writeFileSync(USER_PROGRESS_FILE, JSON.stringify(payload, null, 2), 'utf8');
+  } catch {
+    // ignore cache write failures
+  }
+}
+
+function readUserProgressStore() {
+  const cached = userProgressCache || readUserProgressFile();
+  if (cached && typeof cached === 'object' && !Array.isArray(cached)) {
+    userProgressCache = cached;
+    return cached;
+  }
+  return {};
+}
+
+function readAdminActivityStore() {
+  const cached = adminActivityCache || readJsonObjectFile(ADMIN_ACTIVITY_FILE);
+  if (cached && typeof cached === 'object' && !Array.isArray(cached)) {
+    adminActivityCache = cached;
+    return cached;
+  }
+  return {};
+}
+
+function touchAdminActivity(email, source = 'unknown', options = {}) {
+  const normalizedEmail = normalizeEmail(email);
+  if (!normalizedEmail) return null;
+
+  const store = readAdminActivityStore();
+  const now = new Date().toISOString();
+  const current = store[normalizedEmail] || {};
+  const sources = current.sources && typeof current.sources === 'object' && !Array.isArray(current.sources)
+    ? current.sources
+    : {};
+
+  const next = {
+    email: normalizedEmail,
+    firstSeen: current.firstSeen || now,
+    lastSeen: now,
+    verifiedAt: current.verifiedAt || '',
+    lastSource: source,
+    sources: {
+      ...sources,
+      [source]: now,
+    },
+  };
+
+  if (options.verified) {
+    next.verifiedAt = current.verifiedAt || now;
+  }
+
+  store[normalizedEmail] = next;
+  adminActivityCache = store;
+  writeJsonObjectFile(ADMIN_ACTIVITY_FILE, store);
+  return next;
+}
+
+async function getAdminSummary() {
+  const activityStore = readAdminActivityStore();
+  const userProgressStore = readUserProgressStore();
+  const readingProgressStore = readReadingProgressStore();
+  const activityEntries = Object.values(activityStore)
+    .filter((entry) => entry && typeof entry === 'object' && !Array.isArray(entry))
+    .map((entry) => ({
+      email: normalizeEmail(entry.email),
+      firstSeen: typeof entry.firstSeen === 'string' ? entry.firstSeen : '',
+      lastSeen: typeof entry.lastSeen === 'string' ? entry.lastSeen : '',
+      verifiedAt: typeof entry.verifiedAt === 'string' ? entry.verifiedAt : '',
+      lastSource: typeof entry.lastSource === 'string' ? entry.lastSource : '',
+      sources: entry.sources && typeof entry.sources === 'object' && !Array.isArray(entry.sources) ? entry.sources : {},
+    }))
+    .filter((entry) => entry.email);
+
+  const now = Date.now();
+  const onlineCutoff = now - 5 * 60 * 1000;
+  const activeTodayCutoff = new Date(new Date().toDateString()).getTime();
+  const registeredUsers = await getRegisteredUsersCount();
+
+  const recentUsers = activityEntries
+    .slice()
+    .sort((a, b) => Date.parse(b.lastSeen || '') - Date.parse(a.lastSeen || ''))
+    .slice(0, 20)
+    .map((entry) => ({
+      ...entry,
+      online: Date.parse(entry.lastSeen || '') >= onlineCutoff,
+      activeToday: Date.parse(entry.lastSeen || '') >= activeTodayCutoff,
+    }));
+
+    const onlineUsers = activityEntries.filter((entry) => Date.parse(entry.lastSeen || '') >= onlineCutoff).length;
+    const activeTodayUsers = activityEntries.filter((entry) => Date.parse(entry.lastSeen || '') >= activeTodayCutoff).length;
+  const knownUsers = new Set([
+    ...Object.keys(activityStore),
+    ...Object.keys(userProgressStore),
+    ...Object.keys(readingProgressStore),
+  ].map((email) => normalizeEmail(email)).filter(Boolean)).size;
+
+    return {
+      generatedAt: new Date().toISOString(),
+      registeredUsers: registeredUsers.count ?? 0,
+      registeredUsersSource: registeredUsers.source,
+      registeredUsersNote: registeredUsers.error,
+      onlineUsers,
+      activeTodayUsers,
+      knownUsers,
+    userProgressUsers: Object.keys(userProgressStore).length,
+    readingProgressUsers: Object.keys(readingProgressStore).length,
+    recentUsers,
+  };
+}
+
+function normalizeProgressSnapshot(snapshot = {}) {
+  const safeObject = (value, fallback = {}) => {
+    if (!value || typeof value !== 'object' || Array.isArray(value)) return fallback;
+    return value;
+  };
+
+  const safeArray = (value) => (
+    Array.isArray(value)
+      ? Array.from(new Set(value.map((item) => String(item || '').trim()).filter(Boolean)))
+      : []
+  );
+
+  return {
+    progress: safeObject(snapshot.progress),
+    dailyStats: Array.isArray(snapshot.dailyStats) ? snapshot.dailyStats : [],
+    listening: safeArray(snapshot.listening),
+    podcasts: safeArray(snapshot.podcasts),
+    reading: safeArray(snapshot.reading),
+    updatedAt: typeof snapshot.updatedAt === 'string' ? snapshot.updatedAt : new Date().toISOString(),
+  };
+}
+
+function getUserProgressEntry(email) {
+  const store = readUserProgressStore();
+  const normalizedEmail = normalizeEmail(email);
+  const entry = normalizedEmail ? store[normalizedEmail] : null;
+  return {
+    email: normalizedEmail,
+    ...normalizeProgressSnapshot(entry || {}),
+  };
+}
+
+function setUserProgressEntry(email, snapshot = {}) {
+  const normalizedEmail = normalizeEmail(email);
+  if (!normalizedEmail) return null;
+
+  const store = readUserProgressStore();
+  const payload = {
+    ...store,
+    [normalizedEmail]: {
+      ...normalizeProgressSnapshot(snapshot),
+      updatedAt: new Date().toISOString(),
+    },
+  };
+
+  userProgressCache = payload;
+  writeUserProgressFile(payload);
+  touchAdminActivity(normalizedEmail, 'user-progress');
+  return getUserProgressEntry(normalizedEmail);
+}
+
 function isPodcastCacheFresh(cache) {
   const lastSyncAt = cache?.meta?.lastSyncAt || '';
   if (!lastSyncAt) return false;
@@ -753,6 +1462,7 @@ function handleVerifyEmailCode(body) {
   }
 
   emailCodes.delete(email);
+  touchAdminActivity(email, 'auth', { verified: true });
   return { ok: true };
 }
 
@@ -946,6 +1656,34 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
+    if (req.method === 'GET' && url.pathname === '/api/reading/library') {
+      const library = getReadingLibraryStore();
+      sendJson(res, 200, {
+        articles: library.articles,
+        meta: library.meta,
+        updatedAt: library.updatedAt,
+        batchIndex: library.batchIndex,
+        canRefresh: true,
+        notice: '',
+        error: '',
+      });
+      return;
+    }
+
+    if (req.method === 'POST' && url.pathname === '/api/reading/library/refresh') {
+      const library = await refreshReadingLibraryStore();
+      sendJson(res, 200, {
+        articles: library.articles,
+        meta: library.meta,
+        updatedAt: library.updatedAt,
+        batchIndex: library.batchIndex,
+        canRefresh: true,
+        notice: '',
+        error: '',
+      });
+      return;
+    }
+
     if (req.method === 'GET' && url.pathname === '/api/podcasts/library') {
       const library = await buildPodcastLibrary({ force: false });
       sendJson(res, 200, library);
@@ -994,6 +1732,49 @@ const server = http.createServer(async (req, res) => {
     if (req.method === 'POST' && url.pathname === '/api/auth/verify-email-code') {
       const body = await parseJsonBody(req);
       sendJson(res, 200, handleVerifyEmailCode(body));
+      return;
+    }
+
+    if (url.pathname === '/api/reading/progress' && req.method === 'GET') {
+      const email = url.searchParams.get('email') || '';
+      if (email) touchAdminActivity(email, 'reading-progress:get');
+      sendJson(res, 200, getReadingProgressEntry(email));
+      return;
+    }
+
+    if (url.pathname === '/api/reading/progress' && req.method === 'POST') {
+      const body = await parseJsonBody(req);
+      if (body.email) touchAdminActivity(body.email, 'reading-progress:post');
+      const entry = setReadingProgressEntry(body.email, body.articleIds);
+      sendJson(res, 200, entry || { email: '', articleIds: [], updatedAt: '' });
+      return;
+    }
+
+    if (url.pathname === '/api/user/progress' && req.method === 'GET') {
+      const email = url.searchParams.get('email') || '';
+      if (email) touchAdminActivity(email, 'user-progress:get');
+      sendJson(res, 200, getUserProgressEntry(email));
+      return;
+    }
+
+    if (url.pathname === '/api/user/progress' && req.method === 'POST') {
+      const body = await parseJsonBody(req);
+      if (body.email) touchAdminActivity(body.email, 'user-progress:post');
+      const entry = setUserProgressEntry(body.email, body);
+      sendJson(res, 200, entry || { email: '', progress: {}, dailyStats: [], listening: [], podcasts: [], reading: [], updatedAt: '' });
+      return;
+    }
+
+    if (req.method === 'GET' && url.pathname === '/api/admin/summary') {
+      if (ADMIN_DASHBOARD_TOKEN) {
+        const providedToken = String(req.headers['x-admin-token'] || url.searchParams.get('token') || '').trim();
+        if (providedToken !== ADMIN_DASHBOARD_TOKEN) {
+          sendJson(res, 403, { error: 'Forbidden' });
+          return;
+        }
+      }
+
+      sendJson(res, 200, await getAdminSummary());
       return;
     }
 

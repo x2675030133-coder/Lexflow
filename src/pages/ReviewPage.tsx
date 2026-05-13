@@ -1,14 +1,21 @@
-﻿import { useEffect, useMemo, useState } from 'react';
+﻿import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, CheckCircle2, Headphones, Keyboard, Languages, RefreshCcw, Volume2, XCircle } from 'lucide-react';
 import type { Word } from '../data/types';
 import { words as fallbackWords } from '../data/words';
+import { wordLists } from '../data/wordLists';
 import { calculateNextReview, getProgress, saveProgress } from '../utils/storage';
+import { isWordPending } from '../utils/studyFlow';
+import { loadWordLists } from '../utils/wordListService';
 import { speakText } from '../utils/settings';
 import { useStopMediaOnUnmount } from '../hooks/useStopMediaOnUnmount';
 
 type ReviewMode = 'mixed' | 'enToZh' | 'zhToEn' | 'typing' | 'audio';
 type Stage = 'select' | 'practice';
+type ReviewSessionItem = {
+  wordId: string;
+  mode: Exclude<ReviewMode, 'mixed'>;
+};
 
 const modeCards: Array<{ id: ReviewMode; title: string; desc: string; icon: typeof RefreshCcw }> = [
   { id: 'mixed', title: '综合复习', desc: '多种模式随机切换', icon: RefreshCcw },
@@ -43,6 +50,18 @@ function uniqueWords(words: Word[]) {
   });
 }
 
+function getReviewListIds(progress: ReturnType<typeof getProgress>) {
+  const knownIds = wordLists.map((list) => list.id).sort((a, b) => b.length - a.length);
+  const ids = new Set<string>([progress.currentListId]);
+
+  Object.keys(progress.records).forEach((wordId) => {
+    const matched = knownIds.find((listId) => wordId.startsWith(`${listId}-`));
+    if (matched) ids.add(matched);
+  });
+
+  return Array.from(ids).filter(Boolean);
+}
+
 function pickActualMode(mode: ReviewMode): Exclude<ReviewMode, 'mixed'> {
   if (mode !== 'mixed') return mode;
   return shuffle<Exclude<ReviewMode, 'mixed'>>(['enToZh', 'zhToEn', 'typing', 'audio'])[0];
@@ -52,6 +71,7 @@ export default function ReviewPage() {
   const [initialProgress] = useState(() => getProgress());
   const [progress, setProgress] = useState(initialProgress);
   const [wordPool, setWordPool] = useState<Word[]>(fallbackWords.slice(0, 20));
+  const [sessionQueue, setSessionQueue] = useState<ReviewSessionItem[]>([]);
   const [stage, setStage] = useState<Stage>('select');
   const [mode, setMode] = useState<ReviewMode>('mixed');
   const [actualMode, setActualMode] = useState<Exclude<ReviewMode, 'mixed'>>('enToZh');
@@ -59,18 +79,71 @@ export default function ReviewPage() {
   const [selected, setSelected] = useState<string | null>(null);
   const [typed, setTyped] = useState('');
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
+  const resultTimerRef = useRef<number | null>(null);
 
   useStopMediaOnUnmount();
 
-  useEffect(() => {
-    const dueIds = Object.values(initialProgress.records)
-      .filter((record) => record.wrongCount > 0 || !record.mastered)
-      .map((record) => record.wordId);
-    const dueWords = fallbackWords.filter((word) => dueIds.includes(word.id));
-    setWordPool((dueWords.length ? dueWords : fallbackWords).slice(0, 20));
-  }, [initialProgress.records]);
+  function clearResultTimer() {
+    if (resultTimerRef.current !== null) {
+      window.clearTimeout(resultTimerRef.current);
+      resultTimerRef.current = null;
+    }
+  }
 
-  const currentWord = wordPool[index % wordPool.length];
+  function resetQuestionState() {
+    clearResultTimer();
+    setSelected(null);
+    setTyped('');
+    setFeedback(null);
+  }
+
+  useEffect(() => {
+    return () => clearResultTimer();
+  }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function loadReviewPool() {
+      try {
+        const loadedLists = await loadWordLists(getReviewListIds(initialProgress));
+        if (cancelled) return;
+
+        const learnedWords = uniqueWords([...Object.values(loadedLists).flat(), ...fallbackWords]).filter((word) => {
+          const record = initialProgress.records[word.id];
+          return Boolean(record) && record.correctCount > 0 && !record.mastered;
+        });
+        const dueWords = learnedWords.filter((word) => isWordPending(word, initialProgress));
+
+        setWordPool((dueWords.length ? dueWords : learnedWords.length ? learnedWords : fallbackWords).slice(0, 20));
+      } catch {
+        if (cancelled) return;
+        const learnedWords = fallbackWords.filter((word) => {
+          const record = initialProgress.records[word.id];
+          return Boolean(record) && record.correctCount > 0 && !record.mastered;
+        });
+        const dueWords = learnedWords.filter((word) => isWordPending(word, initialProgress));
+        setWordPool((dueWords.length ? dueWords : learnedWords.length ? learnedWords : fallbackWords).slice(0, 20));
+      }
+    }
+
+    void loadReviewPool();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [initialProgress]);
+
+  const currentItem = sessionQueue[index] ?? sessionQueue[0];
+  const currentWord = useMemo(() => {
+    if (!currentItem) return wordPool[0] ?? fallbackWords[0];
+    return (
+      wordPool.find((word) => word.id === currentItem.wordId) ??
+      fallbackWords.find((word) => word.id === currentItem.wordId) ??
+      wordPool[0] ??
+      fallbackWords[0]
+    );
+  }, [currentItem, wordPool]);
   const distractorPool = useMemo(() => uniqueWords([...wordPool, ...fallbackWords]), [wordPool]);
   const options = useMemo(() => {
     const wrongCandidates = distractorPool.filter((item) => item.id !== currentWord.id);
@@ -92,18 +165,22 @@ export default function ReviewPage() {
   }, [actualMode, currentWord, distractorPool]);
 
   function startMode(nextMode: ReviewMode) {
-    const resolved = pickActualMode(nextMode);
+    resetQuestionState();
+    const queue = shuffle([...wordPool]).map<ReviewSessionItem>((word) => ({
+      wordId: word.id,
+      mode: nextMode === 'mixed' ? pickActualMode(nextMode) : nextMode,
+    }));
     setMode(nextMode);
-    setActualMode(resolved);
+    setSessionQueue(queue);
+    setIndex(0);
+    setActualMode(queue[0]?.mode ?? pickActualMode(nextMode));
     setStage('practice');
-    setSelected(null);
-    setTyped('');
-    setFeedback(null);
-    if (resolved === 'audio') setTimeout(() => speakText(currentWord.word), 120);
+    if (queue[0]?.mode === 'audio') setTimeout(() => speakText(wordPool[0]?.word ?? ''), 120);
   }
 
   function persist(correct: boolean) {
     const next = { ...progress };
+    const now = new Date().toISOString();
     const existing = next.records[currentWord.id] || {
       wordId: currentWord.id,
       correctCount: 0,
@@ -112,6 +189,7 @@ export default function ReviewPage() {
       nextReviewDate: today(),
       level: 0,
       mastered: false,
+      updatedAt: now,
     };
     const nextLevel = correct ? Math.min(existing.level + 1, 6) : Math.max(existing.level - 1, 0);
     next.records[currentWord.id] = {
@@ -119,36 +197,62 @@ export default function ReviewPage() {
       correctCount: existing.correctCount + (correct ? 1 : 0),
       wrongCount: existing.wrongCount + (correct ? 0 : 1),
       lastReviewDate: today(),
-      nextReviewDate: calculateNextReview(nextLevel),
+      nextReviewDate: correct ? calculateNextReview(nextLevel) : today(),
       level: nextLevel,
       mastered: nextLevel >= 5,
+      updatedAt: now,
     };
     saveProgress(next);
     setProgress(next);
   }
 
+  function enqueueRetryLater(item: ReviewSessionItem) {
+    setSessionQueue((prev) => {
+      if (!prev.length) return prev;
+      const next = [...prev];
+      const insertAt = Math.min(index + 3, next.length);
+      next.splice(insertAt, 0, item);
+      return next;
+    });
+  }
+
   function answer(option: string) {
-    if (feedback === 'correct') return;
+    if (feedback) return;
+    clearResultTimer();
     setSelected(option);
     const correctAnswer = actualMode === 'enToZh' ? mainZh(currentWord) : currentWord.word;
     const correct = option === correctAnswer;
     setFeedback(correct ? 'correct' : 'wrong');
     persist(correct);
-    if (correct) setTimeout(nextQuestion, 450);
+    if (!correct && currentItem) {
+      enqueueRetryLater(currentItem);
+    }
+    resultTimerRef.current = window.setTimeout(nextQuestion, correct ? 450 : 3000);
   }
 
   function submitTyped() {
-    if (!typed.trim()) return;
+    if (feedback || !typed.trim()) return;
+    clearResultTimer();
     const correct = typed.trim().toLowerCase() === currentWord.word.toLowerCase();
     setFeedback(correct ? 'correct' : 'wrong');
     persist(correct);
-    if (correct) setTimeout(nextQuestion, 450);
+    if (!correct && currentItem) {
+      enqueueRetryLater(currentItem);
+    }
+    resultTimerRef.current = window.setTimeout(nextQuestion, correct ? 450 : 3000);
   }
 
   function nextQuestion() {
-    const resolved = pickActualMode(mode);
-    setIndex((value) => (value + 1) % wordPool.length);
-    setActualMode(resolved);
+    clearResultTimer();
+    if (document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur();
+    }
+    const nextIndex = (index + 1) % Math.max(sessionQueue.length, 1);
+    setIndex(nextIndex);
+    const nextItem = sessionQueue[nextIndex];
+    if (nextItem) {
+      setActualMode(nextItem.mode);
+    }
     setSelected(null);
     setTyped('');
     setFeedback(null);
@@ -205,7 +309,10 @@ export default function ReviewPage() {
     <div className="mx-auto max-w-4xl px-4 py-12 animate-in fade-in duration-500">
       <div className="mb-10 flex items-center justify-between">
         <button 
-          onClick={() => setStage('select')} 
+          onClick={() => {
+            resetQuestionState();
+            setStage('select');
+          }} 
           className="inline-flex items-center gap-2 rounded-2xl border border-[#d2d2d7]/50 bg-white px-5 py-3 text-[15px] font-bold text-[#1d1d1f] shadow-sm hover:bg-[#f5f5f7] transition-all active:scale-95"
         >
           <ArrowLeft size={18} /> 返回中心
@@ -227,7 +334,12 @@ export default function ReviewPage() {
               <>
                 <div className="flex items-center justify-center gap-6 mb-4">
                   <h1 className="text-7xl font-black text-[#1d1d1f] tracking-tighter">{currentWord.word}</h1>
-                  <button onClick={() => speakText(currentWord.word)} className="flex h-16 w-16 items-center justify-center rounded-full bg-white text-orange-600 shadow-xl shadow-orange-500/10 transition-all hover:scale-110 active:scale-90">
+                  <button
+                    type="button"
+                    onClick={() => speakText(currentWord.word)}
+                    aria-label={`朗读 ${currentWord.word}`}
+                    className="flex h-16 w-16 items-center justify-center rounded-full bg-white text-orange-600 shadow-xl shadow-orange-500/10 transition-all hover:scale-110 active:scale-90"
+                  >
                     <Volume2 size={28} />
                   </button>
                 </div>
@@ -264,10 +376,12 @@ export default function ReviewPage() {
                   onKeyDown={(event) => { if (event.key === 'Enter') submitTyped(); }} 
                   className="h-16 flex-1 rounded-[24px] border-2 border-[#f5f5f7] px-8 text-xl font-bold outline-none transition-all focus:border-orange-400 focus:bg-white shadow-sm" 
                   placeholder="输入单词拼写..." 
+                  disabled={feedback !== null}
                 />
                 <button 
                   onClick={submitTyped} 
-                  className="rounded-[24px] bg-orange-500 px-10 font-black text-white shadow-xl shadow-orange-500/25 transition-all hover:bg-orange-600 active:scale-95"
+                  disabled={feedback !== null}
+                  className="rounded-[24px] bg-orange-500 px-10 font-black text-white shadow-xl shadow-orange-500/25 transition-all hover:bg-orange-600 active:scale-95 disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   提交
                 </button>
@@ -291,7 +405,8 @@ export default function ReviewPage() {
                   <button 
                     key={option} 
                     onClick={() => answer(option)} 
-                    className={`flex w-full items-center gap-6 rounded-3xl border-2 px-8 py-6 text-left text-[19px] font-bold transition-all duration-300 active:scale-[0.98] shadow-md hover:shadow-xl ${stateClass}`}
+                    disabled={feedback !== null}
+                    className={`flex w-full items-center gap-6 rounded-3xl border-2 px-8 py-6 text-left text-[19px] font-bold transition-all duration-300 active:scale-[0.98] shadow-md hover:shadow-xl disabled:cursor-default ${stateClass}`}
                   >
                     <span className="font-black text-[#d2d2d7] text-[16px]">{String.fromCharCode(65 + optionIndex)}</span>
                     {option}
@@ -303,8 +418,15 @@ export default function ReviewPage() {
           
           <div className="mt-8 flex justify-center">
             {feedback === 'wrong' && (
-              <div className="flex items-center gap-2 rounded-2xl bg-red-50 px-5 py-3 text-red-600 font-black animate-in slide-in-from-top-2 duration-300">
-                <XCircle size={18} /> 加油，再试一次！
+              <div className="flex flex-col gap-2 rounded-2xl bg-red-50 px-5 py-3 text-red-600 font-black animate-in slide-in-from-top-2 duration-300">
+                <div className="flex items-center gap-2">
+                  <XCircle size={18} />
+                  加油，再看看答案
+                </div>
+                <div className="text-[15px] font-bold text-red-700">
+                  正确答案：
+                  <span className="font-black">{actualMode === 'enToZh' ? mainZh(currentWord) : currentWord.word}</span>
+                </div>
               </div>
             )}
             {feedback === 'correct' && (

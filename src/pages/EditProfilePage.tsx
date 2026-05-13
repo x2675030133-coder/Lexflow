@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Camera, Save, Target } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
@@ -10,6 +11,22 @@ export default function EditProfilePage() {
   const [nickname, setNickname] = useState(user?.user_metadata?.username || user?.email?.split('@')[0] || '');
   const [dailyGoal, setDailyGoal] = useState(progress.dailyGoal);
   const [saved, setSaved] = useState(false);
+
+  useEffect(() => {
+    const refresh = () => {
+      const nextProgress = getProgress();
+      setProgress(nextProgress);
+      setDailyGoal(nextProgress.dailyGoal);
+    };
+
+    refresh();
+    window.addEventListener('storage', refresh);
+    window.addEventListener('el-progress-changed', refresh as EventListener);
+    return () => {
+      window.removeEventListener('storage', refresh);
+      window.removeEventListener('el-progress-changed', refresh as EventListener);
+    };
+  }, []);
 
   const handleSave = () => {
     const next = { ...progress, dailyGoal: dailyGoal };

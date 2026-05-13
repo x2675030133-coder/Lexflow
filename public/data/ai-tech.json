@@ -18,12 +18,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"system\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“system”。"
+        "en": "The solar system has eight planets.",
+        "zh": "太阳系有八颗行星。"
+      },
+      {
+        "en": "We need a better system for filing.",
+        "zh": "我们需要一个更好的归档系统。"
       }
     ],
     "imageQuery": "system",
-    "memoryTip": "system - n. 系统, 体系, 制度, 方式, 秩序, 分类原则"
+    "collocations": []
   },
   {
     "id": "ai-tech-0002",
@@ -44,12 +48,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"language\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“language”。"
+        "en": "She is learning a new language.",
+        "zh": "她正在学习一门新语言。"
+      },
+      {
+        "en": "Body language can be very powerful.",
+        "zh": "肢体语言可以非常有力。"
       }
     ],
     "imageQuery": "language",
-    "memoryTip": "language - n. 语言, 文字, 措辞"
+    "collocations": []
   },
   {
     "id": "ai-tech-0003",
@@ -71,12 +79,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"voice\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“voice”。"
+        "en": "She has a very soft voice.",
+        "zh": "她的声音非常柔和。"
+      },
+      {
+        "en": "Please voice your opinion in class.",
+        "zh": "请在课堂上表达你的意见。"
       }
     ],
     "imageQuery": "voice",
-    "memoryTip": "voice - n. 声音, 嗓音, 嗓子, 愿望, 发言权, 表达, 喉舌, 语态"
+    "collocations": []
   },
   {
     "id": "ai-tech-0004",
@@ -97,12 +109,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"training\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“training”。"
+        "en": "The dog needs more training.",
+        "zh": "这只狗需要更多训练。"
+      },
+      {
+        "en": "Training helps improve your skills.",
+        "zh": "训练有助于提高你的技能。"
       }
     ],
     "imageQuery": "training",
-    "memoryTip": "training - n. 训练, 培养"
+    "collocations": []
   },
   {
     "id": "ai-tech-0005",
@@ -119,12 +135,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"learn\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“learn”。"
+        "en": "I want to learn how to cook.",
+        "zh": "我想学习如何烹饪。"
+      },
+      {
+        "en": "Children learn quickly from games.",
+        "zh": "孩子们从游戏中学习很快。"
       }
     ],
     "imageQuery": "learn",
-    "memoryTip": "learn - vt. 学习；认识到；得知"
+    "collocations": []
   },
   {
     "id": "ai-tech-0006",
@@ -151,12 +171,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"model\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“model”。"
+        "en": "He built a model airplane.",
+        "zh": "他造了一个模型飞机。"
+      },
+      {
+        "en": "She works as a fashion model.",
+        "zh": "她是一名时装模特。"
       }
     ],
     "imageQuery": "model",
-    "memoryTip": "model - n. 模型, 模范, 模特儿"
+    "collocations": []
   },
   {
     "id": "ai-tech-0007",
@@ -177,12 +201,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"data\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“data”。"
+        "en": "The data shows a clear trend.",
+        "zh": "数据显示了一个明显的趋势。"
+      },
+      {
+        "en": "We need to collect more data.",
+        "zh": "我们需要收集更多数据。"
       }
     ],
     "imageQuery": "data",
-    "memoryTip": "data - pl. 资料, 数据"
+    "collocations": []
   },
   {
     "id": "ai-tech-0008",
@@ -203,12 +231,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"computer\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“computer”。"
+        "en": "My computer is very fast.",
+        "zh": "我的电脑非常快。"
+      },
+      {
+        "en": "She uses a computer for work.",
+        "zh": "她用电脑工作。"
       }
     ],
     "imageQuery": "computer",
-    "memoryTip": "computer - n. 电脑, 电子计算机"
+    "collocations": []
   },
   {
     "id": "ai-tech-0009",
@@ -230,12 +262,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"future\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“future”。"
+        "en": "The future looks bright for her.",
+        "zh": "她的未来看起来很光明。"
+      },
+      {
+        "en": "We must plan for the future.",
+        "zh": "我们必须为未来做计划。"
       }
     ],
     "imageQuery": "future",
-    "memoryTip": "future - n. 未来, 将来"
+    "collocations": []
   },
   {
     "id": "ai-tech-0010",
@@ -261,12 +297,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"pattern\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“pattern”。"
+        "en": "The fabric has a floral pattern.",
+        "zh": "这块布料有花卉图案。"
+      },
+      {
+        "en": "We noticed a pattern in the data.",
+        "zh": "我们注意到了数据中的一种模式。"
       }
     ],
     "imageQuery": "pattern",
-    "memoryTip": "pattern - n. 模范, 典型, 式样, 样品, 图案, 格调, 模式"
+    "collocations": []
   },
   {
     "id": "ai-tech-0011",
@@ -287,12 +327,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"analysis\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“analysis”。"
+        "en": "The analysis took several hours.",
+        "zh": "分析花了几个小时。"
+      },
+      {
+        "en": "We need a careful analysis of this.",
+        "zh": "我们需要对此进行仔细分析。"
       }
     ],
     "imageQuery": "analysis",
-    "memoryTip": "analysis - n. 分析"
+    "collocations": []
   },
   {
     "id": "ai-tech-0012",
@@ -314,12 +358,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"machine\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“machine”。"
+        "en": "The machine makes coffee quickly.",
+        "zh": "这台机器快速煮咖啡。"
+      },
+      {
+        "en": "He fixed the broken machine.",
+        "zh": "他修好了坏掉的机器。"
       }
     ],
     "imageQuery": "machine",
-    "memoryTip": "machine - n. 机器, 机械装置, 机构, 自动售货机, 机械般工作的人"
+    "collocations": []
   },
   {
     "id": "ai-tech-0013",
@@ -340,12 +388,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"growth\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“growth”。"
+        "en": "The plant shows strong growth.",
+        "zh": "这株植物生长旺盛。"
+      },
+      {
+        "en": "Economic growth is important.",
+        "zh": "经济增长很重要。"
       }
     ],
     "imageQuery": "growth",
-    "memoryTip": "growth - n. 生长, 栽培, 增长"
+    "collocations": []
   },
   {
     "id": "ai-tech-0014",
@@ -366,12 +418,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"version\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“version”。"
+        "en": "This is the latest version of the app.",
+        "zh": "这是该应用的最新版本。"
+      },
+      {
+        "en": "He told a different version of the story.",
+        "zh": "他讲述了故事的一个不同版本。"
       }
     ],
     "imageQuery": "version",
-    "memoryTip": "version - n. 一种描述, 版本, 译文"
+    "collocations": []
   },
   {
     "id": "ai-tech-0015",
@@ -396,12 +452,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"context\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“context”。"
+        "en": "You must understand the context first.",
+        "zh": "你必须先理解上下文。"
+      },
+      {
+        "en": "The word changes meaning in context.",
+        "zh": "这个词在上下文中含义会变化。"
       }
     ],
     "imageQuery": "context",
-    "memoryTip": "context - n. 上下文, 背景, 来龙去脉"
+    "collocations": []
   },
   {
     "id": "ai-tech-0016",
@@ -428,12 +488,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"deep\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“deep”。"
+        "en": "The lake is very deep.",
+        "zh": "这个湖很深。"
+      },
+      {
+        "en": "She took a deep breath.",
+        "zh": "她深吸了一口气。"
       }
     ],
     "imageQuery": "deep",
-    "memoryTip": "deep - a. 深的"
+    "collocations": []
   },
   {
     "id": "ai-tech-0017",
@@ -455,12 +519,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"network\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“network”。"
+        "en": "The network connects all computers.",
+        "zh": "这个网络连接所有电脑。"
+      },
+      {
+        "en": "She has a large network of friends.",
+        "zh": "她有一个庞大的朋友网络。"
       }
     ],
     "imageQuery": "network",
-    "memoryTip": "network - n. 网络, 广播网, 网状物"
+    "collocations": []
   },
   {
     "id": "ai-tech-0018",
@@ -486,12 +554,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"scale\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“scale”。"
+        "en": "The map uses a large scale.",
+        "zh": "这张地图使用了大比例尺。"
+      },
+      {
+        "en": "We need to scale up production.",
+        "zh": "我们需要扩大生产规模。"
       }
     ],
     "imageQuery": "scale",
-    "memoryTip": "scale - n. 刻度, 衡量, 比例, 比例尺, 数值范围, 等级, 规模, 天平, 秤, 鳞, 积垢"
+    "collocations": []
   },
   {
     "id": "ai-tech-0019",
@@ -512,12 +584,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"agent\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“agent”。"
+        "en": "The travel agent booked our tickets.",
+        "zh": "旅行代理为我们订了票。"
+      },
+      {
+        "en": "He works as a real estate agent.",
+        "zh": "他是一名房地产经纪人。"
       }
     ],
     "imageQuery": "agent",
-    "memoryTip": "agent - n. 代理商, 政府代表, 动原, 媒介"
+    "collocations": []
   },
   {
     "id": "ai-tech-0020",
@@ -538,12 +614,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"engine\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“engine”。"
+        "en": "The car engine is very powerful.",
+        "zh": "汽车引擎非常强大。"
+      },
+      {
+        "en": "The search engine finds results fast.",
+        "zh": "搜索引擎快速找到结果。"
       }
     ],
     "imageQuery": "engine",
-    "memoryTip": "engine - n. 引擎, 发动机, 机车"
+    "collocations": []
   },
   {
     "id": "ai-tech-0021",
@@ -564,12 +644,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"generate\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“generate”。"
+        "en": "The wind turbines generate electricity.",
+        "zh": "风力涡轮机发电。"
+      },
+      {
+        "en": "This idea will generate new interest.",
+        "zh": "这个想法将产生新的兴趣。"
       }
     ],
     "imageQuery": "generate",
-    "memoryTip": "generate - vt. 产生, 发生, 导致"
+    "collocations": []
   },
   {
     "id": "ai-tech-0022",
@@ -590,12 +674,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"device\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“device”。"
+        "en": "This device measures temperature.",
+        "zh": "这个设备测量温度。"
+      },
+      {
+        "en": "She uses a small electronic device.",
+        "zh": "她使用一个小型电子设备。"
       }
     ],
     "imageQuery": "device",
-    "memoryTip": "device - n. 装置, 设计, 策略, 发明物, 设备"
+    "collocations": []
   },
   {
     "id": "ai-tech-0023",
@@ -616,12 +704,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"vision\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“vision”。"
+        "en": "He has poor vision without glasses.",
+        "zh": "他不戴眼镜视力很差。"
+      },
+      {
+        "en": "She has a clear vision for the future.",
+        "zh": "她对未来有清晰的愿景。"
       }
     ],
     "imageQuery": "vision",
-    "memoryTip": "vision - n. 视觉, 眼光, 视力, 幻想"
+    "collocations": []
   },
   {
     "id": "ai-tech-0024",
@@ -647,12 +739,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"signal\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“signal”。"
+        "en": "The traffic signal turned green.",
+        "zh": "交通信号灯变绿了。"
+      },
+      {
+        "en": "She gave a signal to start the race.",
+        "zh": "她发出信号开始比赛。"
       }
     ],
     "imageQuery": "signal",
-    "memoryTip": "signal - n. 信号, 暗号, 近因, 导火线"
+    "collocations": []
   },
   {
     "id": "ai-tech-0025",
@@ -673,12 +769,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"framework\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“framework”。"
+        "en": "The framework supports the building.",
+        "zh": "这个框架支撑着建筑。"
+      },
+      {
+        "en": "We need a legal framework for this.",
+        "zh": "我们需要一个法律框架来处理这个。"
       }
     ],
     "imageQuery": "framework",
-    "memoryTip": "framework - n. 结构, 骨架, 参照标准, 准则, 观点"
+    "collocations": []
   },
   {
     "id": "ai-tech-0026",
@@ -704,12 +804,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"layer\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“layer”。"
+        "en": "The cake has a layer of chocolate.",
+        "zh": "蛋糕有一层巧克力。"
+      },
+      {
+        "en": "Add another layer of paint.",
+        "zh": "再加一层油漆。"
       }
     ],
     "imageQuery": "layer",
-    "memoryTip": "layer - n. 层, 产卵鸡, 放置者"
+    "collocations": []
   },
   {
     "id": "ai-tech-0027",
@@ -726,12 +830,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"predict\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“predict”。"
+        "en": "Can you predict the weather tomorrow?",
+        "zh": "你能预测明天的天气吗？"
+      },
+      {
+        "en": "Scientists predict a warmer climate.",
+        "zh": "科学家预测气候会更温暖。"
       }
     ],
     "imageQuery": "predict",
-    "memoryTip": "predict - v. 预知, 预言, 预报"
+    "collocations": []
   },
   {
     "id": "ai-tech-0028",
@@ -757,12 +865,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"cloud\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“cloud”。"
+        "en": "A white cloud floated in the sky.",
+        "zh": "一朵白云飘在天空中。"
+      },
+      {
+        "en": "We store photos in the cloud.",
+        "zh": "我们把照片存储在云端。"
       }
     ],
     "imageQuery": "cloud",
-    "memoryTip": "cloud - n. 云, 阴暗, 烟雾, 疑团"
+    "collocations": []
   },
   {
     "id": "ai-tech-0029",
@@ -783,12 +895,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"AI\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“AI”。"
+        "en": "AI is changing many industries.",
+        "zh": "人工智能正在改变许多行业。"
+      },
+      {
+        "en": "This AI can recognize faces quickly.",
+        "zh": "这个人工智能可以快速识别面孔。"
       }
     ],
     "imageQuery": "AI",
-    "memoryTip": "AI - [计] 附加信息, 人工智能"
+    "collocations": []
   },
   {
     "id": "ai-tech-0030",
@@ -809,12 +925,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"intelligence\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“intelligence”。"
+        "en": "She has high intelligence and creativity.",
+        "zh": "她拥有高智力和创造力。"
+      },
+      {
+        "en": "The agency gathered intelligence on the enemy.",
+        "zh": "该机构收集了关于敌人的情报。"
       }
     ],
     "imageQuery": "intelligence",
-    "memoryTip": "intelligence - n. 智力, 情报, 信息"
+    "collocations": []
   },
   {
     "id": "ai-tech-0031",
@@ -839,12 +959,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"transform\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“transform”。"
+        "en": "The caterpillar will transform into a butterfly.",
+        "zh": "毛毛虫会变成蝴蝶。"
+      },
+      {
+        "en": "Technology can transform our lives.",
+        "zh": "技术可以改变我们的生活。"
       }
     ],
     "imageQuery": "transform",
-    "memoryTip": "transform - vt. 使转换, 改变, 改造, 使...变形"
+    "collocations": []
   },
   {
     "id": "ai-tech-0032",
@@ -866,12 +990,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"assistant\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“assistant”。"
+        "en": "She works as a personal assistant.",
+        "zh": "她是一名私人助理。"
+      },
+      {
+        "en": "The virtual assistant answers questions.",
+        "zh": "虚拟助手回答问题。"
       }
     ],
     "imageQuery": "assistant",
-    "memoryTip": "assistant - n. 助手, 助理, 助教"
+    "collocations": []
   },
   {
     "id": "ai-tech-0033",
@@ -892,12 +1020,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"logic\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“logic”。"
+        "en": "You need logic to solve this puzzle.",
+        "zh": "你需要逻辑来解决这个谜题。"
+      },
+      {
+        "en": "His argument lacks clear logic.",
+        "zh": "他的论点缺乏清晰的逻辑。"
       }
     ],
     "imageQuery": "logic",
-    "memoryTip": "logic - n. 逻辑, 逻辑学, 推理的方法, 推理, 逻辑性"
+    "collocations": []
   },
   {
     "id": "ai-tech-0034",
@@ -924,12 +1056,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"prompt\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“prompt”。"
+        "en": "Please give a prompt reply.",
+        "zh": "请给予迅速的回复。"
+      },
+      {
+        "en": "The teacher gave a prompt to the student.",
+        "zh": "老师给了学生一个提示。"
       }
     ],
     "imageQuery": "prompt",
-    "memoryTip": "prompt - n. 激励, 提示, 提醒物, 提词, 付款期限"
+    "collocations": []
   },
   {
     "id": "ai-tech-0035",
@@ -955,12 +1091,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"digital\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“digital”。"
+        "en": "We live in a digital age.",
+        "zh": "我们生活在数字时代。"
+      },
+      {
+        "en": "The clock has a digital display.",
+        "zh": "这个时钟有数字显示。"
       }
     ],
     "imageQuery": "digital",
-    "memoryTip": "digital - a. 数字显示的, 数字的"
+    "collocations": []
   },
   {
     "id": "ai-tech-0036",
@@ -981,12 +1121,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"accuracy\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“accuracy”。"
+        "en": "The measurement has high accuracy.",
+        "zh": "这个测量具有高精度。"
+      },
+      {
+        "en": "Check the accuracy of your work.",
+        "zh": "检查你工作的准确性。"
       }
     ],
     "imageQuery": "accuracy",
-    "memoryTip": "accuracy - n. 精确, 正确"
+    "collocations": []
   },
   {
     "id": "ai-tech-0037",
@@ -1012,12 +1156,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"forecast\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“forecast”。"
+        "en": "The weather forecast says it will rain.",
+        "zh": "天气预报说会下雨。"
+      },
+      {
+        "en": "Economists forecast a slow growth.",
+        "zh": "经济学家预测增长缓慢。"
       }
     ],
     "imageQuery": "forecast",
-    "memoryTip": "forecast - n. 预想, 预测, 预报"
+    "collocations": []
   },
   {
     "id": "ai-tech-0038",
@@ -1039,12 +1187,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"graph\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“graph”。"
+        "en": "The graph shows sales over time.",
+        "zh": "这张图显示了随时间变化的销售额。"
+      },
+      {
+        "en": "Please graph the data for us.",
+        "zh": "请为我们绘制数据图表。"
       }
     ],
     "imageQuery": "graph",
-    "memoryTip": "graph - n. 曲线图, 图表, 图形"
+    "collocations": []
   },
   {
     "id": "ai-tech-0039",
@@ -1065,12 +1217,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"semantic\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“semantic”。"
+        "en": "The semantic meaning is clear.",
+        "zh": "语义含义很清楚。"
+      },
+      {
+        "en": "We study semantic differences in words.",
+        "zh": "我们研究词语的语义差异。"
       }
     ],
     "imageQuery": "semantic",
-    "memoryTip": "semantic - a. 语义的"
+    "collocations": []
   },
   {
     "id": "ai-tech-0040",
@@ -1096,12 +1252,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"query\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“query”。"
+        "en": "I have a query about the bill.",
+        "zh": "我对账单有一个疑问。"
+      },
+      {
+        "en": "She queried the database for results.",
+        "zh": "她查询数据库以获取结果。"
       }
     ],
     "imageQuery": "query",
-    "memoryTip": "query - n. 疑问, 疑问号, 质问, 查询"
+    "collocations": []
   },
   {
     "id": "ai-tech-0041",
@@ -1126,12 +1286,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"vector\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“vector”。"
+        "en": "A vector has both magnitude and direction.",
+        "zh": "矢量既有大小又有方向。"
+      },
+      {
+        "en": "Mosquitoes are vectors for many diseases.",
+        "zh": "蚊子是许多疾病的传病媒介。"
       }
     ],
     "imageQuery": "vector",
-    "memoryTip": "vector - n. 矢量, 传病媒介"
+    "collocations": []
   },
   {
     "id": "ai-tech-0042",
@@ -1157,12 +1321,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"token\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“token”。"
+        "en": "This coin is a token of our friendship.",
+        "zh": "这枚硬币是我们友谊的象征。"
+      },
+      {
+        "en": "You need a token to ride the subway.",
+        "zh": "你需要一枚代币来乘坐地铁。"
       }
     ],
     "imageQuery": "token",
-    "memoryTip": "token - n. 表征, 记号, 代币"
+    "collocations": []
   },
   {
     "id": "ai-tech-0043",
@@ -1183,12 +1351,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"robot\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“robot”。"
+        "en": "The robot can clean the house automatically.",
+        "zh": "这个机器人可以自动打扫房子。"
+      },
+      {
+        "en": "Scientists built a robot to explore Mars.",
+        "zh": "科学家建造了一个机器人来探索火星。"
       }
     ],
     "imageQuery": "robot",
-    "memoryTip": "robot - n. 机械人, 自动机械, 机械般工作的人"
+    "collocations": []
   },
   {
     "id": "ai-tech-0044",
@@ -1209,12 +1381,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"inference\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“inference”。"
+        "en": "We made an inference from the data.",
+        "zh": "我们从数据中得出了一个推论。"
+      },
+      {
+        "en": "Her inference was based on strong evidence.",
+        "zh": "她的推断基于确凿的证据。"
       }
     ],
     "imageQuery": "inference",
-    "memoryTip": "inference - n. 推论"
+    "collocations": []
   },
   {
     "id": "ai-tech-0045",
@@ -1235,12 +1411,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"algorithm\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“algorithm”。"
+        "en": "The algorithm sorts numbers very quickly.",
+        "zh": "这个算法能非常快速地排序数字。"
+      },
+      {
+        "en": "We need a better algorithm for this problem.",
+        "zh": "我们需要一个更好的算法来解决这个问题。"
       }
     ],
     "imageQuery": "algorithm",
-    "memoryTip": "algorithm - n. 算法"
+    "collocations": []
   },
   {
     "id": "ai-tech-0046",
@@ -1261,12 +1441,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"neural\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“neural”。"
+        "en": "Neural networks are used in AI research.",
+        "zh": "神经网络用于人工智能研究。"
+      },
+      {
+        "en": "The doctor studied neural activity in the brain.",
+        "zh": "医生研究了大脑中的神经活动。"
       }
     ],
     "imageQuery": "neural",
-    "memoryTip": "neural - a. 神经的, 神经系统的, 神经中枢的, 背的"
+    "collocations": []
   },
   {
     "id": "ai-tech-0047",
@@ -1283,12 +1467,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"deploy\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“deploy”。"
+        "en": "The army will deploy troops tomorrow.",
+        "zh": "军队明天将部署部队。"
+      },
+      {
+        "en": "We need to deploy our resources wisely.",
+        "zh": "我们需要明智地配置资源。"
       }
     ],
     "imageQuery": "deploy",
-    "memoryTip": "deploy - v. 展开, 配置"
+    "collocations": []
   },
   {
     "id": "ai-tech-0048",
@@ -1314,12 +1502,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"hybrid\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“hybrid”。"
+        "en": "This car is a hybrid that uses less fuel.",
+        "zh": "这辆车是混合动力车，耗油更少。"
+      },
+      {
+        "en": "The plant is a hybrid of two species.",
+        "zh": "这种植物是两个物种的杂交种。"
       }
     ],
     "imageQuery": "hybrid",
-    "memoryTip": "hybrid - n. 混血儿, 杂种, 混合物"
+    "collocations": []
   },
   {
     "id": "ai-tech-0049",
@@ -1340,12 +1532,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"compute\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“compute”。"
+        "en": "Can you compute the total cost for me?",
+        "zh": "你能帮我计算总成本吗？"
+      },
+      {
+        "en": "The computer can compute very fast.",
+        "zh": "计算机可以非常快速地计算。"
       }
     ],
     "imageQuery": "compute",
-    "memoryTip": "compute - v. 计算, 估算"
+    "collocations": []
   },
   {
     "id": "ai-tech-0050",
@@ -1366,12 +1562,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"automation\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“automation”。"
+        "en": "Automation helps factories work faster.",
+        "zh": "自动化帮助工厂更快地运作。"
+      },
+      {
+        "en": "Many jobs are replaced by automation.",
+        "zh": "许多工作被自动化取代了。"
       }
     ],
     "imageQuery": "automation",
-    "memoryTip": "automation - n. 自动化, 自动操作"
+    "collocations": []
   },
   {
     "id": "ai-tech-0051",
@@ -1392,12 +1592,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"metric\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“metric”。"
+        "en": "The metric system is used in most countries.",
+        "zh": "大多数国家使用公制。"
+      },
+      {
+        "en": "We need a metric to measure success.",
+        "zh": "我们需要一个衡量成功的标准。"
       }
     ],
     "imageQuery": "metric",
-    "memoryTip": "metric - a. 公尺的, 公制的, 计量的"
+    "collocations": []
   },
   {
     "id": "ai-tech-0052",
@@ -1414,12 +1618,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"benchmark\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“benchmark”。"
+        "en": "This test is a benchmark for performance.",
+        "zh": "这个测试是性能的基准。"
+      },
+      {
+        "en": "We set a benchmark for quality control.",
+        "zh": "我们为质量控制设定了一个基准。"
       }
     ],
     "imageQuery": "benchmark",
-    "memoryTip": "benchmark - [计] 基准程序; 基准"
+    "collocations": []
   },
   {
     "id": "ai-tech-0053",
@@ -1440,12 +1648,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"analyze\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“analyze”。"
+        "en": "We need to analyze the data carefully.",
+        "zh": "我们需要仔细分析数据。"
+      },
+      {
+        "en": "Scientists analyze samples in the lab.",
+        "zh": "科学家在实验室分析样本。"
       }
     ],
     "imageQuery": "analyze",
-    "memoryTip": "analyze - vt. 分析, 细察, 分解"
+    "collocations": []
   },
   {
     "id": "ai-tech-0054",
@@ -1462,12 +1674,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"adaptive\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“adaptive”。"
+        "en": "Adaptive systems can change with the environment.",
+        "zh": "自适应系统可以随环境变化。"
+      },
+      {
+        "en": "She is very adaptive to new situations.",
+        "zh": "她非常适应新环境。"
       }
     ],
     "imageQuery": "adaptive",
-    "memoryTip": "adaptive - a. 适应的, 能适应的"
+    "collocations": []
   },
   {
     "id": "ai-tech-0055",
@@ -1484,12 +1700,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"dataset\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“dataset”。"
+        "en": "The dataset contains thousands of images.",
+        "zh": "这个数据集包含数千张图像。"
+      },
+      {
+        "en": "We used a large dataset for training.",
+        "zh": "我们使用了一个大型数据集进行训练。"
       }
     ],
     "imageQuery": "dataset",
-    "memoryTip": "dataset - [电] 资料组"
+    "collocations": []
   },
   {
     "id": "ai-tech-0056",
@@ -1506,12 +1726,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"retrain\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“retrain”。"
+        "en": "Workers need to retrain for new jobs.",
+        "zh": "工人需要为新工作重新培训。"
+      },
+      {
+        "en": "The model must retrain with new data.",
+        "zh": "这个模型必须用新数据重新训练。"
       }
     ],
     "imageQuery": "retrain",
-    "memoryTip": "retrain - vt. 重新训练, 再训练"
+    "collocations": []
   },
   {
     "id": "ai-tech-0057",
@@ -1536,12 +1760,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"optimize\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“optimize”。"
+        "en": "We can optimize the code for speed.",
+        "zh": "我们可以优化代码以提高速度。"
+      },
+      {
+        "en": "The goal is to optimize resource usage.",
+        "zh": "目标是优化资源使用。"
       }
     ],
     "imageQuery": "optimize",
-    "memoryTip": "optimize - vt. 使完美, 使完善, 充分利用, 乐观地对待, 优化"
+    "collocations": []
   },
   {
     "id": "ai-tech-0058",
@@ -1558,12 +1786,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"workflow\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“workflow”。"
+        "en": "The new software improves our workflow.",
+        "zh": "新软件改进了我们的工作流程。"
+      },
+      {
+        "en": "We need to streamline the workflow process.",
+        "zh": "我们需要简化工作流程。"
       }
     ],
     "imageQuery": "workflow",
-    "memoryTip": "workflow - 工作流程"
+    "collocations": []
   },
   {
     "id": "ai-tech-0059",
@@ -1584,11 +1816,15 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"BOT\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“BOT”。"
+        "en": "The bot answered all my questions quickly.",
+        "zh": "机器人快速回答了我所有的问题。"
+      },
+      {
+        "en": "A bot can automate repetitive tasks online.",
+        "zh": "机器人可以自动化在线重复任务。"
       }
     ],
     "imageQuery": "BOT",
-    "memoryTip": "BOT - [计] 磁带开始标志, 计算机角色"
+    "collocations": []
   }
 ]

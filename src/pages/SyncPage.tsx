@@ -1,17 +1,28 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, RefreshCw, Smartphone, Laptop, Download, Upload, CheckCircle2 } from 'lucide-react';
+import { useAuth } from '../contexts/AuthContext';
+import { hydrateAccountProgress, readCurrentAccountSnapshot } from '../utils/accountProgressSync';
 
 export default function SyncPage() {
+  const { user } = useAuth();
   const [syncing, setSyncing] = useState(false);
   const [lastSync, setLastSync] = useState('刚刚');
 
-  const handleSync = () => {
+  useEffect(() => {
+    const snapshot = readCurrentAccountSnapshot();
+    setLastSync(snapshot.updatedAt || '刚刚');
+  }, []);
+
+  const handleSync = async () => {
+    if (!user?.email) return;
     setSyncing(true);
-    setTimeout(() => {
+    try {
+      const snapshot = await hydrateAccountProgress(user.email);
+      setLastSync(snapshot.updatedAt || new Date().toISOString());
+    } finally {
       setSyncing(false);
-      setLastSync('刚刚');
-    }, 2000);
+    }
   };
 
   return (
@@ -34,18 +45,17 @@ export default function SyncPage() {
       </div>
 
       <div className="space-y-8">
-        {/* Sync Action */}
         <section className="apple-card p-12 text-center">
           <div className="max-w-xs mx-auto">
             <h2 className="text-[24px] font-black text-[#1d1d1f] mb-4">保持数据最新</h2>
             <p className="text-[16px] text-[#86868b] font-medium mb-10 leading-relaxed">
-              LexFlow 会在您每次完成学习后自动同步，您也可以在此手动触发强制同步。
+              LexFlow 会在您每次完成学习后自动同步，您也可以在这里手动触发一次同步。
             </p>
             <button
               onClick={handleSync}
-              disabled={syncing}
+              disabled={syncing || !user?.email}
               className={`w-full py-5 rounded-[24px] flex items-center justify-center gap-3 text-[18px] font-black transition-all active:scale-[0.98] shadow-xl ${
-                syncing ? 'bg-[#f5f5f7] text-[#86868b]' : 'bg-[#1d1d1f] text-white hover:bg-black shadow-black/10'
+                syncing || !user?.email ? 'bg-[#f5f5f7] text-[#86868b]' : 'bg-[#1d1d1f] text-white hover:bg-black shadow-black/10'
               }`}
             >
               <RefreshCw className={`w-5 h-5 ${syncing ? 'animate-spin' : ''}`} />
@@ -54,7 +64,6 @@ export default function SyncPage() {
           </div>
         </section>
 
-        {/* Linked Devices */}
         <section className="apple-card p-10">
           <h2 className="text-[20px] font-black text-[#1d1d1f] mb-8">已关联的设备</h2>
           <div className="space-y-4">
@@ -68,7 +77,7 @@ export default function SyncPage() {
                     <p className="text-[17px] font-bold text-[#1d1d1f]">Windows PC</p>
                     <span className="px-2 py-0.5 bg-[#0071e3]/10 text-[#0071e3] text-[10px] font-black rounded uppercase">当前设备</span>
                   </div>
-                  <p className="text-sm text-[#86868b] font-medium">Edge 浏览器 · 上海, 中国</p>
+                  <p className="text-sm text-[#86868b] font-medium">浏览器会话同步中</p>
                 </div>
               </div>
               <CheckCircle2 className="w-6 h-6 text-[#34c759]" />
@@ -80,8 +89,8 @@ export default function SyncPage() {
                   <Smartphone className="w-6 h-6" />
                 </div>
                 <div>
-                  <p className="text-[17px] font-bold text-[#1d1d1f]">iPhone 15 Pro</p>
-                  <p className="text-sm text-[#86868b] font-medium">Safari 浏览器 · 2小时前</p>
+                  <p className="text-[17px] font-bold text-[#1d1d1f]">手机端</p>
+                  <p className="text-sm text-[#86868b] font-medium">登录同一账号即可接收学习进度</p>
                 </div>
               </div>
               <button className="text-[14px] font-bold text-[#ff3b30] hover:underline">移除</button>
@@ -89,7 +98,6 @@ export default function SyncPage() {
           </div>
         </section>
 
-        {/* Data Portability */}
         <section className="apple-card p-10">
           <h2 className="text-[20px] font-black text-[#1d1d1f] mb-8">数据迁移</h2>
           <div className="grid grid-cols-2 gap-4">

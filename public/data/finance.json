@@ -19,12 +19,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"interest\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“interest”。"
+        "en": "She has a strong interest in science.",
+        "zh": "她对科学有浓厚的兴趣。"
+      },
+      {
+        "en": "The bank pays interest on savings.",
+        "zh": "银行支付储蓄利息。"
       }
     ],
     "imageQuery": "interest",
-    "memoryTip": "interest - n. 兴趣, 嗜好, 利息, 利益, 爱好, 趣味, 势力"
+    "collocations": []
   },
   {
     "id": "finance-0002",
@@ -45,12 +49,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"money\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“money”。"
+        "en": "He saved money for a new bike.",
+        "zh": "他存钱买新自行车。"
+      },
+      {
+        "en": "Money cannot buy happiness.",
+        "zh": "金钱买不到幸福。"
       }
     ],
     "imageQuery": "money",
-    "memoryTip": "money - n. 金钱, 一笔款, 财富, 货币, 金额"
+    "collocations": []
   },
   {
     "id": "finance-0003",
@@ -76,12 +84,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"market\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“market”。"
+        "en": "We buy fresh fruit at the local market.",
+        "zh": "我们在当地市场买新鲜水果。"
+      },
+      {
+        "en": "The company wants to market its new product.",
+        "zh": "这家公司想推销它的新产品。"
       }
     ],
     "imageQuery": "market",
-    "memoryTip": "market - n. 市场, 交易, 集市, 推销地区, 行情, 市面, 销路"
+    "collocations": []
   },
   {
     "id": "finance-0004",
@@ -107,12 +119,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"rate\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“rate”。"
+        "en": "The interest rate is very low.",
+        "zh": "利率非常低。"
+      },
+      {
+        "en": "I rate this movie as excellent.",
+        "zh": "我认为这部电影很棒。"
       }
     ],
     "imageQuery": "rate",
-    "memoryTip": "rate - n. 比率, 率, 速度, 价格, 费用, 等级"
+    "collocations": []
   },
   {
     "id": "finance-0005",
@@ -138,12 +154,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"cost\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“cost”。"
+        "en": "The cost of this book is ten dollars.",
+        "zh": "这本书的价格是十美元。"
+      },
+      {
+        "en": "How much does it cost to buy a car?",
+        "zh": "买一辆车要花多少钱？"
       }
     ],
     "imageQuery": "cost",
-    "memoryTip": "cost - n. 代价, 价值, 费用"
+    "collocations": []
   },
   {
     "id": "finance-0006",
@@ -169,12 +189,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"value\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“value”。"
+        "en": "This painting has great value to collectors.",
+        "zh": "这幅画对收藏家来说很有价值。"
+      },
+      {
+        "en": "I value your opinion on this matter.",
+        "zh": "我很重视你在这件事上的意见。"
       }
     ],
     "imageQuery": "value",
-    "memoryTip": "value - n. 价值, 价格, 购买力, 评价, 估价, 计算结果"
+    "collocations": []
   },
   {
     "id": "finance-0007",
@@ -196,12 +220,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"bank\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“bank”。"
+        "en": "I need to go to the bank today.",
+        "zh": "我今天需要去银行。"
+      },
+      {
+        "en": "We sat on the river bank.",
+        "zh": "我们坐在河岸上。"
       }
     ],
     "imageQuery": "bank",
-    "memoryTip": "bank - n. 银行, 堤, 岸"
+    "collocations": []
   },
   {
     "id": "finance-0008",
@@ -228,12 +256,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"return\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“return”。"
+        "en": "She will return home tomorrow.",
+        "zh": "她明天将回家。"
+      },
+      {
+        "en": "Please return the book to the library.",
+        "zh": "请把书还给图书馆。"
       }
     ],
     "imageQuery": "return",
-    "memoryTip": "return - n. 回来, 返回, 来回票, 归还, 报答, 利润率, 报告书"
+    "collocations": []
   },
   {
     "id": "finance-0009",
@@ -259,12 +291,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"trade\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“trade”。"
+        "en": "They trade goods with other countries.",
+        "zh": "他们与其他国家进行货物贸易。"
+      },
+      {
+        "en": "He learned the trade of a carpenter.",
+        "zh": "他学了木匠的手艺。"
       }
     ],
     "imageQuery": "trade",
-    "memoryTip": "trade - n. 贸易, 商业, 交易, 生意, 职业, 顾客, 信风"
+    "collocations": []
   },
   {
     "id": "finance-0010",
@@ -290,12 +326,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"account\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“account”。"
+        "en": "I opened a bank account.",
+        "zh": "我开了一个银行账户。"
+      },
+      {
+        "en": "He gave an account of the event.",
+        "zh": "他讲述了事件的经过。"
       }
     ],
     "imageQuery": "account",
-    "memoryTip": "account - n. 报告, 解释, 估价, 理由, 利润, 算账, 帐目"
+    "collocations": []
   },
   {
     "id": "finance-0011",
@@ -317,12 +357,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"tax\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“tax”。"
+        "en": "We pay tax on our income.",
+        "zh": "我们为收入纳税。"
+      },
+      {
+        "en": "The government raised taxes.",
+        "zh": "政府提高了税收。"
       }
     ],
     "imageQuery": "tax",
-    "memoryTip": "tax - n. 税, 税款, 重负, 会费"
+    "collocations": []
   },
   {
     "id": "finance-0012",
@@ -348,12 +392,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"share\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“share”。"
+        "en": "Please share your food with your sister.",
+        "zh": "请和你的妹妹分享食物。"
+      },
+      {
+        "en": "She bought shares in the technology company.",
+        "zh": "她买了那家科技公司的股票。"
       }
     ],
     "imageQuery": "share",
-    "memoryTip": "share - n. 部分, 参与, 一份, 参股, 份额"
+    "collocations": []
   },
   {
     "id": "finance-0013",
@@ -380,12 +428,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"charge\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“charge”。"
+        "en": "The battery needs a charge.",
+        "zh": "电池需要充电。"
+      },
+      {
+        "en": "He was charged with theft.",
+        "zh": "他被指控盗窃。"
       }
     ],
     "imageQuery": "charge",
-    "memoryTip": "charge - n. 指控, 费用, 冲锋, 电荷, 炸药, 主管, 被托管人, 命令"
+    "collocations": []
   },
   {
     "id": "finance-0014",
@@ -406,12 +458,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"statement\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“statement”。"
+        "en": "She made a clear statement about her plans.",
+        "zh": "她对自己的计划做了清晰的陈述。"
+      },
+      {
+        "en": "His statement surprised everyone in the room.",
+        "zh": "他的声明让房间里所有人都很惊讶。"
       }
     ],
     "imageQuery": "statement",
-    "memoryTip": "statement - n. 陈述, 指令, 声明"
+    "collocations": []
   },
   {
     "id": "finance-0015",
@@ -433,12 +489,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"capital\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“capital”。"
+        "en": "Paris is the capital of France.",
+        "zh": "巴黎是法国的首都。"
+      },
+      {
+        "en": "They need more capital to expand the business.",
+        "zh": "他们需要更多资金来扩大业务。"
       }
     ],
     "imageQuery": "capital",
-    "memoryTip": "capital - n. 首都, 大写字母, 资本"
+    "collocations": []
   },
   {
     "id": "finance-0016",
@@ -459,12 +519,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"income\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“income”。"
+        "en": "Her income is enough to live comfortably.",
+        "zh": "她的收入足以舒适地生活。"
+      },
+      {
+        "en": "He reports his income to the tax office.",
+        "zh": "他向税务局申报收入。"
       }
     ],
     "imageQuery": "income",
-    "memoryTip": "income - n. 收入, 收益, 流入"
+    "collocations": []
   },
   {
     "id": "finance-0017",
@@ -486,12 +550,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"risk\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“risk”。"
+        "en": "Smoking increases the risk of lung cancer.",
+        "zh": "吸烟增加患肺癌的风险。"
+      },
+      {
+        "en": "Don't risk your health for a job.",
+        "zh": "不要为了工作拿健康冒险。"
       }
     ],
     "imageQuery": "risk",
-    "memoryTip": "risk - n. 冒险, 危险, 保险额"
+    "collocations": []
   },
   {
     "id": "finance-0018",
@@ -512,12 +580,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"investment\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“investment”。"
+        "en": "This investment will bring good returns.",
+        "zh": "这项投资会带来好的回报。"
+      },
+      {
+        "en": "Education is a wise investment for life.",
+        "zh": "教育是人生明智的投资。"
       }
     ],
     "imageQuery": "investment",
-    "memoryTip": "investment - n. 投资"
+    "collocations": []
   },
   {
     "id": "finance-0019",
@@ -538,12 +610,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"economy\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“economy”。"
+        "en": "The economy is growing very fast.",
+        "zh": "经济增长非常快。"
+      },
+      {
+        "en": "We need to practice economy at home.",
+        "zh": "我们在家需要节约。"
       }
     ],
     "imageQuery": "economy",
-    "memoryTip": "economy - n. 经济, 理财, 节约"
+    "collocations": []
   },
   {
     "id": "finance-0020",
@@ -565,12 +641,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"fund\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“fund”。"
+        "en": "The project needs more fund to continue.",
+        "zh": "项目需要更多资金来继续。"
+      },
+      {
+        "en": "They fund the research with donations.",
+        "zh": "他们用捐款资助研究。"
       }
     ],
     "imageQuery": "fund",
-    "memoryTip": "fund - n. 基金, 资金, 存款, 财源, 贮藏"
+    "collocations": []
   },
   {
     "id": "finance-0021",
@@ -596,12 +676,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"profit\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“profit”。"
+        "en": "The company made a big profit this year.",
+        "zh": "公司今年赚了大钱。"
+      },
+      {
+        "en": "You can profit from learning new skills.",
+        "zh": "你可以从学习新技能中获益。"
       }
     ],
     "imageQuery": "profit",
-    "memoryTip": "profit - n. 利润, 赢利, 利益"
+    "collocations": []
   },
   {
     "id": "finance-0022",
@@ -623,12 +707,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"commission\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“commission”。"
+        "en": "She earns a commission on each sale.",
+        "zh": "她每笔销售都赚取佣金。"
+      },
+      {
+        "en": "The commission will investigate the issue.",
+        "zh": "委员会将调查这个问题。"
       }
     ],
     "imageQuery": "commission",
-    "memoryTip": "commission - n. 委任状, 任官令, 所委职责, 佣金, 犯, 委托, 所托之事"
+    "collocations": []
   },
   {
     "id": "finance-0023",
@@ -649,12 +737,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"payment\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“payment”。"
+        "en": "Payment is due at the end of the month.",
+        "zh": "付款应在月底前完成。"
+      },
+      {
+        "en": "She made a payment for the new car.",
+        "zh": "她为新车付了款。"
       }
     ],
     "imageQuery": "payment",
-    "memoryTip": "payment - n. 付款, 支付的款项(或实物), 偿还, 报应, 惩罚"
+    "collocations": []
   },
   {
     "id": "finance-0024",
@@ -680,12 +772,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"budget\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“budget”。"
+        "en": "We need to budget our money carefully.",
+        "zh": "我们需要仔细预算我们的钱。"
+      },
+      {
+        "en": "The project is within the budget limit.",
+        "zh": "这个项目在预算限制之内。"
       }
     ],
     "imageQuery": "budget",
-    "memoryTip": "budget - n. 预算"
+    "collocations": []
   },
   {
     "id": "finance-0025",
@@ -712,12 +808,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"stock\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“stock”。"
+        "en": "The store has a large stock of shoes.",
+        "zh": "这家店有大量的鞋子库存。"
+      },
+      {
+        "en": "She bought stock in a tech company.",
+        "zh": "她购买了一家科技公司的股票。"
       }
     ],
     "imageQuery": "stock",
-    "memoryTip": "stock - n. 树干, 祖先, 血统, 原料, 备料, 库存, 牲畜, 股票, 股份, 保留剧目"
+    "collocations": []
   },
   {
     "id": "finance-0026",
@@ -743,12 +843,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"exchange\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“exchange”。"
+        "en": "We can exchange gifts after dinner.",
+        "zh": "我们可以在晚餐后交换礼物。"
+      },
+      {
+        "en": "The exchange rate is very good today.",
+        "zh": "今天的汇率非常好。"
       }
     ],
     "imageQuery": "exchange",
-    "memoryTip": "exchange - n. 交换, (电话)交换局, 交换机, 汇兑, 交易所"
+    "collocations": []
   },
   {
     "id": "finance-0027",
@@ -774,12 +878,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"balance\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“balance”。"
+        "en": "Keep your balance on the bike.",
+        "zh": "在自行车上保持平衡。"
+      },
+      {
+        "en": "Check your bank account balance.",
+        "zh": "检查你的银行账户余额。"
       }
     ],
     "imageQuery": "balance",
-    "memoryTip": "balance - n. 平衡, 差额"
+    "collocations": []
   },
   {
     "id": "finance-0028",
@@ -801,12 +909,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"cash\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“cash”。"
+        "en": "I need to cash this check today.",
+        "zh": "我今天需要兑现这张支票。"
+      },
+      {
+        "en": "Do you have enough cash for lunch?",
+        "zh": "你有足够的现金吃午饭吗？"
       }
     ],
     "imageQuery": "cash",
-    "memoryTip": "cash - n. 现金"
+    "collocations": []
   },
   {
     "id": "finance-0029",
@@ -832,12 +944,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"credit\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“credit”。"
+        "en": "He bought the car on credit.",
+        "zh": "他赊账买了车。"
+      },
+      {
+        "en": "She received credit for her hard work.",
+        "zh": "她的努力得到了认可。"
       }
     ],
     "imageQuery": "credit",
-    "memoryTip": "credit - n. 信用, 信任, 荣誉, 贷款, 学分"
+    "collocations": []
   },
   {
     "id": "finance-0030",
@@ -858,12 +974,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"debt\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“debt”。"
+        "en": "She paid off her debt quickly.",
+        "zh": "她很快还清了债务。"
+      },
+      {
+        "en": "He is in debt to the bank.",
+        "zh": "他欠银行的钱。"
       }
     ],
     "imageQuery": "debt",
-    "memoryTip": "debt - n. 债务, 罪过"
+    "collocations": []
   },
   {
     "id": "finance-0031",
@@ -884,12 +1004,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"consumer\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“consumer”。"
+        "en": "Consumers should compare prices before buying.",
+        "zh": "消费者在购买前应该比较价格。"
+      },
+      {
+        "en": "The new law protects consumer rights.",
+        "zh": "新法律保护消费者权益。"
       }
     ],
     "imageQuery": "consumer",
-    "memoryTip": "consumer - n. 消费者"
+    "collocations": []
   },
   {
     "id": "finance-0032",
@@ -911,12 +1035,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"loan\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“loan”。"
+        "en": "He took out a loan to buy a car.",
+        "zh": "他贷款买了一辆车。"
+      },
+      {
+        "en": "The bank approved her loan application.",
+        "zh": "银行批准了她的贷款申请。"
       }
     ],
     "imageQuery": "loan",
-    "memoryTip": "loan - n. 贷款, 借出"
+    "collocations": []
   },
   {
     "id": "finance-0033",
@@ -933,12 +1061,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"asset\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“asset”。"
+        "en": "Her experience is a valuable asset.",
+        "zh": "她的经验是宝贵的资产。"
+      },
+      {
+        "en": "The company owns many assets.",
+        "zh": "这家公司拥有许多资产。"
       }
     ],
     "imageQuery": "asset",
-    "memoryTip": "asset - n. 资产, 有益的东西"
+    "collocations": []
   },
   {
     "id": "finance-0034",
@@ -964,12 +1096,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"finance\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“finance”。"
+        "en": "He works in finance.",
+        "zh": "他在金融领域工作。"
+      },
+      {
+        "en": "They will finance the project.",
+        "zh": "他们将资助这个项目。"
       }
     ],
     "imageQuery": "finance",
-    "memoryTip": "finance - n. 财政, 财务"
+    "collocations": []
   },
   {
     "id": "finance-0035",
@@ -990,12 +1126,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"revenue\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“revenue”。"
+        "en": "The company's revenue increased this year.",
+        "zh": "公司今年的收入增加了。"
+      },
+      {
+        "en": "Tax revenue helps build roads.",
+        "zh": "税收有助于修建道路。"
       }
     ],
     "imageQuery": "revenue",
-    "memoryTip": "revenue - n. 收入, 岁入, 税收, 税务局"
+    "collocations": []
   },
   {
     "id": "finance-0036",
@@ -1016,12 +1156,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"liability\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“liability”。"
+        "en": "The company has a large liability.",
+        "zh": "公司有大量债务。"
+      },
+      {
+        "en": "He accepted liability for the accident.",
+        "zh": "他承担了事故的责任。"
       }
     ],
     "imageQuery": "liability",
-    "memoryTip": "liability - n. 责任, 债务, 倾向"
+    "collocations": []
   },
   {
     "id": "finance-0037",
@@ -1042,12 +1186,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"expense\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“expense”。"
+        "en": "The expense of living in the city is high.",
+        "zh": "在城市生活的费用很高。"
+      },
+      {
+        "en": "He finished the work at great expense.",
+        "zh": "他付出了很大代价完成了工作。"
       }
     ],
     "imageQuery": "expense",
-    "memoryTip": "expense - n. 费用, 代价, 开支, 损失"
+    "collocations": []
   },
   {
     "id": "finance-0038",
@@ -1068,12 +1216,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"withdraw\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“withdraw”。"
+        "en": "I need to withdraw some money from the bank.",
+        "zh": "我需要从银行取一些钱。"
+      },
+      {
+        "en": "The army decided to withdraw from the area.",
+        "zh": "军队决定从该地区撤退。"
       }
     ],
     "imageQuery": "withdraw",
-    "memoryTip": "withdraw - vt. 撤回, 取回, 撤消, 使撤退, 拉开, 移开"
+    "collocations": []
   },
   {
     "id": "finance-0039",
@@ -1094,12 +1246,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"inflation\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“inflation”。"
+        "en": "Inflation makes prices go up.",
+        "zh": "通货膨胀使物价上涨。"
+      },
+      {
+        "en": "The government fights against inflation.",
+        "zh": "政府对抗通货膨胀。"
       }
     ],
     "imageQuery": "inflation",
-    "memoryTip": "inflation - n. 胀大, 夸张, 通货膨胀"
+    "collocations": []
   },
   {
     "id": "finance-0040",
@@ -1125,12 +1281,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"quote\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“quote”。"
+        "en": "She likes to quote famous authors.",
+        "zh": "她喜欢引用著名作家的话。"
+      },
+      {
+        "en": "Can you quote me a price for this?",
+        "zh": "你能给我报个价吗？"
       }
     ],
     "imageQuery": "quote",
-    "memoryTip": "quote - n. 引用"
+    "collocations": []
   },
   {
     "id": "finance-0041",
@@ -1151,12 +1311,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"transaction\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“transaction”。"
+        "en": "The transaction was completed quickly.",
+        "zh": "交易很快完成了。"
+      },
+      {
+        "en": "Each transaction is recorded carefully.",
+        "zh": "每笔交易都被仔细记录。"
       }
     ],
     "imageQuery": "transaction",
-    "memoryTip": "transaction - n. 交易, 办理, 学报, 和解协议"
+    "collocations": []
   },
   {
     "id": "finance-0042",
@@ -1177,12 +1341,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"currency\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“currency”。"
+        "en": "The dollar is a strong currency.",
+        "zh": "美元是一种强势货币。"
+      },
+      {
+        "en": "You need local currency for shopping.",
+        "zh": "你需要当地货币购物。"
       }
     ],
     "imageQuery": "currency",
-    "memoryTip": "currency - n. 货币, 通货, 流通, 通用"
+    "collocations": []
   },
   {
     "id": "finance-0043",
@@ -1208,12 +1376,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"saving\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“saving”。"
+        "en": "She has a lot of money in savings.",
+        "zh": "她有很多存款。"
+      },
+      {
+        "en": "Buying in bulk is a great saving.",
+        "zh": "批量购买能省很多钱。"
       }
     ],
     "imageQuery": "saving",
-    "memoryTip": "saving - n. 存款, 挽救, 节约"
+    "collocations": []
   },
   {
     "id": "finance-0044",
@@ -1230,12 +1402,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"funding\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“funding”。"
+        "en": "The project needs more funding.",
+        "zh": "这个项目需要更多资金。"
+      },
+      {
+        "en": "They received funding from the government.",
+        "zh": "他们从政府获得了资金。"
       }
     ],
     "imageQuery": "funding",
-    "memoryTip": "funding - [经] 债务转期"
+    "collocations": []
   },
   {
     "id": "finance-0045",
@@ -1256,12 +1432,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"wealth\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“wealth”。"
+        "en": "He gained great wealth through hard work.",
+        "zh": "他通过努力工作获得了巨大财富。"
+      },
+      {
+        "en": "Health is more important than wealth.",
+        "zh": "健康比财富更重要。"
       }
     ],
     "imageQuery": "wealth",
-    "memoryTip": "wealth - n. 财富, 资源, 财产, 丰富, 富裕, 大量"
+    "collocations": []
   },
   {
     "id": "finance-0046",
@@ -1287,12 +1467,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"deposit\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“deposit”。"
+        "en": "I need to deposit money in the bank.",
+        "zh": "我需要把钱存入银行。"
+      },
+      {
+        "en": "She made a deposit for the apartment.",
+        "zh": "她为公寓付了定金。"
       }
     ],
     "imageQuery": "deposit",
-    "memoryTip": "deposit - n. 存款, 定金, 堆积物"
+    "collocations": []
   },
   {
     "id": "finance-0047",
@@ -1318,12 +1502,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"bond\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“bond”。"
+        "en": "They share a strong bond of friendship.",
+        "zh": "他们有着牢固的友谊纽带。"
+      },
+      {
+        "en": "He bought a government bond last week.",
+        "zh": "他上周买了一份政府债券。"
       }
     ],
     "imageQuery": "bond",
-    "memoryTip": "bond - n. 捆绑物, 结合, 债券, 契约, 粘合剂, 保证人, 键, 关栈保留"
+    "collocations": []
   },
   {
     "id": "finance-0048",
@@ -1348,12 +1536,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"borrow\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“borrow”。"
+        "en": "Can I borrow your pen for a moment?",
+        "zh": "我能借你的笔用一下吗？"
+      },
+      {
+        "en": "She needs to borrow some money.",
+        "zh": "她需要借一些钱。"
       }
     ],
     "imageQuery": "borrow",
-    "memoryTip": "borrow - vt. 借, 借入, 借用"
+    "collocations": []
   },
   {
     "id": "finance-0049",
@@ -1374,12 +1566,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"treasury\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“treasury”。"
+        "en": "The treasury manages the country's money.",
+        "zh": "财政部管理国家的资金。"
+      },
+      {
+        "en": "The museum has a treasury of art.",
+        "zh": "博物馆有艺术宝库。"
       }
     ],
     "imageQuery": "treasury",
-    "memoryTip": "treasury - n. 国库, 宝库, 财政部, 国库券"
+    "collocations": []
   },
   {
     "id": "finance-0050",
@@ -1404,12 +1600,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"margin\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“margin”。"
+        "en": "Write notes in the margin.",
+        "zh": "在页边空白处写笔记。"
+      },
+      {
+        "en": "The profit margin is very small.",
+        "zh": "利润率非常小。"
       }
     ],
     "imageQuery": "margin",
-    "memoryTip": "margin - n. 页边的空白, 边缘, 界限, 余裕, 差数, 差额, 保证金"
+    "collocations": []
   },
   {
     "id": "finance-0051",
@@ -1430,12 +1630,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"dividend\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“dividend”。"
+        "en": "The company paid a dividend to shareholders.",
+        "zh": "公司向股东支付了股息。"
+      },
+      {
+        "en": "Ten divided by two gives a dividend of five.",
+        "zh": "十除以二得被除数五。"
       }
     ],
     "imageQuery": "dividend",
-    "memoryTip": "dividend - n. 被除数, 股利"
+    "collocations": []
   },
   {
     "id": "finance-0052",
@@ -1461,12 +1665,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"audit\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“audit”。"
+        "en": "The company will audit its accounts.",
+        "zh": "公司将审计其账目。"
+      },
+      {
+        "en": "She decided to audit the class for fun.",
+        "zh": "她决定旁听这门课作为乐趣。"
       }
     ],
     "imageQuery": "audit",
-    "memoryTip": "audit - n. 审计, 查帐"
+    "collocations": []
   },
   {
     "id": "finance-0053",
@@ -1492,12 +1700,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"yield\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“yield”。"
+        "en": "The farm had a good yield this year.",
+        "zh": "农场今年收成很好。"
+      },
+      {
+        "en": "You must yield to oncoming traffic.",
+        "zh": "你必须让行迎面而来的车辆。"
       }
     ],
     "imageQuery": "yield",
-    "memoryTip": "yield - n. 生产量, 投资收益"
+    "collocations": []
   },
   {
     "id": "finance-0054",
@@ -1518,12 +1730,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"equity\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“equity”。"
+        "en": "The law should ensure equity for all.",
+        "zh": "法律应确保人人公平。"
+      },
+      {
+        "en": "He has equity in the family home.",
+        "zh": "他在家庭住房中有产权。"
       }
     ],
     "imageQuery": "equity",
-    "memoryTip": "equity - n. 公平, 公正"
+    "collocations": []
   },
   {
     "id": "finance-0055",
@@ -1544,12 +1760,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"banking\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“banking”。"
+        "en": "Banking is an important industry.",
+        "zh": "银行业是一个重要行业。"
+      },
+      {
+        "en": "She works in online banking.",
+        "zh": "她在网上银行工作。"
       }
     ],
     "imageQuery": "banking",
-    "memoryTip": "banking - n. 银行业务"
+    "collocations": []
   },
   {
     "id": "finance-0056",
@@ -1570,12 +1790,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"creditor\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“creditor”。"
+        "en": "The creditor demanded payment immediately.",
+        "zh": "债权人要求立即付款。"
+      },
+      {
+        "en": "He owes money to a large creditor.",
+        "zh": "他欠一个大债权人钱。"
       }
     ],
     "imageQuery": "creditor",
-    "memoryTip": "creditor - n. 债权人"
+    "collocations": []
   },
   {
     "id": "finance-0057",
@@ -1596,12 +1820,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"portfolio\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“portfolio”。"
+        "en": "She carries her drawings in a portfolio.",
+        "zh": "她把画放在公文包里。"
+      },
+      {
+        "en": "He manages a diverse investment portfolio.",
+        "zh": "他管理一个多元化的投资组合。"
       }
     ],
     "imageQuery": "portfolio",
-    "memoryTip": "portfolio - n. 皮包, 公文包, 部长职务, 有价证券财产目录, 艺术代表作选辑"
+    "collocations": []
   },
   {
     "id": "finance-0058",
@@ -1627,12 +1855,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"forecast\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“forecast”。"
+        "en": "The weather forecast says it will rain.",
+        "zh": "天气预报说会下雨。"
+      },
+      {
+        "en": "Economists forecast a slow growth.",
+        "zh": "经济学家预测增长缓慢。"
       }
     ],
     "imageQuery": "forecast",
-    "memoryTip": "forecast - n. 预想, 预测, 预报"
+    "collocations": []
   },
   {
     "id": "finance-0059",
@@ -1654,12 +1886,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"liquid\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“liquid”。"
+        "en": "Water is a clear liquid.",
+        "zh": "水是一种清澈的液体。"
+      },
+      {
+        "en": "The medicine is a liquid, not a pill.",
+        "zh": "这种药是液体，不是药片。"
       }
     ],
     "imageQuery": "liquid",
-    "memoryTip": "liquid - n. 液体, 流体, 流音"
+    "collocations": []
   },
   {
     "id": "finance-0060",
@@ -1680,12 +1916,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"valuation\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“valuation”。"
+        "en": "The house needs a proper valuation.",
+        "zh": "这房子需要适当的估价。"
+      },
+      {
+        "en": "The valuation of the company is high.",
+        "zh": "这家公司的估值很高。"
       }
     ],
     "imageQuery": "valuation",
-    "memoryTip": "valuation - n. 评价, 估价, 价值判断"
+    "collocations": []
   },
   {
     "id": "finance-0061",
@@ -1707,12 +1947,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"broker\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“broker”。"
+        "en": "The broker helped us buy the stock.",
+        "zh": "经纪人帮我们买了股票。"
+      },
+      {
+        "en": "She works as a real estate broker.",
+        "zh": "她是一名房地产经纪人。"
       }
     ],
     "imageQuery": "broker",
-    "memoryTip": "broker - n. 掮客, 经纪人"
+    "collocations": []
   },
   {
     "id": "finance-0062",
@@ -1733,12 +1977,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"insure\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“insure”。"
+        "en": "You should insure your car against accidents.",
+        "zh": "你应该为你的车投保以防事故。"
+      },
+      {
+        "en": "We insured the house for fire damage.",
+        "zh": "我们为房子投保了火灾险。"
       }
     ],
     "imageQuery": "insure",
-    "memoryTip": "insure - vt. 保险, 确保"
+    "collocations": []
   },
   {
     "id": "finance-0063",
@@ -1759,12 +2007,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"invoice\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“invoice”。"
+        "en": "Please send me the invoice by email.",
+        "zh": "请通过电子邮件把发票发给我。"
+      },
+      {
+        "en": "The invoice shows the total amount due.",
+        "zh": "发票显示了应付总额。"
       }
     ],
     "imageQuery": "invoice",
-    "memoryTip": "invoice - n. 发票, 发货单"
+    "collocations": []
   },
   {
     "id": "finance-0064",
@@ -1785,12 +2037,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"budgeting\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“budgeting”。"
+        "en": "Budgeting helps you save money.",
+        "zh": "预算编制有助于省钱。"
+      },
+      {
+        "en": "She is good at budgeting her expenses.",
+        "zh": "她擅长预算开支。"
       }
     ],
     "imageQuery": "budgeting",
-    "memoryTip": "budgeting - [计] 预定, 预算"
+    "collocations": []
   },
   {
     "id": "finance-0065",
@@ -1807,12 +2063,16 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"cashflow\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“cashflow”。"
+        "en": "The business has positive cashflow.",
+        "zh": "这家企业有正向现金流。"
+      },
+      {
+        "en": "Cashflow is important for small companies.",
+        "zh": "现金流对小公司很重要。"
       }
     ],
     "imageQuery": "cashflow",
-    "memoryTip": "cashflow - vi. 现金流转"
+    "collocations": []
   },
   {
     "id": "finance-0066",
@@ -1833,11 +2093,15 @@
     ],
     "examples": [
       {
-        "en": "I use the word \"securities\" when I study this topic.",
-        "zh": "我在学习这个主题时会用到单词“securities”。"
+        "en": "He invests in stocks and other securities.",
+        "zh": "他投资股票和其他有价证券。"
+      },
+      {
+        "en": "The securities market is volatile.",
+        "zh": "证券市场波动很大。"
       }
     ],
     "imageQuery": "securities",
-    "memoryTip": "securities - n. 有价证券"
+    "collocations": []
   }
 ]

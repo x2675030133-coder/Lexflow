@@ -18,6 +18,7 @@ import PodcastListeningPage from './pages/PodcastListeningPage';
 import PodcastPracticePage from './pages/PodcastPracticePage';
 import ArticleListPage from './pages/ArticleListPage';
 import ArticleReadPage from './pages/ArticleReadPage';
+import PronunciationPage from './pages/PronunciationPage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import ProfilePage from './pages/ProfilePage';
@@ -88,6 +89,7 @@ function AppRoutes() {
         <Route path="/dashboard" element={<RequireAuth><DashboardPage /></RequireAuth>} />
         <Route path="/tools" element={<RequireAuth><ToolsPage /></RequireAuth>} />
         <Route path="/listening" element={<RequireAuth><ListeningPage /></RequireAuth>} />
+        <Route path="/pronunciation" element={<PronunciationPage />} />
         <Route path="/listening/podcasts" element={<RequireAuth><PodcastListeningPage /></RequireAuth>} />
         <Route path="/listening/podcasts/:episodeId" element={<RequireAuth><PodcastPracticePage /></RequireAuth>} />
         <Route path="/listening/:id" element={<RequireAuth><ListeningPracticePage /></RequireAuth>} />
@@ -111,12 +113,13 @@ export default function App() {
             <div className="bg-blob bg-blob-3" />
             <div className="bg-blob bg-blob-4" />
           </div>
-
-          <Navbar />
-          <main className="flex-1 relative z-10">
-            <AppRoutes />
-          </main>
-          <Footer />
+          <div className="site-scale-shell">
+            <Navbar />
+            <main className="flex-1 relative z-10">
+              <AppRoutes />
+            </main>
+            <Footer />
+          </div>
         </div>
       </AuthProvider>
     </BrowserRouter>

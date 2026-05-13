@@ -32,11 +32,26 @@ const T = {
 export default function ProfilePage() {
   const { user, signOut } = useAuth();
   const navigate = useNavigate();
-  const progress = getProgress();
-  const stats = getDailyStats();
+  const [progress, setProgress] = useState(() => getProgress());
+  const [stats, setStats] = useState(() => getDailyStats());
 
   const [showLogoutConfirm, setShowLogoutConfirm] = useState(false);
   const [isLoggingOut, setIsLoggingOut] = useState(false);
+
+  useEffect(() => {
+    function refresh() {
+      setProgress(getProgress());
+      setStats(getDailyStats());
+    }
+
+    refresh();
+    window.addEventListener('storage', refresh);
+    window.addEventListener('el-progress-changed', refresh as EventListener);
+    return () => {
+      window.removeEventListener('storage', refresh);
+      window.removeEventListener('el-progress-changed', refresh as EventListener);
+    };
+  }, []);
 
   const handleLogout = async () => {
     // 1. Immediate UI Feedback
