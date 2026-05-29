@@ -9,14 +9,26 @@ type SpeechState = {
 
 let currentSpeech: SpeechState | null = null;
 let activeSpeechId = 0;
+let pendingSpeechTimer: number | null = null;
+let pendingSpeechToken = 0;
 
 function getSpeechSynthesis() {
   if (typeof window === 'undefined') return null;
   return window.speechSynthesis || null;
 }
 
+function cancelPendingSpeech() {
+  pendingSpeechToken += 1;
+
+  if (pendingSpeechTimer !== null) {
+    window.clearTimeout(pendingSpeechTimer);
+    pendingSpeechTimer = null;
+  }
+}
+
 export function stopSpeechPlayback() {
   const synthesis = getSpeechSynthesis();
+  cancelPendingSpeech();
   activeSpeechId += 1;
   if (!synthesis) return;
   try {
@@ -77,16 +89,44 @@ export function speakPlayback(
   const nextRate = options.rate ?? 0.85;
   const nextLang = options.lang ?? 'en-US';
   const speechId = activeSpeechId + 1;
+  const shouldDefer = options.cancelPrevious !== false;
 
-  if (options.cancelPrevious !== false) {
+  cancelPendingSpeech();
+
+  if (shouldDefer) {
     stopSpeechPlayback();
   }
 
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = nextLang;
-  utterance.rate = nextRate;
-  utterance.onstart = () => {
-    if (speechId !== activeSpeechId) return;
+  const startSpeech = () => {
+    if (speechId !== activeSpeechId + 1 && speechId !== activeSpeechId) return;
+
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = nextLang;
+    utterance.rate = nextRate;
+    utterance.onstart = () => {
+      if (speechId !== activeSpeechId) return;
+      currentSpeech = {
+        id: speechId,
+        text,
+        rate: nextRate,
+        lang: nextLang,
+        onEnd: options.onEnd,
+        onStart: options.onStart,
+      };
+      options.onStart?.();
+    };
+    utterance.onend = () => {
+      if (speechId !== activeSpeechId) return;
+      currentSpeech = null;
+      options.onEnd?.();
+    };
+    utterance.onerror = () => {
+      if (speechId !== activeSpeechId) return;
+      currentSpeech = null;
+      options.onEnd?.();
+    };
+
+    activeSpeechId = speechId;
     currentSpeech = {
       id: speechId,
       text,
@@ -95,30 +135,21 @@ export function speakPlayback(
       onEnd: options.onEnd,
       onStart: options.onStart,
     };
-    options.onStart?.();
-  };
-  utterance.onend = () => {
-    if (speechId !== activeSpeechId) return;
-    currentSpeech = null;
-    options.onEnd?.();
-  };
-  utterance.onerror = () => {
-    if (speechId !== activeSpeechId) return;
-    currentSpeech = null;
-    options.onEnd?.();
+
+    synthesis.speak(utterance);
   };
 
-  activeSpeechId = speechId;
-  currentSpeech = {
-    id: speechId,
-    text,
-    rate: nextRate,
-    lang: nextLang,
-    onEnd: options.onEnd,
-    onStart: options.onStart,
-  };
+  if (shouldDefer) {
+    const token = pendingSpeechToken;
+    pendingSpeechTimer = window.setTimeout(() => {
+      if (token !== pendingSpeechToken) return;
+      pendingSpeechTimer = null;
+      startSpeech();
+    }, 0);
+  } else {
+    startSpeech();
+  }
 
-  synthesis.speak(utterance);
   return true;
 }
 

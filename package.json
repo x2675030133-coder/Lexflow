@@ -11,6 +11,7 @@
     "generate:topics": "node scripts/generate-topic-wordlists.mjs",
     "generate:examples": "node scripts/rebuild-word-examples.mjs",
     "generate:collocations": "node scripts/rebuild-word-collocations.mjs",
+    "validate:examples": "node scripts/validate-word-examples.mjs",
     "enrich:reading-vocab": "node scripts/enrich-reading-vocabulary.mjs",
     "validate:collocations": "node scripts/validate-word-collocations.mjs",
     "lint": "eslint .",

@@ -2,10 +2,18 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft, BookOpen, Pause, Play, Square, Volume2 } from 'lucide-react';
 import { getAllArticles } from '../data/readingLibrary';
-import { markArticleRead } from '../utils/readingProgress';
 import { translateParagraphsDeepSeek } from '../services/remoteContent';
 import { useStopMediaOnUnmount } from '../hooks/useStopMediaOnUnmount';
+import { useStudyTimeTracker } from '../hooks/useStudyTimeTracker';
 import { getSettings } from '../utils/settings';
+import { markArticleRead } from '../utils/readingProgress';
+import {
+  getReadingStudyProgress,
+  markReadingParagraphListened,
+  markReadingSentenceListened,
+  markReadingStudyStarted,
+  type ReadingStudyRecord,
+} from '../utils/readingStudyProgress';
 import {
   pauseSpeechPlayback,
   resumeSpeechPlayback,
@@ -16,6 +24,7 @@ import {
 import { splitEnglishSentences, tokenizeEnglishWords } from '../utils/textSegments';
 
 type PlaybackMode = 'idle' | 'article' | 'paragraph' | 'sentence' | 'word';
+type ReadingViewMode = 'paragraph' | 'continuous';
 
 type SentenceSegment = {
   key: string;
@@ -33,12 +42,23 @@ function getVoiceLang() {
   return getSettings().accent === 'uk' ? 'en-GB' : 'en-US';
 }
 
+function getInitialReadingViewMode(): ReadingViewMode {
+  try {
+    const stored = window.localStorage.getItem('el-reading-view-mode');
+    return stored === 'continuous' ? 'continuous' : 'paragraph';
+  } catch {
+    return 'paragraph';
+  }
+}
+
 export default function ArticleReadPage() {
   const { id } = useParams();
   const articles = useMemo(() => getAllArticles(), []);
   const article = articles.find((item) => item.id === id);
+  const articleId = article?.id || '';
 
   const [resolvedParagraphs, setResolvedParagraphs] = useState(article?.paragraphs || []);
+  const [readingViewMode, setReadingViewMode] = useState<ReadingViewMode>(getInitialReadingViewMode);
   const [playbackMode, setPlaybackMode] = useState<PlaybackMode>('idle');
   const [currentParagraphIndex, setCurrentParagraphIndex] = useState<number | null>(null);
   const [currentSentenceKey, setCurrentSentenceKey] = useState<string | null>(null);
@@ -46,19 +66,19 @@ export default function ArticleReadPage() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
   const [playbackRate, setPlaybackRate] = useState(0.85);
+  const [studyProgress, setStudyProgress] = useState<ReadingStudyRecord>(() => getReadingStudyProgress(articleId));
   const playbackActionAtRef = useRef(0);
   const playbackSessionIdRef = useRef(0);
   const sentenceNodeRefs = useRef(new Map<string, HTMLElement>());
   const paragraphNodeRefs = useRef(new Map<number, HTMLElement>());
 
   useStopMediaOnUnmount();
-
-  useEffect(() => {
-    if (article) markArticleRead(article);
-  }, [article]);
+  useStudyTimeTracker(true);
 
   useEffect(() => {
     setResolvedParagraphs(article?.paragraphs || []);
+    setReadingViewMode(getInitialReadingViewMode());
+    setStudyProgress(getReadingStudyProgress(articleId));
     playbackSessionIdRef.current += 1;
     stopSpeechPlayback();
     setPlaybackMode('idle');
@@ -115,6 +135,37 @@ export default function ArticleReadPage() {
       }));
     });
   }, [resolvedParagraphs]);
+
+  useEffect(() => {
+    if (!article) return;
+
+    const next = markReadingStudyStarted(article.id, sentenceSegments.length);
+    setStudyProgress(next);
+  }, [article, sentenceSegments.length]);
+
+  function syncStudyProgress(next: ReadingStudyRecord) {
+    setStudyProgress(next);
+    if (article && next.completed) {
+      markArticleRead(article);
+    }
+  }
+
+  function recordSentenceListened(segment: SentenceSegment) {
+    if (!article) return;
+    const next = markReadingSentenceListened(article.id, segment.key, segment.paragraphIndex, sentenceSegments.length);
+    syncStudyProgress(next);
+  }
+
+  function recordParagraphListened(paragraphIndex: number, paragraphSegments: SentenceSegment[]) {
+    if (!article) return;
+    const next = markReadingParagraphListened(
+      article.id,
+      paragraphIndex,
+      paragraphSegments.map((segment) => segment.key),
+      sentenceSegments.length,
+    );
+    syncStudyProgress(next);
+  }
 
   useEffect(() => {
     if (currentSentenceKey) {
@@ -211,6 +262,7 @@ export default function ArticleReadPage() {
         cancelPrevious: false,
         onEnd: () => {
           if (playbackSessionIdRef.current !== sessionId) return;
+          recordSentenceListened(segment);
           playAt(index + 1);
         },
       });
@@ -237,8 +289,15 @@ export default function ArticleReadPage() {
     const paragraph = resolvedParagraphs[paragraphIndex];
     if (!paragraph) return;
 
+    const paragraphSentenceSegments = sentenceSegments.filter((segment) => segment.paragraphIndex === paragraphIndex);
+
     beginNewPlaybackSession();
-    startSpeech(paragraph.en, { mode: 'paragraph', paragraphIndex });
+    startSpeech(paragraph.en, {
+      mode: 'paragraph',
+      paragraphIndex,
+    }, () => {
+      recordParagraphListened(paragraphIndex, paragraphSentenceSegments);
+    });
   }
 
   function playSentence(segment: SentenceSegment) {
@@ -249,6 +308,8 @@ export default function ArticleReadPage() {
       mode: 'sentence',
       paragraphIndex: segment.paragraphIndex,
       sentenceKey: segment.key,
+    }, () => {
+      recordSentenceListened(segment);
     });
   }
 
@@ -336,11 +397,29 @@ export default function ArticleReadPage() {
       ? '全文'
       : playbackMode === 'paragraph'
         ? '段落'
-        : playbackMode === 'sentence'
+      : playbackMode === 'sentence'
           ? '句子'
           : playbackMode === 'word'
             ? '单词'
             : '待命';
+  const fullChineseText = resolvedParagraphs.map((paragraph) => paragraph.zh.trim()).filter(Boolean).join('');
+  const listenedSentenceCount = studyProgress.listenedSentenceKeys.length;
+  const studyProgressPercent =
+    sentenceSegments.length > 0 ? Math.min(100, Math.round((listenedSentenceCount / sentenceSegments.length) * 100)) : 0;
+  const studyStatusLabel = studyProgress.completed
+    ? '已完成'
+    : listenedSentenceCount > 0
+      ? '学习中'
+      : '未开始';
+
+  function updateReadingViewMode(nextMode: ReadingViewMode) {
+    setReadingViewMode(nextMode);
+    try {
+      window.localStorage.setItem('el-reading-view-mode', nextMode);
+    } catch {
+      // Ignore storage failures.
+    }
+  }
 
   if (!article) {
     return (
@@ -390,6 +469,55 @@ export default function ArticleReadPage() {
                 <span>{article.paragraphs.length} 段落</span>
                 <span>{article.vocabulary.length} 核心词汇</span>
               </div>
+
+              <div className="mt-6 inline-flex rounded-full border border-gray-200 bg-gray-100 p-1">
+                <button
+                  type="button"
+                  onClick={() => updateReadingViewMode('paragraph')}
+                  className={`rounded-full px-4 py-2 text-[13px] font-black transition-all ${
+                    readingViewMode === 'paragraph'
+                      ? 'bg-white text-[#1d1d1f] shadow-sm'
+                      : 'text-gray-500 hover:text-[#1d1d1f]'
+                  }`}
+                >
+                  分段精读
+                </button>
+                <button
+                  type="button"
+                  onClick={() => updateReadingViewMode('continuous')}
+                  className={`rounded-full px-4 py-2 text-[13px] font-black transition-all ${
+                    readingViewMode === 'continuous'
+                      ? 'bg-white text-[#1d1d1f] shadow-sm'
+                      : 'text-gray-500 hover:text-[#1d1d1f]'
+                  }`}
+                >
+                  连续阅读
+                </button>
+              </div>
+
+              <div className="mt-5 rounded-[22px] border border-gray-200 bg-white/80 p-4 shadow-sm">
+                <div className="flex items-center justify-between gap-3">
+                  <div className="text-[12px] font-black uppercase tracking-[0.18em] text-gray-500">学习进度</div>
+                  <div className="flex items-center gap-2 text-[13px] font-bold text-gray-600">
+                    <span>{studyStatusLabel}</span>
+                    <span>{listenedSentenceCount}/{sentenceSegments.length} 句</span>
+                  </div>
+                </div>
+                <div className="mt-3 h-2 overflow-hidden rounded-full bg-gray-100">
+                  <div
+                    className={`h-full rounded-full transition-all ${studyProgress.completed ? 'bg-emerald-500' : 'bg-blue-600'}`}
+                    style={{ width: `${studyProgressPercent}%` }}
+                  />
+                </div>
+                <p className="mt-2 text-[12px] leading-6 text-gray-500">
+                  听完全文并完成整篇学习后，系统才会把这篇文章算作已完成。
+                </p>
+              </div>
+              {studyProgress.completed && (
+                <div className="mt-4 rounded-[22px] border border-emerald-100 bg-emerald-50 px-4 py-3 text-[13px] font-bold text-emerald-700">
+                  这篇文章已经完成，列表页会同步显示已学习。
+                </div>
+              )}
             </header>
 
             <div className="border-b border-gray-100 px-4 py-4 md:hidden">
@@ -434,117 +562,172 @@ export default function ArticleReadPage() {
             </div>
 
             <div className="space-y-10 px-5 py-8 md:px-10 md:py-10">
-              {resolvedParagraphs.map((paragraph, paragraphIndex) => {
-                const paragraphSentenceSegments = sentenceSegments.filter(
-                  (segment) => segment.paragraphIndex === paragraphIndex,
-                );
-                const activeParagraph = currentParagraphIndex === paragraphIndex;
+              {readingViewMode === 'paragraph' ? (
+                resolvedParagraphs.map((paragraph, paragraphIndex) => {
+                  const paragraphSentenceSegments = sentenceSegments.filter(
+                    (segment) => segment.paragraphIndex === paragraphIndex,
+                  );
+                  const activeParagraph = currentParagraphIndex === paragraphIndex;
 
-                return (
-                  <section
-                    key={`${paragraph.en}-${paragraphIndex}`}
-                    ref={(node) => {
-                      if (node) {
-                        paragraphNodeRefs.current.set(paragraphIndex, node);
-                      } else {
-                        paragraphNodeRefs.current.delete(paragraphIndex);
-                      }
-                    }}
-                    className={`group rounded-[24px] border-l-2 py-2 pl-5 transition-colors ${
-                      activeParagraph
-                        ? 'border-blue-200 bg-blue-50/30'
-                        : 'border-transparent hover:border-blue-100 hover:bg-gray-50/40'
-                    }`}
-                  >
-                    <div className="mb-5 flex flex-wrap items-center justify-between gap-3 opacity-90 transition-opacity group-hover:opacity-100">
-                      <button
-                        type="button"
-                        onClick={() => playParagraph(paragraphIndex)}
-                        className={`inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-[12px] font-bold transition-all ${
-                          activeParagraph
-                            ? 'bg-blue-600 text-white shadow-sm shadow-blue-500/20'
-                            : 'border border-blue-50 bg-white text-blue-600 hover:bg-blue-50'
-                        }`}
-                      >
-                        <Volume2 size={14} /> 朗读段落
-                      </button>
-                      <span className="text-[11px] font-black uppercase tracking-[0.18em] text-gray-400">
-                        段落 {paragraphIndex + 1}
-                      </span>
-                    </div>
+                  return (
+                    <section
+                      key={`${paragraph.en}-${paragraphIndex}`}
+                      ref={(node) => {
+                        if (node) {
+                          paragraphNodeRefs.current.set(paragraphIndex, node);
+                        } else {
+                          paragraphNodeRefs.current.delete(paragraphIndex);
+                        }
+                      }}
+                      className={`group rounded-[24px] border-l-2 py-2 pl-5 transition-colors ${
+                        activeParagraph
+                          ? 'border-blue-200 bg-blue-50/30'
+                          : 'border-transparent hover:border-blue-100 hover:bg-gray-50/40'
+                      }`}
+                    >
+                      <div className="mb-5 flex flex-wrap items-center justify-between gap-3 opacity-90 transition-opacity group-hover:opacity-100">
+                        <button
+                          type="button"
+                          onClick={() => playParagraph(paragraphIndex)}
+                          className={`inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-[12px] font-bold transition-all ${
+                            activeParagraph
+                              ? 'bg-blue-600 text-white shadow-sm shadow-blue-500/20'
+                              : 'border border-blue-50 bg-white text-blue-600 hover:bg-blue-50'
+                          }`}
+                        >
+                          <Volume2 size={14} /> 朗读段落
+                        </button>
+                        <span className="text-[11px] font-black uppercase tracking-[0.18em] text-gray-400">
+                          段落 {paragraphIndex + 1}
+                        </span>
+                      </div>
 
-                    <div className="space-y-6">
-                      {paragraphSentenceSegments.map((segment) => {
-                        const isCurrentSentence = currentSentenceKey === segment.key;
-                        return (
-                          <div
-                            key={segment.key}
-                            ref={(node) => {
-                              if (node) {
-                                sentenceNodeRefs.current.set(segment.key, node);
-                              } else {
-                                sentenceNodeRefs.current.delete(segment.key);
-                              }
-                            }}
-                            className={`group/sentence scroll-mt-24 rounded-2xl transition-colors ${
-                              isCurrentSentence ? 'bg-blue-50/30' : ''
-                            }`}
-                          >
-                            <div className="mb-2 flex items-center gap-2">
-                              <button
-                                type="button"
-                                onClick={() => playSentence(segment)}
-                                className={`inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border transition-all ${
-                                  isCurrentSentence && playbackMode === 'sentence'
-                                    ? 'border-blue-600 bg-blue-600 text-white shadow-sm shadow-blue-500/20'
-                                    : 'border-blue-100 bg-white text-blue-600 hover:border-blue-200 hover:bg-blue-50'
-                                }`}
-                                aria-label="朗读句子"
-                              >
-                                <Volume2 size={14} />
-                              </button>
-                              <span className="text-[11px] font-black uppercase tracking-[0.16em] text-gray-400">
-                                句子 {segment.sentenceIndex + 1}
-                              </span>
-                            </div>
-
-                            <p className="whitespace-pre-wrap text-[18px] leading-9 text-gray-900 md:text-[19px] md:leading-[2.15rem]">
-                              {segment.tokens.map((token, tokenIndex) => {
-                                const wordKey = `${segment.key}-${tokenIndex}`;
-
-                                if (!token.isWordLike) {
-                                  return <span key={wordKey}>{token.text}</span>;
+                      <div className="space-y-6">
+                        {paragraphSentenceSegments.map((segment) => {
+                          const isCurrentSentence = currentSentenceKey === segment.key;
+                          return (
+                            <div
+                              key={segment.key}
+                              ref={(node) => {
+                                if (node) {
+                                  sentenceNodeRefs.current.set(segment.key, node);
+                                } else {
+                                  sentenceNodeRefs.current.delete(segment.key);
                                 }
+                              }}
+                              className={`group/sentence scroll-mt-24 rounded-2xl transition-colors ${
+                                isCurrentSentence ? 'bg-blue-50/30' : ''
+                              }`}
+                            >
+                              <div className="mb-2 flex items-center gap-2">
+                                <button
+                                  type="button"
+                                  onClick={() => playSentence(segment)}
+                                  className={`inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border transition-all ${
+                                    isCurrentSentence && playbackMode === 'sentence'
+                                      ? 'border-blue-600 bg-blue-600 text-white shadow-sm shadow-blue-500/20'
+                                      : 'border-blue-100 bg-white text-blue-600 hover:border-blue-200 hover:bg-blue-50'
+                                  }`}
+                                  aria-label="朗读句子"
+                                >
+                                  <Volume2 size={14} />
+                                </button>
+                                <span className="text-[11px] font-black uppercase tracking-[0.16em] text-gray-400">
+                                  句子 {segment.sentenceIndex + 1}
+                                </span>
+                              </div>
 
-                                const isCurrentWord = currentWordKey === wordKey;
-                                return (
-                                  <button
-                                    key={wordKey}
-                                    type="button"
-                                    onClick={() => playWord(segment, token.text, tokenIndex)}
-                                    className={`inline-flex items-center rounded-[4px] px-0.5 py-0.5 align-baseline transition-colors ${
-                                      isCurrentWord
-                                        ? 'bg-blue-100 text-blue-700'
-                                        : 'hover:bg-blue-50 hover:text-blue-700'
-                                    }`}
-                                    aria-label={`朗读单词 ${token.text.trim()}`}
-                                  >
-                                    {token.text}
-                                  </button>
-                                );
-                              })}
-                            </p>
-                          </div>
-                        );
-                      })}
+                              <p className="whitespace-pre-wrap text-[18px] leading-9 text-gray-900 md:text-[19px] md:leading-[2.15rem]">
+                                {segment.tokens.map((token, tokenIndex) => {
+                                  const wordKey = `${segment.key}-${tokenIndex}`;
+
+                                  if (!token.isWordLike) {
+                                    return <span key={wordKey}>{token.text}</span>;
+                                  }
+
+                                  const isCurrentWord = currentWordKey === wordKey;
+                                  return (
+                                    <button
+                                      key={wordKey}
+                                      type="button"
+                                      onClick={() => playWord(segment, token.text, tokenIndex)}
+                                      className={`inline-flex items-center rounded-[4px] px-0.5 py-0.5 align-baseline transition-colors ${
+                                        isCurrentWord
+                                          ? 'bg-blue-100 text-blue-700'
+                                          : 'hover:bg-blue-50 hover:text-blue-700'
+                                      }`}
+                                      aria-label={`朗读单词 ${token.text.trim()}`}
+                                    >
+                                      {token.text}
+                                    </button>
+                                  );
+                                })}
+                              </p>
+                            </div>
+                          );
+                        })}
+                      </div>
+
+                      <p className="mt-5 border-l-2 border-blue-100 pl-4 text-[14px] leading-7 text-gray-500 italic md:text-[15px] md:leading-7">
+                        {paragraph.zh || '该段译文正在生成...'}
+                      </p>
+                    </section>
+                  );
+                })
+              ) : (
+                <section className="rounded-[24px] border border-gray-200 bg-white px-5 py-6 md:px-8 md:py-8">
+                  <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+                    <button
+                      type="button"
+                      onClick={() => playArticleFromIndex(0)}
+                      className="inline-flex items-center gap-2 rounded-full border border-blue-50 bg-white px-3 py-1.5 text-[12px] font-bold text-blue-600 transition-all hover:bg-blue-50"
+                    >
+                      <Volume2 size={14} /> 朗读全文
+                    </button>
+                    <span className="text-[11px] font-black uppercase tracking-[0.18em] text-gray-400">
+                      全文模式
+                    </span>
+                  </div>
+
+                  <div className="space-y-6">
+                    <div className="rounded-[24px] bg-gray-50/70 p-5 md:p-6">
+                      <p className="text-[18px] leading-9 text-gray-900 md:text-[19px] md:leading-[2.15rem]">
+                        {sentenceSegments.map((segment, segmentIndex) => (
+                          <span key={segment.key}>
+                            <button
+                              type="button"
+                              ref={(node) => {
+                                if (node) {
+                                  sentenceNodeRefs.current.set(segment.key, node);
+                                } else {
+                                  sentenceNodeRefs.current.delete(segment.key);
+                                }
+                              }}
+                              onClick={() => playSentence(segment)}
+                              className={`inline-flex items-center rounded-[6px] px-0.5 py-0.5 align-baseline transition-colors ${
+                                currentSentenceKey === segment.key
+                                  ? 'bg-blue-100 text-blue-700'
+                                  : 'hover:bg-blue-50 hover:text-blue-700'
+                              }`}
+                              aria-label={`朗读句子 ${segmentIndex + 1}`}
+                            >
+                              {segment.text}
+                            </button>
+                            {segmentIndex < sentenceSegments.length - 1 ? ' ' : ''}
+                          </span>
+                        ))}
+                      </p>
                     </div>
 
-                    <p className="mt-5 border-l-2 border-blue-100 pl-4 text-[14px] leading-7 text-gray-500 italic md:text-[15px] md:leading-7">
-                      {paragraph.zh || '该段译文正在生成...'}
-                    </p>
-                  </section>
-                );
-              })}
+                    <div className="rounded-[24px] border border-blue-100 bg-blue-50/30 p-5 md:p-6">
+                      <p className="text-[14px] font-black uppercase tracking-widest text-blue-600">中文全文</p>
+                      <p className="mt-3 whitespace-pre-wrap text-[15px] leading-8 text-gray-700 md:text-[16px] md:leading-8">
+                        {fullChineseText || '该篇译文正在生成...'}
+                      </p>
+                    </div>
+                  </div>
+                </section>
+              )}
             </div>
           </section>
         </main>
@@ -597,32 +780,6 @@ export default function ArticleReadPage() {
               >
                 <Square size={15} /> 停止播放
               </button>
-            </section>
-
-            <section className="rounded-[24px] border border-gray-200 bg-white p-5 shadow-sm">
-              <div className="text-[13px] font-black uppercase tracking-widest text-gray-500">文章信息</div>
-              <div className="mt-4 space-y-3 text-[14px] text-gray-600">
-                <div className="flex items-center justify-between gap-4">
-                  <span>日期</span>
-                  <span className="font-bold text-gray-900">{article.date}</span>
-                </div>
-                <div className="flex items-center justify-between gap-4">
-                  <span>来源</span>
-                  <span className="max-w-[180px] truncate font-bold text-gray-900">{article.source}</span>
-                </div>
-                <div className="flex items-center justify-between gap-4">
-                  <span>段落</span>
-                  <span className="font-bold text-gray-900">{article.paragraphs.length}</span>
-                </div>
-                <div className="flex items-center justify-between gap-4">
-                  <span>词汇</span>
-                  <span className="font-bold text-gray-900">{article.vocabulary.length}</span>
-                </div>
-                <div className="flex items-center justify-between gap-4">
-                  <span>当前语速</span>
-                  <span className="font-bold text-gray-900">{currentSpeedLabel}</span>
-                </div>
-              </div>
             </section>
 
             <section className="rounded-[24px] border border-gray-200 bg-white p-5 shadow-sm">

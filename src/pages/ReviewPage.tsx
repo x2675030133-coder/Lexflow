@@ -9,6 +9,8 @@ import { isWordPending } from '../utils/studyFlow';
 import { loadWordLists } from '../utils/wordListService';
 import { speakText } from '../utils/settings';
 import { useStopMediaOnUnmount } from '../hooks/useStopMediaOnUnmount';
+import { useStudyTimeTracker } from '../hooks/useStudyTimeTracker';
+import { getPrimaryMeaning } from '../data/wordUsageNotes';
 
 type ReviewMode = 'mixed' | 'enToZh' | 'zhToEn' | 'typing' | 'audio';
 type Stage = 'select' | 'practice';
@@ -34,7 +36,7 @@ function shuffle<T>(items: T[]) {
 }
 
 function mainZh(word: Word) {
-  return word.definitions[0]?.zh || '暂无释义';
+  return getPrimaryMeaning(word);
 }
 
 function uniqueStrings(items: string[]) {
@@ -82,6 +84,7 @@ export default function ReviewPage() {
   const resultTimerRef = useRef<number | null>(null);
 
   useStopMediaOnUnmount();
+  useStudyTimeTracker(stage === 'practice');
 
   function clearResultTimer() {
     if (resultTimerRef.current !== null) {
@@ -306,8 +309,8 @@ export default function ReviewPage() {
         : '通过听力选择单词';
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-12 animate-in fade-in duration-500">
-      <div className="mb-10 flex items-center justify-between">
+    <div className="mx-auto max-w-4xl px-4 py-6 sm:py-8 animate-in fade-in duration-500">
+      <div className="mb-5 flex items-center justify-between">
         <button 
           onClick={() => {
             resetQuestionState();
@@ -322,8 +325,8 @@ export default function ReviewPage() {
         </div>
       </div>
 
-      <section className={`overflow-hidden rounded-[40px] bg-white shadow-2xl shadow-black/5 transition-all duration-500 ${feedback === 'wrong' ? 'animate-apple-shake' : feedback === 'correct' ? 'animate-apple-pop' : ''}`}>
-        <div className="bg-orange-50/50 px-8 py-20 text-center relative overflow-hidden">
+      <section className={`overflow-hidden rounded-[32px] bg-white shadow-2xl shadow-black/5 transition-all duration-500 ${feedback === 'wrong' ? 'animate-apple-shake' : feedback === 'correct' ? 'animate-apple-pop' : ''}`}>
+        <div className="bg-orange-50/50 px-6 py-10 text-center relative overflow-hidden sm:px-8 sm:py-12">
           <div className="absolute top-0 left-0 w-full h-full opacity-30 pointer-events-none">
             <div className="absolute top-[-50%] left-[-10%] w-[60%] h-[120%] bg-orange-100 blur-[100px] rounded-full" />
             <div className="absolute bottom-[-50%] right-[-10%] w-[60%] h-[120%] bg-yellow-50 blur-[100px] rounded-full" />
@@ -332,18 +335,18 @@ export default function ReviewPage() {
           <div className="relative z-10">
             {showWord ? (
               <>
-                <div className="flex items-center justify-center gap-6 mb-4">
-                  <h1 className="text-7xl font-black text-[#1d1d1f] tracking-tighter">{currentWord.word}</h1>
+                <div className="flex items-center justify-center gap-4 mb-2 sm:gap-5">
+                  <h1 className="text-5xl font-black text-[#1d1d1f] tracking-tighter sm:text-6xl">{currentWord.word}</h1>
                   <button
                     type="button"
                     onClick={() => speakText(currentWord.word)}
                     aria-label={`朗读 ${currentWord.word}`}
-                    className="flex h-16 w-16 items-center justify-center rounded-full bg-white text-orange-600 shadow-xl shadow-orange-500/10 transition-all hover:scale-110 active:scale-90"
+                    className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white text-orange-600 shadow-xl shadow-orange-500/10 transition-all hover:scale-110 active:scale-90 sm:h-14 sm:w-14"
                   >
-                    <Volume2 size={28} />
+                    <Volume2 size={24} />
                   </button>
                 </div>
-                <p className="text-2xl font-bold text-[#86868b] tracking-tight italic opacity-60">{currentWord.phonetic}</p>
+                <p className="text-xl font-bold text-[#86868b] tracking-tight italic opacity-60 sm:text-2xl">{currentWord.phonetic}</p>
               </>
             ) : actualMode === 'audio' ? (
               <button 
@@ -360,10 +363,10 @@ export default function ReviewPage() {
           </div>
         </div>
 
-        <div className="p-10">
-          <div className="mb-8 rounded-3xl bg-[#f5f5f7] px-8 py-6 text-center">
-            <div className="text-[#86868b] text-[13px] font-black uppercase tracking-widest mb-2">当前提示</div>
-            <div className="text-[22px] font-black text-[#1d1d1f]">{promptText}</div>
+        <div className="p-6 sm:p-8">
+          <div className="mb-5 rounded-3xl bg-[#f5f5f7] px-6 py-4 text-center">
+            <div className="text-[#86868b] text-[12px] font-black uppercase tracking-widest mb-1">当前提示</div>
+            <div className="text-[20px] font-black text-[#1d1d1f]">{promptText}</div>
           </div>
 
           {actualMode === 'typing' ? (
@@ -388,7 +391,7 @@ export default function ReviewPage() {
               </div>
             </div>
           ) : (
-            <div className="grid gap-4">
+            <div className="grid gap-3">
               {options.map((option, optionIndex) => {
                 const correctAnswer = actualMode === 'enToZh' ? mainZh(currentWord) : currentWord.word;
                 const isSelected = selected === option;
@@ -406,7 +409,7 @@ export default function ReviewPage() {
                     key={option} 
                     onClick={() => answer(option)} 
                     disabled={feedback !== null}
-                    className={`flex w-full items-center gap-6 rounded-3xl border-2 px-8 py-6 text-left text-[19px] font-bold transition-all duration-300 active:scale-[0.98] shadow-md hover:shadow-xl disabled:cursor-default ${stateClass}`}
+                    className={`flex min-h-16 w-full items-center gap-5 rounded-3xl border-2 px-6 py-4 text-left text-[18px] font-bold transition-all duration-300 active:scale-[0.98] shadow-md hover:shadow-xl disabled:cursor-default ${stateClass}`}
                   >
                     <span className="font-black text-[#d2d2d7] text-[16px]">{String.fromCharCode(65 + optionIndex)}</span>
                     {option}
@@ -416,7 +419,7 @@ export default function ReviewPage() {
             </div>
           )}
           
-          <div className="mt-8 flex justify-center">
+          <div className="mt-5 flex justify-center">
             {feedback === 'wrong' && (
               <div className="flex flex-col gap-2 rounded-2xl bg-red-50 px-5 py-3 text-red-600 font-black animate-in slide-in-from-top-2 duration-300">
                 <div className="flex items-center gap-2">

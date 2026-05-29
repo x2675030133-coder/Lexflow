@@ -1390,16 +1390,12 @@
     ],
     "definitions": [
       {
-        "en": "conj. In case that; granting, allowing, or supposing that; --",
-        "zh": "conj. 如果, 是否, 无论何时, 假设, 即使"
+        "en": "conj. In case that; granting, allowing, or supposing that; introducing a condition or supposition.",
+        "zh": "conj. ???????????"
       },
       {
-        "en": "   introducing a condition or supposition.",
-        "zh": "n. 条件"
-      },
-      {
-        "en": "conj. Whether; -- in dependent questions.",
-        "zh": "[计] DOS批处理命令:根据所测试的条件决定是否执行另一条命令"
+        "en": "conj. Whether; used in indirect questions.",
+        "zh": "conj. ?????????"
       }
     ],
     "examples": [

@@ -1,4 +1,6 @@
 import type { DailyStats, LearningRecord, UserProgress } from '../data/types';
+import { isSupabaseConfigured, supabase } from '../lib/supabase';
+import type { PronunciationProgress } from './pronunciationProgress';
 import { createDefaultProgress } from './storage';
 import {
   clearProgressScope,
@@ -15,8 +17,11 @@ export interface AccountProgressSnapshot {
   progress: UserProgress;
   dailyStats: DailyStats[];
   reading: string[];
+  readingComplete: string[];
+  readingStudy: unknown;
   listening: string[];
   podcasts: string[];
+  pronunciation: PronunciationProgress;
   updatedAt: string;
 }
 
@@ -24,8 +29,16 @@ const EMPTY_SNAPSHOT: AccountProgressSnapshot = {
   progress: createDefaultProgress(),
   dailyStats: [],
   reading: [],
+  readingComplete: [],
+  readingStudy: { articles: {}, updatedAt: '' },
   listening: [],
   podcasts: [],
+  pronunciation: {
+    favorites: [],
+    practiced: [],
+    lastSelectedId: '',
+    updatedAt: '',
+  },
   updatedAt: '',
 };
 
@@ -58,6 +71,20 @@ function asStats(value: unknown): DailyStats[] {
       timeSpent: Number((item as DailyStats).timeSpent || 0),
     }))
     .filter((item) => Boolean(item.date));
+}
+
+function asPlainObject<T>(value: unknown, fallback: T): T {
+  return value && typeof value === 'object' && !Array.isArray(value) ? value as T : fallback;
+}
+
+function asPronunciation(value: unknown): PronunciationProgress {
+  const progress = asPlainObject<Partial<PronunciationProgress>>(value, {});
+  return {
+    favorites: asArray(progress.favorites),
+    practiced: asArray(progress.practiced),
+    lastSelectedId: String(progress.lastSelectedId || '').trim(),
+    updatedAt: String(progress.updatedAt || ''),
+  };
 }
 
 function asRecord(value: unknown, wordId: string): LearningRecord | null {
@@ -155,8 +182,11 @@ function readSnapshotForScope(scope: string): AccountProgressSnapshot {
     progress,
     dailyStats: asStats(readScopedJson<DailyStats[]>(STORAGE_BASE_KEYS.dailyStats, [], nextScope)),
     reading: asArray(readScopedJson<string[]>(STORAGE_BASE_KEYS.reading, [], nextScope)),
+    readingComplete: asArray(readScopedJson<string[]>(STORAGE_BASE_KEYS.readingComplete, [], nextScope)),
+    readingStudy: asPlainObject(readScopedJson<unknown>(STORAGE_BASE_KEYS.readingStudy, { articles: {}, updatedAt: '' }, nextScope), { articles: {}, updatedAt: '' }),
     listening: asArray(readScopedJson<string[]>(STORAGE_BASE_KEYS.listening, [], nextScope)),
     podcasts: asArray(readScopedJson<string[]>(STORAGE_BASE_KEYS.podcast, [], nextScope)),
+    pronunciation: asPronunciation(readScopedJson<PronunciationProgress>(STORAGE_BASE_KEYS.pronunciation, EMPTY_SNAPSHOT.pronunciation, nextScope)),
     updatedAt: progress.updatedAt || '',
   };
 }
@@ -171,8 +201,11 @@ function writeSnapshotForScope(scope: string, snapshot: AccountProgressSnapshot)
   writeScopedJson(STORAGE_BASE_KEYS.progress, stampedProgress, nextScope);
   writeScopedJson(STORAGE_BASE_KEYS.dailyStats, snapshot.dailyStats.slice(-30), nextScope);
   writeScopedJson(STORAGE_BASE_KEYS.reading, Array.from(new Set(snapshot.reading)), nextScope);
+  writeScopedJson(STORAGE_BASE_KEYS.readingComplete, Array.from(new Set(snapshot.readingComplete)), nextScope);
+  writeScopedJson(STORAGE_BASE_KEYS.readingStudy, asPlainObject(snapshot.readingStudy, { articles: {}, updatedAt: '' }), nextScope);
   writeScopedJson(STORAGE_BASE_KEYS.listening, Array.from(new Set(snapshot.listening)), nextScope);
   writeScopedJson(STORAGE_BASE_KEYS.podcast, Array.from(new Set(snapshot.podcasts)), nextScope);
+  writeScopedJson(STORAGE_BASE_KEYS.pronunciation, asPronunciation(snapshot.pronunciation), nextScope);
   emitProgressChanged();
 }
 
@@ -220,6 +253,43 @@ function mergeProgress(primary: UserProgress, secondary: UserProgress): UserProg
   };
 }
 
+function mergeReadingStudy(primary: unknown, secondary: unknown): unknown {
+  const left = asPlainObject<{ articles?: Record<string, unknown>; updatedAt?: string }>(secondary, {});
+  const right = asPlainObject<{ articles?: Record<string, unknown>; updatedAt?: string }>(primary, {});
+  return {
+    ...left,
+    ...right,
+    articles: {
+      ...(left.articles || {}),
+      ...(right.articles || {}),
+    },
+    updatedAt: right.updatedAt || left.updatedAt || '',
+  };
+}
+
+function mergePronunciation(primary: PronunciationProgress, secondary: PronunciationProgress): PronunciationProgress {
+  return {
+    favorites: Array.from(new Set([...(secondary.favorites || []), ...(primary.favorites || [])])),
+    practiced: Array.from(new Set([...(secondary.practiced || []), ...(primary.practiced || [])])),
+    lastSelectedId: primary.lastSelectedId || secondary.lastSelectedId || '',
+    updatedAt: primary.updatedAt || secondary.updatedAt || '',
+  };
+}
+
+function normalizeSnapshotPayload(data: Partial<AccountProgressSnapshot> | null | undefined, fallbackUpdatedAt = ''): AccountProgressSnapshot {
+  return {
+    progress: normalizeProgress(data?.progress),
+    dailyStats: asStats(data?.dailyStats),
+    reading: asArray(data?.reading),
+    readingComplete: asArray(data?.readingComplete),
+    readingStudy: asPlainObject(data?.readingStudy, { articles: {}, updatedAt: '' }),
+    listening: asArray(data?.listening),
+    podcasts: asArray(data?.podcasts),
+    pronunciation: asPronunciation(data?.pronunciation),
+    updatedAt: String(data?.updatedAt || fallbackUpdatedAt || ''),
+  };
+}
+
 export function readCurrentAccountSnapshot(scope = getActiveScope()): AccountProgressSnapshot {
   return readSnapshotForScope(scope);
 }
@@ -235,8 +305,11 @@ export function isAccountSnapshotEmpty(snapshot: AccountProgressSnapshot): boole
     Object.keys(snapshot.progress.records).length === 0 &&
     snapshot.dailyStats.length === 0 &&
     snapshot.reading.length === 0 &&
+    snapshot.readingComplete.length === 0 &&
     snapshot.listening.length === 0 &&
-    snapshot.podcasts.length === 0
+    snapshot.podcasts.length === 0 &&
+    snapshot.pronunciation.favorites.length === 0 &&
+    snapshot.pronunciation.practiced.length === 0
   );
 }
 
@@ -250,13 +323,57 @@ export function mergeAccountSnapshots(primary: AccountProgressSnapshot, secondar
     progress: mergeProgress(newer.progress, older.progress),
     dailyStats: mergeDailyStats(newer.dailyStats, older.dailyStats),
     reading: Array.from(new Set([...(newer.reading || []), ...(older.reading || [])])),
+    readingComplete: Array.from(new Set([...(newer.readingComplete || []), ...(older.readingComplete || [])])),
+    readingStudy: mergeReadingStudy(newer.readingStudy, older.readingStudy),
     listening: Array.from(new Set([...(newer.listening || []), ...(older.listening || [])])),
     podcasts: Array.from(new Set([...(newer.podcasts || []), ...(older.podcasts || [])])),
+    pronunciation: mergePronunciation(newer.pronunciation, older.pronunciation),
     updatedAt: newer.updatedAt || older.updatedAt || now(),
   };
 }
 
-export async function fetchAccountSnapshot(email: string): Promise<AccountProgressSnapshot | null> {
+async function fetchAccountSnapshotFromSupabase(userId: string): Promise<AccountProgressSnapshot | null> {
+  if (!isSupabaseConfigured || !userId) return null;
+
+  const { data, error } = await supabase
+    .from('account_progress')
+    .select('snapshot, updated_at')
+    .eq('user_id', userId)
+    .maybeSingle();
+
+  if (error) return null;
+  if (!data) return null;
+
+  return normalizeSnapshotPayload(data.snapshot as Partial<AccountProgressSnapshot>, String(data.updated_at || ''));
+}
+
+async function saveAccountSnapshotToSupabase(
+  email: string,
+  userId: string,
+  snapshot: AccountProgressSnapshot,
+): Promise<boolean> {
+  if (!isSupabaseConfigured || !userId) return false;
+
+  const updatedAt = now();
+  const { error } = await supabase
+    .from('account_progress')
+    .upsert({
+      user_id: userId,
+      email: String(email || '').trim().toLowerCase(),
+      snapshot: {
+        ...snapshot,
+        updatedAt,
+      },
+      updated_at: updatedAt,
+    }, { onConflict: 'user_id' });
+
+  return !error;
+}
+
+export async function fetchAccountSnapshot(email: string, userId = ''): Promise<AccountProgressSnapshot | null> {
+  const supabaseSnapshot = await fetchAccountSnapshotFromSupabase(userId);
+  if (supabaseSnapshot) return supabaseSnapshot;
+
   const normalizedEmail = String(email || '').trim().toLowerCase();
   if (!normalizedEmail) return null;
 
@@ -270,20 +387,16 @@ export async function fetchAccountSnapshot(email: string): Promise<AccountProgre
     }
 
     const data = (await response.json()) as Partial<AccountProgressSnapshot> & { email?: string };
-    return {
-      progress: normalizeProgress(data.progress),
-      dailyStats: asStats(data.dailyStats),
-      reading: asArray(data.reading),
-      listening: asArray(data.listening),
-      podcasts: asArray(data.podcasts),
-      updatedAt: String(data.updatedAt || ''),
-    };
+    return normalizeSnapshotPayload(data, String(data.updatedAt || ''));
   } catch {
     return null;
   }
 }
 
-export async function saveAccountSnapshot(email: string, snapshot: AccountProgressSnapshot): Promise<boolean> {
+export async function saveAccountSnapshot(email: string, snapshot: AccountProgressSnapshot, userId = ''): Promise<boolean> {
+  const savedToSupabase = await saveAccountSnapshotToSupabase(email, userId, snapshot);
+  if (savedToSupabase) return true;
+
   const normalizedEmail = String(email || '').trim().toLowerCase();
   if (!normalizedEmail) return false;
 
@@ -308,6 +421,9 @@ export async function saveAccountSnapshot(email: string, snapshot: AccountProgre
         listening: stampedSnapshot.listening,
         podcasts: stampedSnapshot.podcasts,
         reading: stampedSnapshot.reading,
+        readingComplete: stampedSnapshot.readingComplete,
+        readingStudy: stampedSnapshot.readingStudy,
+        pronunciation: stampedSnapshot.pronunciation,
       }),
     });
 
@@ -317,7 +433,7 @@ export async function saveAccountSnapshot(email: string, snapshot: AccountProgre
   }
 }
 
-export async function hydrateAccountProgress(email: string): Promise<AccountProgressSnapshot> {
+export async function hydrateAccountProgress(email: string, userId = ''): Promise<AccountProgressSnapshot> {
   const normalizedEmail = String(email || '').trim().toLowerCase();
   if (!normalizedEmail) {
     return readSnapshotForScope(DEFAULT_SCOPE);
@@ -327,7 +443,7 @@ export async function hydrateAccountProgress(email: string): Promise<AccountProg
   try {
     const accountSnapshot = readSnapshotForScope(normalizedEmail);
     const guestSnapshot = readSnapshotForScope(DEFAULT_SCOPE);
-    const remoteSnapshot = (await fetchAccountSnapshot(normalizedEmail)) ?? EMPTY_SNAPSHOT;
+    const remoteSnapshot = (await fetchAccountSnapshot(normalizedEmail, userId)) ?? EMPTY_SNAPSHOT;
     const merged = mergeAccountSnapshots(
       mergeAccountSnapshots(accountSnapshot, guestSnapshot),
       remoteSnapshot,
@@ -339,7 +455,7 @@ export async function hydrateAccountProgress(email: string): Promise<AccountProg
     }
 
     if (!isAccountSnapshotEmpty(merged)) {
-      await saveAccountSnapshot(normalizedEmail, merged);
+      await saveAccountSnapshot(normalizedEmail, merged, userId);
     }
 
     return merged;
@@ -348,7 +464,7 @@ export async function hydrateAccountProgress(email: string): Promise<AccountProg
   }
 }
 
-export function scheduleAccountUpload(email: string): void {
+export function scheduleAccountUpload(email: string, userId = ''): void {
   const normalizedEmail = String(email || '').trim().toLowerCase();
   if (!normalizedEmail || suppressUploads) return;
 
@@ -361,7 +477,7 @@ export function scheduleAccountUpload(email: string): void {
     pendingUploads.delete(normalizedEmail);
     const snapshot = readSnapshotForScope(normalizedEmail);
     if (isAccountSnapshotEmpty(snapshot)) return;
-    await saveAccountSnapshot(normalizedEmail, snapshot);
+    await saveAccountSnapshot(normalizedEmail, snapshot, userId);
   }, 1200);
 
   pendingUploads.set(normalizedEmail, timer);

@@ -101,8 +101,15 @@ export default function SettingsPage() {
             progress: data.progress || getProgress(),
             dailyStats: Array.isArray(data.dailyStats) ? data.dailyStats : [],
             reading: Array.isArray(data.reading) ? data.reading : [],
+            readingComplete: Array.isArray(data.readingComplete) ? data.readingComplete : [],
+            readingStudy: data.readingStudy && typeof data.readingStudy === 'object' && !Array.isArray(data.readingStudy)
+              ? data.readingStudy
+              : { articles: {}, updatedAt: '' },
             listening: Array.isArray(data.listening) ? data.listening : [],
             podcasts: Array.isArray(data.podcasts) ? data.podcasts : [],
+            pronunciation: data.pronunciation && typeof data.pronunciation === 'object' && !Array.isArray(data.pronunciation)
+              ? data.pronunciation
+              : { favorites: [], practiced: [], lastSelectedId: '', updatedAt: '' },
             updatedAt: String(data.updatedAt || ''),
           };
           writeCurrentAccountSnapshot(nextSnapshot);

@@ -21,6 +21,7 @@ import { getPronunciationProgress } from '../utils/pronunciationProgress';
 import { getReadArticleIds } from '../utils/readingProgress';
 import { loadWordList } from '../utils/wordListService';
 import { getDailyStats, getProgress } from '../utils/storage';
+import { getPrimaryMeaning } from '../data/wordUsageNotes';
 
 type DetailMode = 'today' | 'mastered';
 type DetailTab = 'words' | 'listening' | 'podcasts' | 'reading' | 'pronunciation';
@@ -159,7 +160,7 @@ export default function DashboardPage() {
           return {
             id: record.wordId,
             title: word?.word || record.wordId,
-            subtitle: word?.definitions[0]?.zh || '暂无释义',
+            subtitle: word ? getPrimaryMeaning(word) : '暂无释义',
             meta: `Lv.${record.level} · 对 ${record.correctCount} / 错 ${record.wrongCount}`,
           };
         }),
@@ -176,7 +177,7 @@ export default function DashboardPage() {
           return {
             id: record.wordId,
             title: word?.word || record.wordId,
-            subtitle: word?.definitions[0]?.zh || '暂无释义',
+            subtitle: word ? getPrimaryMeaning(word) : '暂无释义',
             meta: `Lv.${record.level} · 对 ${record.correctCount} / 错 ${record.wrongCount}`,
           };
         }),

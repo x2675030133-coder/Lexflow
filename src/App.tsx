@@ -1,4 +1,4 @@
-﻿import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route, Routes, useLocation, useNavigationType } from 'react-router-dom';
 import { useEffect, type ReactNode } from 'react';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import Navbar from './components/Navbar';
@@ -56,12 +56,18 @@ function RequireAuth({ children }: { children: ReactNode }) {
 
 function AppRoutes() {
   const location = useLocation();
+  const navigationType = useNavigationType();
 
   useEffect(() => {
     return () => {
       stopPageMedia();
     };
   }, [location.pathname, location.search, location.hash]);
+
+  useEffect(() => {
+    if (navigationType === 'POP') return;
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  }, [location.pathname, location.search, location.hash, navigationType]);
 
   return (
     <div className="page-enter">
@@ -125,4 +131,3 @@ export default function App() {
     </BrowserRouter>
   );
 }
-

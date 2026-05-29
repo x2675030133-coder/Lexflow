@@ -6,6 +6,8 @@ import type { Word } from '../data/types';
 import { getProgress, saveProgress } from '../utils/storage';
 import { findWordById, loadWordList } from '../utils/wordListService';
 import { useStopMediaOnUnmount } from '../hooks/useStopMediaOnUnmount';
+import { useStudyTimeTracker } from '../hooks/useStudyTimeTracker';
+import { getPrimaryMeaning } from '../data/wordUsageNotes';
 
 export default function WordbookPage() {
   const [progress, setProgress] = useState(getProgress());
@@ -13,6 +15,7 @@ export default function WordbookPage() {
   const [loading, setLoading] = useState(true);
 
   useStopMediaOnUnmount();
+  useStudyTimeTracker(true);
 
   useEffect(() => {
     const refresh = () => setProgress(getProgress());
@@ -117,7 +120,7 @@ export default function WordbookPage() {
                         {word.word}
                       </Link>
                       <span className="ml-2 text-sm text-gray-400">{word.phonetic}</span>
-                      <p className="mt-0.5 text-sm text-gray-500">{word.definitions[0].zh}</p>
+                      <p className="mt-0.5 text-sm text-gray-500">{getPrimaryMeaning(word)}</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-2">

@@ -5,7 +5,9 @@ import {
   TrendingUp, User, Lock, RefreshCw, ShieldCheck, ChevronRight
 } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
+import { getStoredAvatar, PROFILE_CHANGED_EVENT } from '../utils/profileStorage';
 import { getProgress, getDailyStats } from '../utils/storage';
+import { formatStudyDuration } from '../utils/studyTime';
 
 const T = {
   signOut: '退出登录',
@@ -34,6 +36,7 @@ export default function ProfilePage() {
   const navigate = useNavigate();
   const [progress, setProgress] = useState(() => getProgress());
   const [stats, setStats] = useState(() => getDailyStats());
+  const [avatarDataUrl, setAvatarDataUrl] = useState(() => getStoredAvatar(user?.email));
 
   const [showLogoutConfirm, setShowLogoutConfirm] = useState(false);
   const [isLoggingOut, setIsLoggingOut] = useState(false);
@@ -52,6 +55,18 @@ export default function ProfilePage() {
       window.removeEventListener('el-progress-changed', refresh as EventListener);
     };
   }, []);
+
+  useEffect(() => {
+    const refreshAvatar = () => setAvatarDataUrl(getStoredAvatar(user?.email));
+
+    refreshAvatar();
+    window.addEventListener('storage', refreshAvatar);
+    window.addEventListener(PROFILE_CHANGED_EVENT, refreshAvatar);
+    return () => {
+      window.removeEventListener('storage', refreshAvatar);
+      window.removeEventListener(PROFILE_CHANGED_EVENT, refreshAvatar);
+    };
+  }, [user?.email]);
 
   const handleLogout = async () => {
     // 1. Immediate UI Feedback
@@ -89,7 +104,7 @@ export default function ProfilePage() {
   const metrics = [
     { icon: BookOpen, label: '已学单词', value: totalWords, color: '#0071e3' },
     { icon: Flame, label: '连续天数', value: progress.streak, color: '#ff9500' },
-    { icon: Clock, label: '学习时长', value: `${totalTimeMinutes}m`, color: '#34c759' },
+    { icon: Clock, label: '学习时长', value: formatStudyDuration(totalTimeMinutes), color: '#34c759' },
     { icon: Target, label: '平均准确率', value: `${avgCorrectRate}%`, color: '#af52de' },
   ];
 
@@ -113,8 +128,12 @@ export default function ProfilePage() {
 
       {/* Profile Header */}
       <section className="apple-card p-8 mb-8 flex flex-col sm:flex-row items-center gap-8">
-        <div className="w-24 h-24 bg-gradient-to-br from-[#0071e3] to-[#5856d6] rounded-[32px] flex items-center justify-center text-white text-4xl font-black shadow-xl shadow-blue-500/20">
-          {username.charAt(0).toUpperCase()}
+        <div className="w-24 h-24 bg-gradient-to-br from-[#0071e3] to-[#5856d6] rounded-[32px] flex items-center justify-center overflow-hidden text-white text-4xl font-black shadow-xl shadow-blue-500/20">
+          {avatarDataUrl ? (
+            <img src={avatarDataUrl} alt="用户头像" className="h-full w-full object-cover" />
+          ) : (
+            username.charAt(0).toUpperCase()
+          )}
         </div>
         <div className="flex-1 text-center sm:text-left">
           <h1 className="text-[32px] font-black tracking-tight">{username}</h1>

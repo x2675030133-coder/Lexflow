@@ -25,6 +25,7 @@ import {
 } from '../data/phonetics';
 import { PronunciationRecordingCard } from '../components/PronunciationRecordingCard';
 import { useStopMediaOnUnmount } from '../hooks/useStopMediaOnUnmount';
+import { useStudyTimeTracker } from '../hooks/useStudyTimeTracker';
 import { getSettings, saveSettings } from '../utils/settings';
 import { speakPlayback, stopSpeechPlayback } from '../utils/speechPlayback';
 import {
@@ -76,6 +77,7 @@ export default function PronunciationPage() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useStopMediaOnUnmount();
+  useStudyTimeTracker(true);
 
   useEffect(() => {
     const refresh = () => setProgress(getPronunciationProgress());

@@ -5,11 +5,14 @@ import { wordLists } from '../data/wordLists';
 import type { UserProgress } from '../data/types';
 import { getProgress } from '../utils/storage';
 import { getWordListMetadata } from '../utils/wordListService';
+import { useStudyTimeTracker } from '../hooks/useStudyTimeTracker';
 
 export default function VocabularyPage() {
   const [progress, setProgress] = useState<UserProgress>(getProgress());
   const [wordCounts, setWordCounts] = useState<Record<string, number>>({});
   const containerRef = useRef<HTMLDivElement>(null);
+
+  useStudyTimeTracker(true);
 
   useEffect(() => {
     const handleStorage = () => setProgress(getProgress());

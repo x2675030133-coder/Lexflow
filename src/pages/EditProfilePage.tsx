@@ -1,16 +1,23 @@
-import { useState } from 'react';
+import { useRef, useState, type ChangeEvent } from 'react';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Camera, Save, Target } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
+import { supabase } from '../lib/supabase';
+import { translateAuthError } from '../utils/authErrors';
+import { getStoredAvatar, PROFILE_CHANGED_EVENT, saveStoredProfile } from '../utils/profileStorage';
 import { getProgress, saveProgress } from '../utils/storage';
 
 export default function EditProfilePage() {
-  const { user } = useAuth();
+  const { user, isConfigured } = useAuth();
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
   const [progress, setProgress] = useState(getProgress());
   const [nickname, setNickname] = useState(user?.user_metadata?.username || user?.email?.split('@')[0] || '');
+  const [avatarDataUrl, setAvatarDataUrl] = useState(() => getStoredAvatar(user?.email));
   const [dailyGoal, setDailyGoal] = useState(progress.dailyGoal);
   const [saved, setSaved] = useState(false);
+  const [saving, setSaving] = useState(false);
+  const [error, setError] = useState('');
 
   useEffect(() => {
     const refresh = () => {
@@ -28,12 +35,72 @@ export default function EditProfilePage() {
     };
   }, []);
 
-  const handleSave = () => {
+  useEffect(() => {
+    setNickname(user?.user_metadata?.username || user?.email?.split('@')[0] || '');
+    setAvatarDataUrl(getStoredAvatar(user?.email));
+  }, [user?.email, user?.user_metadata?.username]);
+
+  const handleAvatarChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    setError('');
+
+    if (!file) return;
+
+    if (!['image/jpeg', 'image/png', 'image/gif'].includes(file.type)) {
+      setError('头像只支持 JPG、PNG 或 GIF 格式。');
+      event.target.value = '';
+      return;
+    }
+
+    if (file.size > 2 * 1024 * 1024) {
+      setError('头像文件不能超过 2MB。');
+      event.target.value = '';
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = () => {
+      setAvatarDataUrl(String(reader.result || ''));
+    };
+    reader.onerror = () => {
+      setError('头像读取失败，请重新选择图片。');
+    };
+    reader.readAsDataURL(file);
+  };
+
+  const handleSave = async () => {
+    const nextNickname = nickname.trim();
+    setError('');
+
+    if (!nextNickname) {
+      setError('昵称不能为空。');
+      return;
+    }
+
+    setSaving(true);
+
     const next = { ...progress, dailyGoal: dailyGoal };
     saveProgress(next);
     setProgress(next);
+
+    saveStoredProfile({ avatarDataUrl }, user?.email);
+
+    if (isConfigured) {
+      const { error: updateError } = await supabase.auth.updateUser({
+        data: { username: nextNickname },
+      });
+
+      if (updateError) {
+        setSaving(false);
+        setError(translateAuthError(updateError.message) || '个人资料保存失败，请稍后重试。');
+        return;
+      }
+    }
+
+    window.dispatchEvent(new Event(PROFILE_CHANGED_EVENT));
+    setSaving(false);
     setSaved(true);
-    setTimeout(() => setSaved(false), 2000);
+    window.setTimeout(() => setSaved(false), 2000);
   };
 
   return (
@@ -53,15 +120,34 @@ export default function EditProfilePage() {
           <h2 className="text-[20px] font-black text-[#1d1d1f] mb-8">更换头像</h2>
           <div className="flex items-center gap-10">
             <div className="relative group">
-              <div className="w-24 h-24 bg-[#0071e3] rounded-[28px] flex items-center justify-center text-white text-3xl font-black shadow-xl shadow-blue-500/20">
-                {nickname.charAt(0).toUpperCase()}
+              <div className="w-24 h-24 bg-[#0071e3] rounded-[28px] flex items-center justify-center overflow-hidden text-white text-3xl font-black shadow-xl shadow-blue-500/20">
+                {avatarDataUrl ? (
+                  <img src={avatarDataUrl} alt="头像预览" className="h-full w-full object-cover" />
+                ) : (
+                  nickname.charAt(0).toUpperCase()
+                )}
               </div>
-              <button className="absolute -bottom-2 -right-2 w-10 h-10 bg-white rounded-full shadow-lg border border-[#d2d2d7]/30 flex items-center justify-center text-[#1d1d1f] hover:scale-110 transition-transform">
+              <button
+                type="button"
+                onClick={() => fileInputRef.current?.click()}
+                className="absolute -bottom-2 -right-2 w-10 h-10 bg-white rounded-full shadow-lg border border-[#d2d2d7]/30 flex items-center justify-center text-[#1d1d1f] hover:scale-110 transition-transform"
+              >
                 <Camera className="w-5 h-5" />
               </button>
             </div>
             <div>
-              <button className="px-6 py-3 bg-[#f5f5f7] text-[#1d1d1f] rounded-xl text-sm font-bold hover:bg-[#e8e8ed] transition-colors mb-2">
+              <input
+                ref={fileInputRef}
+                type="file"
+                accept="image/jpeg,image/png,image/gif"
+                className="hidden"
+                onChange={handleAvatarChange}
+              />
+              <button
+                type="button"
+                onClick={() => fileInputRef.current?.click()}
+                className="px-6 py-3 bg-[#f5f5f7] text-[#1d1d1f] rounded-xl text-sm font-bold hover:bg-[#e8e8ed] transition-colors mb-2"
+              >
                 上传新头像
               </button>
               <p className="text-xs text-[#86868b] font-medium">支持 JPG、PNG 或 GIF。最大 2MB。</p>
@@ -91,7 +177,13 @@ export default function EditProfilePage() {
                 disabled
                 className="w-full px-6 py-4 rounded-2xl bg-[#f5f5f7] text-[17px] font-bold text-[#1d1d1f]/40 cursor-not-allowed outline-none"
               />
-              <p className="mt-2 text-xs text-[#86868b] font-medium">邮箱地址暂不支持自行修改。如需变更请联系技术支持。</p>
+              <p className="mt-2 text-xs text-[#86868b] font-medium">
+                邮箱地址可在
+                <Link to="/help/account/security" className="mx-1 font-black text-[#0071e3] no-underline hover:underline">
+                  安全性与密码
+                </Link>
+                页面更改。
+              </p>
             </div>
           </div>
         </section>
@@ -126,16 +218,18 @@ export default function EditProfilePage() {
           </div>
         </section>
 
+        {error && <p className="text-center text-sm font-bold text-[#ff3b30]">{error}</p>}
+
         <button
           onClick={handleSave}
-          disabled={saved}
+          disabled={saved || saving}
           className={`w-full py-5 rounded-[24px] flex items-center justify-center gap-3 text-[18px] font-black transition-all active:scale-[0.98] shadow-xl ${
             saved 
             ? 'bg-[#34c759] text-white shadow-green-500/20' 
             : 'bg-[#0071e3] text-white hover:bg-[#0077ed] shadow-blue-500/20'
           }`}
         >
-          {saved ? <><Save className="w-5 h-5" /> 已保存</> : '保存所有修改'}
+          {saved ? <><Save className="w-5 h-5" /> 已保存</> : saving ? '正在保存...' : '保存所有修改'}
         </button>
       </div>
     </div>

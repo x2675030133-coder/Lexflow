@@ -46,7 +46,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       setActiveScope(nextUser.email);
 
       try {
-        await hydrateAccountProgress(nextUser.email);
+        await hydrateAccountProgress(nextUser.email, nextUser.id);
       } catch {
         // Keep the session usable even if sync fails.
       } finally {
@@ -94,12 +94,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
 
     const handleProgressChange = () => {
-      scheduleAccountUpload(email);
+      scheduleAccountUpload(email, user.id);
     };
 
     const handleVisibilityChange = () => {
       if (document.visibilityState === 'visible') {
-        void hydrateAccountProgress(email);
+        void hydrateAccountProgress(email, user.id);
       }
     };
 

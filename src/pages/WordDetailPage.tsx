@@ -17,6 +17,8 @@ import { findWordByWord, loadWordList } from '../utils/wordListService';
 import { findNextNewStudyIndex } from '../utils/studyFlow';
 import { speakText } from '../utils/settings';
 import { useStopMediaOnUnmount } from '../hooks/useStopMediaOnUnmount';
+import { useStudyTimeTracker } from '../hooks/useStudyTimeTracker';
+import { getCommonMeanings, getPrimaryMeaning } from '../data/wordUsageNotes';
 
 const etymologyColors: Record<string, { bg: string; text: string; label: string }> = {
   prefix: { bg: 'bg-blue-100', text: 'text-blue-700', label: '前缀' },
@@ -379,6 +381,7 @@ export default function WordDetailPage() {
   const wordLookup = buildWordLookup([...fallbackWords, ...activeWords]);
 
   useStopMediaOnUnmount();
+  useStudyTimeTracker(true);
 
   useEffect(() => {
     const refresh = () => setProgress(getProgress());
@@ -435,6 +438,8 @@ export default function WordDetailPage() {
   const nextWord = nextStudyIndex >= 0 ? activeWords[nextStudyIndex] : null;
   const isFavorite = progress.favorites.includes(wordData.id);
   const record = progress.records[wordData.id];
+  const commonMeanings = getCommonMeanings(wordData);
+  const primaryMeaning = getPrimaryMeaning(wordData);
   const collocations = getCollocationRows(wordData, wordLookup);
 
   const speak = (text: string) => {
@@ -555,7 +560,7 @@ export default function WordDetailPage() {
                       {i < wordData.etymologyParts!.length - 1 && <span className="mx-1">+</span>}
                     </span>
                   ))}
-                  <span className="text-sm text-gray-500 ml-1">→ {wordData.definitions[0].zh}</span>
+                  <span className="text-sm text-gray-500 ml-1">→ {primaryMeaning}</span>
                 </div>
               </div>
             </section>
@@ -569,6 +574,51 @@ export default function WordDetailPage() {
               </h3>
               <div className="bg-purple-50 rounded-xl p-4">
                 <p className="text-gray-700">{wordData.etymology}</p>
+              </div>
+            </section>
+          )}
+
+          {commonMeanings.length > 0 && (
+            <section>
+              <h3 className="flex items-center gap-2 text-base md:text-lg font-bold text-gray-800 mb-2">
+                <BookOpen className="w-5 h-5 text-amber-500" />
+                常用意思
+              </h3>
+              <div className="grid gap-2 md:grid-cols-2">
+                {commonMeanings.map((meaning, index) => (
+                  <div key={`${wordData.id}-meaning-${index}`} className="rounded-xl border border-amber-100 bg-amber-50/65 px-3 py-3">
+                    <div className="flex items-start gap-2.5">
+                      <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-white text-[13px] font-bold text-amber-600 shadow-sm">
+                        {index + 1}
+                      </div>
+                      <div className="min-w-0 flex-1">
+                        <div className="flex flex-wrap items-center gap-2">
+                          <span className="text-[14px] font-bold text-gray-800">{meaning.title}</span>
+                          <span className="rounded-full bg-white px-2 py-0.5 text-[11px] font-semibold text-amber-700">
+                            常用
+                          </span>
+                        </div>
+                        <p className="mt-0.5 text-[14px] leading-6 text-gray-700">{meaning.summary}</p>
+                        {meaning.exampleEn && (
+                          <div className="mt-2 flex items-start gap-2 rounded-lg bg-white/90 px-2.5 py-2 ring-1 ring-amber-100">
+                            <button
+                              type="button"
+                              onClick={() => speak(meaning.exampleEn)}
+                              aria-label={`朗读常用意思 ${index + 1} 例句`}
+                              className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-700 transition-colors hover:bg-amber-200"
+                            >
+                              <Volume2 className="h-4 w-4" />
+                            </button>
+                            <div className="min-w-0 flex-1">
+                              <p className="text-[13px] font-semibold leading-5 text-gray-800">{meaning.exampleEn}</p>
+                              <p className="mt-0.5 text-[12px] leading-5 text-gray-500">{meaning.exampleZh}</p>
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </section>
           )}
@@ -588,34 +638,36 @@ export default function WordDetailPage() {
             </div>
             </section>
 
-            <section>
-            <h3 className="flex items-center gap-2 text-base md:text-lg font-bold text-gray-800 mb-2.5">
-              <Quote className="w-5 h-5 text-green-500" />
-              {T.examples}
-            </h3>
+            {wordData.examples.length > 0 && (
+              <section>
+                <h3 className="flex items-center gap-2 text-base md:text-lg font-bold text-gray-800 mb-2.5">
+                  <Quote className="w-5 h-5 text-green-500" />
+                  {T.examples}
+                </h3>
                 <div className="space-y-2">
                   {wordData.examples.map((ex, i) => (
-                <div key={i} className="bg-gray-50 rounded-2xl overflow-hidden">
-                  <div className="p-4">
-                    <div className="flex items-start gap-3">
-                      <button
-                        type="button"
-                        onClick={() => speak(ex.en)}
-                        aria-label={`朗读例句 ${i + 1}`}
-                        className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 hover:bg-green-200"
-                      >
-                        <Volume2 className="w-4 h-4 text-green-600" />
-                      </button>
-                      <div>
-                        <p className="text-gray-700 leading-relaxed mb-1">{ex.en}</p>
-                        <p className="text-gray-500 text-sm">{ex.zh}</p>
+                    <div key={`${wordData.id}-example-${i}`} className="bg-gray-50 rounded-2xl overflow-hidden">
+                      <div className="p-4">
+                        <div className="flex items-start gap-3">
+                          <button
+                            type="button"
+                            onClick={() => speak(ex.en)}
+                            aria-label={`朗读例句 ${i + 1}`}
+                            className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 hover:bg-green-200"
+                          >
+                            <Volume2 className="w-4 h-4 text-green-600" />
+                          </button>
+                          <div>
+                            <p className="text-gray-700 leading-relaxed mb-1">{ex.en}</p>
+                            <p className="text-gray-500 text-sm">{ex.zh}</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  ))}
                 </div>
-              ))}
-            </div>
-          </section>
+              </section>
+            )}
 
           {collocations.length > 0 && (
             <section>

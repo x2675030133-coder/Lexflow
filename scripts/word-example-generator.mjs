@@ -28,6 +28,16 @@ export function loadEnvFile(envPath = resolveEnvPath()) {
   }
 }
 
+function resolveReadingApiKey(options = {}) {
+  return String(
+    options.apiKey ||
+      process.env.READING_AI_API_KEY ||
+      process.env.READING_GUARDIAN_KEY ||
+      process.env.DEEPSEEK_API_KEY ||
+      '',
+  ).trim();
+}
+
 export function normalizeWordKey(value) {
   return String(value ?? '').trim().toLowerCase();
 }
@@ -53,50 +63,39 @@ function pickMeaning(wordRecord) {
   };
 }
 
-function makeFallbackExamples(wordRecord, count = 2) {
+function isHighRiskFallbackWord(wordRecord) {
   const word = String(wordRecord?.word || '').trim();
-  const { zh } = pickMeaning(wordRecord);
-  const meaning = zh || word;
-  const lowerWord = word.toLowerCase();
   const pos = Array.isArray(wordRecord?.partOfSpeech) ? wordRecord.partOfSpeech : [];
-  const isVerb = pos.some((item) => String(item).startsWith('v.'));
-  const isAdj = pos.some((item) => ['j.', 'a.', 'adj.', 's.'].includes(String(item).toLowerCase()));
-  const isAdv = pos.some((item) => ['r.', 'adv.'].includes(String(item).toLowerCase()));
+  const normalizedPos = pos
+    .map((item) => String(item).trim().toLowerCase())
+    .filter(Boolean);
 
-  const nounExamples = [
-    { en: `The ${word} plays an important role in daily life.`, zh: `${meaning}在日常生活中很重要。` },
-    { en: `People use the ${word} in many situations.`, zh: `人们会在很多场合用到${meaning}。` },
-    { en: `This ${word} helps people solve a problem.`, zh: `${meaning}能帮助人们解决问题。` },
-    { en: `A good ${word} can make things easier.`, zh: `一个好的${meaning}能让事情更容易。` },
-    { en: `She learned about the ${word} in class.`, zh: `她在课堂上学到了${meaning}。` },
-  ];
+  const highRiskPos = normalizedPos.some((item) =>
+    item.startsWith('pron.') ||
+    item.startsWith('det.') ||
+    item.startsWith('prep.') ||
+    item.startsWith('conj.') ||
+    item.startsWith('aux.') ||
+    item.startsWith('interj.') ||
+    item.startsWith('int.') ||
+    item.startsWith('art.') ||
+    item.startsWith('num.') ||
+    item.startsWith('d.') ||
+    item.startsWith('abbr.')
+  );
 
-  const verbExamples = [
-    { en: `They ${lowerWord} every day to make progress.`, zh: `他们每天都会${meaning}，以取得进步。` },
-    { en: `We need to ${lowerWord} carefully before we decide.`, zh: `我们在做决定之前需要仔细${meaning}。` },
-    { en: `The team will ${lowerWord} the plan this week.`, zh: `团队这周会${meaning}这个计划。` },
-    { en: `She tried to ${lowerWord} the problem step by step.`, zh: `她试着一步一步地${meaning}这个问题。` },
-    { en: `Students often ${lowerWord} when they practice every day.`, zh: `学生们常常会在每天练习时${meaning}。` },
-  ];
+  return !word || word.length <= 3 || highRiskPos || normalizedPos.length > 1;
+}
 
-  const adjExamples = [
-    { en: `The result is ${word}.`, zh: `结果是${meaning}的。` },
-    { en: `It is a ${word} choice for this task.`, zh: `这对这项任务来说是个${meaning}的选择。` },
-    { en: `Her answer sounded ${word}.`, zh: `她的回答听起来很${meaning}。` },
-    { en: `The room looks ${word} after cleaning.`, zh: `房间打扫后看起来${meaning}多了。` },
-    { en: `That was a ${word} idea.`, zh: `那是个${meaning}的想法。` },
-  ];
-
-  const advExamples = [
-    { en: `He spoke ${word}.`, zh: `他说话${meaning}。` },
-    { en: `Please read it ${word}.`, zh: `请把它${meaning}地读出来。` },
-    { en: `The team finished the task ${word}.`, zh: `团队${meaning}完成了任务。` },
-    { en: `She replied ${word} and left the room.`, zh: `她${meaning}地回答后离开了房间。` },
-    { en: `We should move ${word} and stay focused.`, zh: `我们应该${meaning}地行动，并保持专注。` },
-  ];
-
-  const pool = isVerb ? verbExamples : isAdj ? adjExamples : isAdv ? advExamples : nounExamples;
-  return pool.slice(0, Math.max(1, count));
+function makeFallbackExamples(wordRecord, count = 2) {
+  const examples = Array.isArray(wordRecord?.examples) ? wordRecord.examples : [];
+  return examples
+    .map((example) => ({
+      en: String(example?.en || '').trim(),
+      zh: String(example?.zh || '').trim(),
+    }))
+    .filter((example) => example.en && example.zh)
+    .slice(0, Math.max(1, count));
 }
 
 function looksLikePlaceholderExample(example) {
@@ -398,7 +397,7 @@ async function generateBatch(entries, config, depth = 0) {
 export async function generateExamplesForEntries(entries, options = {}) {
   const examplesPerWord = Math.max(1, Number(options.examplesPerWord || 2));
   const provider = String(options.provider || process.env.READING_AI_PROVIDER || 'deepseek').toLowerCase();
-  const apiKey = String(options.apiKey || process.env.READING_AI_API_KEY || process.env.DEEPSEEK_API_KEY || '').trim();
+  const apiKey = resolveReadingApiKey(options);
   const endpoint = String(
     options.endpoint ||
       process.env.READING_AI_ENDPOINT ||
@@ -412,9 +411,11 @@ export async function generateExamplesForEntries(entries, options = {}) {
   const retries = Math.max(0, Number(options.retries || 2));
   const onBatchComplete = typeof options.onBatchComplete === 'function' ? options.onBatchComplete : null;
   const results = new Map();
-  const fallbackOnly = !apiKey || options.disableModel === true;
-
   const workItems = Array.isArray(entries) ? entries.filter((entry) => entry && entry.word) : [];
+
+  if (!apiKey) {
+    throw new Error('AI API key is required for example generation. Template fallback has been removed.');
+  }
 
   for (let index = 0; index < workItems.length; index += batchSize) {
     const batch = workItems.slice(index, index + batchSize);
@@ -425,7 +426,7 @@ export async function generateExamplesForEntries(entries, options = {}) {
       endpoint,
       model,
       retries,
-      fallbackOnly,
+      fallbackOnly: false,
     });
 
     batchResult.forEach((value, key) => results.set(key, value));
@@ -583,7 +584,7 @@ async function generateCollocationBatch(entries, config, depth = 0) {
 export async function generateCollocationsForEntries(entries, options = {}) {
   const collocationCount = Math.max(1, Number(options.collocationCount || COLLOCATION_COUNT_DEFAULT));
   const provider = String(options.provider || process.env.READING_AI_PROVIDER || 'deepseek').toLowerCase();
-  const apiKey = String(options.apiKey || process.env.READING_AI_API_KEY || process.env.DEEPSEEK_API_KEY || '').trim();
+  const apiKey = resolveReadingApiKey(options);
   const endpoint = String(
     options.endpoint ||
       process.env.READING_AI_ENDPOINT ||

@@ -1,6 +1,11 @@
 import { Link } from 'react-router-dom';
 import { ArrowLeft, ShieldCheck, User, RefreshCw, Lock, Mail, ChevronRight } from 'lucide-react';
 
+const supportEmail = 'support@example.com';
+const loginSupportMailto = `mailto:${supportEmail}?subject=${encodeURIComponent('LexFlow 登录问题反馈')}&body=${encodeURIComponent(
+  `你好，LexFlow 支持团队：\n\n我遇到了登录问题，需要协助找回账号。\n\n注册邮箱：\n遇到的问题：\n是否还能访问绑定邮箱：\n\n谢谢。`,
+)}`;
+
 export default function AccountManagementPage() {
   const accountItems = [
     {
@@ -78,9 +83,12 @@ export default function AccountManagementPage() {
             <p className="text-[18px] text-[#86868b] font-medium leading-relaxed mb-8">
               如果您忘记了密码或无法访问绑定的邮箱，请直接通过邮件联系我们，我们的工程师将协助您找回账号。
             </p>
-            <button className="px-8 py-4 bg-[#1d1d1f] text-white rounded-[20px] text-[16px] font-bold hover:bg-black transition-all">
+            <a
+              href={loginSupportMailto}
+              className="inline-flex px-8 py-4 bg-[#1d1d1f] text-white rounded-[20px] text-[16px] font-bold hover:bg-black transition-all no-underline active:scale-95"
+            >
               发送反馈邮件
-            </button>
+            </a>
           </div>
         </div>
       </div>

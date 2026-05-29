@@ -9,6 +9,8 @@ import { speakText } from '../utils/settings';
 import { loadWordList } from '../utils/wordListService';
 import { findNextNewStudyIndex, isNewStudyWord } from '../utils/studyFlow';
 import { useStopMediaOnUnmount } from '../hooks/useStopMediaOnUnmount';
+import { useStudyTimeTracker } from '../hooks/useStudyTimeTracker';
+import { getPrimaryMeaning } from '../data/wordUsageNotes';
 
 type LearnMode = 'choice' | 'spelling';
 type Stage = 'select' | 'practice';
@@ -18,7 +20,7 @@ function today() {
 }
 
 function getMainDefinition(word: Word) {
-  return word.definitions[0]?.zh || '暂无释义';
+  return getPrimaryMeaning(word);
 }
 
 function shuffle<T>(items: T[]) {
@@ -59,8 +61,10 @@ export default function LearnPage() {
   const startWordAppliedRef = useRef(false);
   const resultTimerRef = useRef<number | null>(null);
   const listMenuRef = useRef<HTMLDivElement | null>(null);
+  const practicePanelRef = useRef<HTMLDivElement | null>(null);
 
   useStopMediaOnUnmount();
+  useStudyTimeTracker(stage === 'practice');
 
   const clearResultTimer = useCallback(() => {
     if (resultTimerRef.current !== null) {
@@ -122,6 +126,19 @@ export default function LearnPage() {
     document.addEventListener('mousedown', handlePointerDown);
     return () => document.removeEventListener('mousedown', handlePointerDown);
   }, []);
+
+  useEffect(() => {
+    if (stage !== 'practice') return;
+
+    const node = practicePanelRef.current;
+    if (!node) return;
+
+    const frame = window.requestAnimationFrame(() => {
+      node.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+
+    return () => window.cancelAnimationFrame(frame);
+  }, [stage, selectedListId, mode]);
 
   const dailyGoal = progress.dailyGoal || 20;
   const currentWord = sessionQueue.length > 0
@@ -426,6 +443,7 @@ export default function LearnPage() {
       </div>
 
       <section
+        ref={practicePanelRef}
         className={`overflow-hidden rounded-[36px] bg-white shadow-2xl shadow-black/5 transition-all duration-500 ${
           feedback === 'wrong' ? 'animate-apple-shake' : feedback === 'correct' ? 'animate-apple-pop' : ''
         }`}

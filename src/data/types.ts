@@ -8,6 +8,13 @@ export interface WordExample {
   zh: string;
 }
 
+export interface WordUsageMeaning {
+  title: string;
+  summary: string;
+  exampleEn: string;
+  exampleZh: string;
+}
+
 export interface EtymologyPart {
   part: string;
   type: 'prefix' | 'root' | 'suffix';
@@ -28,6 +35,7 @@ export interface Word {
   definitions: WordDefinition[];
   examples: WordExample[];
   imageQuery: string;
+  commonMeanings?: WordUsageMeaning[];
   etymology?: string;
   etymologyParts?: EtymologyPart[];
   collocations?: Collocation[];

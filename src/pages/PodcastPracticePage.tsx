@@ -20,6 +20,7 @@ import type { PodcastEpisode } from '../services/podcastService';
 import { loadPodcastLibrary } from '../services/podcastLibraryApi';
 import { markPodcastLearned } from '../utils/podcastProgress';
 import { useStopMediaOnUnmount } from '../hooks/useStopMediaOnUnmount';
+import { useStudyTimeTracker } from '../hooks/useStudyTimeTracker';
 
 type Mode = 'dictation' | 'read-along' | 'fill-blanks';
 type Stage = 'chooser' | 'practice';
@@ -120,6 +121,7 @@ export default function PodcastPracticePage() {
   const [isEnteringPractice, setIsEnteringPractice] = useState(false);
 
   useStopMediaOnUnmount();
+  useStudyTimeTracker(stage === 'practice');
 
   useEffect(() => {
     if (!episodeId) return;

@@ -3,6 +3,9 @@
 const BRAND = 'LexFlow';
 const ICP_RECORD = '浙ICP备2026027815号-1';
 const ICP_URL = 'https://beian.miit.gov.cn/';
+const PUBLIC_SECURITY_RECORD = '浙公网安备33072702100127号';
+const PUBLIC_SECURITY_URL = 'https://beian.mps.gov.cn/#/query/webSearch?code=33072702100127';
+const PUBLIC_SECURITY_ICON = '/beian/gongan.png';
 
 export default function Footer() {
   return (
@@ -60,6 +63,15 @@ export default function Footer() {
               className="text-gray-400 no-underline hover:text-blue-600"
             >
               {ICP_RECORD}
+            </a>
+            <a
+              href={PUBLIC_SECURITY_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1.5 text-gray-400 no-underline hover:text-blue-600"
+            >
+              <img src={PUBLIC_SECURITY_ICON} alt="" className="h-4 w-4 shrink-0" />
+              <span>{PUBLIC_SECURITY_RECORD}</span>
             </a>
           </p>
           <div className="flex flex-wrap gap-x-5 gap-y-2">

@@ -1,7 +1,8 @@
 ﻿import { Link, useLocation } from 'react-router-dom';
 import { BarChart3, BookOpen, FileText, Headphones, Heart, Home, Menu, Wrench, X } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
+import { getStoredAvatar, PROFILE_CHANGED_EVENT } from '../utils/profileStorage';
 
 const BRAND = 'LexFlow';
 
@@ -27,10 +28,29 @@ export default function Navbar() {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
   const { user } = useAuth();
+  const [avatarDataUrl, setAvatarDataUrl] = useState(() => getStoredAvatar(user?.email));
 
   const authLabel = user ? '个人中心' : '立即登录';
   const authPath = user ? '/profile' : '/login';
   const avatarText = (user?.user_metadata?.username || user?.email?.charAt(0) || 'X').charAt(0).toUpperCase();
+
+  useEffect(() => {
+    const refreshAvatar = () => setAvatarDataUrl(getStoredAvatar(user?.email));
+
+    refreshAvatar();
+    window.addEventListener('storage', refreshAvatar);
+    window.addEventListener(PROFILE_CHANGED_EVENT, refreshAvatar);
+    return () => {
+      window.removeEventListener('storage', refreshAvatar);
+      window.removeEventListener(PROFILE_CHANGED_EVENT, refreshAvatar);
+    };
+  }, [user?.email]);
+
+  const avatar = (sizeClass: string, textClass = 'text-sm') => (
+    <span className={`flex ${sizeClass} items-center justify-center overflow-hidden rounded-full bg-blue-600 ${textClass} font-black text-white`}>
+      {avatarDataUrl ? <img src={avatarDataUrl} alt="" className="h-full w-full object-cover" /> : avatarText}
+    </span>
+  );
 
   return (
     <nav className="sticky top-0 z-[100] glass-nav">
@@ -41,7 +61,7 @@ export default function Navbar() {
             <span className="text-2xl font-black tracking-tight text-[#1d1d1f]">{BRAND}</span>
           </Link>
           <Link to={authPath} className="hidden items-center gap-2 rounded-2xl border border-blue-100 bg-blue-50/50 px-4 py-2 font-semibold text-blue-700 no-underline transition-all hover:bg-blue-100 hover:scale-[1.02] active:scale-95 sm:flex">
-            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-blue-600 text-sm font-black text-white">{avatarText}</span>
+            {avatar('h-7 w-7')}
             {authLabel}
           </Link>
         </div>
@@ -97,7 +117,7 @@ export default function Navbar() {
               onClick={() => setMenuOpen(false)} 
               className="mb-8 flex items-center gap-4 rounded-[32px] bg-blue-50 px-6 py-5 text-2xl font-black text-blue-700 no-underline active:scale-95 transition-all"
             >
-              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 text-white shadow-lg shadow-blue-500/20">{avatarText}</span>
+              {avatar('h-12 w-12', 'text-base')}
               {authLabel}
             </Link>
             

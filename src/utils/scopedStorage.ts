@@ -6,8 +6,11 @@ export const STORAGE_BASE_KEYS = {
   progress: 'el_user_progress',
   dailyStats: 'el_daily_stats',
   reading: 'el_reading_progress',
+  readingComplete: 'el_reading_complete',
+  readingStudy: 'el_reading_study',
   listening: 'el_listening_progress',
   podcast: 'el_podcast_progress',
+  pronunciation: 'el_pronunciation_progress',
 } as const;
 
 const SCOPE_SANITIZER = /[^a-z0-9._-]+/g;

@@ -1137,6 +1137,14 @@ function normalizeProgressSnapshot(snapshot = {}) {
     listening: safeArray(snapshot.listening),
     podcasts: safeArray(snapshot.podcasts),
     reading: safeArray(snapshot.reading),
+    readingComplete: safeArray(snapshot.readingComplete),
+    readingStudy: safeObject(snapshot.readingStudy),
+    pronunciation: safeObject(snapshot.pronunciation, {
+      favorites: [],
+      practiced: [],
+      lastSelectedId: '',
+      updatedAt: '',
+    }),
     updatedAt: typeof snapshot.updatedAt === 'string' ? snapshot.updatedAt : new Date().toISOString(),
   };
 }

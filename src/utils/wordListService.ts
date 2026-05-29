@@ -1,7 +1,7 @@
 import type { Word } from '../data/types';
 
 const DB_NAME = 'wordwise_cache';
-const DB_VERSION = 4;
+const DB_VERSION = 6;
 const STORE_NAME = 'wordLists';
 
 type DerivedWordListConfig = {
@@ -80,12 +80,24 @@ function isFreshCacheEntry(
   metadata: WordListMetadataFile,
   listId: string,
 ): boolean {
+  if (!hasUsableWordDefinitions(entry.words)) return false;
+
   const metadataEntry = getMetadataListEntry(metadata, listId);
   if (!metadataEntry) return true;
   return (
     `${entry.metadataVersion}:${entry.metadataGenerated}` === getMetadataSignature(metadata) &&
     entry.totalWords === metadataEntry.totalWords
   );
+}
+
+function hasUsableWordDefinitions(words: Word[]): boolean {
+  return words.every((word) => {
+    const definitions = Array.isArray(word.definitions) ? word.definitions : [];
+    return definitions.some((definition) => {
+      const meaning = `${definition?.zh || ''} ${definition?.en || ''}`.trim();
+      return meaning && !meaning.includes('暂无此单词词义') && !meaning.includes('暂无释义');
+    });
+  });
 }
 
 function normalizeCachedEntry(

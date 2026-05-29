@@ -3,12 +3,12 @@ import { getArticleLearningKeys } from './articleIdentity';
 import { emitProgressChanged, readScopedJson, STORAGE_BASE_KEYS, writeScopedJson } from './scopedStorage';
 
 function readIds(): string[] {
-  const ids = readScopedJson<string[]>(STORAGE_BASE_KEYS.reading, []);
+  const ids = readScopedJson<string[]>(STORAGE_BASE_KEYS.readingComplete, []);
   return Array.isArray(ids) ? ids.filter((item) => typeof item === 'string') : [];
 }
 
 function writeIds(ids: string[]): void {
-  writeScopedJson(STORAGE_BASE_KEYS.reading, Array.from(new Set(ids)));
+  writeScopedJson(STORAGE_BASE_KEYS.readingComplete, Array.from(new Set(ids)));
   emitProgressChanged();
 }
 

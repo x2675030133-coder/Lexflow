@@ -22,6 +22,7 @@ import { videoLessons, highlightDefinitions } from '../data/videoData';
 import type { SubtitleLine } from '../data/videoData';
 import { buildVideoQuery, fetchPexelsVideoUrl } from '../services/remoteContent';
 import { useStopMediaOnUnmount } from '../hooks/useStopMediaOnUnmount';
+import { useStudyTimeTracker } from '../hooks/useStudyTimeTracker';
 
 export default function CorpusPlayerPage() {
   const { id } = useParams<{ id: string }>();
@@ -46,6 +47,7 @@ export default function CorpusPlayerPage() {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useStopMediaOnUnmount();
+  useStudyTimeTracker(true);
 
   const currentLine: SubtitleLine | undefined = lesson?.subtitles[currentLineIndex];
 

@@ -20,6 +20,7 @@ import { difficultyLabels, categoryLabels } from '../data/listeningData';
 import { allListeningExercises } from '../data/listeningLibrary';
 import { markListeningLearned } from '../utils/listeningProgress';
 import { useStopMediaOnUnmount } from '../hooks/useStopMediaOnUnmount';
+import { useStudyTimeTracker } from '../hooks/useStudyTimeTracker';
 import {
   pauseSpeechPlayback,
   resumeSpeechPlayback,
@@ -114,6 +115,7 @@ export default function ListeningPracticePage() {
   const playbackActionAtRef = useRef(0);
 
   useStopMediaOnUnmount();
+  useStudyTimeTracker(stage === 'practice');
 
   const sentences = exercise?.sentences || [];
   const current = sentences[currentIndex];

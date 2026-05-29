@@ -1,3 +1,5 @@
+import { emitProgressChanged, readScopedJson, STORAGE_BASE_KEYS, writeScopedJson } from './scopedStorage';
+
 export interface PronunciationProgress {
   favorites: string[];
   practiced: string[];
@@ -5,7 +7,6 @@ export interface PronunciationProgress {
   updatedAt: string;
 }
 
-const STORAGE_KEY = 'el_pronunciation_progress';
 export const PRONUNCIATION_CHANGED_EVENT = 'el-pronunciation-changed';
 
 function createDefaultProgress(): PronunciationProgress {
@@ -43,21 +44,26 @@ function normalizeProgress(progress: Partial<PronunciationProgress> | null | und
 }
 
 function readProgress(): PronunciationProgress {
+  const scoped = normalizeProgress(readScopedJson<PronunciationProgress>(STORAGE_BASE_KEYS.pronunciation, createDefaultProgress()));
+  if (scoped.favorites.length || scoped.practiced.length || scoped.lastSelectedId) return scoped;
+
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return createDefaultProgress();
-    return normalizeProgress(JSON.parse(raw) as Partial<PronunciationProgress>);
+    const legacyRaw = localStorage.getItem(STORAGE_BASE_KEYS.pronunciation);
+    if (!legacyRaw) return scoped;
+    const legacy = normalizeProgress(JSON.parse(legacyRaw) as Partial<PronunciationProgress>);
+    if (legacy.favorites.length || legacy.practiced.length || legacy.lastSelectedId) {
+      writeProgress(legacy);
+      return legacy;
+    }
   } catch {
-    return createDefaultProgress();
+    // Ignore legacy migration failures.
   }
+
+  return scoped;
 }
 
 function writeProgress(progress: PronunciationProgress): void {
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
-  } catch {
-    // Ignore quota and privacy-mode failures.
-  }
+  writeScopedJson(STORAGE_BASE_KEYS.pronunciation, progress);
 }
 
 function emitChange(): void {
@@ -81,6 +87,7 @@ export function savePronunciationProgress(progress: Partial<PronunciationProgres
 
   writeProgress(next);
   emitChange();
+  emitProgressChanged();
   return next;
 }
 

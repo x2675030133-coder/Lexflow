@@ -16,6 +16,7 @@ import ReadingGenerationStatus from '../components/ReadingGenerationStatus';
 import { fetchAppConfig } from '../services/apiConfig';
 import { refreshReadingCache } from '../services/readingFeed';
 import { isArticleRead } from '../utils/readingProgress';
+import { getReadingStudyProgress } from '../utils/readingStudyProgress';
 
 const categories = ['all', 'technology', 'culture', 'education', 'environment', 'news'] as const;
 const AUTO_REFRESH_MAX_AGE_MS = 24 * 60 * 60 * 1000;
@@ -40,6 +41,15 @@ export default function ArticleListPage() {
     [articles, selectedCategory],
   );
   const readCount = filtered.filter((article) => isArticleRead(article)).length;
+
+  useEffect(() => {
+    const handleProgressChange = () => {
+      setRefreshTick((value) => value + 1);
+    };
+
+    window.addEventListener('el-progress-changed', handleProgressChange);
+    return () => window.removeEventListener('el-progress-changed', handleProgressChange);
+  }, []);
 
   useEffect(() => {
     const revealElements = () => {
@@ -236,6 +246,14 @@ export default function ArticleListPage() {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 reveal-section">
             {filtered.map((article) => {
               const read = isArticleRead(article);
+              const studyProgress = getReadingStudyProgress(article.id);
+              const listenedSentenceCount = studyProgress.listenedSentenceKeys.length;
+              const sentenceTotal = studyProgress.totalSentences || article.paragraphs.reduce((sum, paragraph) => {
+                const sentenceCount = paragraph.en.split(/[.!?]+/).filter(Boolean).length;
+                return sum + Math.max(sentenceCount, 1);
+              }, 0);
+              const studyPercent = sentenceTotal > 0 ? Math.min(100, Math.round((listenedSentenceCount / sentenceTotal) * 100)) : 0;
+              const studyBadge = read ? '已完成' : listenedSentenceCount > 0 ? `学习中 ${studyPercent}%` : '未开始';
 
               return (
                 <Link
@@ -260,11 +278,17 @@ export default function ArticleListPage() {
                         <h3 className="line-clamp-2 text-[26px] font-black leading-tight tracking-tight transition-colors group-hover:text-[#0071e3]">
                           {article.titleEn}
                         </h3>
-                        {read && (
-                          <span className="shrink-0 rounded-full bg-[#34c759] px-2.5 py-1 text-[11px] font-black text-white shadow-lg shadow-green-500/20">
-                            已学习
-                          </span>
-                        )}
+                        <span
+                          className={`shrink-0 rounded-full px-2.5 py-1 text-[11px] font-black shadow-lg ${
+                            read
+                              ? 'bg-[#34c759] text-white shadow-green-500/20'
+                              : listenedSentenceCount > 0
+                                ? 'bg-blue-100 text-blue-700 shadow-blue-500/10'
+                                : 'bg-[#f5f5f7] text-[#86868b] shadow-black/5'
+                          }`}
+                        >
+                          {studyBadge}
+                        </span>
                       </div>
                       <p className="mb-4 line-clamp-1 text-[18px] font-bold text-[#1d1d1f] opacity-90">{article.titleZh}</p>
                       <p className="line-clamp-2 text-[17px] font-medium leading-relaxed text-[#86868b]">{article.paragraphs[0]?.en}</p>
